@@ -10,6 +10,7 @@ import { useAuth } from '@/app/contexts/AuthContext';
 import { ArrowRight, Mail, Lock } from 'lucide-react';
 import { sanitizeReturnPath } from '@/lib/sanitizeReturnPath';
 import { ApiError, fetchAuthConfig, type AuthConfig } from '@/lib/apiClient';
+import { isOSS } from '@/lib/edition';
 import { SocialAuthButtons } from '../SocialAuthButtons';
 
 function SignupPageLoading() {
@@ -309,14 +310,16 @@ function SignupPageInner() {
           </div>
         </motion.div>
 
-        {/* Footer */}
-        <div className="mt-6 flex items-center justify-center gap-6 text-[length:var(--g-text-sm)] text-slate-600">
-          <Link href="/" className="hover:text-slate-400 transition-colors">{t('backHome')}</Link>
-          <span>·</span>
-          <Link href="/pricing" className="hover:text-slate-400 transition-colors">{t('pricing')}</Link>
-          <span>·</span>
-          <Link href="/help" className="hover:text-slate-400 transition-colors">{t('helpCenter')}</Link>
-        </div>
+        {/* Footer（营销页链接仅 cloud：OSS 下这些路由会被重定向回登录页，纯噪音） */}
+        {!isOSS() && (
+          <div className="mt-6 flex items-center justify-center gap-6 text-[length:var(--g-text-sm)] text-slate-600">
+            <Link href="/" className="hover:text-slate-400 transition-colors">{t('backHome')}</Link>
+            <span>·</span>
+            <Link href="/pricing" className="hover:text-slate-400 transition-colors">{t('pricing')}</Link>
+            <span>·</span>
+            <Link href="/help" className="hover:text-slate-400 transition-colors">{t('helpCenter')}</Link>
+          </div>
+        )}
       </motion.div>
     </div>
   );

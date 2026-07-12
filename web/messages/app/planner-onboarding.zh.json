@@ -1,0 +1,367 @@
+{
+  "planner": {
+    "dimensions": {
+      "health": "健康",
+      "career": "事业",
+      "family": "家庭",
+      "finance": "财务",
+      "growth": "成长",
+      "social": "社交",
+      "hobby": "兴趣",
+      "self_realization": "自我实现"
+    },
+    "levels": {
+      "objective": {
+        "label": "O 终极目标",
+        "timeframe": "3-12个月"
+      },
+      "key_result": {
+        "label": "KR 季度成果",
+        "timeframe": "每季度"
+      },
+      "monthly": {
+        "label": "M 月度目标",
+        "timeframe": "每月"
+      },
+      "task": {
+        "label": "T 今日行动",
+        "timeframe": "每天"
+      }
+    },
+    "status": {
+      "active": "进行中",
+      "completed": "已完成",
+      "paused": "已暂停",
+      "draft": "草稿",
+      "cancelled": "已取消"
+    },
+    "obstacleTypes": {
+      "time_limited": {
+        "label": "时间受限型",
+        "description": "低估任务耗时，日计划超载"
+      },
+      "attention_scattered": {
+        "label": "注意力分散型",
+        "description": "频繁切换任务，外部干扰多"
+      },
+      "procrastination_fear": {
+        "label": "拖延-恐惧型",
+        "description": "高价值任务持续延后"
+      },
+      "info_insufficient": {
+        "label": "信息不足型",
+        "description": "信息不全导致无法推进"
+      },
+      "energy_low": {
+        "label": "能量不足型",
+        "description": "特定时段完成率持续低"
+      },
+      "external_dependency": {
+        "label": "外部依赖型",
+        "description": "等待他人导致阻塞"
+      }
+    },
+    "list": {
+      "emptyTitle": "还没有目标",
+      "emptyHint": "点击「新建目标」开始 WOOP 引导式目标建构",
+      "moreActions": "更多操作",
+      "editGoal": "编辑目标",
+      "decomposeOkr": "AI 规划",
+      "viewObstacles": "查看障碍预案",
+      "pause": "暂停",
+      "resume": "继续",
+      "markComplete": "标记完成",
+      "delete": "删除",
+      "detail": "详情",
+      "hitRate": "障碍命中率 {rate}%",
+      "woopWish": "W 愿望",
+      "woopOutcome": "O 最佳结果",
+      "woopObstacle": "O 最大障碍",
+      "searchPlaceholder": "搜索目标...",
+      "filterAll": "全部",
+      "noResultsTitle": "没有匹配的目标",
+      "noResultsHint": "换个关键词，或清除筛选条件试试。",
+      "clearFilters": "清除筛选",
+      "pagePrev": "上一页",
+      "pageNext": "下一页",
+      "pageIndicator": "第 {current} / {total} 页",
+      "createdOn": "创建 {date}",
+      "targetSpan": "{start} → {end}",
+      "targetBy": "预计 {date} 达成"
+    },
+    "deleteGoalConfirm": "删除这个目标？其下 KR 与未开始的待办会被移除，已完成/进行中的待办保留（脱钩为自由待办）。",
+    "editModal": {
+      "eyebrow": "编辑目标",
+      "title": "修改目标信息",
+      "titleLabel": "目标标题",
+      "titlePlaceholder": "例如：90 天练成英语口语流利",
+      "dimensionLabel": "生命维度",
+      "descriptionLabel": "描述",
+      "descriptionPlaceholder": "补充说明（可选）",
+      "woopSection": "WOOP（可选）",
+      "wishLabel": "W · 愿望",
+      "wishPlaceholder": "你真正想要的",
+      "outcomeLabel": "O · 最佳结果",
+      "outcomePlaceholder": "实现后最好的样子",
+      "obstacleLabel": "O · 最大障碍",
+      "obstaclePlaceholder": "最可能拦住你的"
+    },
+    "wizard": {
+      "title": "目标建构向导",
+      "steps": {
+        "input": "描述目标",
+        "diagnosis": "AI 澄清",
+        "structure": "OKR 生成",
+        "obstacle_plan": "障碍预案"
+      },
+      "inputLabel": "用一句话描述你的目标",
+      "inputPlaceholder": "例如：6个月内转行产品经理 / 3个月体脂率降到18% / 半年内通过 PMP 认证",
+      "analyzing": "AI 分析中...",
+      "startDiagnosis": "开始目标诊断",
+      "noClarify": "暂无需要澄清的问题，可直接进入 WOOP。",
+      "generating": "生成中…",
+      "generateOkr": "生成 OKR",
+      "questionProgress": "问题 {current} / {total}",
+      "other": "其他…",
+      "answerPlaceholder": "输入你的回答…",
+      "skip": "跳过 →",
+      "prevQuestion": "上一题",
+      "nextQuestion": "下一题",
+      "editAnswers": "修改回答",
+      "confirmObstaclePlan": "确认并生成障碍预案",
+      "yourObstacle": "你的障碍：{obstacle}",
+      "obstaclePlanIntro": "AI 已根据你的障碍描述生成 If-Then 应对卡片",
+      "ifLabel": "如果",
+      "thenLabel": "那么",
+      "back": "返回",
+      "confirmStart": "确认并开始执行",
+      "ifThenWhen": "如果我在执行「{goal}」相关任务时遇到这个障碍",
+      "thenActions": {
+        "time_limited": "那么我就立刻减少今日计划到 3 项以内，只保留 MIT",
+        "attention_scattered": "那么我就把手机放到另一个房间，开启 25 分钟专注计时器",
+        "procrastination_fear": "那么我就只花 10 分钟，完成最小可行版本",
+        "info_insufficient": "那么我就花 15 分钟做前置调研，列出需要的信息清单",
+        "energy_low": "那么我就先做 5 分钟热身/准备，再决定是否继续",
+        "external_dependency": "那么我就拆出可独立推进的部分，先做能做的"
+      },
+      "ifThenFallback": "如果遇到「{obstacle}」",
+      "thenFallback": "那么先完成最小 5 分钟行动"
+    },
+    "detail": {
+      "eyebrow": "目标详情",
+      "loading": "加载中…",
+      "close": "关闭",
+      "summary": "{progress}% · {todos} 待办 · {krs} KR",
+      "editGoal": "编辑目标",
+      "krSection": "关键成果 (KR)",
+      "noKr": "还没有 KR。可在下方手动添加，或用「重新规划」生成。",
+      "noTodos": "暂无待办",
+      "addKrPlaceholder": "新增关键成果…",
+      "addKr": "加 KR",
+      "orphanTodos": "未归属 KR 的待办",
+      "replanSection": "重新规划（对当前规划不满意时）",
+      "replanPlaceholder": "可选：说明想怎么调整（如「更偏口语、降低强度」）。AI 会据此重排，生成预览供你编辑后再保存。",
+      "genPreview": "生成预览",
+      "genPreviewing": "生成预览…",
+      "previewHint": "预览（可改 KR 标题）。应用后替换未完成的旧规划，已完成的保留为历史：",
+      "discard": "放弃",
+      "regen": "重新生成",
+      "applying": "应用中…",
+      "applyReplace": "应用并替换",
+      "deleteGoal": "删除目标",
+      "deleteKrConfirm": "删除这个关键成果？其下未开始的待办会被移除，已完成/进行中的回挂到目标。",
+      "deleteGoalConfirm": "删除目标「{title}」？\n· 保留 {done} 条已完成（转为历史）\n· 脱钩 {prog} 条进行中（变自由待办）\n· 移除 {todo} 条未开始\nKR 及其子项一并删除。",
+      "woopWish": "W 愿望",
+      "woopOutcome": "O 最佳结果",
+      "woopObstacle": "O 最大障碍"
+    },
+    "obstacleLibrary": {
+      "byGoal": "按目标",
+      "byType": "按类型",
+      "all": "全部",
+      "cardCount": "{n} 张卡片",
+      "emptyTitle": "暂无障碍预案卡片",
+      "emptyHint": "创建目标时会自动生成 If-Then 卡片",
+      "ifLabel": "如果",
+      "thenLabel": "那么",
+      "triggerCount": "触发 {n} 次",
+      "deleteTitle": "删除"
+    }
+  },
+  "onboarding": {
+    "subtitle": "人生快照 · 初始画像 — 约 5-10 分钟，可一次填完，也可随时退出下次继续",
+    "later": "稍后再说",
+    "optional": "(可选)",
+    "multiIndex": "{placeholder} ({index}/{count})",
+    "prevChapter": "上一章",
+    "skipChapter": "跳过本章",
+    "saving": "保存中…",
+    "continue": "继续",
+    "finish": "完成",
+    "saveError": "保存失败，请稍后再试",
+    "rings": { "basics": "基础圈", "life": "生活圈", "core": "内核圈" },
+    "ringDone": "「{ring}」完成",
+    "knowLevelLabel": "了解等级",
+    "sayALittle": "说一句也行…",
+    "expandMore": "展开多写",
+    "benefit": {
+      "name": "智伴从此用你喜欢的称呼叫你",
+      "birthday": "生日和人生阶段相关的建议会更贴切",
+      "location": "天气、作息、本地化建议都会参考它",
+      "role": "建议会贴合你的职业与身份处境",
+      "core_beliefs": "所有建议都会先对齐你的价值观",
+      "non_negotiables": "智伴永远不会推荐触碰你底线的方案",
+      "pivotal_success": "鼓励你时会引用你真实的高光时刻",
+      "pivotal_failure": "帮你避开曾经踩过的坑",
+      "pivotal_turning": "理解你怎么成为今天的你",
+      "important_people": "提到 TA 们时智伴立刻知道是谁（并生成图鉴卡）",
+      "relationship_notes": "维系重要关系的提醒会更聪明",
+      "life_wheel_self_score": "生命之花的花瓣从此有了起始形状",
+      "capability_evidence": "智伴夸你时有真凭实据",
+      "top_3_challenges": "对话会优先帮你解决当下卡点",
+      "why_now": "陪伴的节奏感会对准你的紧迫程度",
+      "future_5y": "长期目标拆解有了方向锚点",
+      "future_10y": "更远的愿景会被温柔记住",
+      "north_star": "每次规划都朝你的北极星对齐"
+    },
+    "layers": {
+      "identity": "身份画像",
+      "semantic": "语义记忆",
+      "working": "工作记忆"
+    },
+    "lifeWheel": {
+      "health": "健康",
+      "career": "事业",
+      "family": "家庭",
+      "finance": "财务",
+      "growth": "成长",
+      "social": "社交",
+      "hobby": "兴趣",
+      "self_realization": "自我实现"
+    },
+    "completion": {
+      "title": "记忆画像已建立",
+      "body": "你的回答已写入身份画像、工作记忆和语义记忆。",
+      "slotsFilled": "核心记忆点已填充 {filled}/{total}。",
+      "completeness": "画像完成度 {percent}%",
+      "hint": "没填的部分不用刻意补 — 之后在对话中自然提到，智伴会主动留意并帮你补全。",
+      "viewMemory": "查看我的记忆架构",
+      "startChat": "开始对话"
+    },
+    "days": {
+      "1": {
+        "title": "基本身份",
+        "intro": "从最基础的开始 —— 让 GEDO 知道该怎么称呼你、你身处哪个人生阶段。",
+        "questions": {
+          "name": {
+            "label": "你希望我怎么称呼你?",
+            "placeholder": "例：小明 / Alice"
+          },
+          "birthday": {
+            "label": "生日 (YYYY-MM-DD，可填年月即可)",
+            "placeholder": "1995-06-12"
+          },
+          "location": {
+            "label": "现在常驻哪个城市?",
+            "placeholder": "例：Singapore / Tokyo"
+          },
+          "role": {
+            "label": "当前的主要角色是什么?",
+            "placeholder": "例：产品经理 / 在读硕士 / 全职妈妈"
+          }
+        }
+      },
+      "2": {
+        "title": "价值观与原则",
+        "intro": "一句话回答你坚信什么、不能接受什么。这两条会进入你的「灵魂提示词」。",
+        "questions": {
+          "core_beliefs": {
+            "label": "你最坚信的 3 件事 (每行一条)",
+            "hint": "例：长期主义优于短期博弈；真诚比聪明重要；健康是 1，其他是 0。",
+            "placeholder": "一行一条"
+          },
+          "non_negotiables": {
+            "label": "你绝对不能接受的 3 件事",
+            "placeholder": "一行一条"
+          }
+        }
+      },
+      "3": {
+        "title": "关键人生经历",
+        "intro": "塑造你的事件 —— 一个成功、一个失败、一个转折点。GEDO 会用它们来理解你的决策模式。",
+        "questions": {
+          "pivotal_success": {
+            "label": "一次让你最有成就感的经历",
+            "hint": "简短描述发生了什么、为什么对你重要 (2-4 句话即可)。"
+          },
+          "pivotal_failure": {
+            "label": "一次让你印象最深的失败",
+            "hint": "它教会了你什么?"
+          },
+          "pivotal_turning": {
+            "label": "一次让你的人生方向发生转变的事",
+            "hint": "为什么是它?"
+          }
+        }
+      },
+      "4": {
+        "title": "重要关系",
+        "intro": "5 个对你最重要的人。这会让 GEDO 在合适的时机提醒你重要日期、关心他们的近况。",
+        "questions": {
+          "important_people": {
+            "label": "列出 5 个对你最重要的人 (可填名字 + 关系，如「妈妈 林XX」)",
+            "placeholder": "例：伴侣 张三 / 导师 李教授"
+          },
+          "relationship_notes": {
+            "label": "想让 GEDO 记住的关系细节 (可选)",
+            "hint": "例：张三的生日 8/12；每周日固定和爸妈打电话。"
+          }
+        }
+      },
+      "5": {
+        "title": "能力地图",
+        "intro": "从 8 维生命之花给自己打分，各维度举一个证据 (可选)。这构成你的语义记忆底座。",
+        "questions": {
+          "life_wheel_self_score": {
+            "label": "8 维生命之花自评 (0 = 完全没投入，10 = 当前理想状态)"
+          },
+          "capability_evidence": {
+            "label": "挑 1-3 个维度，各举一个具体证据 (可选)",
+            "hint": "例：事业 8 — 半年内独立带完了 X 项目；健康 4 — 最近 1 个月没运动。"
+          }
+        }
+      },
+      "6": {
+        "title": "当前焦虑与目标",
+        "intro": "现在最让你睡不着的 3 件事是什么？GEDO 会在每日规划中优先服务它们。",
+        "questions": {
+          "top_3_challenges": {
+            "label": "当前最大的 3 个挑战 / 焦虑",
+            "placeholder": "一行一条，越具体越好"
+          },
+          "why_now": {
+            "label": "为什么是现在? (可选)",
+            "hint": "比如有外部 deadline，或某个事件触发了反思。"
+          }
+        }
+      },
+      "7": {
+        "title": "长期愿景",
+        "intro": "5 年后的自己，10 年后的自己 —— 不必精确，写「想成为什么样子」就够。这是你的 north star。",
+        "questions": {
+          "future_5y": {
+            "label": "5 年后，你希望自己变成什么样的人 / 在做什么?",
+            "hint": "不必全面，写最重要的 1-2 个变化即可。"
+          },
+          "future_10y": {
+            "label": "10 年后呢?"
+          },
+          "north_star": {
+            "label": "一句话 north star (GEDO 会一直把它放在系统提示里)",
+            "placeholder": "例：做能让普通人做出更好长期决策的产品。"
+          }
+        }
+      }
+    }
+  }
+}

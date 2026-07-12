@@ -1,0 +1,151 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gedo.ai/specs/gmp/v0.1/identity.schema.json",
+  "title": "GEDO Memory Pack — identity.json (L1 Identity Layer)",
+  "description": "Stable, low-frequency-change personal identity data. Always loaded into the model's context. Should fit within ~2 KB.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version"],
+  "properties": {
+    "version": {
+      "description": "L1 schema version, semver.",
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "name": {
+      "description": "Display name the user wants the AI to call them.",
+      "type": ["string", "null"],
+      "maxLength": 128
+    },
+    "life_stage": {
+      "description": "Free-form life-stage tag, e.g. 'early-career', 'parent-of-toddler', 'sabbatical'.",
+      "type": ["string", "null"],
+      "maxLength": 64
+    },
+    "profession": {
+      "description": "Current professional role, free-form.",
+      "type": ["string", "null"],
+      "maxLength": 128
+    },
+    "north_star": {
+      "description": "Long-term vision sentence — what the user is ultimately working toward.",
+      "type": ["string", "null"],
+      "maxLength": 512
+    },
+    "values": {
+      "description": "Core values and priorities; usually 3-7 short phrases.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "top_priorities": {
+          "type": "array",
+          "items": { "type": "string", "maxLength": 64 },
+          "maxItems": 12
+        },
+        "non_negotiables": {
+          "type": "array",
+          "items": { "type": "string", "maxLength": 128 },
+          "maxItems": 12
+        }
+      }
+    },
+    "personality": {
+      "description": "Optional psychometric markers. ALL fields optional; do not invent values.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "big5": {
+          "type": ["object", "null"],
+          "additionalProperties": false,
+          "properties": {
+            "O": { "type": "number", "minimum": 0, "maximum": 1 },
+            "C": { "type": "number", "minimum": 0, "maximum": 1 },
+            "E": { "type": "number", "minimum": 0, "maximum": 1 },
+            "A": { "type": "number", "minimum": 0, "maximum": 1 },
+            "N": { "type": "number", "minimum": 0, "maximum": 1 }
+          }
+        },
+        "mbti_proxy": {
+          "type": ["string", "null"],
+          "pattern": "^[IE][SN][TF][JP]$"
+        }
+      }
+    },
+    "cognition": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "learning_style": {
+          "type": ["string", "null"],
+          "enum": ["visual", "verbal", "kinesthetic", null]
+        },
+        "reasoning_mode": {
+          "type": ["string", "null"],
+          "enum": ["systematic", "intuitive", "mixed", null]
+        },
+        "decision_speed": { "type": ["number", "null"], "minimum": 0, "maximum": 1 }
+      }
+    },
+    "communication": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "preferred_tone": {
+          "type": ["string", "null"],
+          "enum": ["direct", "nurturing", "analytical", null]
+        },
+        "verbosity": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+        "languages": {
+          "description": "BCP-47 codes the user prefers, primary first.",
+          "type": "array",
+          "items": { "type": "string", "pattern": "^[a-z]{2,3}(-[A-Za-z0-9]+)*$" },
+          "maxItems": 6
+        }
+      }
+    },
+    "expertise": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "domains": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["domain"],
+            "properties": {
+              "domain": { "type": "string", "maxLength": 64 },
+              "level": { "type": "string", "enum": ["novice", "intermediate", "advanced", "expert"] }
+            }
+          },
+          "maxItems": 32
+        }
+      }
+    },
+    "key_relationships": {
+      "description": "Important people. Importers should be careful: the linked identity is third-party data.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "role"],
+        "properties": {
+          "name": { "type": "string", "maxLength": 128 },
+          "role": { "type": "string", "maxLength": 64 },
+          "trust": { "type": "number", "minimum": 0, "maximum": 1 }
+        }
+      },
+      "maxItems": 32
+    },
+    "traits": {
+      "description": "Free-form trait labels (≤32 entries).",
+      "type": "array",
+      "items": { "type": "string", "maxLength": 64 },
+      "maxItems": 32
+    },
+    "extra": {
+      "description": "Vendor-specific extension bag. Other implementations MUST ignore unknown keys.",
+      "type": "object"
+    }
+  }
+}

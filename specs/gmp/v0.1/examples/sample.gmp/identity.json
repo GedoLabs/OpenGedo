@@ -1,0 +1,36 @@
+{
+  "version": "0.1.0",
+  "name": "Alice",
+  "life_stage": "early-career",
+  "profession": "Product manager at a fintech startup",
+  "north_star": "Build software that helps individuals make better long-term decisions.",
+  "values": {
+    "top_priorities": ["family time", "deep work", "lifelong learning"],
+    "non_negotiables": ["8h sleep", "no work after 9pm on weekdays"]
+  },
+  "personality": {
+    "big5": { "O": 0.82, "C": 0.71, "E": 0.45, "A": 0.66, "N": 0.32 },
+    "mbti_proxy": "INTJ"
+  },
+  "cognition": {
+    "learning_style": "verbal",
+    "reasoning_mode": "systematic",
+    "decision_speed": 0.55
+  },
+  "communication": {
+    "preferred_tone": "direct",
+    "verbosity": 0.4,
+    "languages": ["zh-CN", "en"]
+  },
+  "expertise": {
+    "domains": [
+      { "domain": "product_management", "level": "advanced" },
+      { "domain": "user_research", "level": "intermediate" }
+    ]
+  },
+  "key_relationships": [
+    { "name": "Bob", "role": "spouse", "trust": 0.98 },
+    { "name": "Carol", "role": "mentor", "trust": 0.85 }
+  ],
+  "traits": ["data-driven", "introverted", "long-form thinker"]
+}

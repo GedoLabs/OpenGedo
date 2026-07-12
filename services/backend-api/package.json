@@ -1,0 +1,44 @@
+{
+  "name": "@gedo-ai/backend-api",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env src/server.mjs",
+    "start": "node --env-file-if-exists=.env src/server.mjs",
+    "migrate": "node ../../scripts/migrate-json-to-postgres.mjs",
+    "db:migrate": "node db/migrate.mjs",
+    "db:rollback": "node db/migrate.mjs --rollback",
+    "db:dry-run": "node db/migrate.mjs --dry-run",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:retrieval": "vitest run test/retrieval/retrieval.test.mjs",
+    "eval:longmem": "node test/longmem/eval.mjs --dry-run",
+    "eval:longmem:live": "node test/longmem/eval.mjs",
+    "backfill:embeddings": "node scripts/backfill-embeddings.mjs",
+    "backfill:embeddings:dry": "node scripts/backfill-embeddings.mjs --dry-run"
+  },
+  "devDependencies": {
+    "vitest": "^1.6.0"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.74.0",
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "@mozilla/readability": "^0.6.0",
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1",
+    "jose": "^6.2.3",
+    "jszip": "^3.10.1",
+    "linkedom": "^0.18.12",
+    "mammoth": "^1.12.0",
+    "node-cron": "^3.0.3",
+    "openai": "^6.22.0",
+    "pdf-parse": "^1.1.1",
+    "pg": "^8.11.3",
+    "undici": "^8.5.0",
+    "web-push": "^3.6.7"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

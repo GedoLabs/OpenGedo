@@ -1,0 +1,858 @@
+@import "tailwindcss";
+
+:root {
+  --background: #020617; /* slate-950 — legacy */
+  --foreground: #f8fafc; /* slate-50 — legacy */
+
+  /* Legacy GEDO Brand Colors (still referenced by some older components) */
+  --gedo-g-purple: #a855f7;
+  --gedo-e-blue: #3b82f6;
+  --gedo-d-amber: #f59e0b;
+  --gedo-o-emerald: #10b981;
+
+  /* ── Redesign tokens (Gedo AI 重构) ───────────────────────────────────
+     Defaults match the dark theme; ThemeProvider overrides these at runtime
+     via inline script + setProperty so theme survives SSR/CSR.            */
+  --g-bg:          oklch(0.16 0.006 270);
+  --g-bg-raised:   oklch(0.185 0.006 270);
+  --g-surface-1:   oklch(0.205 0.006 270);
+  --g-surface-2:   oklch(0.235 0.006 270);
+  --g-border:      oklch(0.27 0.006 270);
+  --g-border-hi:   oklch(0.34 0.006 270);
+
+  --g-text:        oklch(0.97 0.003 270);
+  --g-text-mid:    oklch(0.78 0.005 270);
+  --g-text-muted:  oklch(0.6  0.008 270);
+  --g-text-faint:  oklch(0.45 0.008 270);
+
+  --g-dim-memory:  oklch(0.72 0.13 305);
+  --g-dim-exec:    oklch(0.74 0.13 145);
+  --g-dim-goal:    oklch(0.78 0.13 75);
+  --g-dim-insight: oklch(0.72 0.13 235);
+  --g-dim-persona: oklch(0.72 0.13 195);
+  --g-danger:      oklch(0.65 0.18 25);
+
+  /* 生命之花八维 life-dimension palette (memory IA v2) — one hue per dim,
+     independent from the module --g-dim-* colors above. Overridden at runtime
+     by ThemeProvider/ThemeScript together with the rest of the tokens. */
+  --g-life-health:   oklch(0.74 0.13 145);
+  --g-life-career:   oklch(0.78 0.13 75);
+  --g-life-family:   oklch(0.72 0.13 350);
+  --g-life-finance:  oklch(0.72 0.13 270);
+  --g-life-growth:   oklch(0.72 0.13 235);
+  --g-life-social:   oklch(0.72 0.13 195);
+  --g-life-hobby:    oklch(0.74 0.13 30);
+  --g-life-selfreal: oklch(0.72 0.13 305);
+
+  --g-accent:      oklch(0.74 0.13 145);
+  --g-accent-soft: oklch(0.74 0.13 145 / 0.14);
+  --g-accent-line: oklch(0.74 0.13 145 / 0.35);
+  --g-accent-ink:  oklch(0.22 0.06 145);
+  --g-accent-hue:  145;
+
+  --g-shadow-card: 0 8px 24px -16px oklch(0 0 0 / 0.6);
+
+  --g-radius:      12px;
+  --g-radius-sm:   8px;
+  --g-radius-lg:   16px;
+  --g-radius-pill: 999px;
+
+  --g-font-sans:   "Inter", -apple-system, BlinkMacSystemFont, "PingFang SC",
+                   "Microsoft YaHei", sans-serif;
+  --g-font-mono:   "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Typography scale — baseline: 2xs/xs are fine-print sizes (labels, timestamps,
+     eyebrows); min readable body/label size is sm 14px, body 16px. Scaled in /app
+     via user pref. */
+  --g-font-scale-user: 1;
+  --g-font-scale-device: 1;
+
+  --g-text-2xs: calc(11px * var(--g-font-scale-user) * var(--g-font-scale-device));
+  --g-text-xs:  calc(12px * var(--g-font-scale-user) * var(--g-font-scale-device));
+  --g-text-sm:  calc(14px * var(--g-font-scale-user) * var(--g-font-scale-device));
+  --g-text-base: calc(16px * var(--g-font-scale-user) * var(--g-font-scale-device));
+  --g-text-md:  calc(20px * var(--g-font-scale-user) * var(--g-font-scale-device));
+  --g-text-lg:  calc(24px * var(--g-font-scale-user) * var(--g-font-scale-device));
+  --g-text-xl:  calc(32px * var(--g-font-scale-user) * var(--g-font-scale-device));
+  --g-text-2xl: calc(40px * var(--g-font-scale-user) * var(--g-font-scale-device));
+  --g-text-lead: calc(18px * var(--g-font-scale-user) * var(--g-font-scale-device));
+  --g-text-hero: clamp(34px, 4.3vw, 52px);
+
+  --g-leading-tight: 1.35;
+  --g-leading-base: 1.6;
+  --g-leading-caption: 1.45;
+  --g-space-scale: calc(0.5 + 0.5 * var(--g-font-scale-user));
+  --g-btn-pad-y: calc(8px * var(--g-space-scale));
+  --g-btn-pad-x: calc(14px * var(--g-space-scale));
+  --g-btn-pad-y-lg: calc(11px * var(--g-space-scale));
+  --g-btn-pad-x-lg: calc(20px * var(--g-space-scale));
+  --g-icon-btn-size: calc(34px * var(--g-space-scale));
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(100, 116, 139, 0.3) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.3);
+  border-radius: 3px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.5);
+}
+
+/* 主滚动容器常驻滚动条槽位：各分区高度不一，滚动条出现/消失会让居中内容左右抖动
+   （设置页切换分节时最明显，表现为左侧子菜单横向位移）。预留槽位后布局稳定不跳动。 */
+.gedo-app-main {
+  scrollbar-gutter: stable;
+}
+
+body {
+  color: var(--g-text);
+  background: var(--g-bg);
+  font-family: var(--g-font-sans);
+  font-feature-settings: "cv11", "ss01";
+  letter-spacing: -0.005em;
+  transition: background 0.18s ease, color 0.18s ease;
+}
+
+@keyframes gedoBlink { 50% { opacity: 0 } }
+
+/* Public persona chat — message entrance + typing dots. */
+@keyframes gedo-msg-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+.gedo-msg-in { animation: gedo-msg-in 0.22s ease-out; }
+
+/* 图鉴 entity cards — 边框/阴影/选中环走 CSS；位移动效由 framer-motion
+   接管（codex/EntityCard），此处不再写 transform 以免与行内样式打架。 */
+.gedo-codex-card {
+  border: 1px solid var(--g-border);
+  cursor: pointer;
+  transition: box-shadow .15s ease, border-color .15s ease;
+}
+.gedo-codex-card:hover {
+  border-color: var(--g-border-hi);
+  box-shadow: 0 12px 28px -14px oklch(0 0 0 / 0.45);
+}
+.gedo-codex-card.is-active {
+  border-color: var(--g-accent);
+  box-shadow: 0 0 0 1px var(--g-accent), 0 12px 28px -16px oklch(0 0 0 / 0.4);
+}
+.gedo-codex-card .gedo-codex-emoji { transition: transform .18s ease; }
+.gedo-codex-card:hover .gedo-codex-emoji { transform: scale(1.08) rotate(-3deg); }
+@keyframes gedo-dot { 0%, 80%, 100% { opacity: 0.3; transform: translateY(0); } 40% { opacity: 1; transform: translateY(-3px); } }
+
+/* Themeable landing subpage helpers — all colors via --g-* tokens so they
+   follow the ThemePicker (dark/light + accent hue) just like the home page. */
+.g-card { transition: border-color 0.18s ease, background 0.18s ease, transform 0.18s ease; }
+.g-card-hover:hover { border-color: var(--g-border-hi); }
+.g-link { color: var(--g-text-mid); text-decoration: none; transition: color 0.15s ease; }
+.g-link:hover { color: var(--g-text); }
+.g-accent-link { color: var(--g-accent); text-decoration: none; }
+.g-accent-link:hover { text-decoration: underline; }
+
+/* ── Mobile / tablet responsive (≤900px) ─────────────────────────────
+   Desktop layout unchanged above 900px. Below: hide aux sidebars, tighten
+   padding, stack landing grids. Drawer panels restore hidden sidebars. */
+.gedo-mobile-only { display: none !important; }
+.gedo-desktop-only { display: revert; }
+
+/* Landing — fixed baseline (不受 /app 字号偏好影响) */
+.gedo-land-page {
+  overflow-x: clip;
+  max-width: 100%;
+  --g-font-scale-user: 1;
+  --g-font-scale-device: 1;
+}
+
+/* /app shell — clip overflow on mobile */
+.gedo-app-shell { overflow-x: clip; max-width: 100%; }
+
+.gedo-app-side-rail { display: flex; }
+
+/* Goals / obstacles — tabs + title share one header row */
+.gedo-goals-header {
+  min-height: 60px;
+  height: auto !important;
+  align-items: center;
+  row-gap: 8px;
+}
+.gedo-goals-header-main {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  flex: 1 1 auto;
+}
+.gedo-action-tabs {
+  flex-shrink: 0;
+}
+.gedo-sidebar-card-text {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+.gedo-task-title-row {
+  flex-wrap: wrap;
+  row-gap: 4px;
+}
+.gedo-task-title-text {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+.gedo-task-actions {
+  flex-wrap: wrap;
+  row-gap: 6px;
+}
+
+.gedo-app-mobile-header,
+.gedo-app-bottom-nav {
+  display: none;
+}
+
+/* Companion 3-column layout — narrow the two fixed-width aux sidebars before
+   the 900px breakpoint fully collapses them into drawers, so the chat column
+   doesn't absorb the entire narrowing on its own between ~900-1200px. Bounded
+   to (901px, 1200px] so it never competes with the drawer-embedded width
+   rule below 900px (.gedo-drawer-inner .gedo-aux-sidebar). */
+@media (max-width: 1200px) and (min-width: 901px) {
+  .gedo-conv-sidebar { width: 200px !important; }
+  .gedo-context-sidebar { width: 300px !important; }
+}
+
+@media (max-width: 900px) {
+  .gedo-mobile-only { display: flex !important; }
+  .gedo-desktop-only { display: none !important; }
+
+  .gedo-app-mobile-header {
+    display: flex !important;
+    position: sticky;
+    top: 0;
+    z-index: 110;
+    box-sizing: border-box;
+    height: auto;
+    min-height: calc(56px + env(safe-area-inset-top, 0px));
+    padding: env(safe-area-inset-top, 0px) max(16px, env(safe-area-inset-right, 0px)) 0 max(16px, env(safe-area-inset-left, 0px));
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-shrink: 0;
+  }
+  .gedo-app-mobile-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+  .gedo-app-bottom-nav {
+    display: block !important;
+  }
+  .gedo-app-bottom-nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 8px 0 calc(8px + env(safe-area-inset-bottom, 0px));
+  }
+  .gedo-app-main {
+    padding-bottom: calc(72px + env(safe-area-inset-bottom, 0px)) !important;
+  }
+  .gedo-app-center-col {
+    min-height: 0;
+  }
+  .gedo-app-main:has(> .gedo-companion-screen) {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding-bottom: calc(72px + env(safe-area-inset-bottom, 0px)) !important;
+  }
+
+  /* Hide flex sidebars; restored inside .gedo-drawer-inner */
+  .gedo-aux-sidebar { display: none !important; }
+  .gedo-drawer-inner .gedo-aux-sidebar {
+    display: flex !important;
+    width: 100% !important;
+    max-width: none !important;
+    border: none !important;
+    min-height: 0 !important;
+  }
+
+  .gedo-main-padded { padding-left: 16px !important; padding-right: 16px !important; }
+  .gedo-hide-mobile { display: none !important; }
+  .gedo-hide-mobile-subtitle { display: none !important; }
+  .gedo-chat-main { border-right: none !important; }
+
+  /* /app screen headers */
+  .gedo-screen-header {
+    height: auto !important;
+    min-height: 48px;
+    padding: 8px 16px !important;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+  }
+  .gedo-screen-header-actions {
+    flex-wrap: wrap;
+    gap: 6px;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    flex: 1 1 100%;
+    justify-content: flex-start;
+  }
+  .gedo-btn-label { display: none; }
+
+  /* Companion / chat column */
+  .gedo-chat-scroll { padding: 16px 16px 20px !important; }
+  .gedo-chat-composer { padding: 12px 16px 20px !important; }
+  .gedo-chat-main { border-right: none !important; }
+  .gedo-companion-header { display: none !important; }
+
+  /* Execution / 智行 */
+  .gedo-exec-daily-hero {
+    flex-direction: column !important;
+    gap: 12px !important;
+  }
+  .gedo-exec-daily-hero > div {
+    flex: none !important;
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+  .gedo-exec-daily-hero .gedo-exec-hero-stats {
+    flex-wrap: wrap !important;
+    gap: 6px 10px !important;
+  }
+  .gedo-exec-daily-hero .gedo-exec-hero-stats > span[style*="opacity"] { display: none; }
+  .gedo-energy-curve-wrap {
+    width: 100%;
+    overflow: hidden;
+  }
+  .gedo-energy-curve-wrap svg {
+    width: 100% !important;
+    height: auto !important;
+    display: block;
+  }
+  .gedo-task-title-row {
+    flex-wrap: wrap !important;
+    row-gap: 4px !important;
+    align-items: flex-start !important;
+  }
+  .gedo-task-title-text {
+    min-width: 0 !important;
+    word-break: break-word;
+    flex: 1 1 100% !important;
+  }
+  .gedo-task-actions {
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+    row-gap: 6px !important;
+  }
+  .gedo-task-actions > div[style*="flex: 1"] { display: none; }
+  .gedo-schedule-chips {
+    overflow-x: auto;
+    flex-wrap: nowrap !important;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+    padding-bottom: 2px;
+  }
+  .gedo-action-tabs button {
+    padding: var(--g-btn-pad-y) 8px !important;
+    font-size: var(--g-text-sm) !important;
+    white-space: nowrap;
+  }
+  .gedo-exec-date-line {
+    flex-wrap: wrap !important;
+    gap: 4px 8px !important;
+  }
+
+  /* Goals list (OKR tree) — mobile: meta + actions in right column beside title */
+  .gl-row:not(.gl-task-row) {
+    padding: 10px 12px !important;
+  }
+  .gl-depth-1 { padding-left: 20px !important; }
+  .gl-depth-2 { padding-left: 28px !important; }
+  .gl-depth-3 { padding-left: 36px !important; }
+  .gl-row-primary {
+    align-items: flex-start !important;
+    gap: 6px !important;
+  }
+  .gl-row-aside {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 4px !important;
+    width: 68px;
+    flex-shrink: 0;
+    padding-top: 1px;
+  }
+  .gl-status {
+    font-size: 9px !important;
+    padding: 2px 6px !important;
+    max-width: 64px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+  }
+  .gl-actions-wrap {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 4px !important;
+    width: 100%;
+  }
+  .gl-detail-btn,
+  .gl-more-btn {
+    min-height: 30px;
+    min-width: 30px;
+    padding: 4px 6px !important;
+    font-size: 11px !important;
+  }
+  .gl-more-btn { padding: 4px !important; }
+  .gl-woop-btn { display: none !important; }
+  .gl-decompose-label { display: none; }
+  .gl-decompose-btn { padding: 4px 6px !important; }
+  .gl-woop-grid { grid-template-columns: 1fr !important; }
+  .gl-task-row { padding-left: 28px !important; }
+  .gl-dropdown-menu button:active { background: var(--g-surface-2); }
+
+  /* Goals / obstacles sub-views */
+  .gedo-goals-header-main {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+  }
+  .gedo-goals-chat-cta {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 6px !important;
+  }
+  .gedo-goals-chat-cta > span:last-child { display: none; }
+
+  .gedo-goals-header .gedo-goals-header-main {
+    flex: 1 1 100%;
+  }
+
+  /* Companion mobile toolbar — icon row */
+  .gedo-mobile-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border-bottom: 1px solid var(--g-border);
+    background: var(--g-bg-raised);
+    flex-shrink: 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .gedo-mobile-toolbar > button {
+    flex: 1 0 auto;
+    min-width: 0;
+    white-space: nowrap;
+    font-size: 12px !important;
+    padding: 6px 10px !important;
+  }
+  .gedo-mobile-toolbar-compact > button {
+    flex: 0 0 auto;
+    padding: 6px 8px !important;
+  }
+
+  /* Content area padding overrides */
+  .gedo-content-padded { padding: 16px !important; }
+  .gedo-content-padded-lg { padding: 32px 16px !important; }
+
+  /* Stat / KPI grids */
+  .gedo-kpi-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .gedo-stat-grid-4 { grid-template-columns: repeat(2, 1fr) !important; }
+  .gedo-stat-grid-3 { grid-template-columns: repeat(2, 1fr) !important; }
+
+  /* Memory profile layout — collapse main+sidebar to a single column */
+  .mem-layout { grid-template-columns: 1fr !important; }
+  .mem-side { position: static !important; }
+
+  /* Landing page (mobile overrides) */
+  .gedo-land-nav { padding: 0 12px !important; gap: 8px; }
+  .gedo-land-nav-links { display: none !important; }
+  .gedo-land-nav-logo-wrap { gap: 0 !important; min-width: 0; }
+  .gedo-land-nav-actions { flex-shrink: 0; gap: 6px !important; }
+  .gedo-land-nav-cta-label { display: none !important; }
+  .gedo-land-nav-cta {
+    padding: 8px 10px !important;
+    min-width: 36px;
+    justify-content: center;
+  }
+
+  .gedo-land-hero {
+    grid-template-columns: 1fr !important;
+    padding: 32px 16px 48px !important;
+    gap: 28px !important;
+  }
+  .gedo-land-hero h1 {
+    font-size: clamp(30px, 8.5vw, 56px) !important;
+    word-break: break-word;
+    letter-spacing: -0.03em !important;
+  }
+  .gedo-land-grad { white-space: normal !important; }
+  .gedo-land-hero-sub { font-size: var(--g-text-base) !important; margin: 16px 0 24px !important; }
+  .gedo-land-hero-ctas {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 10px !important;
+    margin-bottom: 28px !important;
+  }
+  .gedo-land-hero-ctas > a,
+  .gedo-land-hero-ctas > button { justify-content: center; width: 100%; }
+  .gedo-land-trust-row {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 10px !important;
+  }
+  .gedo-land-trust-sep { display: none !important; }
+
+  .gedo-land-chat-preview { max-width: 100%; min-width: 0; }
+  .gedo-land-chat-chrome { padding: 0 10px !important; gap: 8px !important; }
+  .gedo-land-chat-chrome .gedo-land-brand-tag { display: none !important; }
+  .gedo-land-chat-scroll {
+    height: min(420px, 58vh) !important;
+    padding: 14px 14px 12px !important;
+  }
+  .gedo-land-chat-composer-wrap { padding: 0 14px 14px !important; }
+  .gedo-land-tool-trace { flex-wrap: wrap !important; row-gap: 4px !important; }
+  .gedo-land-tool-detail {
+    flex: 1 1 100% !important;
+    min-width: 0 !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .gedo-land-section { padding: 56px 16px !important; }
+  .gedo-land-section-sm { padding: 32px 16px 36px !important; }
+  .gedo-land-cta { padding: 56px 16px 48px !important; }
+  .gedo-land-cta h2 {
+    font-size: clamp(30px, 8.5vw, 56px) !important;
+    word-break: break-word;
+  }
+  .gedo-land-cta-actions {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 10px !important;
+  }
+  .gedo-land-cta-actions > a,
+  .gedo-land-cta-actions > button { justify-content: center; width: 100%; }
+
+  .gedo-land-grid-2 { grid-template-columns: 1fr !important; gap: 32px !important; }
+  .gedo-land-grid-3 { grid-template-columns: 1fr !important; }
+  .gedo-land-grid-3 { margin-top: 36px !important; }
+
+  .gedo-land-section-head h2,
+  .gedo-land-grid-2 h2 {
+    font-size: clamp(26px, 7vw, 44px) !important;
+    word-break: break-word;
+  }
+  .gedo-land-section-head p { font-size: var(--g-text-base) !important; margin-top: 14px !important; }
+  .gedo-land-cap-card h3 { font-size: var(--g-text-md) !important; }
+
+  .gedo-land-arch-card { padding: 18px !important; }
+  .gedo-land-arch-layer {
+    width: 100% !important;
+    flex-wrap: wrap;
+    gap: 8px !important;
+  }
+  .gedo-land-arch-layer > div:first-child { min-width: 0; flex: 1; }
+  .gedo-land-arch-bullets li > div span:last-child {
+    display: block;
+    margin-left: 0 !important;
+    margin-top: 2px;
+  }
+
+  .gedo-land-footer { padding: 40px 16px 24px !important; }
+  .gedo-land-footer-grid {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)) !important;
+    gap: 28px 24px !important;
+    margin-bottom: 36px !important;
+  }
+  /* Brand block spans the full width; the four menu blocks reflow 4→2 columns
+     instead of stacking into one tall column. */
+  .gedo-land-footer-grid > :first-child {
+    grid-column: 1 / -1 !important;
+  }
+  .gedo-land-footer-bottom {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 8px !important;
+    text-align: left;
+  }
+}
+
+/* Security statement — document with a sticky left-rail table of contents.
+   Desktop: two columns (rail + body); the rail floats fixed while scrolling.
+   ≤960px: collapse to one column, hide the rail, show the inline TOC in flow. */
+.gedo-sec-grid {
+  display: grid;
+  grid-template-columns: 236px minmax(0, 1fr);
+  column-gap: 56px;
+  max-width: 1148px;
+  margin: 0 auto;
+}
+.gedo-sec-toc-rail {
+  position: sticky;
+  top: 88px;
+  align-self: start;
+  max-height: calc(100vh - 116px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.gedo-sec-toc-inline {
+  display: none;
+}
+@media (max-width: 960px) {
+  .gedo-sec-grid {
+    grid-template-columns: minmax(0, 1fr);
+    column-gap: 0;
+  }
+  .gedo-sec-toc-rail {
+    display: none;
+  }
+  .gedo-sec-toc-inline {
+    display: block;
+  }
+}
+
+/* Marquee-style trust strip on landing */
+.g-trust-marquee {
+  animation: g-trust 36s linear infinite;
+}
+@keyframes g-trust {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+  }
+  
+  .bg-grid-pattern {
+    background-size: 50px 50px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  }
+  
+  /* GEDO Letter Animations */
+  .gedo-letter {
+    transition: all 0.3s ease;
+    text-shadow: 0 0 20px currentColor;
+  }
+  
+  .gedo-letter:hover {
+    transform: scale(1.1) translateY(-2px);
+    filter: brightness(1.2);
+  }
+  
+  /* GEDO Gradient Text */
+  .gedo-gradient {
+    background: linear-gradient(135deg, 
+      var(--gedo-g-purple) 0%, 
+      var(--gedo-e-blue) 33%, 
+      var(--gedo-d-amber) 66%, 
+      var(--gedo-o-emerald) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* GEDO Glow Effects */
+  .gedo-glow-purple {
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
+  }
+  
+  .gedo-glow-blue {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+  }
+  
+  .gedo-glow-amber {
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.3);
+  }
+  
+  .gedo-glow-emerald {
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+  }
+}
+
+/* ── Light-theme compatibility layer ────────────────────────────────────────
+   Pages built with dark-mode Tailwind classes need adaptation when the user
+   switches to a light theme. These rules make text and backgrounds readable.
+   Gradient buttons with saturated colors (blue/violet/emerald) keep white
+   text because their backgrounds remain dark even in light mode.           */
+
+/* ①  Gradient text headings: from-white → dark token in light mode
+       Tailwind v4 stores the color in --tw-gradient-from (color only,
+       no position). We must also re-declare --tw-gradient-stops so that
+       the stops formula picks up the new color reference.                 */
+[data-theme="light"] .from-white {
+  --tw-gradient-from: var(--g-text);
+  --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position),
+    var(--tw-gradient-from) var(--tw-gradient-from-position),
+    var(--tw-gradient-to) var(--tw-gradient-to-position));
+}
+[data-theme="light"] .to-slate-400 {
+  --tw-gradient-to: var(--g-text-muted);
+}
+
+/* ②  White text → design-token dark text globally in light mode          */
+[data-theme="light"] .text-white {
+  color: var(--g-text);
+}
+
+/*    Exception: restore white text on elements that carry a saturated
+      gradient background (blue, violet, emerald, purple, fuchsia buttons).
+      These buttons stay visually dark so white text is still readable.    */
+[data-theme="light"] .from-blue-600.text-white,
+[data-theme="light"] .from-blue-500.text-white,
+[data-theme="light"] .from-violet-600.text-white,
+[data-theme="light"] .from-violet-500.text-white,
+[data-theme="light"] .from-emerald-600.text-white,
+[data-theme="light"] .from-purple-600.text-white,
+[data-theme="light"] .from-fuchsia-600.text-white,
+[data-theme="light"] .bg-violet-600\/90.text-white {
+  color: white;
+}
+
+/* ③  Faint slate text → readable dark tokens                             */
+[data-theme="light"] .text-slate-200 {
+  color: var(--g-text);
+}
+[data-theme="light"] .text-slate-300 {
+  color: var(--g-text-mid);
+}
+[data-theme="light"] .text-slate-400 {
+  color: var(--g-text-muted);
+}
+[data-theme="light"] .text-slate-500 {
+  color: var(--g-text-muted);
+}
+
+/* ④  Dark card / panel backgrounds → surface design tokens               */
+/*    bg-slate-900/* → surface-1 (near white); bg-slate-8xx → surface-2   */
+[data-theme="light"] .bg-slate-900,
+[data-theme="light"] .bg-slate-900\/40,
+[data-theme="light"] .bg-slate-900\/60,
+[data-theme="light"] .bg-slate-900\/80,
+[data-theme="light"] .bg-slate-900\/95,
+[data-theme="light"] .bg-slate-950,
+[data-theme="light"] .bg-slate-950\/90 {
+  background-color: var(--g-surface-1);
+}
+[data-theme="light"] .bg-slate-800,
+[data-theme="light"] .bg-slate-800\/50,
+[data-theme="light"] .bg-slate-800\/60 {
+  background-color: var(--g-surface-2);
+}
+
+/* ④b CTA hero sections with dark gradient → light blue-tinted gradient   */
+/*    from-slate-900 / to-slate-900 pairs are used by CTA cards that need  */
+/*    a premium feel in both light and dark modes.                         */
+[data-theme="light"] .from-slate-900 {
+  --tw-gradient-from: color-mix(in oklch, var(--g-accent) 9%, var(--g-surface-2));
+  --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position),
+    var(--tw-gradient-from) var(--tw-gradient-from-position),
+    var(--tw-gradient-to) var(--tw-gradient-to-position));
+}
+[data-theme="light"] .to-slate-900\/50,
+[data-theme="light"] .to-slate-900 {
+  --tw-gradient-to: var(--g-bg-raised);
+}
+
+/* ⑤  Dark borders → design-token borders                                 */
+[data-theme="light"] .border-slate-800 {
+  border-color: var(--g-border);
+}
+[data-theme="light"] .border-slate-700 {
+  border-color: var(--g-border-hi);
+}
+
+/* ⑥  Accent colors that are too bright on a light background             */
+/*    Map the 400-level Tailwind accents to the darker gedo dimension      */
+/*    tokens which are calibrated for readability on light backgrounds.    */
+[data-theme="light"] .text-blue-400 {
+  color: var(--g-dim-insight);   /* oklch(0.52 0.17 235) – readable blue */
+}
+[data-theme="light"] .text-emerald-400 {
+  color: var(--g-dim-exec);      /* oklch(0.54 0.16 145) – readable green */
+}
+[data-theme="light"] .text-violet-400,
+[data-theme="light"] .text-violet-300,
+[data-theme="light"] [class*="text-violet-3"] {
+  color: var(--g-dim-memory);    /* oklch(0.52 0.18 305) – readable violet */
+}
+[data-theme="light"] .text-purple-400 {
+  color: var(--g-dim-memory);
+}
+
+/* ⑧  Hover states for dark panels and text → adapt to light mode          */
+[data-theme="light"] .hover\:bg-slate-800\/50:hover,
+[data-theme="light"] .hover\:bg-slate-700:hover {
+  background-color: var(--g-surface-2);
+}
+[data-theme="light"] .hover\:border-slate-500:hover {
+  border-color: var(--g-border-hi);
+}
+[data-theme="light"] .hover\:text-white:hover {
+  color: var(--g-text);
+}
+
+/* ⑨  Page-level grid pattern – subtle dark lines instead of white        */
+[data-theme="light"] .bg-grid-pattern {
+  background-image:
+    linear-gradient(to right,  rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+}
+
+/* ⑦  Smooth transition when switching themes                             */
+body {
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+/* ⑩  Auth page missing opacity variants                                  */
+[data-theme="light"] .bg-slate-900\/70 {
+  background-color: var(--g-surface-1);
+}
+[data-theme="light"] .border-slate-700\/50,
+[data-theme="light"] .border-slate-700\/60 {
+  border-color: var(--g-border);
+}
+[data-theme="light"] .bg-slate-700\/60,
+[data-theme="light"] .hover\:bg-slate-700\/60:hover {
+  background-color: var(--g-surface-1);
+}
+[data-theme="light"] .border-slate-600\/60,
+[data-theme="light"] .hover\:border-slate-600\/60:hover {
+  border-color: var(--g-border-hi);
+}
+[data-theme="light"] .text-slate-600 {
+  color: var(--g-text-faint);
+}
+[data-theme="light"] .fill-slate-200 {
+  fill: var(--g-text-mid);
+}
+
+/* ⑪  Onboarding / form inputs with 80% opacity dark bg                    */
+[data-theme="light"] .bg-slate-800\/80 {
+  background-color: var(--g-surface-2);
+}
+[data-theme="light"] .placeholder-slate-500::placeholder {
+  color: var(--g-text-faint);
+}

@@ -1,0 +1,73 @@
+{
+  "version": "0.1.0",
+  "dimensions": {
+    "career": {
+      "summary": "Senior PM at a Series-B fintech, transitioning into AI-product strategy.",
+      "key_traits": ["pattern-spotter", "research-first"],
+      "skills": ["roadmap planning", "user interviews", "metrics design"],
+      "patterns": ["Tends to over-invest in research before shipping; ships strongest after time-box."],
+      "evidence_episode_ids": [
+        "1e1b6c8a-aaaa-4aaa-aaaa-000000000001",
+        "1e1b6c8a-aaaa-4aaa-aaaa-000000000002"
+      ],
+      "recent_insight": "Shipping smaller cuts faster has been more useful than monolithic launches."
+    },
+    "health": {
+      "summary": "Consistent sleep, light cardio, recurring shoulder pain since 2025-Q4.",
+      "key_traits": ["routine-driven"],
+      "skills": ["sleep hygiene"],
+      "patterns": ["Pain flares correlate with long laptop sessions on weekends."],
+      "evidence_episode_ids": ["1e1b6c8a-aaaa-4aaa-aaaa-000000000003"]
+    },
+    "growth": {
+      "summary": "Reads ~2 books/month, mostly cognitive science and decision making.",
+      "key_traits": ["reflective"],
+      "skills": ["note-taking", "mental models"],
+      "patterns": ["Gets the most value from books when paired with weekly written reflection."],
+      "evidence_episode_ids": []
+    },
+    "family": { "summary": "", "evidence_episode_ids": [] },
+    "finance": { "summary": "", "evidence_episode_ids": [] },
+    "social": { "summary": "", "evidence_episode_ids": [] },
+    "hobby": { "summary": "", "evidence_episode_ids": [] },
+    "self_realization": { "summary": "", "evidence_episode_ids": [] }
+  },
+  "cross_dimension_patterns": [
+    {
+      "pattern": "Health pain reduces output 2-3 days later in career dimension.",
+      "dimensions": ["health", "career"],
+      "evidence_episode_ids": ["1e1b6c8a-aaaa-4aaa-aaaa-000000000003"]
+    }
+  ],
+  "milestone_events": [
+    {
+      "event": "Promoted to Senior PM",
+      "impact": "major",
+      "ts": "2025-09-15T00:00:00Z",
+      "tags": ["career"],
+      "dimensions": ["career"]
+    }
+  ],
+  "failure_learnings": [
+    {
+      "context": "Q1 launch overran by 6 weeks because user research was open-ended.",
+      "lesson": "Always time-box discovery phases to ≤2 weeks.",
+      "applied": true
+    }
+  ],
+  "relationship_map": [
+    { "name": "Bob", "role": "spouse", "trust": 0.98, "last_interaction": "2026-04-28T19:30:00Z" }
+  ],
+  "growth_trajectory": {
+    "skill_delta": [
+      { "skill": "metrics design", "delta": 0.2, "period": "2025-Q4..2026-Q1" }
+    ]
+  },
+  "long_term_summaries": [
+    {
+      "period": "2025",
+      "summary": "Year of consolidation: kept the same job, deepened PM craft, started a habit of weekly written reflection.",
+      "tags": ["career", "growth"]
+    }
+  ]
+}

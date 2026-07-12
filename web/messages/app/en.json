@@ -1,0 +1,2058 @@
+{
+  "app": {
+    "nav": {
+      "companion": "Chat",
+      "memory": "Memory",
+      "action": "Action",
+      "insights": "Insights",
+      "avatar": "Avatar",
+      "settings": "Settings",
+      "search": "Search conversations",
+      "searchHint": "Search conversations (⌘K)"
+    },
+    "common": {
+      "loading": "Loading…",
+      "save": "Save",
+      "saving": "Saving…",
+      "saved": "Saved",
+      "cancel": "Cancel",
+      "back": "Back",
+      "close": "Close",
+      "collapse": "Collapse",
+      "confirm": "Confirm",
+      "delete": "Delete",
+      "retry": "Try again",
+      "loadFailed": "Something went wrong. Please try again.",
+      "chatWithCompanion": "Chat with Companion",
+      "removeItem": "Remove {item}"
+    },
+    "shell": {
+      "accountAndSettings": "Account Center",
+      "accountAndSettingsFor": "{email} · Account Center",
+      "membershipLevel": "Membership tier",
+      "home": "Home",
+      "help": "Get help",
+      "logout": "Log out",
+      "manage": "Manage",
+      "upgradeHint": "Unlock more models and capacity"
+    },
+    "language": {
+      "title": "Language",
+      "subtitle": "Choose the language for the app interface",
+      "label": "Interface language",
+      "change": "Change language",
+      "timezone": "Timezone",
+      "timezoneDesc": "Used for reminders, daily plans, and scheduling. Choose where you actually live.",
+      "timezoneSearch": "Search city or region…",
+      "timezoneNoResults": "No matching timezones"
+    },
+    "membership": {
+      "tierFree": "Free",
+      "tierPro": "Pro",
+      "tierUltra": "Ultra",
+      "intervalMonthly": "Monthly",
+      "intervalYearly": "Yearly",
+      "intervalNone": "—"
+    },
+    "settings": {
+      "title": "Account Center",
+      "subtitle": "Your identity, subscription, preferences and privacy in one place",
+      "saveBtn": "Save settings",
+      "savedBtn": "Saved",
+      "saving": "Saving…",
+      "nav": {
+        "label": "Account sections",
+        "overview": "Overview",
+        "account": "Account & sign-in",
+        "subscription": "Membership",
+        "preferences": "Preferences",
+        "mcp": "External tools",
+        "developer": "Developer / Access",
+        "privacy": "Data & privacy"
+      },
+      "overview": {
+        "title": "Overview",
+        "displayName": "Display name",
+        "joined": "Member since",
+        "smartUsage": "Smart usage this month",
+        "manageSubscription": "Manage subscription",
+        "exportData": "Export data",
+        "changeAvatar": "Change avatar",
+        "avatarUploadFailed": "Avatar upload failed — please try again",
+        "editName": "Edit display name",
+        "namePlaceholder": "Your display name"
+      },
+      "usage": {
+        "loading": "Loading usage…",
+        "unavailable": "Usage data will appear after your first AI interaction this month.",
+        "smartUsage": "Smart usage",
+        "visitorUsage": "Digital persona visitor replies",
+        "level": {
+          "normal": "Normal",
+          "high": "Higher than usual",
+          "near_limit": "Approaching monthly limit"
+        }
+      },
+      "preferences": {
+        "title": "Preferences"
+      },
+      "display": {
+        "title": "Display",
+        "fontSize": "Text size",
+        "fontSizeHint": "Adjust interface text size across the app. Takes effect immediately.",
+        "fontSizeSmall": "Small",
+        "fontSizeStandard": "Standard",
+        "fontSizeLarge": "Large"
+      },
+      "account": {
+        "title": "Account & sign-in",
+        "email": "Email",
+        "changeEmail": "Change email",
+        "password": "Password",
+        "changePassword": "Change password",
+        "collapse": "Collapse",
+        "loginMethods": "Sign-in methods",
+        "emailPassword": "Email & password",
+        "google": "Google",
+        "apple": "Apple",
+        "disconnect": "Disconnect",
+        "connectGoogle": "Connect Google",
+        "connectApple": "Connect Apple",
+        "linkHint": "Connect Google or Apple for faster, password-free sign-in.",
+        "errLinkedElsewhere": "That account is already connected to a different GEDO user.",
+        "errProviderUnavailable": "This sign-in provider isn't available right now.",
+        "errLinkFailed": "Couldn't connect that account. Please try again.",
+        "errUnlinkFailed": "Couldn't disconnect that method. Please try again.",
+        "errLastMethod": "You can't remove your only sign-in method. Set a password or connect another provider first.",
+        "emailVerification": "Email verification",
+        "verifyHint": "Confirm your email address to secure your account.",
+        "resendVerification": "Resend email",
+        "verifySending": "Sending…",
+        "verifySent": "Verification email sent — check your inbox.",
+        "verifyAlready": "Your email is already verified.",
+        "verifyFailed": "Couldn't send right now. Please try again."
+      },
+      "membership": {
+        "title": "Membership & subscription",
+        "currentTier": "Current tier",
+        "planName": "Plan",
+        "billingInterval": "Billing cycle",
+        "periodEnd": "Current period ends",
+        "cancelNotice": "Your subscription is set to cancel at the end of the current billing period. You keep paid features until then.",
+        "freeNotice": "You're on the free plan. Upgrade to unlock more models and capacity — see the pricing page.",
+        "upgrade": "Upgrade",
+        "viewPricing": "View pricing",
+        "managePortal": "Manage subscription & invoices",
+        "portalError": "Unable to open billing portal",
+        "benefitsSummary": "Your plan includes the entitlements shown on the pricing page. Smart usage resets monthly."
+      },
+      "avatar": {
+        "title": "Companion settings",
+        "nameLabel": "Assistant name",
+        "personalityLabel": "Personality",
+        "personality": {
+          "friendly": "Warm & friendly",
+          "friendlyDesc": "Caring and encouraging",
+          "professional": "Focused & efficient",
+          "professionalDesc": "Goal-driven, concise and direct",
+          "motivational": "Motivational",
+          "motivationalDesc": "Energetic and challenge-oriented",
+          "gentle": "Gentle companion",
+          "gentleDesc": "Patient, attentive and thoughtful"
+        }
+      },
+      "notifications": {
+        "title": "Notifications",
+        "morning": "Morning plan reminder",
+        "morningDesc": "Reminds you each morning to confirm today's plan",
+        "checkin": "Check-in reminder",
+        "checkinDesc": "Reminds you to check in as to-dos near their deadline",
+        "evening": "Evening reflection reminder",
+        "eveningDesc": "Reminds you each evening to complete the three-question reflection"
+      },
+      "theme": {
+        "title": "Appearance",
+        "pickerTitle": "Theme & accent",
+        "mode": "Theme",
+        "modeDark": "Dark",
+        "modeLight": "Light",
+        "modeAuto": "System",
+        "accent": "Accent",
+        "fontSize": "Text size",
+        "fontSizeSmall": "Small",
+        "fontSizeStandard": "Standard",
+        "fontSizeLarge": "Large",
+        "accentColors": {
+          "emerald": "Emerald",
+          "amber": "Amber",
+          "blue": "Blue",
+          "purple": "Purple",
+          "coral": "Coral",
+          "teal": "Teal"
+        }
+      },
+      "mcp": {
+        "title": "External tools (MCP)",
+        "desc": "Register remote MCP servers — their tools become available to Companion in chat (and in the composer's + menu).",
+        "empty": "No external tool servers yet.",
+        "namePh": "Name (e.g. My tools)",
+        "urlPh": "https://mcp.example.com/mcp",
+        "add": "Add",
+        "test": "Test",
+        "testOk": "Connected · {n} tool(s)",
+        "testFailed": "Connection failed",
+        "enable": "Enable",
+        "disable": "Disable",
+        "disabled": "Disabled",
+        "delete": "Delete",
+        "securityHint": "Production requires https; private addresses are blocked by default (self-host can set MCP_ALLOW_PRIVATE=1). Headers with tokens are never sent back to the browser.",
+        "commandPh": "/absolute/path/to/command",
+        "argsPh": "args (space separated)",
+        "directoryTitle": "Recommended connections",
+        "dirConnect": "Connect",
+        "dirAdded": "Added",
+        "oauthConnected": "Authorized",
+        "authRequired": "Authorization required",
+        "authorize": "Authorize"
+      },
+      "developer": {
+        "title": "Developer / Access (Memory MCP)",
+        "desc": "Bring your Gedo memory into any AI: create an access token and paste it into Claude Code / Claude Desktop / Cursor or any MCP client, which can then search your memories and portrait within the granted scopes. Reads and writes are separated (writes never persist directly — they enter your review queue), redactable, every call audited, revocable anytime.",
+        "endpointLabel": "MCP endpoint (Streamable HTTP)",
+        "upgradeHint": "The memory MCP is a Pro (and above) feature. Upgrade to create access tokens.",
+        "tokenOnce": "This token is shown only once — copy it now; it cannot be viewed again.",
+        "empty": "No access tokens yet.",
+        "namePh": "Token name (e.g. My Claude Code)",
+        "create": "Create token",
+        "revoke": "Revoke",
+        "redactToggle": "Redact PII in output (emails/phones/addresses masked; secret-like content is always withheld regardless)",
+        "redactOn": "PII redaction on",
+        "redactOff": "No redaction",
+        "lastUsed": "Last used {time}",
+        "neverUsed": "Never used",
+        "securityHint": "A token is a read-only key to your memory: paste it only into AI clients you trust — connecting means your memory content flows to that client's model provider.",
+        "auditTitle": "Recent access log",
+        "scope": {
+          "memory_read": "Memory search",
+          "profile_read": "Portrait",
+          "goals_read": "Goals & tasks",
+          "memory_write": "Write memories (review queue)"
+        }
+      },
+      "privacy": {
+        "title": "Privacy & data",
+        "pauseMemory": "Pause long-term memory",
+        "pauseMemoryDesc": "When on, the AI stops drawing on your past memories and stops recording new ones",
+        "export": "Export my data",
+        "exportDesc": "Download all your memories, goals and to-dos (.gmp package)",
+        "wipe": "Erase all my data",
+        "wipeDesc": "Permanently delete your account and all memories, goals, to-dos and conversations — unrecoverable",
+        "logout": "Log out",
+        "autoAccept": "Auto-accept imported memories",
+        "autoAcceptDesc": "High-confidence import candidates are saved automatically (undo them anytime in \"To review\"). Turn off to confirm every item yourself."
+      },
+      "wipe": {
+        "title": "Erase all data",
+        "warning": "This permanently deletes your account and all memories, goals, to-dos, conversations and persona data, and cannot be undone. To keep a backup, use \"Export my data\" above first.",
+        "passwordLabel": "Account password",
+        "passwordPlaceholder": "Enter your current password",
+        "confirmLabel": "Type <kw>DELETE</kw> to confirm",
+        "confirmDelete": "Permanently delete"
+      },
+      "emailForm": {
+        "newEmail": "New email address",
+        "currentPassword": "Current password (to verify identity)",
+        "updated": "✓ Email updated"
+      },
+      "passwordForm": {
+        "current": "Current password",
+        "new": "New password (at least 6 characters)",
+        "confirm": "Confirm new password",
+        "changed": "✓ Password changed"
+      },
+      "errors": {
+        "bad_credentials": "Incorrect password, please try again",
+        "weak_password": "New password must be at least 6 characters",
+        "same_password": "New password must differ from the current one",
+        "invalid_email": "Please enter a valid email address",
+        "email_taken": "That email is already in use",
+        "same_email": "New email matches the current one",
+        "bad_json": "Request failed, please try again",
+        "unauthorized": "Your session has expired, please sign in again",
+        "passwordMismatch": "The two new passwords don't match",
+        "generic": "Operation failed, please try again later"
+      }
+    },
+    "quota": {
+      "title": "Monthly limit reached",
+      "body": "You've reached the limit for your current plan this month.",
+      "upgradeTo": "Upgrade to {tier}",
+      "dismiss": "Dismiss",
+      "resource": {
+        "active_goals": "You've reached the active goal limit on the Free plan.",
+        "memory_items": "You've reached the memory limit on the Free plan.",
+        "smart_credits": "You've used your monthly smart allowance.",
+        "persona_publish": "Publishing a public digital persona requires Pro.",
+        "visitor_replies": "Digital persona visitor reply quota reached.",
+        "profile_refresh": "Deep profile refresh limit reached for this month."
+      }
+    },
+    "companion": {
+      "cards": {
+        "snapshot": {
+          "fallbackTitle": "{period, select, today {Snapshot · today} week {Snapshot · this week} month {Snapshot · this month} other {Snapshot}}"
+        },
+        "goalProgress": {
+          "fallbackTitle": "Goal progress",
+          "status": "{status, select, on_track {On track} at_risk {At risk} behind {Behind} completed {Done} other {On track}}",
+          "nextStep": "Next: {task}"
+        },
+        "taskAdjust": {
+          "fallbackTitle": "Suggested task adjustments",
+          "action": "{action, select, postpone {Postpone} reschedule {Reschedule} remove {Remove} priority_up {Raise priority} priority_down {Lower priority} other {Adjust}}",
+          "apply": "Apply all",
+          "applying": "Applying…",
+          "applied": "Applied",
+          "appliedPartial": "Applied {applied}/{total} (others unmatched)",
+          "undo": "Undo",
+          "noop": "No matching tasks to adjust; nothing changed",
+          "undoing": "Undoing…",
+          "undone": "Undone",
+          "errorApply": "Action failed",
+          "errorUndo": "Undo failed"
+        },
+        "memoryList": {
+          "fallbackTitle": "Related memories"
+        }
+      },
+      "brand": "Companion",
+      "brandFull": "Companion · GEDO-AI",
+      "defaultName": "there",
+      "heroTitle": "How about a chat today, {name}",
+      "heroSubtitle": "Companion records, plans and reminds you from your conversations — just talk",
+      "notifications": "Notifications",
+      "voiceChat": "Voice chat",
+      "newSession": "New session",
+      "thinking": "Companion is thinking…",
+      "searchPlaceholder": "Search conversations…",
+      "noMatch": "No conversations match “{query}”",
+      "noConversations": "No conversations yet · type on the right to start",
+      "untitled": "Untitled chat",
+      "deleteConversation": "Delete conversation",
+      "deleteQuestion": "Delete?",
+      "groupToday": "Today",
+      "groupYesterday": "Yesterday",
+      "groupEarlier": "Earlier",
+      "timeJustNow": "Just now",
+      "timeMinutesAgo": "{n}m ago",
+      "timeDaysAgo": "{n}d ago",
+      "loadingHistory": "Loading history…",
+      "emptyTitle": "Start a new conversation",
+      "emptyBody": "Tell Companion what's on your mind — it records, plans and reminds you at once.",
+      "quick": {
+        "todayStatus": "Today's status",
+        "todayStatusPrompt": "Based on yesterday's progress and today's energy forecast, replan my timeline for today.",
+        "jot": "Jot a note",
+        "jotPrompt": "Note this down for me: ",
+        "setGoal": "Set a goal",
+        "setGoalPrompt": "I want to set a 90-day goal — "
+      },
+      "tools": {
+        "capture_memory": "Save memory",
+        "search_memory": "Search memory",
+        "create_goal": "Create goal",
+        "plan_goal": "Plan goal",
+        "create_task": "Add to-do",
+        "complete_task": "Complete to-do",
+        "list_today_tasks": "View today's to-dos",
+        "list_goals": "View goals",
+        "generate_review": "Generate review"
+      },
+      "result": {
+        "done": "Done",
+        "failed": "Action failed",
+        "calling": "Calling…",
+        "interrupted": "Interrupted",
+        "timeout": "Response timed out and was interrupted automatically — please retry.",
+        "error": "Something went wrong: {err}",
+        "connectFailed": "Connection failed",
+        "connectFailedDetail": "Connection failed: {err}",
+        "foundMemories": "Found {n} related memories",
+        "noMemories": "No related memories found",
+        "todayTasks": "{n} to-dos today",
+        "noTodayTasks": "No to-dos today",
+        "totalGoals": "{n} goals in total",
+        "noGoals": "No goals yet"
+      },
+      "composer": {
+        "placeholder": "Say something… Enter to send, Shift+Enter for a new line",
+        "attach": "Attachment",
+        "uploading": "Uploading…",
+        "remind": "Reminder",
+        "voiceInput": "Voice input",
+        "lang": "English",
+        "hint": "Companion extracts from the conversation and asks you to confirm; any memory can be edited or deleted in Memory",
+        "menuAttach": "Upload attachment",
+        "menuLink": "Link goals / to-dos / cards",
+        "menuTools": "External tools",
+        "menuSoon": "Soon"
+      },
+      "refPicker": {
+        "title": "Link content",
+        "goals": "Goals",
+        "tasks": "To-dos",
+        "cards": "Cards",
+        "search": "Search…",
+        "empty": "Nothing here yet.",
+        "confirm": "Link {n} item(s)",
+        "limit": "Up to 5 items"
+      },
+      "modePicker": {
+        "auto": "Auto",
+        "autoHint": "Let Companion decide which tool to use, if any",
+        "memory": "Memory",
+        "memoryHint": "Force this turn to save a memory",
+        "todo": "To-do",
+        "todoHint": "Force this turn to add a to-do",
+        "goal": "Goal",
+        "goalHint": "Force this turn to plan a goal",
+        "review": "Review",
+        "reviewHint": "Force this turn to generate a periodic review",
+        "expandHint": "Change mode"
+      },
+      "memoryExpand": {
+        "tagsPlaceholder": "Tags, comma separated"
+      },
+      "goalExpand": {
+        "continueWoop": "Continue with WOOP →"
+      },
+      "reviewExpand": {
+        "completionRate": "Completion",
+        "tasks": "Tasks",
+        "activeGoals": "Active goals",
+        "reflections": "Reflections",
+        "insights": "Insights",
+        "suggestions": "Suggestions"
+      },
+      "rowEdit": {
+        "save": "Save",
+        "cancel": "Cancel",
+        "edit": "Edit",
+        "delete": "Delete"
+      },
+      "message": {
+        "stop": "Stop generating",
+        "stopped": "Stopped"
+      },
+      "level": {
+        "key_result": "Key result",
+        "monthly": "Phase",
+        "task": "Subtask",
+        "objective": "Objective"
+      },
+      "decompose": {
+        "loading": "Loading plan…",
+        "empty": "No details yet.",
+        "recentTasks": "Recent to-dos",
+        "redoing": "Re-planning… (about 1 min)",
+        "redo": "Re-plan",
+        "redoFailed": "Regeneration failed — your existing plan is untouched; try again later.",
+        "doneStatus": "Done",
+        "savedChip": "Saved to Goals",
+        "discard": "Discard plan",
+        "discarding": "Discarding…",
+        "discardConfirm": "Discard this plan? The goal, its KRs/phases and not-started to-dos will be deleted (completed ones are kept as history).",
+        "discarded": "Discarded — the goal and to-dos from this plan were removed."
+      },
+      "inProgress": "In progress",
+      "board": {
+        "title": "Context board",
+        "items": "{n} items",
+        "pending": "{n} to confirm",
+        "collapse": "Collapse",
+        "activeCapture": "Proactive capture · AI extracts, you confirm",
+        "coreHint": "Core facts are remembered automatically (undoable) · other candidates enter memory only after you confirm",
+        "explainTitle": "About · Context board",
+        "explainBody": "Whenever Companion calls a tool (save memory, adjust to-dos, plan goals), the process shows up here. Start a conversation and the board fills in automatically."
+      },
+      "capture": {
+        "statusPending": "To confirm",
+        "statusSaved": "Remembered",
+        "statusConfirmed": "Confirmed",
+        "statusRejected": "Dismissed",
+        "statusUndone": "Undone",
+        "statusExpired": "Expired",
+        "importanceCore": "Core",
+        "importanceHigh": "Important",
+        "taskCandidate": "To-do candidate",
+        "memoryCapture": "Memory capture",
+        "hit": "Match · {slot}",
+        "due": "Due {date}",
+        "saveConfirm": "Save & confirm",
+        "addTask": "Add to to-dos",
+        "confirmRemember": "Confirm & remember",
+        "fix": "Fix",
+        "ignore": "Dismiss",
+        "addedToToday": "Added to today's to-dos",
+        "savedToMemory": "Saved to Memory",
+        "undo": "Undo"
+      },
+      "callStatus": {
+        "running": "In progress",
+        "success": "Done",
+        "failed": "Failed"
+      },
+      "memoryModal": {
+        "eyebrow": "Save to Memory",
+        "title": "Jot that down",
+        "saving": "Saving…",
+        "save": "Save to Memory",
+        "contentLabel": "Content",
+        "contentPlaceholder": "e.g. Ran 30 min this morning, legs sore but felt good, pace 6'42\"…",
+        "typeLabel": "Type",
+        "sourceLabel": "Source",
+        "dimensionsLabel": "Linked dimensions",
+        "dimensionsHint": "Optional; auto-classified from content when left empty",
+        "tagsLabel": "Tags",
+        "tagsHint": "Press Enter or comma to add. e.g. health, running, milestone",
+        "tagsPlaceholder": "Type and press Enter…",
+        "saveError": "Failed to save",
+        "category": {
+          "important_info": "Key info",
+          "observation": "Self-observation",
+          "goal_related": "Goal-related",
+          "reflection": "Reflection",
+          "general": "Everyday"
+        },
+        "source": {
+          "text": "Manual",
+          "chat_extract": "From chat",
+          "voice": "Voice note"
+        }
+      },
+      "notif": {
+        "eyebrow": "Notifications",
+        "titlePending": "{n} awaiting your response",
+        "titleEmpty": "All caught up",
+        "loading": "Loading…",
+        "emptyBody": "Companion hasn't found anything it needs to reach out about yet",
+        "accepted": "Accepted",
+        "snoozed": "Snoozed",
+        "dismissed": "Dismissed",
+        "snooze": "Later",
+        "ignore": "Dismiss",
+        "accept": "Accept",
+        "justNow": "just now",
+        "minutesAgo": "{n} min ago",
+        "hoursAgo": "{n} h ago",
+        "daysAgo": "{n} d ago"
+      },
+      "voice": {
+        "eyebrow": "Voice chat",
+        "noSpeechApi": "This browser doesn't support the Web Speech API. Please use Chrome / Edge.",
+        "noSynthesis": "This browser doesn't support speech synthesis.",
+        "noReply": "Companion didn't reply.",
+        "requestFailed": "Request failed",
+        "exit": "Exit voice",
+        "holdToTalk": "Hold to talk",
+        "stopListening": "Stop listening",
+        "processing": "Processing…",
+        "stopReading": "Stop reading",
+        "retry": "Retry",
+        "youSaid": "You said",
+        "assistant": "Companion",
+        "state": {
+          "idle": "Start whenever you're ready",
+          "listening": "Listening…",
+          "transcribing": "Transcribing",
+          "responding": "Companion is replying",
+          "speaking": "Companion is reading aloud",
+          "error": "Something went wrong"
+        }
+      }
+    },
+    "insights": {
+      "brand": "Insights",
+      "titleWeek": "This week in review",
+      "titleMonth": "This month in review",
+      "subtitle": "{days} days of insight Companion distilled from your execution, memory and reviews",
+      "periodWeek": "Week",
+      "periodMonth": "Month",
+      "generating": "Generating…",
+      "aiReview": "AI review",
+      "exportReport": "Export report",
+      "emptyTitle": "Insight comes from your everyday",
+      "emptyHint": "Chat with Companion and jot a few notes — the more you use it, the sharper the trends and reviews here.",
+      "reviewsTitle": "Past reviews",
+      "reviewsEmpty": "No AI reviews yet — tap “AI review” above to generate your first",
+      "periodMonthShort": "Mo",
+      "periodWeekShort": "Wk",
+      "kpi": {
+        "ecsAvg": "ECS average",
+        "ecsExcellent": "Excellent",
+        "ecsGood": "Good",
+        "ecsWatch": "Needs attention",
+        "completionRate": "To-do completion",
+        "completionSub": "Done / planned",
+        "activeGoals": "Active goals",
+        "activeGoalsSub": "In progress",
+        "newMemories": "New memories",
+        "newMemoriesSub": "Captured",
+        "reflections": "Reviews done",
+        "reflectionsSub": "times"
+      },
+      "ecsTrend": "ECS trend",
+      "ecsNoData": "Not enough data yet — the trend appears after a few days of to-dos",
+      "trendFlat": "— flat",
+      "weekdays": [
+        "Sun",
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat"
+      ],
+      "completionByDay": "Daily completion",
+      "last7": "Last 7 days",
+      "noData": "No data yet",
+      "sidebarTitle": "Companion insights",
+      "sidebarEmpty": "No new insights for now — keep recording and acting, Companion keeps watching",
+      "regenerate": "Regenerate",
+      "suggestion": {
+        "praise": "Well done",
+        "tip": "Tip",
+        "warning": "Heads up",
+        "hint": "Note"
+      },
+      "overview": "Overview",
+      "highlights": "Highlights",
+      "lowlights": "To improve",
+      "nextFocus": "Next focus",
+      "export": {
+        "reportTitle": "Insights report",
+        "monthly": "Monthly",
+        "weekly": "This week",
+        "exportedAt": "Exported at",
+        "metrics": "Metrics",
+        "ecsMean": "ECS mean",
+        "taskCompletion": "To-do completion",
+        "activeGoals": "Active goals",
+        "newMemories": "New memories",
+        "reflections": "Reviews done",
+        "aiSuggestions": "AI suggestions",
+        "historyReviews": "Past reviews",
+        "noSummary": "(no summary)",
+        "reviewTitle": "review"
+      },
+      "reviewModal": {
+        "eyebrowMonth": "Monthly review",
+        "eyebrowWeek": "Weekly review",
+        "title": "Review",
+        "exportMd": "Export Markdown",
+        "noData": "No review data",
+        "ecsAvg": "ECS avg",
+        "completionRate": "Completion"
+      }
+    },
+    "memory": {
+      "nav": {
+        "profile": "Profile",
+        "codex": "Cards",
+        "memories": "Memories"
+      },
+      "flower": {
+        "dimGoals": "Linked goals",
+        "dimEntities": "Linked cards"
+      },
+      "knowLevels": {
+        "l1": "Just met",
+        "l2": "Getting familiar",
+        "l3": "Close friend",
+        "l4": "Truly gets you"
+      },
+      "codex": {
+        "loading": "Loading…",
+        "detail": {
+          "mentions": "{n} mentions",
+          "lastSeen": "Last mentioned {d}",
+          "discoveries": "New from Companion",
+          "adopt": "Adopt",
+          "ignore": "Ignore",
+          "loadMore": "Load more",
+          "chatAbout": "Chat about this",
+          "edit": "Edit card",
+          "facts": "Facts",
+          "inboxEntry": "{n} discoveries about them to review"
+        },
+        "searchPlaceholder": "Search name / relation…",
+        "addCard": "Add card",
+        "emptyTitle": "No cards yet",
+        "emptyHint": "Create a card for the people, things and places that matter to you; frequently mentioned people also surface as card suggestions from chat.",
+        "aiHiddenBadge": "Hidden from AI",
+        "avatarVisibleBadge": "Avatar-visible",
+        "types": {
+          "all": "All",
+          "person": "People",
+          "pet": "Pets",
+          "object": "Things",
+          "place": "Places",
+          "event": "Events",
+          "org": "Orgs",
+          "other": "Other"
+        },
+        "keyLabels": {
+          "birthday": "Birthday",
+          "personality": "Personality",
+          "likes": "Likes",
+          "how_we_met": "How we met",
+          "breed": "Breed",
+          "brand": "Brand",
+          "model": "Model",
+          "acquired_at": "Acquired",
+          "meaning": "Meaning to me",
+          "city": "City",
+          "period": "Period",
+          "when": "When",
+          "my_role": "My role",
+          "impact": "Impact",
+          "joined_at": "Joined"
+        },
+        "editor": {
+          "newTitle": "New card",
+          "editTitle": "Edit card",
+          "emoji": "Icon",
+          "name": "Name",
+          "namePlaceholder": "Mom / Bobby / my car…",
+          "type": "Type",
+          "relation": "Relation to me",
+          "relationPlaceholder": "Mother / beloved pet / daily driver…",
+          "aliases": "Aliases (comma separated)",
+          "aliasesPlaceholder": "Mum, Mrs. Zhang",
+          "facts": "Card facts",
+          "noFacts": "No facts yet — start from the suggestions below",
+          "suggested": "Suggested",
+          "customKeyPlaceholder": "Custom key",
+          "valuePlaceholder": "Value",
+          "addFact": "Add",
+          "removeFact": "Remove",
+          "note": "Note",
+          "notePlaceholder": "Any extra context…",
+          "dimensions": "Linked dimensions",
+          "privacy": "Privacy",
+          "aiExcluded": "Hide from AI",
+          "aiExcludedHint": "When on, Companion no longer reads this card or refers to it in chat.",
+          "avatarVisible": "Available to public avatar",
+          "avatarVisibleHint": "When on, your public digital persona may mention this card's facts to recognized visitors. Off by default.",
+          "invite": "Personal invite link",
+          "inviteGenerate": "Generate invite link",
+          "inviteNeedPublish": "Publish your digital persona first to activate the link.",
+          "inviteHint": "Whoever opens the link is automatically recognized as this card.",
+          "copy": "Copy",
+          "linkedEpisodes": "Related memories",
+          "noLinkedEpisodes": "No fragments reference this card yet",
+          "delete": "Delete",
+          "cancel": "Cancel",
+          "save": "Save"
+        },
+        "groups": {
+          "people": "People",
+          "things": "Pets & things",
+          "places": "Places & orgs",
+          "events": "Events"
+        },
+        "completeness": "Profile {pct}% complete",
+        "merge": {
+          "button": "Merge…",
+          "hint": "Merge \"{name}\" into another card: facts fill the target card, memory links follow, then this card is deleted (irreversible).",
+          "pickTarget": "Pick the card to merge into…",
+          "confirm": "Merge now"
+        },
+        "rail": {
+          "title": "Browse",
+          "collapse": "Collapse",
+          "expand": "Expand"
+        },
+        "summary": {
+          "title": "AI summary",
+          "empty": "Chat about them with your companion — the AI will write a summary here.",
+          "generatedAt": "Generated {date}",
+          "regenerate": "Regenerate",
+          "regenerating": "Generating…",
+          "failed": "Last generation failed — it will retry automatically.",
+          "excludedHint": "Cards hidden from AI don’t get summaries."
+        }
+      },
+      "allMemories": "All memories",
+      "dimAll": "All",
+      "profileTitle": "Profile",
+      "codexTitle": "Cards",
+      "profileSub": "How the AI sees you — every conclusion traceable to memories, and correctable anytime.",
+      "codexSub": "The people, things and events in your life — memory's anchors",
+      "searchPlaceholder": "Search memories…",
+      "emptyTimelineTitle": "Memories settle here automatically",
+      "emptyTimelineHint": "Tell Companion about your day — it'll remember what's worth keeping, with your confirmation.",
+      "genFailed": "Failed to generate",
+      "genFailedDetail": "Failed to generate: {msg}",
+      "noSummaryReturned": "Companion didn't return a summary.",
+      "aiSummaryLabel": "AI Summary",
+      "export": {
+        "title": "Memory export · {focus}",
+        "exportedAt": "Exported at",
+        "summaryHeading": "Companion summary",
+        "timelineHeading": "Timeline"
+      },
+      "detail": {
+        "filterAll": "All",
+        "filterText": "Manual",
+        "filterChatExtract": "From chat",
+        "filterVoice": "Voice",
+        "countPill": "{count} total",
+        "filterPill": "Filtered {count}",
+        "loading": "Loading…",
+        "emptyAll": "No memories yet — tap “Add manually” above, or just chat with Companion",
+        "emptyFiltered": "No memories under this source filter",
+        "loadMore": "Show {n} earlier ↓"
+      },
+      "entry": {
+        "sourceLabel": "Source: {label}",
+        "sources": {
+          "text": "Manual",
+          "chat_extract": "From chat",
+          "voice": "Voice",
+          "passive_event": "Passive event",
+          "reminder": "Reminder",
+          "raw": "Raw",
+          "import": "Imported"
+        },
+        "aiHidden": "Hidden from AI",
+        "downweighted": "Downweighted",
+        "allowAiTip": "Let the AI use this memory",
+        "disallowAiTip": "Stop the AI from using this memory",
+        "excluded": "Excluded",
+        "aiVisible": "AI visible",
+        "restoreWeightTip": "Restore this memory's weight",
+        "lowerWeightTip": "Downweight: ranks lower in recall",
+        "downweightedRestore": "Downweighted ↺",
+        "downweight": "Downweight",
+        "deleteTip": "Permanently delete this memory",
+        "delete": "Delete",
+        "emptyContent": "(empty)",
+        "timeToday": "Today {time}",
+        "timeYesterday": "Yesterday",
+        "timeDaysAgo": "{n}d ago",
+        "menu": {
+          "open": "More",
+          "muteAi": "Don't let AI mention",
+          "allowAi": "Visible to AI again",
+          "downweight": "Mention less",
+          "restoreWeight": "Restore weight",
+          "delete": "Delete",
+          "deleteConfirm": "Confirm delete?"
+        }
+      },
+      "sidebar": {
+        "regenSummary": "Regenerate summary",
+        "exportMd": "Export Markdown",
+        "setReminder": "Set a reminder",
+        "generating": "Generating…"
+      },
+      "profile": {
+        "loading": "Loading profile…",
+        "defaultName": "Your profile",
+        "gettingToKnow": "Companion is still getting to know you",
+        "northStar": "North star · {value}",
+        "rightNow": "Right now",
+        "rightNowStats": "Past {days}d · {signals} signals · {pct}% confidence",
+        "rightNowEmpty": "Chat more and jot a few notes — your current focus and rhythm will show up here",
+        "chips": {
+          "focus": "Focus",
+          "mode": "Mode",
+          "energy": "Energy",
+          "emotion": "Mood",
+          "momentum": "Momentum"
+        },
+        "inProgress": "In progress · ",
+        "completion": "Completeness",
+        "improveProfile": "Improve profile",
+        "inviteTitle": "Companion wants to know you better",
+        "inviteWantsToKnow": "Still curious about: {list}",
+        "inviteGeneric": "Tell it about yourself — your profile will get richer",
+        "inviteSuffix": " — just mention it naturally in chat, or fill it all in one go with “Life snapshot”.",
+        "snapshotCta": "Life snapshot · Fill it in one go →",
+        "lifeFlowerTab": "Life flower",
+        "overallScore": "Overall <b>{score}</b>/10",
+        "pickDimHint": "Click a dimension for details",
+        "coreArchiveTitle": "Core archive",
+        "coreArchiveHint": "The most stable you — remembered every conversation",
+        "careAbout": "Cares about",
+        "bottomLine": "Non-negotiable",
+        "vision": "Vision",
+        "currentChallenges": "Current challenges",
+        "notMentioned": "Not mentioned yet",
+        "provenanceChat": "Auto-filled from chat",
+        "benefit": {
+          "careAbout": "Fill this and Companion aligns advice with your priorities",
+          "bottomLine": "Fill this and Companion never suggests plans that cross your lines",
+          "vision": "Fill this and goal planning steers toward your north star"
+        },
+        "memoryFragmentsTitle": "Memories",
+        "memoryFragmentsHint": "Raw snippets from conversations and notes",
+        "viewAll": "View all",
+        "memCountLabel": "Memories",
+        "pendingLabel": "Not yet consolidated",
+        "reorgTitle": "One-tap memory cleanup",
+        "reorgHint": "Companion reads through all memories and updates your profile; unsure changes will ask for your call.",
+        "reorgLast": " Last: {date}",
+        "pendingConfirm": "to confirm",
+        "reorganizing": "Cleaning up…",
+        "reorganize": "Clean up now",
+        "reorgDoneUpdated": "profile updated",
+        "reorgDoneNoChange": "no changes needed",
+        "reorgNoticeConflicts": "Cleanup done · {auto}, {n} change(s) need your confirmation.",
+        "reorgNoticeDone": "Cleanup done · {auto}{offline}.",
+        "offlineSuffix": " (offline rule-based cleanup)",
+        "reorgFailed": "Cleanup failed",
+        "reorgFailedDetail": "Cleanup failed: {msg}",
+        "narrative": {
+          "title": "Growth trajectory",
+          "windowSuffix": "d",
+          "confidence": "{pct}% confidence{ai}",
+          "aiSuffix": " · AI narrative",
+          "empty": "Your trajectory takes shape as you record more — keep going a few more days and your stage, changes and next steps will appear here.",
+          "changes": "Key changes",
+          "nextSteps": "Next steps",
+          "risks": "Risks",
+          "opportunities": "Opportunities"
+        },
+        "identity": {
+          "title": "How AI sees you",
+          "version": "v{v} · {pct}% confidence",
+          "empty": "Companion is sketching out who you are from your memories — strengths, style and growth stage sharpen as evidence builds up.",
+          "growthStage": "Growth stage",
+          "decisionStyle": "Decision style",
+          "riskTendency": "Risk tendency",
+          "strengths": "Strengths",
+          "weaknesses": "To improve",
+          "goalPrefs": "Goal preferences",
+          "recentChanges": "Recent changes (why)"
+        },
+        "aiSeesYou": "How the AI sees you now: ",
+        "evidenceLink": "From these {n} memories",
+        "evidenceMissing": "Run a memory review to make these conclusions traceable to specific memories.",
+        "experience": {
+          "title": "Experiences",
+          "hint": "Milestones and lessons distilled from your memories",
+          "peopleEntry": "{n} important people",
+          "lessonsTitle": "Lessons learned",
+          "lessonApplied": "Internalized",
+          "empty": "No milestones yet. Capture more memories, then let your companion organize them."
+        },
+        "sidebar": {
+          "title": "Overview & actions",
+          "open": "Overview & actions"
+        }
+      },
+      "profileDims": {
+        "health": "Health",
+        "career": "Career",
+        "family": "Family",
+        "finance": "Finance",
+        "growth": "Growth",
+        "social": "Social",
+        "hobby": "Hobbies",
+        "self_realization": "Self"
+      },
+      "dimDetail": {
+        "empty": "Nothing here yet — talk about it with your companion and your profile will grow.",
+        "goAssess": "View assessment"
+      },
+      "review": {
+        "eyebrow": "Confirm changes",
+        "title": "Apply these changes to your profile?",
+        "later": "Later",
+        "acceptAll": "Accept all ({n})",
+        "explain": "While organizing your memories, Companion found these don't match your current profile. High-confidence updates are already applied; these need your call.",
+        "loading": "Loading pending changes…",
+        "empty": "No pending changes ✓",
+        "acceptNew": "Accept new",
+        "keepOld": "Keep old",
+        "fieldLabels": {
+          "name": "Name",
+          "profession": "Role / Profession",
+          "location": "Location",
+          "topPriorities": "Core values",
+          "northStar": "North star vision",
+          "fiveYear": "5-year vision",
+          "tone": "Communication style"
+        },
+        "leafLabels": {
+          "summary": "Summary",
+          "recentInsight": "Recent insight",
+          "skills": "Skills",
+          "patterns": "Patterns"
+        },
+        "emptyValue": "(empty)"
+      },
+      "reminder": {
+        "eyebrow": "Reminder rule",
+        "title": "Set a reminder",
+        "save": "Save reminder",
+        "saving": "Saving…",
+        "contentLabel": "Reminder text",
+        "contentPlaceholder": "e.g. Every Sunday at 4pm: do a strength session",
+        "dateLabel": "Date",
+        "timeLabel": "Time",
+        "freqLabel": "Frequency",
+        "freq": {
+          "once": "Once only",
+          "daily": "Daily",
+          "weekly": "Weekly",
+          "monthly": "Monthly"
+        },
+        "onceNote": "Reminder: {date} {time}",
+        "repeatNote": "{freq} reminder · starting {date} {time}",
+        "freqShort": {
+          "daily": "daily",
+          "weekly": "weekly",
+          "monthly": "monthly"
+        },
+        "saveError": "Failed to save",
+        "prefillTitle": "Reminder · {query}"
+      },
+      "insight": {
+        "title": "Self-insight report",
+        "eyebrow": "Evidence-based, non-clinical",
+        "disclaimer": "AI-inferred from your memories — for self-exploration only, not a clinical assessment or diagnosis.",
+        "lockedProgress": "{p}% / {r}%",
+        "lockedHint": "Unlocks as GEDO gets to know you — keep chatting or complete your life snapshot.",
+        "readyBody": "Evidence-based personality insight from your real memories — no questionnaire.",
+        "generate": "Generate my report",
+        "continueDraft": "Continue — {n} questions left",
+        "view": "View report",
+        "cooldown": "Refresh in {n}d",
+        "updated": "v{v} · updated {date}",
+        "generating": "Reading your memories…",
+        "generatingHint": "Inferring from real evidence, ~1 minute",
+        "finalizing": "Weaving in your answers…",
+        "failedTitle": "Generation failed",
+        "failedBody": "The model did not respond properly. Your progress is saved.",
+        "retry": "Retry",
+        "clarifyIntro": "A few dimensions need your input — {n} questions, under a minute.",
+        "back": "Back",
+        "next": "Next",
+        "submit": "Generate report",
+        "big5Title": "Personality spectrum",
+        "gedoTitle": "How you operate",
+        "confidence": "{pct}% confident",
+        "evidenceTitle": "Evidence",
+        "clarifyRecord": "Your clarifications",
+        "historyTitle": "History",
+        "currentTag": "Current",
+        "versionMeta": "v{v} · {date}",
+        "regenerate": "Refresh report",
+        "cooldownHint": "Refresh available in {n}d",
+        "evidenceKinds": {
+          "episode": "memory",
+          "profile": "profile",
+          "life_wheel": "life flower",
+          "identity": "AI identity",
+          "clarification": "your answer"
+        },
+        "big5": {
+          "openness": {
+            "name": "Openness",
+            "low": "Practical",
+            "high": "Curious"
+          },
+          "conscientiousness": {
+            "name": "Conscientiousness",
+            "low": "Flexible",
+            "high": "Disciplined"
+          },
+          "extraversion": {
+            "name": "Extraversion",
+            "low": "Reserved",
+            "high": "Outgoing"
+          },
+          "agreeableness": {
+            "name": "Agreeableness",
+            "low": "Direct",
+            "high": "Accommodating"
+          },
+          "neuroticism": {
+            "name": "Emotionality",
+            "low": "Steady",
+            "high": "Sensitive"
+          }
+        },
+        "gedo": {
+          "motivation": "Motivation",
+          "decision_style": "Decision style",
+          "energy_rhythm": "Energy rhythm",
+          "stress_response": "Stress response",
+          "interpersonal": "Interpersonal"
+        }
+      },
+      "sources": {
+        "title": "Memory Sources",
+        "subtitle": "Import blogs, files and AI chat history — you review everything before it is saved",
+        "countLabel": "{count} sources",
+        "quotaLabel": "this month {used}/{limit}",
+        "empty": {
+          "title": "No sources yet",
+          "hint": "Upload files, add links, paste text, or import your ChatGPT / Claude history to enrich your memory."
+        },
+        "add": {
+          "entry": "Add source",
+          "title": "Add sources to your memory",
+          "dropTitle": "Drag & drop files here, or click to browse",
+          "dropHint": "TXT · MD · PDF · DOCX · JSON · ZIP",
+          "modeUpload": "Upload files",
+          "modeUrl": "Web link",
+          "modePaste": "Paste text",
+          "modeAi": "Import from AI apps",
+          "urlPlaceholder": "https://your-blog.com/about",
+          "urlSubmit": "Add link",
+          "urlHint": "Blogs and public pages work best. If fetching fails, paste the text instead.",
+          "pasteTitlePlaceholder": "Name this source (optional)",
+          "pastePlaceholder": "Paste anything about you — bio, notes, chat transcripts…",
+          "pasteSubmit": "Add text",
+          "aiHint": "Pick a platform to see how to export, then upload the export file or paste the content.",
+          "fileQueued": "Queued",
+          "fileFailed": "Failed",
+          "quotaLeft": "{n} sources left this month",
+          "quotaFull": "Monthly source limit reached — upgrade for more",
+          "queueNote": "Imports run in the background — you can close this window."
+        },
+        "platforms": {
+          "chatgpt": "ChatGPT",
+          "claude": "Claude",
+          "gemini": "Gemini",
+          "kimi": "Kimi",
+          "doubao": "Doubao",
+          "deepseek": "DeepSeek"
+        },
+        "guide": {
+          "uploadExport": "Upload export file",
+          "pasteInstead": "Paste text instead",
+          "chatgpt1": "Open ChatGPT → Settings → Data Controls → Export data",
+          "chatgpt2": "Confirm the export, then check your email for the download link",
+          "chatgpt3": "Download the zip and upload it here directly (no need to unzip)",
+          "claude1": "Open Claude → Settings → Privacy → Export data",
+          "claude2": "The download link arrives by email (expires in 24 hours)",
+          "claude3": "Upload the zip or conversations.json here",
+          "gemini1": "Open takeout.google.com and deselect all products",
+          "gemini2": "Check \"My Activity\", open its content options and keep only \"Gemini Apps\"; choose JSON format",
+          "gemini3": "Export, download the zip, and upload it here",
+          "geminiWarn": "Selecting the \"Gemini\" product exports Gems config only — your chat history lives under \"My Activity\".",
+          "kimi1": "Open Kimi on the web → avatar menu → Settings",
+          "kimi2": "Find \"Export personal data\" and request a copy",
+          "kimi3": "Download it, then upload the zip/json here",
+          "doubao1": "Doubao has no official export — copy the conversation text you want to keep",
+          "doubao2": "Paste it here, or upload an MD/TXT saved by a browser extension",
+          "deepseek1": "DeepSeek has no official export — copy the conversation text you want to keep",
+          "deepseek2": "Paste it here, or upload an MD/TXT saved by a browser extension"
+        },
+        "status": {
+          "queued": "Queued",
+          "fetching": "Fetching",
+          "parsing": "Parsing",
+          "extracting": "Extracting",
+          "review": "To review",
+          "done": "Done",
+          "failed": "Failed",
+          "canceled": "Canceled"
+        },
+        "card": {
+          "chars": "chars",
+          "queuePos": "#{pos} in queue",
+          "pending": "{count} to review",
+          "goReview": "Review",
+          "deleteConfirm": "Confirm?",
+          "acceptedLine": "Saved {accepted} · dismissed {rejected}",
+          "pasteFallbackHint": "Tip: use \"Paste text\" instead"
+        },
+        "typeNames": {
+          "file": "File",
+          "url": "Web page",
+          "text": "Pasted text",
+          "chat_export": "Chat export"
+        },
+        "errors": {
+          "SSRF_BLOCKED": "This address is not allowed",
+          "BAD_URL": "Invalid link",
+          "FETCH_FAILED": "Could not fetch the page",
+          "FETCH_TIMEOUT": "Fetching timed out",
+          "UNSUPPORTED_CONTENT_TYPE": "Unsupported content type",
+          "NO_TEXT_LAYER": "This PDF has no text layer (likely scanned) — convert it to text first",
+          "PARSE_FAILED": "Could not parse this file",
+          "ZIP_GUARD": "Archive too large or has too many entries",
+          "NO_CONTENT": "No extractable text found",
+          "NO_DATA_IN_ZIP": "No usable data file inside the archive",
+          "EMPTY_INPUT": "Content is empty",
+          "PARSER_UNAVAILABLE": "Parser not available on the server"
+        },
+        "review": {
+          "title": "Review & save",
+          "summary": "{total} candidates · {mem} memories · {ent} codex updates",
+          "selectAll": "Select all",
+          "clearAll": "Clear",
+          "acceptSel": "Accept selected ({n})",
+          "rejectSel": "Dismiss selected",
+          "edit": "Edit",
+          "empty": "Nothing left to review",
+          "doneLine": "Saved {confirmed} · dismissed {rejected}",
+          "quotaHit": "Memory limit reached — not saved",
+          "quotaBanner": "Your memory quota is full and some items were not saved. Upgrade to keep importing.",
+          "upgrade": "Upgrade",
+          "rowFailed": "Failed to save",
+          "groupMemories": "Memories",
+          "groupNewEntities": "New codex cards",
+          "groupEntityFacts": "Facts for existing cards",
+          "panelSub": "Extraction results from all sources, reviewed in one place. Nothing is saved until you accept it.",
+          "openPanel": "To review ({n})",
+          "newCardBadge": "new card"
+        },
+        "types": {
+          "important_info": "Key info",
+          "personal_trait": "Trait",
+          "key_event": "Key event",
+          "date_reminder": "Date"
+        },
+        "entityTypes": {
+          "person": "Person",
+          "pet": "Pet",
+          "object": "Object",
+          "place": "Place",
+          "event": "Event",
+          "org": "Organization",
+          "other": "Other"
+        },
+        "detail": {
+          "open": "View details",
+          "eyebrow": "Source details",
+          "tabs": {
+            "overview": "Overview",
+            "text": "Text",
+            "chunks": "Chunks"
+          },
+          "download": "Download original",
+          "steps": {
+            "fetch": "Fetch page",
+            "parse": "Parse & chunk",
+            "extract": "Extract memories",
+            "review": "Review & save"
+          },
+          "parseLine": "{chars} chars → {chunks} chunks",
+          "convSuffix": " ({convs} conversations)",
+          "extractLine": "{done}/{total} chunks · {cand} candidates",
+          "failSuffix": " ({n} failed)",
+          "reviewLine": "{pending} to review · {accepted} saved · {rejected} dismissed",
+          "info": {
+            "type": "Type",
+            "platform": "Platform",
+            "file": "File",
+            "link": "Link",
+            "size": "Size",
+            "created": "Added",
+            "updated": "Updated"
+          },
+          "textEmpty": "Text not generated yet — it appears after parsing.",
+          "textMeta": "Showing {shown} of {total} chars",
+          "loadMore": "Load more",
+          "chunksEmpty": "No chunks yet — they appear after parsing.",
+          "embedded": "Embedded (searchable later)",
+          "notEmbedded": "Not embedded"
+        }
+      },
+      "inbox": {
+        "title": "To review",
+        "subtitle": "Everything waiting for your review: imports, chat discoveries, and memory review updates.",
+        "groups": {
+          "expiring": "Expiring soon",
+          "chat": "From chats",
+          "consolidation": "Memory review"
+        },
+        "deletedSource": "Source deleted",
+        "autoSavedLine": "Auto-accepted {n} from {name} (undoable)",
+        "undoAll": "Undo all",
+        "doneLine": "Accepted {confirmed} · skipped {rejected}",
+        "acceptSel": "Accept selected ({n})",
+        "skipSel": "Skip selected",
+        "empty": "Nothing waiting for review — all caught up.",
+        "entityEmpty": "No new discoveries about them yet.",
+        "entityFilter": "Showing items about \"{name}\"",
+        "clearFilter": "Show all"
+      },
+      "memoriesTitle": "Memories",
+      "memoriesSub": "Everything you remember — slice by source or life area anytime.",
+      "rail": {
+        "title": "Sources",
+        "collapse": "Collapse",
+        "expand": "Expand sources",
+        "all": "All memories",
+        "chat": "Chats with companion",
+        "manual": "Recorded by you",
+        "imports": "Imports",
+        "addImport": "Add source",
+        "guideText": "Hand ChatGPT exports, documents or links to your companion and turn them into memories.",
+        "guideCta": "Import data",
+        "quota": "{used}/{limit} this month",
+        "pendingChip": "{n} to review"
+      },
+      "addMenu": {
+        "button": "Add",
+        "capture": "Quick note",
+        "upload": "Upload files",
+        "link": "Paste link or text",
+        "ai": "AI platform export"
+      },
+      "filterBar": {
+        "label": "Filters",
+        "source": "Source: {name}",
+        "dim": "Area: {name}",
+        "search": "Search: \"{q}\"",
+        "clearAll": "Clear all",
+        "clearSource": "Clear source",
+        "clearDim": "Clear area",
+        "clearSearch": "Clear search",
+        "emptyCombo": "No memories under {conditions}",
+        "evidence": "Evidence: {name}"
+      },
+      "toolsMenu": "More actions",
+      "undoToast": {
+        "deleted": "Deleted {n}",
+        "undo": "Undo"
+      },
+      "emptyPendingTitle": "Your memories are waiting for review",
+      "emptyPendingHint": "Imported content has been distilled into candidates — accept them and they will appear here.",
+      "emptyPendingCta": "Review now ({n})",
+      "flowerCard": {
+        "legendSelf": "Self-rated",
+        "legendAi": "AI assessment",
+        "insufficientLegend": "Empty petal = not enough signal",
+        "insufficientHint": "Not much here yet — talk about this area with your companion and the assessment will grow.",
+        "aiEmptyHint": "Chat about the different areas of your life — the AI will grow this flower.",
+        "aiEmptyShort": "AI is still getting to know you",
+        "ruleInsightFallback": "Initial estimate from memory activity and goal progress. Run \"Clean up\" to generate the AI insight.",
+        "signalsLine": "{total} memories · {recent} in last 30d",
+        "goalsLine": "{n} goals · avg progress {p}%",
+        "selfCompare": "Self-rated {s}/10",
+        "viewMemories": "View memories ({n})"
+      },
+      "dimLevels": {
+        "needs_care": "Needs care",
+        "sprouting": "Sprouting",
+        "growing": "Growing",
+        "thriving": "Thriving",
+        "blooming": "In bloom",
+        "unknown": "Not enough signal"
+      },
+      "dimLevelDesc": {
+        "needs_care": "Long under-tended or clearly under pressure — worth prioritizing",
+        "sprouting": "Starting to pick up, but not steady yet",
+        "growing": "Consistent investment at a steady rhythm",
+        "thriving": "Both effort and results — one of the pillars of your life",
+        "blooming": "A highlight of your life, with energy to spare for other areas",
+        "unknown": "Not enough conversation yet — the AI holds off on scoring"
+      },
+      "flowerMovedNotice": "Life Flower moved into \"Profile\" — the radar and self-assessment live there now.",
+      "flowerMovedCta": "Take a look"
+    },
+    "execution": {
+      "shell": {
+        "execution": "Action",
+        "goals": "Goals",
+        "obstacles": "If-Then"
+      },
+      "weekdays": [
+        "Sun",
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat"
+      ],
+      "brand": "Action",
+      "subtitle": "Plan goals into daily to-dos, AI auto-schedules · tracks execution",
+      "eveningReview": "Evening review",
+      "replan": "Re-plan",
+      "addTask": "Add to-do",
+      "ecsLabel": {
+        "excellent": "Excellent",
+        "good": "Good",
+        "fair": "Fair",
+        "watch": "Needs attention"
+      },
+      "dayLabel": {
+        "unscheduled": "Unscheduled",
+        "today": "Today",
+        "tomorrow": "Tomorrow",
+        "yesterday": "Yesterday",
+        "dayAfterTomorrow": "In 2 days",
+        "dateFormat": "{mm}/{dd} · {wd}"
+      },
+      "dateLine": {
+        "todayPlanned": "AI scheduled {n} item(s) from yesterday's review",
+        "upcomingPlanned": "{n} item(s) scheduled ahead",
+        "historyDone": "{n} item(s) done / skipped"
+      },
+      "hero": {
+        "completedToday": "Completed today",
+        "mitNotStarted": " · MIT not started yet",
+        "focusTip": "Your focus score is highest in the morning — schedule <b>MIT</b> before 10:30; energy dips in the afternoon.",
+        "completedPct": "Completed {pct}%",
+        "planStable": "Plan stability 92%",
+        "reviewPending": "Review pending",
+        "energyCurveTitle": "Energy curve",
+        "past14": "14-day average",
+        "now": "Now",
+        "peak": "Peak · 10:30"
+      },
+      "schedule": {
+        "todayTimeline": "Today's timeline",
+        "upcomingTasks": "Upcoming to-dos",
+        "historyRecord": "History",
+        "todayChip": "Today",
+        "upcomingChip": "Upcoming{count}",
+        "historyChip": "History{count}",
+        "filterAll": "All",
+        "filterMitOnly": "MIT only",
+        "filterOpen": "Not done",
+        "emptyNoTasksToday": "No to-dos today · tap “Add to-do” above or let Companion plan for you",
+        "emptyNoFilterMatch": "No to-dos match this filter",
+        "emptyNoUpcoming": "Nothing scheduled ahead yet · give a to-do a due date to plan it here",
+        "emptyNoHistory": "No history yet · completed or skipped to-dos will appear here",
+        "upcomingBanner": "Upcoming · {n} item(s) scheduled",
+        "view": "View",
+        "itemsCount": "{n} item(s)"
+      },
+      "energy": {
+        "high": "High",
+        "medium": "Medium",
+        "low": "Low"
+      },
+      "task": {
+        "inProgress": "In progress · {time}",
+        "refine": "Refine",
+        "later": "Later",
+        "blocked": "Blocked",
+        "done": "Done",
+        "doneCheck": "Done ✓",
+        "start": "Start →",
+        "new": "New",
+        "doneMark": "✓ Done",
+        "skipMark": "⤫ Skipped"
+      },
+      "sidebar": {
+        "activeGoalsTitle": "Active goals",
+        "activeCount": "{n} active",
+        "noGoals": "No goals yet · tell Companion “I want to set a goal” to start",
+        "ifThenTitle": "If-Then cards",
+        "hitRate": "{rate} hit rate",
+        "noObstacles": "No If-Then cards yet"
+      },
+      "goalCard": {
+        "ongoing": "Ongoing",
+        "decomposed": "Planned · {n} to-do(s){sub}",
+        "childGoals": " · {n} sub-goal(s)",
+        "viewBtn": "View details",
+        "replanBtn": "Re-plan / adjust",
+        "decomposeBtn": "Plan daily to-dos"
+      },
+      "obstacleCard": {
+        "triggered": "Triggered {n}",
+        "executed": "Executed {n}"
+      },
+      "dims": {
+        "career": "Career",
+        "health": "Health",
+        "growth": "Growth",
+        "learning": "Learning",
+        "relation": "Relationships",
+        "family": "Family",
+        "finance": "Finance",
+        "self": "Self",
+        "fun": "Leisure"
+      },
+      "goalsView": {
+        "title": "Goals",
+        "subtitle": "WOOP-guided · OKR 4-tier planning",
+        "newGoal": "New goal",
+        "chatCta": "Tell Companion what you want to achieve — AI turns it into a SMART plan",
+        "goToChat": "Go to chat",
+        "stats": {
+          "active": "Active",
+          "completed": "Completed",
+          "avgProgress": "Avg. progress",
+          "hitRate": "Obstacle hit rate"
+        },
+        "emptyTitle": "No goals yet",
+        "emptyHint": "Tap “New goal” above for a WOOP walkthrough, or just tell Companion what you want to achieve."
+      },
+      "obstaclesView": {
+        "title": "If-Then",
+        "subtitle": "If-Then obstacle cards · anticipate and overcome execution blockers",
+        "emptyTitle": "No obstacle plans yet",
+        "emptyHint": "If-Then cards are generated automatically when you create a goal, or Companion helps you save one when a to-do gets “Blocked”.",
+        "kpis": {
+          "hitRate": "Obstacle hit rate",
+          "hitRateSub": "Self-awareness accuracy",
+          "cards": "Plan cards",
+          "cardsSub": "If-Then",
+          "triggers": "Triggers",
+          "triggersSub": "Hit",
+          "executions": "Executions",
+          "executionsSub": "Followed the plan"
+        },
+        "distributionTitle": "Obstacle type breakdown",
+        "timesUnit": "{n}×",
+        "recentEventsTitle": "Recent obstacle events",
+        "unnamedTask": "(untitled to-do)",
+        "matched": "Matched",
+        "newObstacle": "New obstacle",
+        "libraryTitle": "If-Then card library"
+      },
+      "taskCreate": {
+        "eyebrow": "New to-do",
+        "title": "Add something for today",
+        "cancel": "Cancel",
+        "add": "Add to today",
+        "adding": "Adding…",
+        "titleLabel": "To-do",
+        "titlePlaceholder": "e.g. Finish section 3 of the PRD",
+        "energyLabel": "Energy needed",
+        "energyOptions": {
+          "high": {
+            "label": "High",
+            "desc": "Focused, needs thinking"
+          },
+          "medium": {
+            "label": "Medium",
+            "desc": "Routine, doable"
+          },
+          "low": {
+            "label": "Low",
+            "desc": "Mechanical, low-effort"
+          }
+        },
+        "durationLabel": "Estimated duration",
+        "durations": {
+          "15": "15 min",
+          "25": "25 min (Pomodoro)",
+          "45": "45 min",
+          "60": "60 min",
+          "90": "90 min (deep work)"
+        },
+        "goalLabel": "Linked goal (optional)",
+        "noGoal": "— None —",
+        "saveError": "Failed to add"
+      },
+      "taskBreakdown": {
+        "eyebrow": "Refine to-do",
+        "titleWith": "Break down “{title}”",
+        "titleGeneric": "Break down to-do",
+        "cancel": "Cancel",
+        "creating": "Creating…",
+        "addN": "Add {n} subtask(s)",
+        "intro": "Companion split this into a few steps — check the ones to add to your list:",
+        "loading": "Companion is breaking it down…",
+        "empty": "No steps to break down",
+        "genError": "Failed to generate",
+        "applyError": "Failed to create"
+      },
+      "obstacleMatch": {
+        "eyebrow": "Blocked",
+        "titleWith": "“{title}” is blocked",
+        "titleGeneric": "Blocked",
+        "cancel": "Cancel",
+        "matching": "Matching…",
+        "matchBtn": "Match an If-Then card",
+        "skipTask": "Just skip the to-do",
+        "done": "Done",
+        "close": "Close",
+        "whatBlocked": "What's blocking you?",
+        "noteLabel": "Add detail (optional)",
+        "noteHint": "Companion will fold this into your review material",
+        "notePlaceholder": "e.g. Three meetings this morning, no energy left for the PRD",
+        "reasons": {
+          "procrastination_fear": {
+            "label": "Procrastinating / afraid to start",
+            "desc": "Feeling pressure / not sure how to begin"
+          },
+          "time_insufficient": {
+            "label": "No time",
+            "desc": "Today's too packed"
+          },
+          "energy_low": {
+            "label": "Low energy",
+            "desc": "Tired, drained, off"
+          },
+          "external_block": {
+            "label": "External blocker",
+            "desc": "Depends on someone / a tool broke"
+          },
+          "unclear_step": {
+            "label": "Unclear next step",
+            "desc": "Need to think it through first"
+          },
+          "mood_dip": {
+            "label": "Low mood",
+            "desc": "Don't feel like doing anything"
+          },
+          "other": {
+            "label": "Other"
+          }
+        },
+        "matchError": "Failed to match",
+        "recordError": "Failed to record",
+        "noMatch": "No If-Then card for this reason yet. You can skip the to-do for now — Companion will help you write one next time.",
+        "matchedIntro": "Companion matched <b>{n}</b> card(s). Try acting on one:",
+        "recordedHit": "Hit recorded",
+        "notUsed": "Didn't use it",
+        "followThis": "Followed this",
+        "recorded": "Recorded"
+      },
+      "dailyPlanReview": {
+        "eyebrowPreview": "Tomorrow preview",
+        "eyebrowPlanning": "AI planning",
+        "titleAccepted": "Added to today ✓",
+        "titlePlanning": "Companion is planning…",
+        "gotIt": "Got it",
+        "done": "Done",
+        "later": "Later",
+        "addingNow": "Adding…",
+        "acceptAdd": "Accept, add to today",
+        "loadingText": "Companion is planning based on yesterday's review and your energy curve…",
+        "suggestedN": "{n} suggested",
+        "sourceLlm": "Frontier model",
+        "sourceFallback": "Rule-based fallback",
+        "genError": "Failed to generate",
+        "applyError": "Failed to apply"
+      },
+      "eveningReflection": {
+        "eyebrow": "Evening review",
+        "titleDone": "That's it for today. See you tomorrow.",
+        "titlePending": "Take 30 seconds to wrap up",
+        "close": "Close",
+        "notNow": "Not now",
+        "saving": "Saving…",
+        "finishReview": "Finish review",
+        "todayScore": "Today's ECS score: {score}",
+        "savedNote": "Your review is now part of Companion's picture of you — tomorrow's plan will factor it in.",
+        "obstacleLabel": "Biggest obstacle today",
+        "obstacles": {
+          "none": "No major obstacle",
+          "procrastination": "Procrastination",
+          "time": "Not enough time",
+          "energy": "Low energy",
+          "distraction": "Distraction",
+          "mood": "Mood",
+          "external": "External interruption"
+        },
+        "valuableLabel": "Most valuable thing today",
+        "valuableHint": "One sentence is enough",
+        "valuablePlaceholder": "e.g. Finished section 3 of the PRD / 20-min call with mom",
+        "adjustLabel": "How should tomorrow change?",
+        "adjusts": {
+          "no_change": {
+            "label": "Keep it",
+            "desc": "Pace feels right, same again tomorrow"
+          },
+          "lower_load": {
+            "label": "Ease up",
+            "desc": "Today was too packed, cut something tomorrow"
+          },
+          "higher_load": {
+            "label": "Push more",
+            "desc": "Room for another challenge"
+          },
+          "reorder": {
+            "label": "Reorder",
+            "desc": "The to-dos were fine, the timing wasn't"
+          }
+        },
+        "stabilityLabel": "How stable did today's plan feel?",
+        "stabilityHint": "{pct}% completion · {n} planned",
+        "stabilitySliderLabel": "Stability",
+        "estimateLabel": "Estimated ECS total:",
+        "saveError": "Failed to save"
+      },
+      "goalDecompose": {
+        "eyebrowReplan": "Re-plan",
+        "eyebrowNew": "Goal planning",
+        "titleWith": "{action} “{title}”",
+        "titleGeneric": "Plan goal",
+        "actionReplan": "Re-plan",
+        "actionPlan": "Plan",
+        "hintPlaceholder": "Adjustment intent for regeneration (optional, e.g. make it easier)",
+        "regenerating": "Generating…",
+        "regenerate": "Regenerate",
+        "cancel": "Cancel",
+        "committing": "Generating to-dos…",
+        "confirmGenerate": "Confirm & {prefix}generate {n} to-do(s)",
+        "replanPrefix": "re-",
+        "planningText": "Companion is planning based on your profile…",
+        "noPlan": "No plan yet",
+        "replanBanner": "Re-plan{doneSuffix}{skipSuffix}",
+        "doneSuffix": " · {done}/{total} done ({pct}%)",
+        "skipSuffix": " · skipped {n}×",
+        "replanNote": "Re-planned based on your progress and other goals. Confirming will <b>replace unfinished old to-dos</b> with the new plan; completed ones stay as history.",
+        "personalizedNote": "Planned using your profile and recent activity.",
+        "notPersonalizedNote": "The more we talk, the better this fits you — check your profile for more to add.",
+        "objectiveLabel": "Objective (one sentence)",
+        "keyResultsLabel": "Key results",
+        "addKr": "Add one",
+        "newKr": "New key result",
+        "durationLabel": "Duration",
+        "days": "days",
+        "rescheduleBtn": "Re-schedule for this duration",
+        "phaseDayPrefix": "Day",
+        "phaseDaySuffix": "",
+        "dailySummary": "{n}/day · {total} to-do(s) total",
+        "milestoneSummary": "{total} key to-do(s)",
+        "newDailyTask": "New daily to-do",
+        "addDailyTask": "Add a daily to-do",
+        "milestoneTasksLabel": "Key to-dos",
+        "dayPrefix": "Day {day}",
+        "minutesSuffix": "min",
+        "genError": "Failed to generate",
+        "commitError": "Failed to generate to-dos"
+      }
+    },
+    "avatar": {
+      "loading": "Loading digital persona…",
+      "sessionExpired": "Your session has expired — please log in again",
+      "loadError": "Failed to load. Check your connection and retry.",
+      "reLogin": "Log in again",
+      "retry": "Retry",
+      "title": "Digital persona",
+      "subtitle": "Public-facing persona · publishing studio",
+      "saving": "Saving",
+      "tabs": {
+        "config": "Config",
+        "activity": "Activity",
+        "distribute": "Distribute"
+      },
+      "defaultAssistantName": "you",
+      "assistantOf": "{name}'s AI assistant",
+      "config": {
+        "identityTitle": "Public identity: proxy assistant (ABOUT)",
+        "identityBody": "Your persona answers in the third person as “{name}'s AI assistant”, using only your public profile — it never reveals private memories.",
+        "accessTitle": "Access gate",
+        "access": {
+          "public": {
+            "label": "Public",
+            "desc": "Anyone can chat directly"
+          },
+          "hybrid": {
+            "label": "Open + passcode unlock",
+            "desc": "Anyone can chat lightly; entering the passcode unlocks recognized / trusted mode"
+          },
+          "passcode": {
+            "label": "Passcode required",
+            "desc": "Must enter the correct passcode to chat"
+          }
+        },
+        "passcodeLabel": "Passcode",
+        "passcodePlaceholder": "Set a sharing passcode",
+        "inviteHint": "Tip: generate a dedicated invite link for important contacts under “Memory · People” — they'll be recognized automatically when they open it, no passcode needed.",
+        "avatarTitle": "Avatar",
+        "profileTitle": "Profile",
+        "displayNameLabel": "Public display name",
+        "displayNamePlaceholder": "e.g. Alex",
+        "taglineLabel": "One-line tagline",
+        "taglinePlaceholder": "e.g. Product designer / Indie developer",
+        "greetingLabel": "Greeting",
+        "greetingPlaceholder": "The first thing your persona says when a visitor opens the page",
+        "promptsTitle": "Suggested questions",
+        "deleteAria": "Delete",
+        "addAria": "Add",
+        "addPlaceholder": "Add a question a visitor might ask",
+        "scopeTitle": "Public topic scope",
+        "scopeDesc": "Limit what topics your persona can discuss; leave blank for no extra limit (still bound by ABOUT privacy rules).",
+        "scopePlaceholder": "e.g. work history, tech stack, how to collaborate",
+        "themeTitle": "Theme color",
+        "previewLabel": "Live preview",
+        "previewEmpty": "Once published, you can chat with your persona live right here."
+      },
+      "presetAvatars": {
+        "default": "Robot",
+        "fox": "Fox",
+        "cat": "Cat",
+        "panda": "Panda",
+        "owl": "Owl",
+        "astronaut": "Astronaut",
+        "wizard": "Wizard",
+        "ghost": "Ghost",
+        "alien": "Alien",
+        "sun": "Sun",
+        "sprout": "Sprout",
+        "star": "Star"
+      },
+      "themeColors": {
+        "emerald": "Emerald",
+        "blue": "Ocean blue",
+        "violet": "Dreamy violet",
+        "rose": "Rose pink",
+        "amber": "Warm amber"
+      },
+      "picker": {
+        "uploadPhoto": "Upload photo",
+        "fileHint": "JPG/PNG/WebP supported, ≤8MB",
+        "fileTooLarge": "Image must be 8MB or smaller",
+        "uploadError": "Upload failed",
+        "chooseCartoonHint": "Or choose a cartoon avatar",
+        "cartoonAvatarOf": "Cartoon avatar · {label}",
+        "chooseCartoonAvatar": "Choose a cartoon avatar",
+        "close": "Close"
+      },
+      "activity": {
+        "kind": {
+          "task": "To-do",
+          "memory": "Memory",
+          "reminder": "Reminder"
+        },
+        "inboxTitle": "Pending review",
+        "inboxDesc": "Candidates extracted from visitor interactions — confirm before they're written to your to-dos / memory.",
+        "loading": "Loading…",
+        "inboxEmpty": "Nothing pending review",
+        "noContent": "(no content)",
+        "ignore": "Dismiss",
+        "adopt": "Adopt",
+        "publishGuideTitle": "Persona not published yet",
+        "publishGuideDesc": "Finish setup and publish so visitors can chat with your persona — interactions will show up here.",
+        "publishGuideStepConfig": "Set public identity, greeting, and access mode",
+        "publishGuideStepPublish": "Publish on the Distribute tab to get your link",
+        "publishGuideStepShare": "Share the link or QR code to start collecting conversations",
+        "publishGuideConfigBtn": "Configure",
+        "publishGuideDistributeBtn": "Publish"
+      },
+      "insights": {
+        "title": "Activity insights",
+        "views": "Total views",
+        "sessions": "Visitor sessions",
+        "sessionsSub": "{matched} recognized · {anon} anonymous",
+        "matchRate": "Recognition rate",
+        "matchRateSub": "Share recognized",
+        "avgMsgs": "Avg. messages/session",
+        "avgMsgsSub": "{n} total",
+        "approved": "Adopted",
+        "approvedSub": "{n} pending",
+        "topQuestionsTitle": "Top opening questions"
+      },
+      "sessions": {
+        "title": "Visitor conversation history",
+        "desc": "Full transcripts of visitor conversations with your persona — click to expand.",
+        "empty": "No visitor conversations yet. Once published, share your link and conversations will show up here.",
+        "via": {
+          "invite": "Invite",
+          "passcode": "Passcode",
+          "anonymous": "Anonymous"
+        },
+        "matchedVisitor": "Recognized visitor",
+        "anonymousVisitor": "Anonymous visitor",
+        "msgCount": "{n} messages",
+        "archived": "Archived",
+        "emptyTurns": "(no messages in this session)",
+        "summaryPrefix": "Summary: ",
+        "timeToday": "Today {time}",
+        "timeYesterday": "Yesterday",
+        "timeDaysAgo": "{n}d ago",
+        "searchPlaceholder": "Search visitor name, summary, or transcript…",
+        "clearSearch": "Clear search",
+        "resultCount": "{n} total",
+        "noResults": "No matching visitor conversations.",
+        "loadMore": "Load {n} more ↓",
+        "timeFilter": "Time",
+        "timeAll": "All",
+        "time7d": "Last 7 days",
+        "time30d": "Last 30 days",
+        "time90d": "Last 90 days"
+      },
+      "distribute": {
+        "published": "Published",
+        "unpublished": "Not published",
+        "publishedDesc": "Anyone can reach your persona through its dedicated link.",
+        "unpublishedDesc": "Publishing generates a dedicated link that's accessible without signing in.",
+        "unpublishBtn": "Unpublish",
+        "publishBtn": "Publish",
+        "publishQuotaExceeded": "Publishing a digital persona requires Pro or above",
+        "publishError": "Something went wrong. Please try again.",
+        "linkTitle": "Dedicated link",
+        "copyLinkTitle": "Copy link",
+        "qrTitle": "QR code",
+        "qrDesc": "Share offline or print on a business card / poster — scanning takes people straight to your persona.",
+        "qrAlt": "Digital persona QR code",
+        "qrHint": "Scan to chat with your persona on a phone.",
+        "downloadPng": "Download PNG",
+        "embedTitle": "Website embed",
+        "embedDesc": "Copy the snippet below to embed the persona chat widget on your site / blog.",
+        "copyEmbedTitle": "Copy embed code",
+        "previewWidget": "Preview widget",
+        "mcpTitle": "External agent access",
+        "mcpBody": "External agents can connect via MCP: endpoint <code>{endpoint}</code> (Streamable HTTP, no auth), tools <tool>digital_persona_profile</tool> / <tool>digital_persona_ask</tool>, slug: <code>{slug}</code>",
+        "emptyState": "Once published, your dedicated link, QR code and embed snippet will appear here."
+      }
+    },
+    "lifeAreas": {
+      "health": {
+        "label": "Health",
+        "desc": "Exercise / Sleep / Diet"
+      },
+      "career": {
+        "label": "Career",
+        "desc": "Work / Projects / Impact"
+      },
+      "growth": {
+        "label": "Growth",
+        "desc": "Skills / Knowledge / Learning"
+      },
+      "relation": {
+        "label": "Relationships",
+        "desc": "Family / Friends / Partner"
+      },
+      "self": {
+        "label": "Self",
+        "desc": "Mind / Emotion / Reflection"
+      },
+      "fun": {
+        "label": "Leisure",
+        "desc": "Hobbies / Play"
+      },
+      "family": {
+        "label": "Family",
+        "desc": "Home / Bonds"
+      },
+      "finance": {
+        "label": "Finance",
+        "desc": "Income / Savings / Investing"
+      }
+    },
+    "twin": {
+      "title": "Twin Model",
+      "badgeSoon": "Forging · Beta",
+      "tagline": "Your own dedicated model — trained on your words, growing more like you, deletable anytime.",
+      "gateDesc": "The Twin model is an Ultra-exclusive capability.",
+      "upgradeHint": "Ultra only",
+      "consentEntry": "Twin model training",
+      "consentEntryDesc": "Train a model that belongs only to you; separate consent, revocable with physical deletion",
+      "enable": "Enable Twin",
+      "consentTitle": "Enable Twin model training",
+      "consentIntro": "Before enabling, please confirm:",
+      "clause1": "Only content you wrote is used (your messages, uploaded writing samples, your own turns in imported chats). AI replies and other people’s words are never used.",
+      "clause2": "The result is a Twin model that belongs only to you — never merged into any shared model, never usable by others.",
+      "clause3": "Training data and your Twin are processed on GEDO’s own infrastructure — never sent to third-party AI providers. Sensitive details are removed before training.",
+      "clause4": "You can revoke anytime — your training data and Twin model will be physically deleted, irreversibly.",
+      "clause5": "This consent is independent of other data settings; content marked \"hidden from AI\" never enters training.",
+      "consentBeta": "Beta terms — you will be asked to re-confirm when the final terms ship.",
+      "agree": "Agree & enable",
+      "cancel": "Cancel",
+      "grantedAt": "Enabled · {version} · {date}",
+      "revoke": "Revoke & delete",
+      "revokeTitle": "Revoke Twin consent?",
+      "revokeWarning": "Your training data and Twin model will be physically deleted — this cannot be undone. Your persona falls back to the generic mode.",
+      "revokeConfirm": "Revoke and delete",
+      "progressTitle": "Corpus progress",
+      "progressStats": "{items} collected (goal {minItems})",
+      "actionChat": "Go chat",
+      "actionUpload": "Upload a writing sample",
+      "actionImport": "You can also import ChatGPT / Claude history in Settings → Privacy to speed things up.",
+      "uploadPlaceholder": "Paste something you wrote (a message, email or note, 20+ characters)…",
+      "uploadSubmit": "Add sample",
+      "uploadOk": "Added — progress updated",
+      "uploadTooShort": "Too short (20+ characters)",
+      "forging": "Forging your Twin model…",
+      "activeDesc": "Your model v{version} is live — your persona now speaks the way you do.",
+      "manageInSettings": "Consent and deletion are managed in Settings → Privacy."
+    },
+    "welcome": {
+      "brand": "GEDO · Welcome",
+      "skip": "Skip",
+      "prev": "Back",
+      "next": "Next",
+      "start": "Get started",
+      "steps": {
+        "talk": {
+          "title": "Talk",
+          "desc": "Say one thing, and your Companion records, plans, and reminds — all at once. You just talk."
+        },
+        "distill": {
+          "title": "Distill",
+          "desc": "What matters becomes memory automatically, saved once you confirm — it understands you more the more you use it."
+        },
+        "insight": {
+          "title": "Insight",
+          "desc": "Trends, energy curves, evening reviews — see your own rhythm."
+        },
+        "breakthrough": {
+          "title": "Breakthrough",
+          "desc": "Day by day, turn what you want to do into done — and grow into who you want to be."
+        }
+      },
+      "talk": {
+        "userMsg": "My three workouts this week are slipping — I’m traveling Sunday too.",
+        "reply": "No rush — it’s not a hard quota; two still counts as steady. I did three things for you:",
+        "trace": {
+          "record": {
+            "name": "Saved to Memory",
+            "detail": "Sunday travel · training window narrows"
+          },
+          "adjust": {
+            "name": "Adjusted plan",
+            "detail": "3× → 2× this week"
+          },
+          "retarget": {
+            "name": "Re-sequenced goal",
+            "detail": "Fitness habit · this week’s pace"
+          }
+        }
+      },
+      "memory": {
+        "recorded": "Saved to Memory",
+        "recordedDetail": "Checkup: elevated blood pressure · needs regular exercise",
+        "sectionLabel": "Life themes · dimensions",
+        "rows": {
+          "health": {
+            "name": "Health",
+            "sub": "Running · sleep"
+          },
+          "career": {
+            "name": "Career",
+            "sub": "Portfolio"
+          },
+          "growth": {
+            "name": "Growth / learning",
+            "sub": "Spoken English"
+          }
+        }
+      },
+      "insight": {
+        "title": "This week’s growth trend",
+        "days": {
+          "mon": "M",
+          "tue": "T",
+          "wed": "W",
+          "thu": "T",
+          "fri": "F",
+          "sat": "S",
+          "sun": "S"
+        },
+        "stats": {
+          "completion": "Completion",
+          "focus": "Focus",
+          "streak": "Streak"
+        },
+        "streakValue": "12 days"
+      },
+      "growth": {
+        "title": "Life growth trajectory",
+        "capability": "Ability +18%",
+        "today": "Today",
+        "days": "{n}d"
+      }
+    }
+  }
+}

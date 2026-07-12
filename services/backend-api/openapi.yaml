@@ -1,0 +1,665 @@
+openapi: 3.0.3
+info:
+  title: GEDO.AI Backend API
+  version: 0.1.0
+servers:
+  - url: http://localhost:8787
+tags:
+  - name: Auth
+  - name: Memory
+  - name: Planner
+  - name: Execution
+  - name: Tree
+paths:
+  /v1/auth/signup:
+    post:
+      tags: [Auth]
+      summary: Signup with email/password
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [email, password]
+              properties:
+                email: { type: string, format: email }
+                password: { type: string, minLength: 6 }
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthResponse'
+  /v1/auth/login:
+    post:
+      tags: [Auth]
+      summary: Login with email/password
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [email, password]
+              properties:
+                email: { type: string, format: email }
+                password: { type: string }
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthResponse'
+  /v1/me:
+    get:
+      tags: [Auth]
+      summary: Get current user
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+
+  /v1/memory/capture:
+    post:
+      tags: [Memory]
+      summary: Create a memory item
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MemoryCaptureRequest'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MemoryItem'
+
+  /v1/memory/search:
+    get:
+      tags: [Memory]
+      summary: Search memory by query
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: query
+          name: q
+          schema: { type: string }
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  items:
+                    type: array
+                    items: { $ref: '#/components/schemas/MemoryItem' }
+
+  /v1/planner/clarify:
+    post:
+      tags: [Planner]
+      summary: Generate clarification questions for a goal prompt
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [prompt]
+              properties:
+                prompt: { type: string }
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  questions:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/ClarifyQuestion'
+
+  /v1/planner/generate:
+    post:
+      tags: [Planner]
+      summary: Generate a plan & tasks based on prompt and answers
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [prompt, answers]
+              properties:
+                prompt: { type: string }
+                answers:
+                  type: object
+                  additionalProperties: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PlannerGenerateResponse'
+
+  /v1/tasks/today:
+    get:
+      tags: [Execution]
+      summary: Get tasks for today (simple)
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  items:
+                    type: array
+                    items: { $ref: '#/components/schemas/Task' }
+
+  /v1/tasks/{taskId}/checkin:
+    post:
+      tags: [Execution]
+      summary: Check-in a task with status and optional reason
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: taskId
+          required: true
+          schema: { type: string }
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [status]
+              properties:
+                status: { type: string, enum: [done, skipped] }
+                reason_code: { type: string }
+                note: { type: string }
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  task: { $ref: '#/components/schemas/Task' }
+                  adjustments:
+                    type: array
+                    items: { $ref: '#/components/schemas/Adjustment' }
+
+  /v1/tree/snapshot:
+    get:
+      tags: [Tree]
+      summary: Get LifeTree snapshot for UI
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LifeTreeSnapshot'
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+  schemas:
+    AuthResponse:
+      type: object
+      properties:
+        token: { type: string }
+        user: { $ref: '#/components/schemas/User' }
+      required: [token, user]
+    User:
+      type: object
+      properties:
+        id: { type: string }
+        email: { type: string }
+        created_at: { type: string }
+      required: [id, email, created_at]
+    MemoryCaptureRequest:
+      type: object
+      required: [type, content_raw]
+      properties:
+        type:
+          type: string
+          enum: [important_info, personal_trait, key_event, date_reminder]
+        content_raw: { type: string }
+        tags:
+          type: array
+          items: { type: string }
+        source:
+          type: string
+          enum: [text, voice, image, passive_event]
+    MemoryItem:
+      type: object
+      properties:
+        id: { type: string }
+        user_id: { type: string }
+        type: { type: string }
+        content_raw: { type: string }
+        content_struct: { type: object, additionalProperties: true }
+        tags:
+          type: array
+          items: { type: string }
+        source: { type: string }
+        created_at: { type: string }
+      required: [id, user_id, type, content_raw, tags, source, created_at]
+    ClarifyQuestion:
+      type: object
+      properties:
+        id: { type: string }
+        prompt: { type: string }
+        options:
+          type: array
+          items:
+            type: object
+            properties:
+              value: { type: string }
+              label: { type: string }
+      required: [id, prompt]
+    PlannerGenerateResponse:
+      type: object
+      properties:
+        goal:
+          type: object
+          additionalProperties: true
+        tasks:
+          type: array
+          items: { $ref: '#/components/schemas/Task' }
+      required: [goal, tasks]
+    Task:
+      type: object
+      properties:
+        id: { type: string }
+        user_id: { type: string }
+        title: { type: string }
+        status: { type: string, enum: [todo, done, skipped] }
+        due_date: { type: string }
+        created_at: { type: string }
+      required: [id, user_id, title, status, created_at]
+    Adjustment:
+      type: object
+      properties:
+        id: { type: string }
+        user_id: { type: string }
+        type: { type: string }
+        detail: { type: object, additionalProperties: true }
+        created_at: { type: string }
+      required: [id, user_id, type, created_at]
+    LifeTreeSnapshot:
+      type: object
+      properties:
+        roots:
+          type: array
+          items:
+            type: object
+            additionalProperties: true
+        skills:
+          type: array
+          items:
+            type: object
+            additionalProperties: true
+        branches:
+          type: array
+          items:
+            type: object
+            additionalProperties: true
+        goals:
+          type: array
+          items:
+            type: object
+            additionalProperties: true
+        tasks:
+          type: array
+          items:
+            $ref: '#/components/schemas/Task'
+      required: [roots, skills, branches, goals, tasks]
+
+  # V2 Endpoints (added in this iteration)
+  /v1/obstacles/cards:
+    get:
+      tags: [Obstacles]
+      summary: List If-Then cards
+      security: [{ BearerAuth: [] }]
+      parameters:
+        - { name: goal_id, in: query, schema: { type: string } }
+        - { name: obstacle_type, in: query, schema: { type: string } }
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  items: { type: array, items: { type: object } }
+    post:
+      tags: [Obstacles]
+      summary: Create If-Then card
+      security: [{ BearerAuth: [] }]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [obstacle_type, if_condition, then_action]
+              properties:
+                goal_id: { type: string }
+                obstacle_type: { type: string }
+                obstacle_description: { type: string }
+                if_condition: { type: string }
+                then_action: { type: string }
+      responses:
+        '200': { description: Created }
+
+  /v1/obstacles/cards/{id}:
+    delete:
+      tags: [Obstacles]
+      summary: Delete If-Then card
+      security: [{ BearerAuth: [] }]
+      parameters:
+        - { name: id, in: path, required: true, schema: { type: string } }
+      responses:
+        '200': { description: Deleted }
+
+  /v1/obstacles/match:
+    post:
+      tags: [Obstacles]
+      summary: Match obstacle by reason code
+      security: [{ BearerAuth: [] }]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [reason_code]
+              properties:
+                reason_code: { type: string }
+      responses:
+        '200': { description: OK }
+
+  /v1/obstacles/events:
+    get:
+      tags: [Obstacles]
+      summary: List obstacle events
+      security: [{ BearerAuth: [] }]
+      responses:
+        '200': { description: OK }
+    post:
+      tags: [Obstacles]
+      summary: Create obstacle event
+      security: [{ BearerAuth: [] }]
+      responses:
+        '200': { description: Created }
+
+  /v1/obstacles/stats:
+    get:
+      tags: [Obstacles]
+      summary: Get obstacle statistics
+      security: [{ BearerAuth: [] }]
+      responses:
+        '200': { description: OK }
+
+  /v1/ecs/record:
+    post:
+      tags: [ECS]
+      summary: Record ECS score
+      security: [{ BearerAuth: [] }]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                completion_rate: { type: number }
+                plan_stability: { type: number }
+                reflection_completed: { type: boolean }
+                total: { type: number }
+      responses:
+        '200': { description: OK }
+
+  /v1/ecs/history:
+    get:
+      tags: [ECS]
+      summary: Get ECS history
+      security: [{ BearerAuth: [] }]
+      parameters:
+        - { name: days, in: query, schema: { type: integer, default: 30 } }
+      responses:
+        '200': { description: OK }
+
+  /v1/reflections:
+    get:
+      tags: [Reflections]
+      summary: List reflections
+      security: [{ BearerAuth: [] }]
+      responses:
+        '200': { description: OK }
+    post:
+      tags: [Reflections]
+      summary: Create reflection
+      security: [{ BearerAuth: [] }]
+      responses:
+        '200': { description: Created }
+
+  /v1/reviews:
+    get:
+      tags: [Reviews]
+      summary: List reviews
+      security: [{ BearerAuth: [] }]
+      responses:
+        '200': { description: OK }
+
+  /v1/reviews/generate:
+    post:
+      tags: [Reviews]
+      summary: AI-generate periodic review
+      security: [{ BearerAuth: [] }]
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                period_type: { type: string, enum: [weekly, monthly] }
+      responses:
+        '200': { description: Generated }
+
+  /v1/insights/stats:
+    get:
+      tags: [Insights]
+      summary: Get aggregated insight stats
+      security: [{ BearerAuth: [] }]
+      parameters:
+        - { name: period, in: query, schema: { type: string, enum: [weekly, monthly] } }
+      responses:
+        '200': { description: OK }
+
+  /v1/insights/suggestions:
+    get:
+      tags: [Insights]
+      summary: Get AI insight suggestions
+      security: [{ BearerAuth: [] }]
+      responses:
+        '200': { description: OK }
+
+  /v1/settings:
+    get:
+      tags: [Settings]
+      summary: Get user settings
+      security: [{ BearerAuth: [] }]
+      responses:
+        '200': { description: OK }
+    put:
+      tags: [Settings]
+      summary: Update user settings
+      security: [{ BearerAuth: [] }]
+      responses:
+        '200': { description: Updated }
+
+  /v1/goals/woop-generate:
+    post:
+      tags: [Goals]
+      summary: WOOP to OKR AI generation
+      security: [{ BearerAuth: [] }]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [prompt]
+              properties:
+                prompt: { type: string }
+                diagnosis_answers: { type: object }
+                woop: { type: object }
+      responses:
+        '200': { description: OK }
+
+  /v1/goals/diagnose:
+    post:
+      tags: [Goals]
+      summary: AI goal diagnosis
+      security: [{ BearerAuth: [] }]
+      responses:
+        '200': { description: OK }
+
+  /v1/plan/daily-generate:
+    post:
+      tags: [Plan]
+      summary: AI daily plan generation
+      security: [{ BearerAuth: [] }]
+      responses:
+        '200': { description: OK }
+
+  /v1/memory/analyze:
+    post:
+      tags: [Memory]
+      summary: AI memory content analysis
+      security: [{ BearerAuth: [] }]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [content]
+              properties:
+                content: { type: string }
+      responses:
+        '200': { description: OK }
+
+  /v1/chat/stream:
+    post:
+      tags: [Chat]
+      summary: SSE streaming chat
+      security: [{ BearerAuth: [] }]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [message]
+              properties:
+                message: { type: string }
+                conversation_id: { type: string }
+      responses:
+        '200':
+          description: SSE stream
+          content:
+            text/event-stream: {}
+
+  /v1/conversations:
+    get:
+      tags: [Chat]
+      summary: List conversations
+      security: [{ BearerAuth: [] }]
+      responses:
+        '200': { description: OK }
+
+  /v1/conversations/{id}/messages:
+    get:
+      tags: [Chat]
+      summary: Get conversation messages
+      security: [{ BearerAuth: [] }]
+      parameters:
+        - { name: id, in: path, required: true, schema: { type: string } }
+      responses:
+        '200': { description: OK }
+
+  /v1/conversations/{id}:
+    delete:
+      tags: [Chat]
+      summary: Delete conversation
+      security: [{ BearerAuth: [] }]
+      parameters:
+        - { name: id, in: path, required: true, schema: { type: string } }
+      responses:
+        '200': { description: Deleted }
+
+  /v1/llm/status:
+    get:
+      tags: [System]
+      summary: LLM provider status
+      responses:
+        '200': { description: OK }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

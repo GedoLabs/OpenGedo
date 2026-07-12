@@ -1,0 +1,367 @@
+{
+  "planner": {
+    "dimensions": {
+      "health": "Health",
+      "career": "Career",
+      "family": "Family",
+      "finance": "Finance",
+      "growth": "Growth",
+      "social": "Social",
+      "hobby": "Hobbies",
+      "self_realization": "Self-actualization"
+    },
+    "levels": {
+      "objective": {
+        "label": "O Objective",
+        "timeframe": "3–12 months"
+      },
+      "key_result": {
+        "label": "KR Key result",
+        "timeframe": "Quarterly"
+      },
+      "monthly": {
+        "label": "M Monthly goal",
+        "timeframe": "Monthly"
+      },
+      "task": {
+        "label": "T Daily action",
+        "timeframe": "Daily"
+      }
+    },
+    "status": {
+      "active": "Active",
+      "completed": "Completed",
+      "paused": "Paused",
+      "draft": "Draft",
+      "cancelled": "Cancelled"
+    },
+    "obstacleTypes": {
+      "time_limited": {
+        "label": "Time-limited",
+        "description": "Underestimated duration; day plan overloaded"
+      },
+      "attention_scattered": {
+        "label": "Scattered attention",
+        "description": "Frequent context switching and interruptions"
+      },
+      "procrastination_fear": {
+        "label": "Procrastination / fear",
+        "description": "High-value tasks keep getting delayed"
+      },
+      "info_insufficient": {
+        "label": "Insufficient info",
+        "description": "Missing information blocks progress"
+      },
+      "energy_low": {
+        "label": "Low energy",
+        "description": "Completion rate stays low at certain times"
+      },
+      "external_dependency": {
+        "label": "External dependency",
+        "description": "Blocked waiting on others"
+      }
+    },
+    "list": {
+      "emptyTitle": "No goals yet",
+      "emptyHint": "Tap “New goal” for a WOOP-guided build",
+      "moreActions": "More actions",
+      "editGoal": "Edit goal",
+      "decomposeOkr": "Plan with AI",
+      "viewObstacles": "View obstacle plans",
+      "pause": "Pause",
+      "resume": "Resume",
+      "markComplete": "Mark complete",
+      "delete": "Delete",
+      "detail": "Details",
+      "hitRate": "Obstacle hit rate {rate}%",
+      "woopWish": "W Wish",
+      "woopOutcome": "O Best outcome",
+      "woopObstacle": "O Main obstacle",
+      "searchPlaceholder": "Search goals...",
+      "filterAll": "All",
+      "noResultsTitle": "No matching goals",
+      "noResultsHint": "Try a different search, or clear the filter.",
+      "clearFilters": "Clear filters",
+      "pagePrev": "Previous",
+      "pageNext": "Next",
+      "pageIndicator": "Page {current} of {total}",
+      "createdOn": "Created {date}",
+      "targetSpan": "{start} → {end}",
+      "targetBy": "Target {date}"
+    },
+    "deleteGoalConfirm": "Delete this goal? KRs and not-started to-dos will be removed; in-progress/done to-dos stay as free tasks.",
+    "editModal": {
+      "eyebrow": "Edit goal",
+      "title": "Update goal",
+      "titleLabel": "Goal title",
+      "titlePlaceholder": "e.g. Fluent English in 90 days",
+      "dimensionLabel": "Life dimension",
+      "descriptionLabel": "Description",
+      "descriptionPlaceholder": "Optional notes",
+      "woopSection": "WOOP (optional)",
+      "wishLabel": "W · Wish",
+      "wishPlaceholder": "What you truly want",
+      "outcomeLabel": "O · Best outcome",
+      "outcomePlaceholder": "Best case if achieved",
+      "obstacleLabel": "O · Main obstacle",
+      "obstaclePlaceholder": "What is most likely to block you"
+    },
+    "wizard": {
+      "title": "Goal build wizard",
+      "steps": {
+        "input": "Describe goal",
+        "diagnosis": "AI clarify",
+        "structure": "OKR draft",
+        "obstacle_plan": "Obstacle plan"
+      },
+      "inputLabel": "Describe your goal in one sentence",
+      "inputPlaceholder": "e.g. Switch to PM in 6 months / Body fat to 18% in 3 months / PMP in half a year",
+      "analyzing": "Analyzing…",
+      "startDiagnosis": "Start diagnosis",
+      "noClarify": "No clarifying questions — continue to WOOP.",
+      "generating": "Generating…",
+      "generateOkr": "Generate OKR",
+      "questionProgress": "Question {current} / {total}",
+      "other": "Other…",
+      "answerPlaceholder": "Your answer…",
+      "skip": "Skip →",
+      "prevQuestion": "Previous",
+      "nextQuestion": "Next",
+      "editAnswers": "Edit answers",
+      "confirmObstaclePlan": "Confirm & build obstacle plan",
+      "yourObstacle": "Your obstacle: {obstacle}",
+      "obstaclePlanIntro": "AI generated If-Then cards from your obstacle",
+      "ifLabel": "If",
+      "thenLabel": "Then",
+      "back": "Back",
+      "confirmStart": "Confirm & start",
+      "ifThenWhen": "If I hit this obstacle while working on “{goal}”",
+      "thenActions": {
+        "time_limited": "Then cut today’s plan to 3 items max — MIT only",
+        "attention_scattered": "Then put my phone in another room and start a 25-min focus timer",
+        "procrastination_fear": "Then spend only 10 minutes on the smallest viable version",
+        "info_insufficient": "Then spend 15 minutes researching and list what I still need",
+        "energy_low": "Then do a 5-minute warm-up before deciding whether to continue",
+        "external_dependency": "Then split out what I can do alone and start there"
+      },
+      "ifThenFallback": "If I encounter “{obstacle}”",
+      "thenFallback": "Then do a 5-minute minimum action first"
+    },
+    "detail": {
+      "eyebrow": "Goal detail",
+      "loading": "Loading…",
+      "close": "Close",
+      "summary": "{progress}% · {todos} to-dos · {krs} KRs",
+      "editGoal": "Edit goal",
+      "krSection": "Key results (KR)",
+      "noKr": "No KRs yet. Add below or use “Re-plan”.",
+      "noTodos": "No to-dos",
+      "addKrPlaceholder": "New key result…",
+      "addKr": "Add KR",
+      "orphanTodos": "To-dos not under a KR",
+      "replanSection": "Re-plan (when the current plan isn’t working)",
+      "replanPlaceholder": "Optional: how to adjust (e.g. “lighter pace, more speaking practice”). AI will draft a preview to edit before saving.",
+      "genPreview": "Generate preview",
+      "genPreviewing": "Generating preview…",
+      "previewHint": "Preview (edit KR titles). Applying replaces unfinished plan; completed items stay as history:",
+      "discard": "Discard",
+      "regen": "Regenerate",
+      "applying": "Applying…",
+      "applyReplace": "Apply & replace",
+      "deleteGoal": "Delete goal",
+      "deleteKrConfirm": "Delete this key result? Not-started to-dos under it will be removed; in-progress/done reattach to the goal.",
+      "deleteGoalConfirm": "Delete “{title}”?\n· Keep {done} completed (history)\n· Detach {prog} in progress (free to-dos)\n· Remove {todo} not started\nKRs and children will be deleted too.",
+      "woopWish": "W Wish",
+      "woopOutcome": "O Best outcome",
+      "woopObstacle": "O Main obstacle"
+    },
+    "obstacleLibrary": {
+      "byGoal": "By goal",
+      "byType": "By type",
+      "all": "All",
+      "cardCount": "{n} cards",
+      "emptyTitle": "No If-Then cards yet",
+      "emptyHint": "Cards are auto-generated when you create a goal",
+      "ifLabel": "If",
+      "thenLabel": "Then",
+      "triggerCount": "Triggered {n}×",
+      "deleteTitle": "Delete"
+    }
+  },
+  "onboarding": {
+    "subtitle": "Life snapshot · Initial profile — ~5–10 min, finish in one sitting or resume anytime",
+    "later": "Maybe later",
+    "optional": "(optional)",
+    "multiIndex": "{placeholder} ({index}/{count})",
+    "prevChapter": "Previous chapter",
+    "skipChapter": "Skip chapter",
+    "saving": "Saving…",
+    "continue": "Continue",
+    "finish": "Finish",
+    "saveError": "Couldn’t save. Try again later.",
+    "rings": { "basics": "Basics", "life": "Life", "core": "Inner core" },
+    "ringDone": "\"{ring}\" complete",
+    "knowLevelLabel": "Familiarity",
+    "sayALittle": "One sentence is fine…",
+    "expandMore": "Write more",
+    "benefit": {
+      "name": "Companion calls you what you like from now on",
+      "birthday": "Life-stage advice gets noticeably more fitting",
+      "location": "Weather, schedule and local suggestions use it",
+      "role": "Advice fits your professional context",
+      "core_beliefs": "Every suggestion aligns with your values first",
+      "non_negotiables": "Companion never proposes plans that cross your lines",
+      "pivotal_success": "Encouragement cites your real highlight moments",
+      "pivotal_failure": "Helps you avoid pits you've already fallen into",
+      "pivotal_turning": "Understands how you became who you are",
+      "important_people": "Mention them and Companion knows who they are (codex cards included)",
+      "relationship_notes": "Smarter reminders for the relationships that matter",
+      "life_wheel_self_score": "Your life flower petals get their starting shape",
+      "capability_evidence": "Praise comes with real evidence",
+      "top_3_challenges": "Conversations prioritize what's blocking you now",
+      "why_now": "The companion's pacing matches your urgency",
+      "future_5y": "Long-term goal planning gets an anchor",
+      "future_10y": "The further vision is gently remembered",
+      "north_star": "Every plan steers toward your north star"
+    },
+    "layers": {
+      "identity": "Identity profile",
+      "semantic": "Semantic memory",
+      "working": "Working memory"
+    },
+    "lifeWheel": {
+      "health": "Health",
+      "career": "Career",
+      "family": "Family",
+      "finance": "Finance",
+      "growth": "Growth",
+      "social": "Social",
+      "hobby": "Hobbies",
+      "self_realization": "Self-actualization"
+    },
+    "completion": {
+      "title": "Memory profile created",
+      "body": "Your answers are in identity, working, and semantic memory.",
+      "slotsFilled": "Core memory slots filled {filled}/{total}.",
+      "completeness": "Profile completeness {percent}%",
+      "hint": "You don’t need to fill every gap — mention things in chat and Companion will remember.",
+      "viewMemory": "View my memory architecture",
+      "startChat": "Start chatting"
+    },
+    "days": {
+      "1": {
+        "title": "Basic identity",
+        "intro": "Start with basics — how to address you and your life stage.",
+        "questions": {
+          "name": {
+            "label": "What should I call you?",
+            "placeholder": "e.g. Alex / Sam"
+          },
+          "birthday": {
+            "label": "Birthday (YYYY-MM-DD; year and month is enough)",
+            "placeholder": "1995-06-12"
+          },
+          "location": {
+            "label": "Which city are you based in now?",
+            "placeholder": "e.g. Singapore / Tokyo"
+          },
+          "role": {
+            "label": "What's your main role right now?",
+            "placeholder": "e.g. Product manager / Master’s student / Stay-at-home parent"
+          }
+        }
+      },
+      "2": {
+        "title": "Values & principles",
+        "intro": "What you believe and won’t compromise — seeds your soul prompt.",
+        "questions": {
+          "core_beliefs": {
+            "label": "The 3 things you believe in most (one per line)",
+            "hint": "e.g. Long-term thinking beats short-term games; sincerity matters more than cleverness; health is the 1 and everything else the 0s.",
+            "placeholder": "One per line"
+          },
+          "non_negotiables": {
+            "label": "3 things you absolutely won't accept",
+            "placeholder": "One per line"
+          }
+        }
+      },
+      "3": {
+        "title": "Pivotal experiences",
+        "intro": "One win, one failure, one turning point — how you decide.",
+        "questions": {
+          "pivotal_success": {
+            "label": "An experience that made you proudest",
+            "hint": "Briefly describe what happened and why it mattered to you (2–4 sentences is plenty)."
+          },
+          "pivotal_failure": {
+            "label": "A failure that left the deepest impression",
+            "hint": "What did it teach you?"
+          },
+          "pivotal_turning": {
+            "label": "Something that changed the direction of your life",
+            "hint": "Why that one?"
+          }
+        }
+      },
+      "4": {
+        "title": "Key relationships",
+        "intro": "Five people who matter most — dates and check-ins.",
+        "questions": {
+          "important_people": {
+            "label": "List the 5 people who matter most to you (name + relationship, e.g. Mom — Lin)",
+            "placeholder": "e.g. Partner — Alex / Mentor — Prof. Lee"
+          },
+          "relationship_notes": {
+            "label": "Relationship details you'd like GEDO to remember (optional)",
+            "hint": "e.g. Alex's birthday is 8/12; I call my parents every Sunday."
+          }
+        }
+      },
+      "5": {
+        "title": "Capability map",
+        "intro": "Rate the 8 life areas; optional evidence per dimension.",
+        "questions": {
+          "life_wheel_self_score": {
+            "label": "Rate your 8-dimension Life Flower (0 = no investment at all, 10 = your ideal state right now)"
+          },
+          "capability_evidence": {
+            "label": "Pick 1–3 dimensions and give one concrete piece of evidence for each (optional)",
+            "hint": "e.g. Career 8 — led project X solo within six months; Health 4 — haven't worked out in the past month."
+          }
+        }
+      },
+      "6": {
+        "title": "Current anxieties",
+        "intro": "Top 3 things keeping you up — daily planning will prioritize them.",
+        "questions": {
+          "top_3_challenges": {
+            "label": "Your 3 biggest current challenges / anxieties",
+            "placeholder": "One per line — the more specific the better"
+          },
+          "why_now": {
+            "label": "Why now? (optional)",
+            "hint": "e.g. there is an external deadline, or some event triggered reflection."
+          }
+        }
+      },
+      "7": {
+        "title": "Long-term vision",
+        "intro": "Who you want to be in 5–10 years — your north star.",
+        "questions": {
+          "future_5y": {
+            "label": "In 5 years, who do you hope to become / what do you want to be doing?",
+            "hint": "No need to be comprehensive — just the 1–2 most important changes."
+          },
+          "future_10y": {
+            "label": "And in 10 years?"
+          },
+          "north_star": {
+            "label": "Your one-sentence north star (GEDO keeps it in the system prompt at all times)",
+            "placeholder": "e.g. Build products that help ordinary people make better long-term decisions."
+          }
+        }
+      }
+    }
+  }
+}

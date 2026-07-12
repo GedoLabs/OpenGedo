@@ -1,0 +1,368 @@
+// 集中管理所有 Mock 数据
+// 用于 V2 P0 功能开发，后端 API 就绪后替换
+
+import type { Goal, OKRStructure } from '@/app/components/planner/types';
+import type { Task, Reflection, ECSScore } from '@/app/components/execution/types';
+import type { IfThenCard, ObstacleEvent, ObstacleStats } from '@/app/components/obstacles/types';
+
+// ============ M1: WOOP 目标 + OKR 四层 ============
+
+export const mockGoals: Goal[] = [
+  {
+    id: 'goal-o-1',
+    title: '6个月内拿到 3 个 PM Offer',
+    description: '转行产品经理，通过系统学习和面试准备，在半年内成功转型',
+    wish: '成为一名产品经理，有能力主导一款用户喜爱的产品',
+    outcome: '拿到理想公司的 PM Offer，薪资提升 30%，每天做自己热爱的事',
+    obstacle: '容易被手机消息打断，特别是下午学习时间；面试准备容易拖延',
+    plan: '如果我开始核心学习任务，就把手机放到另一个房间，开启 25 分钟专注计时器',
+    specific: '投递 50 家公司，完成 30 次有效面试邀约，拿到 3 个 PM Offer',
+    measurable: '面试邀约数、Offer 数量',
+    achievable: '有 3 年技术背景，已学习 PM 基础课程',
+    relevant: '与职业发展和收入增长直接相关',
+    timeBound: '2026年9月前完成',
+    level: 'objective',
+    lifeWheelDimension: 'career',
+    status: 'active',
+    progress: 35,
+    obstacleHitRate: 75,
+    startDate: '2026-03-01',
+    endDate: '2026-09-01',
+    createdAt: '2026-03-01T08:00:00Z',
+    updatedAt: '2026-03-10T10:00:00Z',
+  },
+  {
+    id: 'goal-kr-1',
+    title: '完成 30 次有效面试邀约',
+    level: 'key_result',
+    parentId: 'goal-o-1',
+    lifeWheelDimension: 'career',
+    status: 'active',
+    progress: 20,
+    startDate: '2026-03-01',
+    endDate: '2026-06-01',
+    createdAt: '2026-03-01T08:00:00Z',
+    updatedAt: '2026-03-10T10:00:00Z',
+  },
+  {
+    id: 'goal-kr-2',
+    title: '系统掌握 PM 方法论并完成 5 个实战项目',
+    level: 'key_result',
+    parentId: 'goal-o-1',
+    lifeWheelDimension: 'career',
+    status: 'active',
+    progress: 40,
+    startDate: '2026-03-01',
+    endDate: '2026-06-01',
+    createdAt: '2026-03-01T08:00:00Z',
+    updatedAt: '2026-03-10T10:00:00Z',
+  },
+  {
+    id: 'goal-m-1',
+    title: '3月：完成 PM 方法论系统学习',
+    level: 'monthly',
+    parentId: 'goal-kr-2',
+    lifeWheelDimension: 'career',
+    status: 'active',
+    progress: 60,
+    startDate: '2026-03-01',
+    endDate: '2026-03-31',
+    createdAt: '2026-03-01T08:00:00Z',
+    updatedAt: '2026-03-10T10:00:00Z',
+  },
+  {
+    id: 'goal-m-2',
+    title: '3月：投递 15 家目标公司',
+    level: 'monthly',
+    parentId: 'goal-kr-1',
+    lifeWheelDimension: 'career',
+    status: 'active',
+    progress: 30,
+    startDate: '2026-03-01',
+    endDate: '2026-03-31',
+    createdAt: '2026-03-01T08:00:00Z',
+    updatedAt: '2026-03-10T10:00:00Z',
+  },
+  // 第二个目标
+  {
+    id: 'goal-o-2',
+    title: '3个月内体脂率降到 18%',
+    description: '通过规律运动和饮食控制，实现健康的身体状态',
+    wish: '拥有健康有活力的身体，精力充沛应对工作挑战',
+    outcome: '体脂率 18%，每天精力充沛，睡眠质量显著改善',
+    obstacle: '下班后太累不想运动，周末容易暴饮暴食',
+    plan: '如果下班后感到疲劳，就先做 10 分钟拉伸热身，而不是直接躺沙发',
+    level: 'objective',
+    lifeWheelDimension: 'health',
+    status: 'active',
+    progress: 25,
+    obstacleHitRate: 60,
+    startDate: '2026-03-01',
+    endDate: '2026-06-01',
+    createdAt: '2026-03-01T08:00:00Z',
+    updatedAt: '2026-03-10T10:00:00Z',
+  },
+  {
+    id: 'goal-kr-3',
+    title: '每周完成 4 次有氧运动（每次 30 分钟以上）',
+    level: 'key_result',
+    parentId: 'goal-o-2',
+    lifeWheelDimension: 'health',
+    status: 'active',
+    progress: 50,
+    createdAt: '2026-03-01T08:00:00Z',
+    updatedAt: '2026-03-10T10:00:00Z',
+  },
+  {
+    id: 'goal-m-3',
+    title: '3月：建立运动习惯，每周至少 3 次',
+    level: 'monthly',
+    parentId: 'goal-kr-3',
+    lifeWheelDimension: 'health',
+    status: 'active',
+    progress: 45,
+    createdAt: '2026-03-01T08:00:00Z',
+    updatedAt: '2026-03-10T10:00:00Z',
+  },
+];
+
+// OKR 结构示例（目标建构向导生成的）
+export const mockOKRStructure: OKRStructure = {
+  objective: {
+    title: '6个月内拿到 3 个 PM Offer',
+    description: '从技术岗成功转型产品经理',
+    timeframe: '2026.03 - 2026.09',
+  },
+  keyResults: [
+    { id: 'kr-1', title: '完成 30 次有效面试邀约', description: '简历通过率 > 30%', timeframe: 'Q2 2026' },
+    { id: 'kr-2', title: '系统掌握 PM 方法论并完成 5 个实战项目', description: '产品分析报告 + 原型设计', timeframe: 'Q2 2026' },
+    { id: 'kr-3', title: '建立 PM 社交网络，获得 3 位内推', description: '行业活动 + LinkedIn', timeframe: 'Q2 2026' },
+  ],
+  monthlyGoals: [
+    { id: 'mg-1', keyResultId: 'kr-2', title: '完成 PM 方法论系统学习', description: '读完 3 本核心书籍 + 在线课程' },
+    { id: 'mg-2', keyResultId: 'kr-1', title: '投递 15 家目标公司', description: '优化简历 + 精准投递' },
+    { id: 'mg-3', keyResultId: 'kr-3', title: '参加 2 次行业线下活动', description: '准备自我介绍 + 交换联系方式' },
+  ],
+  tasks: [
+    { id: 't-1', monthlyGoalId: 'mg-1', title: '阅读《俞军产品方法论》第1-3章', estimatedDuration: 60 },
+    { id: 't-2', monthlyGoalId: 'mg-1', title: '完成产品分析练习：分析微信读书', estimatedDuration: 90 },
+    { id: 't-3', monthlyGoalId: 'mg-2', title: '整理 3 个项目的 STAR 叙述', estimatedDuration: 45 },
+    { id: 't-4', monthlyGoalId: 'mg-2', title: '优化简历 PM 版本', estimatedDuration: 60 },
+    { id: 't-5', monthlyGoalId: 'mg-3', title: '报名本周六 PM 线下交流会', estimatedDuration: 10 },
+  ],
+};
+
+// ============ M2: If-Then 障碍卡片 ============
+
+export const mockIfThenCards: IfThenCard[] = [
+  {
+    id: 'itc-1',
+    goalId: 'goal-o-1',
+    goalTitle: '6个月内拿到 3 个 PM Offer',
+    obstacleDescription: '我容易被手机消息打断，特别是下午学习时间',
+    ifCondition: '如果我开始了今日的核心学习任务',
+    thenAction: '那么我就把手机放到另一个房间，开启 25 分钟专注计时器',
+    untilCondition: '直到计时器响起才查看消息',
+    obstacleType: 'attention_scattered',
+    triggeredCount: 8,
+    executedCount: 6,
+    status: 'active',
+    createdAt: '2026-03-01T08:00:00Z',
+    updatedAt: '2026-03-10T10:00:00Z',
+  },
+  {
+    id: 'itc-2',
+    goalId: 'goal-o-1',
+    goalTitle: '6个月内拿到 3 个 PM Offer',
+    obstacleDescription: '面试准备材料太多，容易拖延不知从哪开始',
+    ifCondition: '如果我感到面试准备无从下手',
+    thenAction: '那么我就只花 10 分钟，写下一个项目的 STAR 框架',
+    untilCondition: '完成一个最小版本后再决定是否继续',
+    obstacleType: 'procrastination_fear',
+    triggeredCount: 5,
+    executedCount: 4,
+    status: 'active',
+    createdAt: '2026-03-01T08:00:00Z',
+    updatedAt: '2026-03-10T10:00:00Z',
+  },
+  {
+    id: 'itc-3',
+    goalId: 'goal-o-2',
+    goalTitle: '3个月内体脂率降到 18%',
+    obstacleDescription: '下班后太累不想运动，直接躺沙发',
+    ifCondition: '如果下班后我感到疲劳不想运动',
+    thenAction: '那么我就先换上运动服，做 10 分钟拉伸热身',
+    untilCondition: '热身完成后再决定是否做完整训练',
+    obstacleType: 'energy_low',
+    triggeredCount: 12,
+    executedCount: 9,
+    status: 'active',
+    createdAt: '2026-03-01T08:00:00Z',
+    updatedAt: '2026-03-10T10:00:00Z',
+  },
+  {
+    id: 'itc-4',
+    goalId: 'goal-o-2',
+    goalTitle: '3个月内体脂率降到 18%',
+    obstacleDescription: '周末容易暴饮暴食，特别是聚餐时',
+    ifCondition: '如果周末有聚餐安排',
+    thenAction: '那么我就提前吃一份健康小食，到场后只吃七分饱',
+    obstacleType: 'external_dependency',
+    triggeredCount: 3,
+    executedCount: 2,
+    status: 'active',
+    createdAt: '2026-03-01T08:00:00Z',
+    updatedAt: '2026-03-10T10:00:00Z',
+  },
+];
+
+// ============ M2: 障碍事件 ============
+
+export const mockObstacleEvents: ObstacleEvent[] = [
+  { id: 'oe-1', taskId: 'task-1', taskTitle: '阅读PM方法论', obstacleType: 'attention_scattered', matchedPredicted: true, ifThenCardId: 'itc-1', ifThenTriggered: true, ifThenExecuted: true, occurredAt: '2026-03-08T14:30:00Z' },
+  { id: 'oe-2', taskId: 'task-2', taskTitle: '写STAR框架', obstacleType: 'procrastination_fear', matchedPredicted: true, ifThenCardId: 'itc-2', ifThenTriggered: true, ifThenExecuted: true, occurredAt: '2026-03-08T16:00:00Z' },
+  { id: 'oe-3', taskId: 'task-3', taskTitle: '跑步30分钟', obstacleType: 'energy_low', matchedPredicted: true, ifThenCardId: 'itc-3', ifThenTriggered: true, ifThenExecuted: false, occurredAt: '2026-03-07T19:00:00Z' },
+  { id: 'oe-4', taskId: 'task-4', taskTitle: '投递简历', obstacleType: 'time_limited', matchedPredicted: false, ifThenTriggered: false, ifThenExecuted: false, occurredAt: '2026-03-07T21:00:00Z' },
+  { id: 'oe-5', taskId: 'task-5', taskTitle: '阅读PM方法论', obstacleType: 'attention_scattered', matchedPredicted: true, ifThenCardId: 'itc-1', ifThenTriggered: true, ifThenExecuted: true, occurredAt: '2026-03-06T15:00:00Z' },
+  { id: 'oe-6', taskId: 'task-6', taskTitle: '完成产品分析', obstacleType: 'procrastination_fear', matchedPredicted: true, ifThenCardId: 'itc-2', ifThenTriggered: true, ifThenExecuted: true, occurredAt: '2026-03-06T10:00:00Z' },
+  { id: 'oe-7', taskId: 'task-7', taskTitle: '力量训练', obstacleType: 'energy_low', matchedPredicted: true, ifThenCardId: 'itc-3', ifThenTriggered: true, ifThenExecuted: true, occurredAt: '2026-03-05T19:30:00Z' },
+  { id: 'oe-8', taskId: 'task-8', taskTitle: '整理面试题', obstacleType: 'attention_scattered', matchedPredicted: true, ifThenCardId: 'itc-1', ifThenTriggered: true, ifThenExecuted: true, occurredAt: '2026-03-05T14:00:00Z' },
+  { id: 'oe-9', taskId: 'task-9', taskTitle: '约咖啡聊天', obstacleType: 'external_dependency', matchedPredicted: false, ifThenTriggered: false, ifThenExecuted: false, occurredAt: '2026-03-04T18:00:00Z' },
+  { id: 'oe-10', taskId: 'task-10', taskTitle: '写周报总结', obstacleType: 'time_limited', matchedPredicted: false, ifThenTriggered: false, ifThenExecuted: false, occurredAt: '2026-03-03T22:00:00Z' },
+];
+
+export const mockObstacleStats: ObstacleStats = {
+  totalCards: 4,
+  totalEvents: 10,
+  hitRate: 70,
+  triggerCount: 7,
+  executeCount: 6,
+  byType: {
+    time_limited: 2,
+    attention_scattered: 3,
+    procrastination_fear: 2,
+    info_insufficient: 0,
+    energy_low: 2,
+    external_dependency: 1,
+  },
+};
+
+// ============ M3: 今日任务 ============
+
+export const mockTodayTasks: Task[] = [
+  {
+    id: 'today-1',
+    goalId: 'goal-m-1',
+    goalTitle: 'PM 方法论学习',
+    title: '阅读《俞军产品方法论》第4-5章并做笔记',
+    description: '重点关注需求分析和用户研究方法论',
+    estimatedDuration: 60,
+    energyLevel: 'high',
+    priority: 5,
+    status: 'pending',
+    scheduledDate: '2026-03-10',
+    isMIT: true,
+    feelingTag: undefined,
+  },
+  {
+    id: 'today-2',
+    goalId: 'goal-m-2',
+    goalTitle: '投递目标公司',
+    title: '优化简历 PM 版本（突出数据分析经验）',
+    estimatedDuration: 45,
+    energyLevel: 'high',
+    priority: 4,
+    status: 'pending',
+    scheduledDate: '2026-03-10',
+    isMIT: false,
+  },
+  {
+    id: 'today-3',
+    goalId: 'goal-m-1',
+    goalTitle: 'PM 方法论学习',
+    title: '完成竞品分析练习：对比飞书 vs Notion',
+    estimatedDuration: 90,
+    energyLevel: 'medium',
+    priority: 3,
+    status: 'pending',
+    scheduledDate: '2026-03-10',
+    isMIT: false,
+  },
+  {
+    id: 'today-4',
+    goalId: 'goal-m-3',
+    goalTitle: '建立运动习惯',
+    title: '30 分钟慢跑 + 10 分钟拉伸',
+    estimatedDuration: 40,
+    energyLevel: 'medium',
+    priority: 3,
+    status: 'completed',
+    scheduledDate: '2026-03-10',
+    completedAt: '2026-03-10T07:30:00Z',
+    isMIT: false,
+    feelingTag: 'smooth',
+  },
+  {
+    id: 'today-5',
+    goalId: 'goal-m-2',
+    goalTitle: '投递目标公司',
+    title: '整理 3 家心仪公司的 JD 并匹配经历',
+    estimatedDuration: 30,
+    energyLevel: 'low',
+    priority: 2,
+    status: 'pending',
+    scheduledDate: '2026-03-10',
+    isMIT: false,
+  },
+];
+
+// ============ M3: 反思记录 ============
+
+export const mockReflections: Reflection[] = [
+  {
+    id: 'ref-1',
+    date: '2026-03-09',
+    q1ObstacleTag: 'time_insufficient',
+    q2MostValuable: '完成了产品分析报告初稿，对需求分析方法有了更深理解',
+    q3AdjustmentTag: 'fewer_tasks',
+    ecsScore: { completionRate: 80, planStability: 70, reflectionCompleted: true, total: 77 },
+    createdAt: '2026-03-09T22:00:00Z',
+  },
+  {
+    id: 'ref-2',
+    date: '2026-03-08',
+    q1ObstacleTag: 'external_interrupt',
+    q2MostValuable: '成功用 STAR 方法梳理了第一个项目经历',
+    q3AdjustmentTag: 'no_change',
+    ecsScore: { completionRate: 60, planStability: 80, reflectionCompleted: true, total: 68 },
+    createdAt: '2026-03-08T21:30:00Z',
+  },
+  {
+    id: 'ref-3',
+    date: '2026-03-07',
+    q1ObstacleTag: 'energy_low',
+    q2MostValuable: '跑步完成了 5km，坚持运动第 5 天',
+    q3AdjustmentTag: 'reorder',
+    ecsScore: { completionRate: 100, planStability: 90, reflectionCompleted: true, total: 94 },
+    createdAt: '2026-03-07T22:15:00Z',
+  },
+];
+
+// ============ M3: ECS 分数 ============
+
+export const mockCurrentECS: ECSScore = {
+  completionRate: 75,
+  planStability: 80,
+  reflectionCompleted: true,
+  total: 78,
+};
+
+export const mockECSTrend: Array<{ date: string; score: number }> = [
+  { date: '2026-03-04', score: 65 },
+  { date: '2026-03-05', score: 72 },
+  { date: '2026-03-06', score: 80 },
+  { date: '2026-03-07', score: 94 },
+  { date: '2026-03-08', score: 68 },
+  { date: '2026-03-09', score: 77 },
+  { date: '2026-03-10', score: 78 },
+];

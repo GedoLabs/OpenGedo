@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gedo.ai/specs/gmp/v0.1/episodes.schema.json",
+  "title": "GEDO Memory Pack — episodes.jsonl (L4 Episodic Layer, single line)",
+  "description": "Schema for ONE line of episodes.jsonl. The file itself is NDJSON; each line MUST validate against this schema.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "type", "content_raw", "created_at"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Stable across re-exports. Used for de-duplication on import."
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "important_info",
+        "personal_trait",
+        "key_event",
+        "date_reminder",
+        "milestone",
+        "failure_learning",
+        "decision",
+        "relationship_event"
+      ]
+    },
+    "content_raw": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 32768
+    },
+    "content_struct": {
+      "description": "LLM-extracted structured fields. All optional; importers MUST tolerate any subset.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "people": { "type": "array", "items": { "type": "string", "maxLength": 128 } },
+        "dates": { "type": "array", "items": { "type": "string" } },
+        "skills": { "type": "array", "items": { "type": "string", "maxLength": 64 } },
+        "traits": { "type": "array", "items": { "type": "string", "maxLength": 64 } },
+        "emotions": { "type": "array", "items": { "type": "string", "maxLength": 32 } },
+        "conclusions": { "type": "array", "items": { "type": "string", "maxLength": 256 } },
+        "locations": { "type": "array", "items": { "type": "string", "maxLength": 128 } }
+      }
+    },
+    "tags": {
+      "description": "Free-form user/system tags merged into a single array.",
+      "type": "array",
+      "items": { "type": "string", "maxLength": 64 },
+      "maxItems": 32
+    },
+    "system_tags": {
+      "description": "Optional alternative split: tags assigned by the system.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["self_awareness", "growth_journey", "goal_related", "relationship"]
+      }
+    },
+    "user_tags": {
+      "type": "array",
+      "items": { "type": "string", "maxLength": 32 }
+    },
+    "source": {
+      "type": "string",
+      "enum": ["text", "chat", "auto_extract", "voice", "image", "reflection", "system", "consolidation"]
+    },
+    "reminder_date": {
+      "type": ["string", "null"],
+      "format": "date"
+    },
+    "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+    "impact_score": { "type": "number", "minimum": 0, "maximum": 1 },
+    "usage_count": { "type": "integer", "minimum": 0 },
+    "consolidated": { "type": "boolean" },
+    "decay_class": {
+      "description": "Forgetting policy hint. Importers MAY use this to compute importance over time.",
+      "type": "string",
+      "enum": ["permanent", "decade", "year", "month", "week"]
+    },
+    "superseded_by": {
+      "description": "ID of a later episode that overrides this one (e.g. 'I quit coffee' supersedes 'I love coffee').",
+      "type": ["string", "null"],
+      "format": "uuid"
+    },
+    "relations": {
+      "description": "Outgoing edges from this episode to other episodes (graph layer).",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["to", "relation_type"],
+        "properties": {
+          "to": { "type": "string", "format": "uuid" },
+          "relation_type": {
+            "type": "string",
+            "enum": ["supports", "contradicts", "follows", "about_person", "caused_by", "leads_to"]
+          },
+          "weight": { "type": "number", "minimum": 0, "maximum": 1 }
+        }
+      },
+      "maxItems": 16
+    },
+    "embedding_offset": {
+      "description": "Byte offset into embeddings.bin for this episode's vector. Required if embeddings.bin is present.",
+      "type": "integer",
+      "minimum": 0
+    },
+    "created_at": { "type": "string", "format": "date-time" },
+    "extra": { "type": "object" }
+  }
+}

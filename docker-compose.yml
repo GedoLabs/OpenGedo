@@ -1,0 +1,52 @@
+# GEDO self-hosted stack (GEDO_EDITION=oss)
+#
+# 开源仓（Gedolabs/gedo）此文件名为 docker-compose.yml；闭源仓中名为
+# docker-compose.selfhost.yml（生产编排另在 docker-compose.yml）。内容两仓同步。
+# Usage: copy services/backend-api/env.example → services/backend-api/.env, fill secrets, then:
+#   docker compose up -d          # 闭源仓中加 -f docker-compose.selfhost.yml
+#
+# 最小配置：JWT_SECRET + 一个 LLM key（ANTHROPIC_API_KEY，或本地 Ollama 走
+# LLM_PROVIDER=ollama / GEDO_SOVEREIGN_MODE=1）。邮件/社交登录/计费全部可缺省。
+
+services:
+  backend:
+    build:
+      # backend Dockerfile 需要仓库根作为 context（COPY services/backend-api + services/agent + specs/gmp）
+      context: .
+      dockerfile: services/backend-api/Dockerfile
+    restart: unless-stopped
+    environment:
+      GEDO_EDITION: oss
+      PORT: 8787
+      ENABLE_LLM: ${ENABLE_LLM:-true}
+      JWT_SECRET: ${JWT_SECRET:?set JWT_SECRET}
+      CORS_ORIGIN: ${PUBLIC_BASE_URL:-http://localhost:3000}
+      PUBLIC_BASE_URL: ${PUBLIC_BASE_URL:-http://localhost:3000}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      LLM_PROVIDER: ${LLM_PROVIDER:-anthropic}
+      # 本地嵌入（可选）：宿主机跑 Ollama 时打开；缺省时记忆召回自动退 BM25 关键词。
+      OLLAMA_BASE_URL: ${OLLAMA_BASE_URL:-}
+    ports:
+      - "8787:8787"
+    volumes:
+      - gedo_data:/app/data
+
+  app:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+      args:
+        # NEXT_PUBLIC_* 是构建期内联；BACKEND_ORIGIN 供 next.config rewrite 构建期读取
+        NEXT_PUBLIC_GEDO_EDITION: oss
+        BACKEND_ORIGIN: http://backend:8787
+    restart: unless-stopped
+    environment:
+      # SSR 运行时取数走容器网络（apiClient/authServer 的 SSR 回退读它）
+      BACKEND_ORIGIN: http://backend:8787
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+volumes:
+  gedo_data:

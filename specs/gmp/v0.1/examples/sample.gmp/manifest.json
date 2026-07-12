@@ -1,0 +1,18 @@
+{
+  "schema": "gedo-memory-pack/v0.1",
+  "exporter": "gedo.ai/0.1.0-sample",
+  "owner": {
+    "uid_hash": "9b74c9897bac770ffc029102a200c5de24d37c4f34c1c7c28c50f3bca3b3e84a",
+    "uid_salt": "0123456789abcdef0123456789abcdef",
+    "display_name": "Alice Sample"
+  },
+  "created_at": "2026-04-29T10:00:00Z",
+  "stats": {
+    "episodes": 3,
+    "skills": 2,
+    "goals_active": 1,
+    "rules": 2,
+    "dimensions_filled": 3
+  },
+  "encryption": "none"
+}

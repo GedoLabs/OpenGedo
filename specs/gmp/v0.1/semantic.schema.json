@@ -1,0 +1,150 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gedo.ai/specs/gmp/v0.1/semantic.schema.json",
+  "title": "GEDO Memory Pack — semantic.json (L2 Semantic Layer)",
+  "description": "Eight-dimension life-wheel profile. Selectively loaded into context per dimension.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "dimensions"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "dimensions": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Eight life-wheel dimensions. Keys are fixed; unknown keys MUST be rejected.",
+      "properties": {
+        "health": { "$ref": "#/$defs/dimension" },
+        "career": { "$ref": "#/$defs/dimension" },
+        "family": { "$ref": "#/$defs/dimension" },
+        "finance": { "$ref": "#/$defs/dimension" },
+        "growth": { "$ref": "#/$defs/dimension" },
+        "social": { "$ref": "#/$defs/dimension" },
+        "hobby": { "$ref": "#/$defs/dimension" },
+        "self_realization": { "$ref": "#/$defs/dimension" }
+      }
+    },
+    "cross_dimension_patterns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["pattern"],
+        "properties": {
+          "pattern": { "type": "string", "maxLength": 512 },
+          "dimensions": {
+            "type": "array",
+            "items": { "type": "string", "enum": ["health", "career", "family", "finance", "growth", "social", "hobby", "self_realization"] },
+            "minItems": 1,
+            "maxItems": 8
+          },
+          "evidence_episode_ids": {
+            "type": "array",
+            "items": { "type": "string", "format": "uuid" },
+            "maxItems": 32
+          }
+        }
+      },
+      "maxItems": 64
+    },
+    "milestone_events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["event"],
+        "properties": {
+          "event": { "type": "string", "maxLength": 256 },
+          "impact": { "type": "string", "enum": ["minor", "moderate", "major", "life_changing"] },
+          "ts": { "type": "string", "format": "date-time" },
+          "tags": { "type": "array", "items": { "type": "string", "maxLength": 32 }, "maxItems": 8 },
+          "dimensions": {
+            "type": "array",
+            "items": { "type": "string", "enum": ["health", "career", "family", "finance", "growth", "social", "hobby", "self_realization"] }
+          }
+        }
+      }
+    },
+    "failure_learnings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["lesson"],
+        "properties": {
+          "context": { "type": "string", "maxLength": 512 },
+          "lesson": { "type": "string", "maxLength": 512 },
+          "applied": { "type": "boolean" }
+        }
+      }
+    },
+    "relationship_map": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "role"],
+        "properties": {
+          "name": { "type": "string", "maxLength": 128 },
+          "role": { "type": "string", "maxLength": 64 },
+          "trust": { "type": "number", "minimum": 0, "maximum": 1 },
+          "last_interaction": { "type": "string", "format": "date-time" }
+        }
+      }
+    },
+    "growth_trajectory": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "skill_delta": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["skill"],
+            "properties": {
+              "skill": { "type": "string", "maxLength": 64 },
+              "delta": { "type": "number" },
+              "period": { "type": "string", "maxLength": 32 }
+            }
+          }
+        }
+      }
+    },
+    "long_term_summaries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["period", "summary"],
+        "properties": {
+          "period": { "type": "string", "maxLength": 32, "description": "e.g. '2025-Q3' or '2025-12'" },
+          "summary": { "type": "string", "maxLength": 4096 },
+          "tags": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "extra": { "type": "object" }
+  },
+  "$defs": {
+    "dimension": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "summary": { "type": "string", "maxLength": 1024 },
+        "key_traits": { "type": "array", "items": { "type": "string", "maxLength": 64 }, "maxItems": 16 },
+        "skills": { "type": "array", "items": { "type": "string", "maxLength": 64 }, "maxItems": 32 },
+        "patterns": { "type": "array", "items": { "type": "string", "maxLength": 256 }, "maxItems": 16 },
+        "evidence_episode_ids": {
+          "description": "References to episodes.jsonl entries that support this dimension's profile.",
+          "type": "array",
+          "items": { "type": "string", "format": "uuid" },
+          "maxItems": 64
+        },
+        "recent_insight": { "type": ["string", "null"], "maxLength": 512 }
+      }
+    }
+  }
+}

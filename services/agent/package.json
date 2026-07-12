@@ -1,0 +1,23 @@
+{
+  "name": "@gedo/agent",
+  "version": "0.1.0",
+  "description": "GEDO.AI Agent - 智能规划与记忆召回代理",
+  "type": "module",
+  "main": "src/index.mjs",
+  "scripts": {
+    "start": "node src/index.mjs",
+    "dev": "node --watch src/index.mjs"
+  },
+  "keywords": [
+    "gedo",
+    "agent",
+    "ai",
+    "planning"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "node-cron": "^3.0.3",
+    "pg-boss": "^10.1.3",
+    "pg": "^8.11.3"
+  }
+}

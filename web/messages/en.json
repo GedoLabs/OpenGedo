@@ -1,0 +1,1985 @@
+{
+  "metadata": {
+    "title": "GEDO.AI — the personal growth system that makes you a super individual",
+    "description": "GEDO is the personal growth system that actually knows you. It helps you cut through the noise of the AI age and keep growing — a personal assistant on the inside, a digital self on the outside, so one person carries the leverage of a team. Your data stays yours: export anytime, hard-delete anytime, never trained on without consent. Invite-only beta.",
+    "keywords": "GEDO, personal growth system, super individual, AI growth system, personal AI assistant, AI companion, second brain, AI coach, digital persona, own your data",
+    "ogTitle": "GEDO.AI — the personal growth system that makes you a super individual",
+    "ogDescription": "GEDO is the personal growth system that actually knows you — a personal assistant within, a digital self without, so one person carries the leverage of a team."
+  },
+  "nav": {
+    "product": "GEDO.AI",
+    "features": "Features",
+    "concept": "How it Works",
+    "waitlist": "Get Started",
+    "avatar": "AI Companion"
+  },
+  "hero": {
+    "slogan": "Your AI Digital Twin, Conversation Drives Everything",
+    "subSlogan": "AI-Native Personal Assistant",
+    "description": "Manage memories, plan goals, and execute tasks through natural conversation — building an AI companion that truly understands you.",
+    "cta": "Get Started Free",
+    "placeholder": "Enter your email",
+    "join": "Join",
+    "joined": "Joined!"
+  },
+  "concept": {
+    "title": "Chat With Your AI, That's All",
+    "subtitle": "No forms, no categories, no manual organizing",
+    "description": "Share your thoughts, your AI companion handles the rest.",
+    "flow": {
+      "memory": "You Say Something",
+      "planning": "AI Auto-Processes",
+      "action": "AI Responds",
+      "feedback": "Continuous Growth"
+    }
+  },
+  "features": {
+    "memory": {
+      "title": "Chat as Interface",
+      "subtitle": "Conversation-First",
+      "desc": "Complete everything through natural language.",
+      "points": [
+        "Real-time streaming AI chat",
+        "Auto intent detection",
+        "Multi-turn context"
+      ]
+    },
+    "planning": {
+      "title": "Four-Layer Memory",
+      "subtitle": "Cognitive Model",
+      "desc": "Each user has a memory profile file: core identity and semantic memory compress into context; working memory holds the active focus; episodic memory grows without limit and is retrieved on demand.",
+      "points": [
+        "Core identity + semantic memory (8 life dimensions)",
+        "Working memory & session continuity",
+        "Episodic capture with consolidation into semantics"
+      ]
+    }
+  },
+  "avatar": {
+    "title": "Your AI Digital Twin",
+    "subtitle": "Digital Twin",
+    "desc": "Your AI companion is more than a tool. It's your digital twin with its own personality, understanding your past and empowering your future.",
+    "points": [
+      "Real-time streaming conversation — chat is the interface",
+      "Auto memory extraction, goal and task generation from conversations",
+      "Independent personality system that learns about you",
+      "Proactive care with advice and encouragement at key moments"
+    ],
+    "greeting": "Hi! I'm your AI assistant ✨ How can I help?",
+    "userMessage": "Note that I learned Docker deployment today",
+    "analyzing": "Processing...",
+    "response": "Noted! 3rd new skill this month, DevOps ability +15%",
+    "feature1": "Real-time Chat",
+    "feature2": "Auto Memory",
+    "feature3": "Smart Planning"
+  },
+  "cta": {
+    "badge": "Try Free",
+    "title": "Start Chatting With Your AI Twin",
+    "desc": "Choose your platform and start using GEDO.AI for free",
+    "webBadge": "Available Now",
+    "webTitle": "Web App",
+    "webDesc": "Chat with your AI companion in the browser. Streaming chat, memory management, goal planning.",
+    "webFeatures": [
+      "Real-time streaming AI chat",
+      "Layered memory profile & on-demand recall",
+      "Cross-device cloud sync"
+    ],
+    "webButton": "Start Chatting Free",
+    "iosBadge": "Coming Soon",
+    "iosTitle": "iOS Native App",
+    "iosDesc": "Native iOS experience. Hybrid mode combining chat + traditional UI.",
+    "iosFeatures": [
+      "Native smooth experience",
+      "Chat + traditional UI hybrid",
+      "Push notifications & system integration"
+    ],
+    "iosPlaceholder": "Enter email for beta access",
+    "iosButton": "Reserve iOS Beta",
+    "iosSuccess": "Reserved! We'll notify you when beta opens",
+    "note": "Get started for free — no credit card required"
+  },
+  "footer": {
+    "copyright": "© 2025-2026 GEDO PTE. LTD. All rights reserved.",
+    "contact": "Contact Us",
+    "privacy": "Privacy & Help",
+    "whyGedo": "Why GEDO",
+    "pricing": "Pricing",
+    "features": "Features",
+    "launchApp": "Launch App",
+    "about": "About Us"
+  },
+  "help": {
+    "title": "Privacy & Help",
+    "subtitle": "How we protect your data and answers to common questions",
+    "privacyTitle": "Privacy Protection",
+    "privacySubtitle": "GEDO.AI puts your data security first",
+    "privacyCards": [
+      {
+        "title": "Encryption in transit (HTTPS)",
+        "desc": "All data is encrypted in transit over HTTPS and stored per-user in the cloud during beta. Any model training happens only with your separate consent — never by default."
+      },
+      {
+        "title": "Data Sovereignty",
+        "desc": "Export or delete all your personal data at any time. You have complete control over your data."
+      },
+      {
+        "title": "Pause-memory switch",
+        "desc": "Pause long-term memory anytime — once paused, the AI stops recalling or learning from new conversations."
+      },
+      {
+        "title": "Portable Data",
+        "desc": "Export your memories, goals and conversation history any time in a standard format."
+      },
+      {
+        "title": "Minimal Data Collection",
+        "desc": "We only collect the minimum data required for the product to function. No excessive data harvesting."
+      },
+      {
+        "title": "International Compliance",
+        "desc": "Built to comply with GDPR, CCPA, and other international privacy regulations to protect your data rights."
+      }
+    ],
+    "faqTitle": "FAQ",
+    "faqSubtitle": "Everything you might want to know about GEDO.AI",
+    "faqCategories": [
+      {
+        "name": "Product",
+        "items": [
+          {
+            "q": "What is GEDO.AI?",
+            "a": "GEDO.AI is an AI-Native personal assistant and digital twin platform. Through natural conversation, it automatically manages your memories, plans goals, tracks tasks, and evolves with you to become an intelligent companion that truly understands you."
+          },
+          {
+            "q": "How is it different from regular AI chatbots?",
+            "a": "GEDO.AI has long-term memory, automatic goal decomposition, independent personality, and proactive care. It doesn't just answer questions — it's a digital twin that continuously learns about you and grows with you."
+          },
+          {
+            "q": "Do I need any configuration to start?",
+            "a": "No. Sign in and you can start chatting with your AI companion right away — no extra setup needed."
+          },
+          {
+            "q": "Can I bring in my chats from other AI apps?",
+            "a": "Yes. Memory's Sources hub imports chat exports from ChatGPT, Claude, Gemini and Kimi, plus PDF, Word, web links and pasted text. The AI extracts candidate memories first, and nothing is saved until you confirm each one — the original sources stay in your account, viewable and deletable anytime."
+          },
+          {
+            "q": "What is the personal Twin model?",
+            "a": "An upcoming Ultra capability: after you grant a separate training consent, we train a model that's yours alone — on samples you approved, only on GEDO's own infrastructure. Training data is never sent to third-party AI providers. You can revoke consent anytime, and revoking physically deletes both the data and the model."
+          },
+          {
+            "q": "What is capability access (MCP)?",
+            "a": "MCP is the AI industry's open connection protocol. You can plug external tools into your companion from Settings and call them in chat or task automations; your digital persona also exposes a public MCP endpoint, so any MCP-enabled AI can talk to the persona you chose to publish. The personal memory endpoint (Pro and up) is live too: generate a personal access token under Settings → Developer/Access and search your own Gedo memory from Claude Code, Cursor and other MCP clients — output is redacted, AI-excluded memories never leave, and every token is revocable with an audit log."
+          }
+        ]
+      },
+      {
+        "name": "Privacy & Security",
+        "items": [
+          {
+            "q": "Where is my data stored?",
+            "a": "Your data is stored per-user on cloud servers and encrypted in transit over HTTPS. You can export or permanently delete all of it at any time."
+          },
+          {
+            "q": "Will my conversations be used for training?",
+            "a": "Not by default — and never for general-purpose models. The only exceptions are ones you switch on yourself: Twin model training (Ultra, coming soon) and \"Help improve GEDO\" (coming soon) each require separate consent, run only on GEDO's own infrastructure, and can be revoked anytime — revoking physically deletes the data."
+          },
+          {
+            "q": "How do I delete my data?",
+            "a": "In the Settings page, you can export or delete all your data with one click, including memories, goals, and conversation history. Deletion is permanent."
+          },
+          {
+            "q": "Is it safe to plug in external tools, or take my memory to another AI?",
+            "a": "You control both directions. Inbound: you add each external tool yourself, can remove it anytime, and every call is visible in the conversation. Outbound: public endpoints only expose what you explicitly chose to publish; when you carry your memory into a third-party AI, that content flows to a provider you picked — that's you exercising data sovereignty, and Gedo never makes that call for you."
+          }
+        ]
+      },
+      {
+        "name": "Getting Started",
+        "items": [
+          {
+            "q": "How do I start?",
+            "a": "Click \"Get Started Free\" to sign up — you can start chatting in under 2 minutes, with no extra configuration."
+          },
+          {
+            "q": "Do I need to pay?",
+            "a": "A free tier with basic quota is available. Pro and Ultra unlock more quota, long-term memory and advanced features."
+          },
+          {
+            "q": "What platforms are supported?",
+            "a": "The web app runs in all modern browsers and is live in beta today; an iOS client is in invite-only beta. iOS and Android launch soon, with iPad and desktop (macOS / Windows) rolling out after."
+          }
+        ]
+      },
+      {
+        "name": "Account & Data",
+        "items": [
+          {
+            "q": "Can I use GEDO across multiple devices?",
+            "a": "Yes. Your account syncs across devices — memories and goals stay consistent everywhere you sign in."
+          },
+          {
+            "q": "How do I migrate my data?",
+            "a": "Export all your data via the Settings page in a standard format and import it into a new device or account to restore it."
+          },
+          {
+            "q": "What happens to my data if I delete my account?",
+            "a": "After account deletion, we permanently remove all your data within 30 days with no backups retained."
+          }
+        ]
+      }
+    ]
+  },
+  "whyGedo": {
+    "title": "Why GEDO",
+    "subtitle": "More than just another AI chat tool",
+    "badge": "Deep Comparison",
+    "comparisonTitle": "Feature Comparison",
+    "comparisonSubtitle": "See the core differences between GEDO.AI and other AI tools",
+    "dimensions": [
+      "Long-term Memory",
+      "Goal Management",
+      "Digital Twin",
+      "Data Privacy",
+      "Proactive Care"
+    ],
+    "gedoValues": [
+      "Auto-extract & persist",
+      "Auto-decompose & track",
+      "Independent personality & evolution",
+      "Exportable + one-click delete",
+      "Memory-based proactive reminders"
+    ],
+    "chatgptValues": [
+      "Limited context window",
+      "Not supported",
+      "None",
+      "Data owned by platform",
+      "Passive response"
+    ],
+    "genericValues": [
+      "None / Manual",
+      "Not supported",
+      "None",
+      "Data owned by platform",
+      "Passive response"
+    ],
+    "scenarioTitle": "Scenario Demos",
+    "scenarioSubtitle": "Same question, different experience",
+    "scenarios": [
+      {
+        "label": "Mental Health",
+        "title": "Mental State Assessment",
+        "chatgptMessages": [
+          {
+            "role": "user",
+            "text": "I've been really stressed lately, feeling anxious"
+          },
+          {
+            "role": "ai",
+            "text": "I understand how you feel. Here are some tips to manage anxiety:\n1. Deep breathing exercises\n2. Regular exercise\n3. Get adequate sleep\n4. Talk to friends\n5. Seek professional help if needed"
+          }
+        ],
+        "gedoMessages": [
+          {
+            "role": "user",
+            "text": "I've been really stressed lately, feeling anxious"
+          },
+          {
+            "role": "ai",
+            "text": "I noticed this is the 3rd time you've mentioned anxiety this month. Combined with the project deadline (March 25th) you mentioned earlier and last week's insomnia record, your stress likely stems from work.\n\n📊 Mood trend: Anxiety frequency up in past 2 weeks\n🎯 Suggestion: Pause \"Learn Rust\" goal, prioritize project\n⏰ Set: 8:00 AM tomorrow reminder for 5-min meditation\n\nWant me to help reprioritize this week's tasks?"
+          }
+        ]
+      },
+      {
+        "label": "Goal Planning",
+        "title": "Goal Planning & Execution",
+        "chatgptMessages": [
+          {
+            "role": "user",
+            "text": "I want to learn Japanese, help me make a plan"
+          },
+          {
+            "role": "ai",
+            "text": "Japanese learning plan:\n1. Learn Hiragana & Katakana (2 weeks)\n2. Basic grammar (1-2 months)\n3. Build vocabulary (ongoing)\n4. Listening & speaking practice (ongoing)\n5. Consider signing up for JLPT N5\n\nAim for 30-60 minutes of study daily."
+          }
+        ],
+        "gedoMessages": [
+          {
+            "role": "user",
+            "text": "I want to learn Japanese, help me make a plan"
+          },
+          {
+            "role": "ai",
+            "text": "Great! Based on your learning habits (9-10 PM is your peak study time), I've created a goal:\n\n🎯 Goal: JLPT N5\n📅 Timeline: 3 months (based on your schedule analysis)\n\n✅ This week's auto-generated tasks:\n- Today: Learn あ-row Hiragana\n- Tomorrow: Review + learn か-row\n- Day after: Learn さ-row\n\n⏰ 9:00 PM daily study reminder set\n📊 I'll track progress weekly and adjust the plan\n\nYou had great results with Anki when learning English — want to use the same approach for Japanese?"
+          }
+        ]
+      },
+      {
+        "label": "Learning",
+        "title": "Learning & Growth Tracking",
+        "chatgptMessages": [
+          {
+            "role": "user",
+            "text": "I learned Docker Compose today"
+          },
+          {
+            "role": "ai",
+            "text": "That's great! Docker Compose is an important tool for container orchestration. You might want to learn Kubernetes next to further enhance your DevOps skills. Feel free to ask if you have questions."
+          }
+        ],
+        "gedoMessages": [
+          {
+            "role": "user",
+            "text": "I learned Docker Compose today"
+          },
+          {
+            "role": "ai",
+            "text": "Noted! Updating your skill map:\n\n🗺️ DevOps skill path:\nGit ✅ → Docker ✅ → Docker Compose ✅ → CI/CD ⬜ → K8s ⬜\n\n📈 3 new skills this month, DevOps ability +18%\n📊 Your learning streak: 12 days\n\n💡 Based on your growth trajectory, next recommended: GitHub Actions (CI/CD), estimated 2 days to get started.\n\nShall I add \"Learn GitHub Actions\" to this week's tasks?"
+          }
+        ]
+      }
+    ],
+    "ctaTitle": "Experience the Difference",
+    "ctaDesc": "Sign up free and start chatting with an AI that truly knows you",
+    "ctaButton": "Get Started Free",
+    "genericAi": "Generic AI",
+    "convEnds": "Conversation ends, no follow-up",
+    "memoryDriven": "Memory-Driven"
+  },
+  "pricing": {
+    "title": "Choose Your Plan",
+    "subtitle": "Start free, upgrade as you grow",
+    "badge": "Simple & Flexible",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "yearlyDiscount": "Save 16%",
+    "perMonth": "/mo",
+    "perYear": "/yr",
+    "free": "Free",
+    "freeSub": "Manage goals, tasks and basic memory with light AI planning",
+    "freePrice": "Free",
+    "freeFeatures": [
+      "Core goals and unlimited tasks",
+      "Core memory library",
+      "Smart quota: starter",
+      "Image understanding: light",
+      "Memory source imports: starter",
+      "Cross-device sync",
+      "Community support"
+    ],
+    "freeButton": "Get Started Free",
+    "pro": "Pro",
+    "proSub": "Your full personal AI — now with a publishable digital persona",
+    "proMonthlyPrice": "$9.99",
+    "proYearlyPrice": "$99.99",
+    "proEquivMonthly": "≈ $8.33/mo",
+    "proFeatures": [
+      "Everything in Free",
+      "Unlimited goals and memory (fair use)",
+      "Smart quota: ample for daily use",
+      "Image understanding: ample",
+      "Memory source imports: ample · priority processing",
+      "Deep profile refreshes",
+      "Digital persona: publishable · trial visitor quota",
+      "Personal memory endpoint (MCP) for your AI tools",
+      "Priority support"
+    ],
+    "proButton": "Upgrade to Pro",
+    "ultra": "Ultra",
+    "ultraNew": "New",
+    "ultraSub": "For power users: top quotas, a fuller persona, and the Twin personal model (coming soon)",
+    "ultraMonthlyPrice": "$29.99",
+    "ultraYearlyPrice": "$299.99",
+    "ultraEquivMonthly": "≈ $25/mo",
+    "ultraFeatures": [
+      "Everything in Pro",
+      "Smart quota: abundant",
+      "Image understanding: abundant",
+      "Memory source imports: top tier · fastest queue",
+      "More deep profile refreshes",
+      "Digital persona: publishable · everyday visitor quota",
+      "Twin personal model — coming soon",
+      "High-priority support",
+      "Fair-use policy applies"
+    ],
+    "ultraButton": "Upgrade to Ultra",
+    "recommended": "Recommended",
+    "faqTitle": "Pricing FAQ",
+    "faqs": [
+      {
+        "q": "Are there limits on the free plan?",
+        "a": "Free lets you manage core goals, tasks and memory with a starter smart quota — enough to experience the essentials. Upgrade to Pro for unlimited goals and memory, a generous smart quota, and your own digital persona."
+      },
+      {
+        "q": "What's the difference between smart quota and persona quota?",
+        "a": "Smart quota powers your everyday AI — chat, planning, memory and image understanding. Persona quota is separate and only powers your public digital persona's replies to visitors. The two are independent and never draw from each other; you can check your live usage anytime in the Account Center."
+      },
+      {
+        "q": "What do Pro and Ultra include?",
+        "a": "Pro unlocks the full personal AI assistant — unlimited goals and memory with a generous smart quota — and lets you publish your own digital persona with a trial persona quota. Ultra adds a richer smart quota, a fuller persona quota for everyday use, and will include the Twin personal model when it launches."
+      },
+      {
+        "q": "Can I get a refund on annual billing?",
+        "a": "For purchases made on the web (card via Stripe): full refund within 14 days; after 14 days, prorated refund based on remaining months. Purchases made through the Apple App Store or Google Play are refunded by the platform under its own policy — request them directly from Apple or Google."
+      },
+      {
+        "q": "Can I cancel anytime?",
+        "a": "Absolutely. After cancellation, Pro features remain active until the end of your billing cycle, then auto-downgrade to Free."
+      },
+      {
+        "q": "Can I subscribe to Pro and Ultra at the same time? How do I switch plans?",
+        "a": "Only one paid tier is active at a time. To switch plans (including Pro to Ultra), cancel your current subscription in the billing portal and subscribe again after the billing period ends—we do not upgrade or change price mid-subscription. If multiple legacy subscriptions exist, we keep the higher tier and cancel the rest."
+      },
+      {
+        "q": "Is pricing the same on iOS, Android and the web?",
+        "a": "Yes — the same plans at the same prices everywhere. Subscribe in the mobile app (billed through the App Store or Google Play) or on the web (card via Stripe). One subscription works across all your devices; manage or cancel it on the platform where you purchased."
+      }
+    ],
+    "successTitle": "Subscription Successful!",
+    "successDesc": "Thank you! Your subscription is now active.",
+    "canceledTitle": "Checkout canceled",
+    "canceledDesc": "You canceled the checkout. You can resume anytime.",
+    "checkoutErrorTitle": "Checkout failed",
+    "checkoutErrorDesc": "Could not create a checkout session. Please try again or contact support.",
+    "processing": "Processing…",
+    "manageBilling": "Manage subscription & invoices",
+    "alreadySubscribedTitle": "Already on this plan",
+    "alreadySubscribedDesc": "You are already subscribed to this tier and billing cycle. To change the cycle or cancel, use “Manage subscription & invoices” below.",
+    "mustCancelFirstTitle": "Cancel your current plan first",
+    "mustCancelFirstDesc": "We do not change an active subscription in place (including upgrades). Open “Manage subscription & invoices” below to cancel, wait until the current period ends, then subscribe to the plan you want.",
+    "authRequiredTitle": "Sign in required",
+    "authRequiredDesc": "Please sign in to subscribe to a paid plan."
+  },
+  "featuresPage": {
+    "badge": "Core Features",
+    "title": "Six AI Modules for All-Around Growth",
+    "subtitle": "A personal growth system that gets to know you through natural conversation — helping you think clearly, set direction, and keep growing.",
+    "modules": [
+      {
+        "name": "Companion",
+        "subtitle": "GEDO Companion",
+        "desc": "Complete everything through natural language. No complex UI to learn — just chat. With real-time streaming and automatic intent detection, you can record thoughts, create goals, and manage tasks in a single message.",
+        "highlights": [
+          "Real-time streaming AI chat with instant response",
+          "Auto intent detection — chat is the interface",
+          "Multi-turn context understanding",
+          "Voice input out of the box"
+        ]
+      },
+      {
+        "name": "Memory",
+        "subtitle": "Layered Memory",
+        "desc": "A Life Snapshot builds your profile through quick questions, a Life Flower lays memories across eight life areas, and a Codex gives the people and things around you their own card. Every capture waits for your OK, with per-memory exclusion and hard delete.",
+        "highlights": [
+          "Life snapshot: quick start, grows via daily chat",
+          "Life Flower: fragments mapped to eight life areas",
+          "Codex: a card for every person, thing, or event",
+          "Confirm-to-save, per-memory exclusion, hard delete"
+        ]
+      },
+      {
+        "name": "Action",
+        "subtitle": "Goals & Execution",
+        "desc": "Share a goal and your AI companion decomposes it into SMART milestones and daily actionable tasks, then runs the loop with morning planning, evening reflection, and If-Then contingency cards — dynamically adjusting priorities to your state.",
+        "highlights": [
+          "SMART goal auto-decomposition into daily tasks",
+          "Morning plan + evening reflection workflow",
+          "If-Then contingency cards for obstacles",
+          "Dynamic priority adjustment based on state"
+        ]
+      },
+      {
+        "name": "Insights",
+        "subtitle": "Growth Insights",
+        "desc": "Automatically analyze your growth trends, emotional patterns, and skill development. Get weekly and monthly review reports with data-driven insights to help you discover blind spots and continuously improve.",
+        "highlights": [
+          "Growth trend data analysis",
+          "Emotion and state tracking",
+          "Skill map visualization",
+          "Weekly/monthly smart review reports"
+        ]
+      },
+      {
+        "name": "More",
+        "subtitle": "Coming Soon",
+        "desc": "Cross-platform native experience, evolving digital twin, and richer scenario intelligence — more capabilities unlocking soon.",
+        "highlights": [
+          "Cross-platform native (Web / iOS / Desktop)",
+          "Deep digital twin evolution",
+          "Scenario-aware proactive reminders",
+          "Smart daily and weekly reports"
+        ]
+      }
+    ],
+    "ctaTitle": "Experience All Features Now",
+    "ctaDesc": "Sign up free and start chatting with your AI companion to unlock the full intelligent growth experience.",
+    "ctaButton": "Get Started Free",
+    "viewAll": "View All Features"
+  },
+  "about": {
+    "badge": "About Us",
+    "title": "Making AI Accessible to Everyone",
+    "subtitle": "We believe everyone deserves an AI companion that truly understands them",
+    "visionTitle": "Our Vision",
+    "visionDesc": "Our ultimate goal is to create a personalized digital twin for everyone, achieving digital immortality. By continuously recording and understanding your memories, goals, and growth trajectory, GEDO.AI becomes your eternal extension in the digital world — not just a productivity tool, but a digital reflection of your thoughts, experiences, and personality, letting your wisdom transcend the boundaries of time and space.",
+    "visionPoints": [
+      {
+        "title": "Digital Twin",
+        "desc": "Build an AI companion with its own personality that truly knows you — carrying your memories and cognition, becoming another you in the digital world."
+      },
+      {
+        "title": "Digital Immortality",
+        "desc": "By continuously consolidating your thoughts, experiences, and decision patterns, your digital twin becomes a timeless entity that carries forward your wisdom and values."
+      },
+      {
+        "title": "AI for All",
+        "desc": "Empower everyone equally with AI capabilities regardless of technical background — everyone deserves their own AI superpower assistant."
+      }
+    ],
+    "nameTitle": "What GEDO Means",
+    "nameFullForm": "Generalized Episodic-Driven Organization",
+    "nameDesc": "GEDO stands for \"Generalized Episodic-Driven Organization,\" corresponding to the product's core capabilities: personal long-term memory and goal planning.",
+    "nameSlogan": "GEDO: Blueprint with Intelligence, Achieve with Action",
+    "nameTagline": "GEDO.AI: Memory + Planning, Your Dual-Engine Efficiency Assistant",
+    "logoTitle": "Logo Design Philosophy",
+    "logoDesc": "The GEDO.AI logo features the letter G forming a never-closing ring, blending the imagery of a clock. The pointer silhouette evolves from a Superman-in-flight posture — symbolizing that the product empowers everyone to become superhuman.",
+    "logoPoints": [
+      "The never-closing ring symbolizes continuous growth and infinite possibility",
+      "The clock imagery represents treasuring time and efficient management",
+      "The Superman flight silhouette signifies breaking limits and digital immortality",
+      "The overall form ingeniously merges the four letters G, E, D, O — representing: Gather (Memory) → Engineer (Planning) → Drive (Execution) → Organize (Consolidation)"
+    ],
+    "companyTitle": "About the Company",
+    "companyDesc": "GEDO PTE. LTD. is a technology company based in Singapore, serving users worldwide. We believe in being \"small but exceptional\" — rather than pursuing rapid scaling, we focus on perfecting every product detail to build something users truly love. We believe AI should serve everyone, not be a privilege for the few. With craftsmanship in our products and sincerity toward our users, we bring technology back to its essence — helping people better understand and fulfill themselves.",
+    "contactTitle": "Contact Us",
+    "companyName": "GEDO PTE. LTD.",
+    "uen": "202608183K",
+    "address": "160 Robinson Road, #14-04, Singapore Business Federation Center, Singapore 068914",
+    "phone": "+65 31072352",
+    "emailLabels": [
+      {
+        "label": "HR & Careers",
+        "email": "hr@gedo.ai"
+      },
+      {
+        "label": "Technical Support",
+        "email": "support@gedo.ai"
+      },
+      {
+        "label": "Customer Service",
+        "email": "service@gedo.ai"
+      },
+      {
+        "label": "General Inquiries",
+        "email": "info@gedo.ai"
+      }
+    ],
+    "ctaTitle": "Join Our Journey",
+    "ctaDesc": "Let GEDO.AI become your digital twin and embrace a new AI-powered lifestyle",
+    "ctaButton": "Get Started Free"
+  },
+  "changelog": {
+    "title": "Changelog",
+    "subtitle": "Every release of GEDO.AI, in one place.",
+    "entries": [
+      {
+        "version": "v0.10.0",
+        "date": "2026-07-12",
+        "tag": "New",
+        "title": "A more open Gedo: memory revamped, sources, and your own model",
+        "items": [
+          "Memory, reworked: a unified Inbox with auto-accept for high-confidence items, a Sources rail, and a Profile rebuilt around an eight-dimension Life Flower AI radar plus AI-summarised Codex cards — now with a Sources hub to import ChatGPT / Claude / Gemini / Kimi chat exports, PDF, Word, web links and pasted text; the AI extracts candidates you confirm one by one, sources traceable and deletable.",
+          "Capability access: plug external tools into your companion over the open MCP protocol and call them in chat or task automations.",
+          "Open endpoints: your digital persona now speaks MCP — any MCP-enabled AI client can talk to your public persona. The personal memory endpoint (Pro and up) ships alongside it — generate an access token in Settings and carry your memory into any MCP client: output passes a redaction pipeline, AI-excluded items never leave, tokens are revocable with an audit trail.",
+          "Twin preview: the privacy centre adds a separate consent and one-click revoke (physical deletion) for twin model training, and the persona page shows corpus progress and writing-sample upload — coming soon for Ultra.",
+          "Kernel upgrade: style-consistency guardrails — swap the underlying model without changing the personality. Security & Privacy statement updated to v1.1.",
+          "Client roadmap announced: iOS / Android coming soon, iPad and desktop rolling out after."
+        ]
+      },
+      {
+        "version": "v0.9.3",
+        "date": "2026-07-03",
+        "tag": "New",
+        "title": "Memory rework + iOS beta",
+        "items": [
+          "Memory redesigned: new Codex entity cards auto-detect the people, pets, things and places you mention, and a Life Flower hub shows fullness across eight life dimensions (health, career, family and more) at a glance.",
+          "The life-snapshot questionnaire is now three progressively deeper rings plus a daily question — lighter to fill in, and it keeps building over time.",
+          "The GEDO iOS app opens invite-only beta — waitlisted users can request TestFlight access."
+        ]
+      },
+      {
+        "version": "v0.9.2",
+        "date": "2026-06-10",
+        "tag": "New",
+        "title": "Public personas + multilingual",
+        "items": [
+          "Digital-persona publishing studio — avatar, bio, topic scope and access mode, published as a login-free page.",
+          "Relationship graph, conversational visitors, and an interaction inbox you approve before anything is saved.",
+          "Multilingual: English / 简体中文 / 日本語 (next-intl), with English as the default."
+        ]
+      },
+      {
+        "version": "v0.9.0",
+        "date": "2026-06-05",
+        "tag": "Improved",
+        "title": "Privacy controls + memory provenance",
+        "items": [
+          "Per-item AI exclusion, a pause-memory switch, and hard delete (per item or whole account).",
+          "One-click .gmp memory-pack export, portable across assistants.",
+          "Visible memory provenance and honest refusal — no made-up answers without a source."
+        ]
+      },
+      {
+        "version": "v0.8.0",
+        "date": "2026-05-21",
+        "tag": "New",
+        "title": "New landing + waitlist",
+        "items": [
+          "Redesigned landing around the four modules: Companion, Memory, Execution, Insights.",
+          "Invite-only waitlist with batched code delivery.",
+          "Light and dark mode."
+        ]
+      },
+      {
+        "version": "v0.7.0",
+        "date": "2026-05-19",
+        "tag": "New",
+        "title": "First iOS prototype + multi-turn tools",
+        "items": [
+          "Companion now chains multiple tool calls in a single turn and keeps conversations persisted, so context no longer drops mid-chat.",
+          "The pending-review inbox is wired to real data end to end.",
+          "First iOS client prototype: voice input, live data sync."
+        ]
+      },
+      {
+        "version": "v0.6.0",
+        "date": "2026-05-03",
+        "tag": "New",
+        "title": "Chat-first experience + Daily Planner",
+        "items": [
+          "A full chat-first redesign — capture and plan in a single message.",
+          "Daily Planner and an Onboarding Quest ship, so first-time use never feels lost.",
+          "Two-way .gmp memory-pack import/export, smarter memory retrieval, and proactive reminders."
+        ]
+      },
+      {
+        "version": "v0.5.0",
+        "date": "2026-04-20",
+        "tag": "New",
+        "title": "Membership billing",
+        "items": [
+          "Stripe billing integration — subscription plans and membership tiers.",
+          "Refined sign-up / login flow.",
+          "Sitewide HTTPS, for a more secure connection end to end."
+        ]
+      },
+      {
+        "version": "v0.4.0",
+        "date": "2026-04-13",
+        "tag": "New",
+        "title": "Four-layer memory system",
+        "items": [
+          "Memory upgraded to a four-layer architecture — short-term chat, facts, profile and principles each consolidate on their own layer, so it gets to know you as you go.",
+          "Conflicting memories are now detected and reconciled automatically, so updates never contradict each other.",
+          "Sign-up moves to invite codes, keeping the beta cohort deliberate."
+        ]
+      },
+      {
+        "version": "v0.3.0",
+        "date": "2026-03-17",
+        "tag": "New",
+        "title": "Execution module launches",
+        "items": [
+          "New execution page — break goals into actionable tasks with clear progress tracking.",
+          "Core UI component library takes shape, for a more consistent product feel."
+        ]
+      }
+    ],
+    "showMore": "Show {count} earlier releases",
+    "showLess": "Show fewer"
+  },
+  "security": {
+    "eyebrow": "SECURITY · PRIVACY",
+    "title": "Security & Privacy Statement",
+    "subtitle": "How GEDO.AI collects, uses, stores and protects your information, the control you keep over your data, and where our responsibility begins and ends during the beta.",
+    "version": "Version v1.1 (Beta)",
+    "updatedLabel": "Last updated",
+    "updated": "2026-07-12",
+    "effectiveLabel": "Effective",
+    "effective": "2026-07-12",
+    "tocLabel": "Contents",
+    "intro": [
+      "At Gedo, privacy isn’t a feature bolted on afterwards — it’s a design premise. We believe the memories, goals and conversations you record belong to you; our job is to keep them safe and let you view, export and delete them at any time.",
+      "This statement applies to the GEDO.AI website, app and related services (the “Service”). The Service is currently in invite-only beta, and some security capabilities are still being built. We choose to describe the real state of things here rather than make promises we can’t keep."
+    ],
+    "sections": [
+      {
+        "h": "Who we are & scope",
+        "p": [
+          "The Service is operated by GEDO PTE. LTD., a technology company registered in Singapore (“we”, “us”, or “GEDO”), which acts as the controller of your personal data.",
+          "This statement covers how we collect, use, store, share and delete personal data when you use the Service. It is a product-level statement; where the law requires it, we will separately provide a formal Privacy Policy and Terms of Service."
+        ]
+      },
+      {
+        "h": "Information we collect",
+        "p": [
+          "We follow a principle of minimal collection — gathering only what the Service needs to work:"
+        ],
+        "list": [
+          "Account information: the email, display name and avatar you register with, plus your membership and subscription status.",
+          "Content you create or import: memories, goals, plans, tasks, conversations, and the chat exports, documents and web content you bring in via Sources — the heart of the Service, all provided by you.",
+          "Necessary technical data: login state, basic device and browser information, and limited operational logs needed to run and secure the Service.",
+          "We do not quietly collect your contacts, location history or cross-site behavioural profiles unrelated to the product."
+        ]
+      },
+      {
+        "h": "How we use information",
+        "p": [
+          "We use the information above only to:"
+        ],
+        "list": [
+          "Provide and maintain the core Service — memory storage and recall, goal planning and AI conversation.",
+          "Personalise recall, insights and suggestions based on your own data.",
+          "With your separate, explicit consent — and only then — train your personal twin model or improve GEDO's own models. Both are off by default; see “Model training & your consent” below.",
+          "Keep your account and data secure, troubleshoot issues, and prevent abuse and fraud.",
+          "Communicate product updates and important notices, where you have agreed to receive them.",
+          "We do not use your personal content for advertising, and we do not sell or rent it to third parties for marketing."
+        ]
+      },
+      {
+        "h": "AI processing & third-party model providers",
+        "p": [
+          "The Service’s conversations and some intelligent features rely on large language models. To provide them, your conversation content and related context — including content queued for memory extraction and source imports — are sent, at the moment you make a request, to third-party model providers (such as Anthropic and OpenAI) for inference, and the results are returned to you.",
+          "These providers act as our subprocessors and process the data only on our instructions to complete that request. Under their developer-facing terms, content submitted via their APIs is not used to train their general-purpose models by default.",
+          "Vector embeddings for semantic search are computed within our own environment, and some extraction tasks run there first, falling back to third-party providers only when needed. We continuously assess each provider’s security and compliance, and reserve the right to change providers when needed."
+        ]
+      },
+      {
+        "h": "Model training & your consent",
+        "p": [
+          "By default, nothing you create is ever used to train models — that is the factory setting, and we will not change it for you. The following two capabilities are optional, off by default, independent of each other, and revocable at any time:"
+        ],
+        "list": [
+          "Twin model training (coming soon): after you sign a separate training consent, we train a personal twin model on the samples you approved — processed only on GEDO’s own infrastructure, never sent to third-party AI providers, and never merged into any general-purpose model.",
+          "Help improve GEDO (coming soon): when enabled, your conversations may be used to compare, evaluate and improve GEDO’s own models — on GEDO’s own servers. You can switch it off at any time.",
+          "Revoke = physical deletion: withdraw your training consent at any time, and the corresponding training data and any trained personal model are physically deleted, beyond recovery."
+        ],
+        "note": "In short: no consent, no training; with consent, only on our own compute; change your mind, and it’s gone for good."
+      },
+      {
+        "h": "Storage & security measures",
+        "p": [
+          "We take reasonable technical and organisational measures to protect your data, including:"
+        ],
+        "list": [
+          "Encryption in transit: all traffic between you and the Service is encrypted over HTTPS/TLS.",
+          "Per-user storage: during the beta, your data is stored per-user in the cloud and isolated behind account authentication.",
+          "Access control: only authorised services access data, within the scope required to deliver a feature; internal access follows the principle of least privilege.",
+          "An honest note on encryption at rest: at-rest encryption of storage media and independent key management are still planned and not yet fully enabled in the beta. We won’t dress this up with phrases like “military-grade encryption”."
+        ],
+        "note": "No system can be perfectly secure. We keep hardening our security, and we describe today’s limits honestly in the Disclaimer below."
+      },
+      {
+        "h": "Your control over your data",
+        "p": [
+          "Your data is yours to command. The Service gives you these self-service controls, available at any time:"
+        ],
+        "list": [
+          "One-click export: export your memories, goals and conversations as a portable .gmp memory pack, to take anywhere.",
+          "Hard delete: delete any single memory, or wipe your entire account. We don’t soft-delete, and we keep no hidden backups afterwards.",
+          "Pause memory: pause long-term memory with one switch; the AI immediately stops recalling and stops learning from new conversations.",
+          "Per-item AI exclusion: mark any single memory invisible to the AI — you decide what it gets to see.",
+          "Confirm before saving: candidate memories the AI extracts from conversations or imported sources are only written to your memory after you confirm each one.",
+          "Outbound access is your call: what your digital persona exposes, and the access tokens for your personal memory endpoint (scoped, revocable, audit-logged), stay fully under your control. Carrying your memory into a third-party AI is your act of data sovereignty — we never share it on our own."
+        ]
+      },
+      {
+        "h": "Data retention & deletion",
+        "p": [
+          "While you use the Service, we retain the content you create so we can keep serving you. When you delete a piece of data or close your account, that data is hard-deleted.",
+          "Because of operational logs and routine backup cycles, incidental technical copies may briefly remain in rolling logs and are cleared automatically on their cycle; we won’t use this as an excuse to retain your deleted personal content long-term."
+        ]
+      },
+      {
+        "h": "What we will never do",
+        "p": [
+          "Some lines are fixed from day one:"
+        ],
+        "list": [
+          "We will never sell or rent your personal data.",
+          "We will never use your private content to train our own or any third party’s general-purpose models.",
+          "We will never run hidden behavioural surveillance or cross-site tracking beyond the product.",
+          "We will never make privacy-surrendering choices for you “on by default”.",
+          "We will never train any model on your content without your separate consent — including your own twin model."
+        ]
+      },
+      {
+        "h": "Cookies & local storage",
+        "p": [
+          "We use necessary cookies and browser local storage to keep you signed in, remember interface preferences (such as language and theme) and maintain basic security. We do not use third-party marketing cookies for cross-site ad tracking. You can clear this data in your browser settings, though it may affect sign-in and some features."
+        ]
+      },
+      {
+        "h": "International transfers & compliance",
+        "p": [
+          "GEDO is registered in Singapore and serves users worldwide, so your data may be stored or processed outside your region (including where our cloud and model providers operate).",
+          "By design, we align with the core principles of GDPR, CCPA and other major privacy frameworks — notice, minimisation, access, portability and deletion. If the law in your region grants you rights to access, correct, export or delete your personal data, you can exercise them via the contact below."
+        ]
+      },
+      {
+        "h": "Children’s privacy",
+        "p": [
+          "The Service is not directed to children under 14. If you are under 18, please use it with the consent and guidance of a parent or guardian. If we learn we have collected a child’s personal information without guardian consent, we will delete it promptly."
+        ]
+      },
+      {
+        "h": "Changes to this statement",
+        "p": [
+          "As the product evolves and our security matures, we may update this statement from time to time. Material changes will be reflected on this page, with the “Last updated” date at the top. Continuing to use the Service means you are aware of the updated content."
+        ]
+      },
+      {
+        "h": "Contact us",
+        "p": [
+          "If you have any questions about this statement, or wish to exercise your data rights — access, export, correction or deletion — please reach us:"
+        ],
+        "list": [
+          "Privacy & data requests: support@gedo.ai",
+          "General enquiries: info@gedo.ai",
+          "Company address: 160 Robinson Road, #14-04, Singapore Business Federation Center, Singapore 068914"
+        ]
+      }
+    ],
+    "disclaimer": {
+      "h": "Disclaimer",
+      "p": [
+        "The Service is currently in invite-only beta and is provided on an “as is” and “as available” basis. We make reasonable efforts to keep it available and secure, but we do not guarantee it will be uninterrupted, error-free or absolutely secure.",
+        "As noted above, at-rest encryption, independent key management, comprehensive auditing and finer-grained retention policies are still being built. Until these are fully in place, please use your own judgement before entering highly sensitive information (such as ID documents, bank card numbers or other people’s private data).",
+        "Keeping your account credentials safe is your responsibility. To the extent permitted by law, we are not liable for exposure resulting from your own sharing, public publishing (for example, making a digital persona public) or a third party obtaining your credentials without authorisation.",
+        "The Service relies on third-party infrastructure and model providers whose own terms and privacy policies are independent of this statement. For issues caused by third parties, we will help address them but will not assume liability beyond our own fault.",
+        "To the maximum extent permitted by law, we are not liable for indirect, incidental or consequential losses arising from your use of, or inability to use, the Service. Nothing here excludes or limits liability that cannot be excluded under applicable law. Where this statement conflicts with mandatory law in your region, that law prevails.",
+        "This is a product-level security and privacy statement and does not constitute legal advice. At general availability we will provide a legally binding Privacy Policy and Terms of Service."
+      ]
+    },
+    "signature": {
+      "closing": "We know trust is hard-earned. Every line above is a commitment we are willing to be held to.",
+      "by": "Issued by",
+      "company": "GEDO PTE. LTD.",
+      "entity": "Registered in Singapore",
+      "address": "160 Robinson Road, #14-04, Singapore Business Federation Center, Singapore 068914",
+      "contactLabel": "Privacy & data",
+      "email": "support@gedo.ai",
+      "place": "Singapore",
+      "dateLabel": "Signed",
+      "date": "12 July 2026"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Notes on memory, personal growth, and building a personal growth system you can trust.",
+    "comingSoonTag": "Coming soon",
+    "posts": [
+      {
+        "tag": "Product",
+        "title": "Why we built Gedo: too many tools, too little progress",
+        "excerpt": "Your goals live in one app, your notes in another, your reminders in a third. We think the fix isn't another tool — it's one that remembers.",
+        "date": "Soon"
+      },
+      {
+        "tag": "Engineering",
+        "title": "Four-layer memory: making an AI that actually remembers you",
+        "excerpt": "Profile, working, episodic, raw — how we model human-like memory so context stays small but recall stays deep.",
+        "date": "Soon"
+      },
+      {
+        "tag": "Privacy",
+        "title": "Your data, your call: our privacy stance",
+        "excerpt": "Export anytime, hard-delete anytime, never trained on. What data ownership means in practice during the beta.",
+        "date": "Soon"
+      }
+    ],
+    "followTitle": "Be first to read them",
+    "followDesc": "We're writing in the open. Join the beta and follow us — you'll get new posts the moment they're live.",
+    "followCta": "Request an invite"
+  },
+  "landing": {
+    "nav": {
+      "navFeatures": "Features",
+      "navWhyGedo": "Why GEDO",
+      "navPricing": "Pricing",
+      "navHelp": "Help",
+      "navAbout": "About",
+      "changeLanguage": "Change language",
+      "signUp": "Sign up",
+      "signIn": "Sign in",
+      "requestAccess": "Request access",
+      "openApp": "Open app",
+      "startFree": "Start free"
+    },
+    "hero": {
+      "badge": "Limited open registration",
+      "headline": "<grad>GEDO</grad>, the personal growth system that makes you a <grad>super individual</grad>",
+      "subhead": "Too much information, too little direction — that's the real drain of the AI age. Gedo actually knows you, and helps you think clearly, set direction, and keep growing — a personal assistant on the inside, a digital self on the outside.",
+      "ctaPrimary": "Request an invite",
+      "ctaSecondary": "Have a code? →",
+      "watchDemo": "Watch the 1-min demo →",
+      "trustSeats": "Limited-access beta",
+      "trustExport": "Export & hard-delete anytime",
+      "trustNoTrain": "No training without your consent",
+      "brandTag": "Companion · GEDO",
+      "composerText": "Message your companion…",
+      "inProgress": "In progress",
+      "scripts": [
+        [
+          {
+            "user": "I've been running flat-out for months and my energy's slipping. I want to get serious about my health.",
+            "reply": "Noted — I'll keep an eye on it. Want to make steady energy a goal this quarter?",
+            "tools": [
+              {
+                "name": "Saved to memory",
+                "detail": "Months at full intensity · wants to manage energy"
+              }
+            ]
+          },
+          {
+            "user": "Something that fits my schedule — not a second job.",
+            "reply": "Start small. Two measurable steps:",
+            "tools": [
+              {
+                "name": "Broke down goal",
+                "detail": "Quarter → strength 3×/week · 30 min"
+              },
+              {
+                "name": "Added to life areas",
+                "detail": "Health dimension +1"
+              }
+            ]
+          },
+          {
+            "user": "Put it in the morning, before meetings.",
+            "reply": "Scheduled for 7am, before your first call.",
+            "tools": [
+              {
+                "name": "Added to today's MIT",
+                "detail": "Tmrw 07:00 · strength 30 min"
+              }
+            ]
+          },
+          {
+            "user": "The moment work gets busy, I drop it.",
+            "reply": "That's why I left you a fallback — and I'll nudge you if you slip.",
+            "tools": [
+              {
+                "name": "If-Then card",
+                "detail": "If no AM session → 15-min walk at lunch"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "user": "I've got a strategy presentation to the board next month, and I want it to really land.",
+            "reply": "Let's break it into pieces you can move on this week.",
+            "tools": [
+              {
+                "name": "Broke down goal",
+                "detail": "Board strategy deck → 5 modules"
+              }
+            ]
+          },
+          {
+            "user": "Save the hardest part — the strategy modeling — for when I'm sharpest.",
+            "reply": "Booked for Wednesday morning; that's your peak focus.",
+            "tools": [
+              {
+                "name": "Added to today's MIT",
+                "detail": "Wed 09:00 · strategy modeling"
+              },
+              {
+                "name": "Saved to memory",
+                "detail": "You focus best in the morning"
+              }
+            ]
+          },
+          {
+            "user": "Last time I prepped something this big too late.",
+            "reply": "Set a check this time — if Monday slips, I'll come find you.",
+            "tools": [
+              {
+                "name": "If-Then card",
+                "detail": "If not started Mon → 15 min that night"
+              }
+            ]
+          },
+          {
+            "user": "Walk me through a retro once it's done.",
+            "reply": "Scheduled for Friday night — we'll review what to sharpen next time.",
+            "tools": [
+              {
+                "name": "Added a retro",
+                "detail": "Fri 20:00 · board presentation retro"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "user": "This weekend I want to be fully present with my family — not cut up by work.",
+            "reply": "Hand me the loose ends and your weekend clears up. Want to do that now?",
+            "tools": [
+              {
+                "name": "Saved to memory",
+                "detail": "Wants undistracted family time this weekend"
+              }
+            ]
+          },
+          {
+            "user": "There are a couple of things to wrap up, and one call I owe.",
+            "reply": "Filed under Family. I'll clear the non-urgent ones off your weekend.",
+            "tools": [
+              {
+                "name": "Added to today's MIT",
+                "detail": "Fri before EOD · wrap up loose ends"
+              },
+              {
+                "name": "Set reminder",
+                "detail": "Sat 9am · 30 min, then off the grid"
+              }
+            ]
+          },
+          {
+            "user": "Keep all of Saturday clear of everything else.",
+            "reply": "Saturday is now family time — I won't interrupt.",
+            "tools": [
+              {
+                "name": "Scheduled",
+                "detail": "Sat · family time · do not disturb"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "user": "Over the next six months I want to truly master a field and build my own knowledge system — not just skim.",
+            "reply": "Doable — let's set a pace you can actually keep.",
+            "tools": [
+              {
+                "name": "Broke down goal",
+                "detail": "6 months → 30 min deep read/day + 1 output/week"
+              },
+              {
+                "name": "Added to life areas",
+                "detail": "Growth dimension +1"
+              }
+            ]
+          },
+          {
+            "user": "I start strong and fade fast.",
+            "reply": "That's why it's small — 30 minutes a day. If you slip, I'll pull you back.",
+            "tools": [
+              {
+                "name": "If-Then card",
+                "detail": "If skipped today → 10-min close read at night"
+              }
+            ]
+          },
+          {
+            "user": "Keep track of how consistent I am.",
+            "reply": "Streak's running — today is day 1.",
+            "tools": [
+              {
+                "name": "Added to insights",
+                "detail": "Streak tracking · deep work"
+              }
+            ]
+          },
+          {
+            "user": "I'll do a bit on tomorrow's commute.",
+            "reply": "Slotted into your 8:10 commute.",
+            "tools": [
+              {
+                "name": "Added to today's MIT",
+                "detail": "Tmrw 08:10 · 30-min deep listen on commute"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "user": "I want a real long-term wealth plan — not just saving, but making my money compound.",
+            "reply": "Let's turn that into a clear plan you'll actually follow.",
+            "tools": [
+              {
+                "name": "Saved to memory",
+                "detail": "Wants a long-term wealth plan · grow assets"
+              }
+            ]
+          },
+          {
+            "user": "Start by putting a fixed share into investing each month.",
+            "reply": "Set as a monthly goal — I'll remind you to invest first on payday.",
+            "tools": [
+              {
+                "name": "Broke down goal",
+                "detail": "Invest 20% of income first, each month"
+              },
+              {
+                "name": "Set reminder",
+                "detail": "Payday · invest before you spend"
+              }
+            ]
+          },
+          {
+            "user": "I get twitchy the moment the market moves.",
+            "reply": "Here's a fallback for those moments.",
+            "tools": [
+              {
+                "name": "If-Then card",
+                "detail": "If tempted to chase the market → wait 24 hours"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "user": "I've been under pressure for a long stretch and it's wearing me down. I want to feel steadier.",
+            "reply": "Let's note it — go easy on yourself. Want to talk, or some things you can do right now?",
+            "tools": [
+              {
+                "name": "Saved to memory",
+                "detail": "Long stretch of pressure · wants more steadiness"
+              }
+            ]
+          },
+          {
+            "user": "Something I can use right away.",
+            "reply": "Two small moves you can try tonight.",
+            "tools": [
+              {
+                "name": "If-Then card",
+                "detail": "If tension spikes → step away, breathe 1 min"
+              },
+              {
+                "name": "Added to today's MIT",
+                "detail": "Tonight · sleep 30 min earlier"
+              }
+            ]
+          },
+          {
+            "user": "And help me protect some real downtime.",
+            "reply": "I've set aside time for you to fully switch off.",
+            "tools": [
+              {
+                "name": "Scheduled",
+                "detail": "Sun 18:30 · no work · fully unplug"
+              }
+            ]
+          }
+        ]
+      ],
+      "badgeFull": "This round is full · invite-only",
+      "spotsLeft": "{count} spots left",
+      "ctaStart": "Start free",
+      "ctaSignIn": "Sign in",
+      "ctaOpenApp": "Open GEDO"
+    },
+    "trust": {
+      "eyebrow": "Privacy-first · you own your data",
+      "signals": [
+        {
+          "k": "01",
+          "v": "One-click data export (.gmp)"
+        },
+        {
+          "k": "02",
+          "v": "Per-item & full-account delete"
+        },
+        {
+          "k": "03",
+          "v": "Pause memory anytime"
+        },
+        {
+          "k": "04",
+          "v": "No training without consent"
+        },
+        {
+          "k": "05",
+          "v": "Singapore-incorporated"
+        }
+      ]
+    },
+    "capabilities": {
+      "title": "More than an AI assistant — a system that grows you.",
+      "desc": "It gets to know you, turns a vague direction into a clear next step, and stays with you all the way.",
+      "cards": [
+        {
+          "mono": "01 / MEMORY",
+          "title": "Memory",
+          "subtitle": "The more you use it, the more it knows you",
+          "desc": "A Life Flower maps your eight life areas, and a Codex gives the people and things around you their own card. The AI pulls key facts and waits for your OK before saving — knowing you is the precondition for everything else."
+        },
+        {
+          "mono": "02 / PLANNER",
+          "title": "Planner",
+          "subtitle": "Turns being lost into a clear next step",
+          "desc": "It reads your energy curve, past retros and today's state, then breaks a vague direction into small, doable steps. It helps you think clearly and decide — and leaves the call to you."
+        },
+        {
+          "mono": "03 / COMPANION",
+          "title": "Companion",
+          "subtitle": "Proactive · Grows with you · Transparent",
+          "desc": "It checks in, reflects, breaks down goals, calls tools. Every reply shows the tool calls and a context canvas — not a black box, but a companion whose thinking you can see."
+        }
+      ],
+      "memRows": [
+        {
+          "lvl": 0,
+          "name": "Life Flower · All memories",
+          "count": "312"
+        },
+        {
+          "lvl": 1,
+          "name": "Health",
+          "count": "42",
+          "dim": "var(--g-dim-exec)",
+          "active": true
+        },
+        {
+          "lvl": 2,
+          "name": "Fragment · Morning 5k run",
+          "count": "today",
+          "dim": "var(--g-dim-exec)"
+        },
+        {
+          "lvl": 1,
+          "name": "Family",
+          "count": "36",
+          "dim": "var(--g-dim-memory)"
+        },
+        {
+          "lvl": 2,
+          "name": "Codex · Mom",
+          "count": "24",
+          "dim": "var(--g-dim-memory)"
+        }
+      ],
+      "execMit": "PRD draft v1",
+      "execNew": "new",
+      "execRows": [
+        {
+          "time": "07:00",
+          "text": "Morning run 30m",
+          "done": true
+        },
+        {
+          "time": "11:00",
+          "text": "1:1 with Lin",
+          "done": false
+        },
+        {
+          "time": "14:30",
+          "text": "Writing · 20m",
+          "done": false,
+          "isNew": true
+        }
+      ],
+      "compUserMsg": "Wake me at 7 tomorrow — mom's birthday",
+      "compAiReply": "Added. Want to log what mom likes?",
+      "compSetReminder": "Set reminder",
+      "compReminderDetail": "6/12 07:00 · mom's birthday",
+      "compAddToMemory": "Add to memory"
+    },
+    "howItWorks": {
+      "title": "How it grows with you",
+      "desc": "Not another Notion template, not another GPT wrapper. Gedo turns a single conversation into understanding, direction, and a companion that stays — and gets to know you a little more each time.",
+      "steps": [
+        {
+          "n": "01",
+          "title": "You speak",
+          "desc": "Tell it what's on your mind — voice or text. The worry underneath counts too.",
+          "stub": "\"Remind me to finish the PRD tomorrow. I might give up halfway.\""
+        },
+        {
+          "n": "02",
+          "title": "It understands, and helps you think",
+          "desc": "It saves what matters as memory, and helps you turn a vague worry into a clear direction — all visible, all reversible.",
+          "stub": "Saved to memory · Direction set · If-Then card written"
+        },
+        {
+          "n": "03",
+          "title": "It stays with you",
+          "desc": "Today's rhythm, your energy curve, an evening reflection — even a setback becomes a better plan, and you're never doing it alone.",
+          "stub": "ECS 76 / Good · 7-day trend ↑ 8 · Tomorrow re-planned with you"
+        }
+      ]
+    },
+    "memoryArch": {
+      "headline": "Four-layer memory<break></break><muted>So the AI actually <em>remembers</em> you</muted>",
+      "intro": "Modelled on human memory. Identity and semantics live in the context window; working memory carries the current session; episodic stays archived but retrievable; a nightly pass distils new experience back into long-term semantics. The people, things and events around you each get a codex card — anchors that tie the fragments together.",
+      "layers": [
+        {
+          "name": "Profile",
+          "mono": "L1",
+          "desc": "Compressed into context permanently",
+          "d": "var(--g-dim-memory)",
+          "w": 96,
+          "count": "~ 2KB"
+        },
+        {
+          "name": "Working",
+          "mono": "L2",
+          "desc": "Current session focus",
+          "d": "var(--g-dim-insight)",
+          "w": 78,
+          "count": "~ 8KB"
+        },
+        {
+          "name": "Episodic",
+          "mono": "L3",
+          "desc": "Recalled on demand",
+          "d": "var(--g-dim-goal)",
+          "w": 60,
+          "count": "∞"
+        },
+        {
+          "name": "Raw",
+          "mono": "L4",
+          "desc": "Archived forever",
+          "d": "var(--g-dim-exec)",
+          "w": 46,
+          "count": "∞"
+        }
+      ],
+      "bullets": [
+        {
+          "k": "Profile",
+          "v": "Identity + eight life areas · compressed into context",
+          "d": "var(--g-dim-memory)"
+        },
+        {
+          "k": "Working memory",
+          "v": "Focus, open items, current task · continuity across turns",
+          "d": "var(--g-dim-insight)"
+        },
+        {
+          "k": "Episodic",
+          "v": "Events / state / decisions archived · retrieved on demand",
+          "d": "var(--g-dim-goal)"
+        },
+        {
+          "k": "Codex cards",
+          "v": "People / things / places / events as anchors · mention one, recall what's linked",
+          "d": "var(--g-dim-persona)"
+        },
+        {
+          "k": "Consolidation",
+          "v": "Nightly AI pass: pattern extraction, write-back to profile",
+          "d": "var(--g-dim-exec)"
+        }
+      ],
+      "compressLabel": "compress · consolidate",
+      "recallLabel": "recall · inject"
+    },
+    "openPowers": {
+      "title": "New in this release: more open, still yours",
+      "desc": "Import your past, mint a model of your own, plug tools in, take your memory anywhere — every step opt-in, every step reversible.",
+      "liveTag": "Live",
+      "soonTag": "Coming soon",
+      "cards": [
+        {
+          "mono": "01 / SOURCES",
+          "title": "Memory sources",
+          "subtitle": "Bring your past in, all at once",
+          "desc": "Import chat exports from ChatGPT / Claude / Gemini / Kimi, plus PDF, Word, web links and pasted text. The AI proposes candidate memories; nothing is saved until you confirm it — sources stay traceable and deletable.",
+          "status": "live"
+        },
+        {
+          "mono": "02 / TWIN_MODEL",
+          "title": "Your own model",
+          "subtitle": "Your voice, your own model",
+          "desc": "With a separate, revocable consent, we train a personal twin model on the samples you approve — only on GEDO's own infrastructure, never sent to third-party AI providers. Revoking physically deletes the data and the model. Ultra only.",
+          "status": "soon"
+        },
+        {
+          "mono": "03 / CONNECT_IN",
+          "title": "Plug tools in",
+          "subtitle": "Give your companion real tools",
+          "desc": "Connect external tools and services over the open MCP protocol: call them right in chat, or let task automations trigger them on schedule. One protocol, a whole ecosystem.",
+          "status": "live"
+        },
+        {
+          "mono": "04 / OPEN_OUT",
+          "title": "Take it anywhere",
+          "subtitle": "Your persona and memory, in any AI",
+          "desc": "Your public digital persona now speaks MCP — any MCP-enabled AI can talk to it. And with a personal access token (Pro and up), you can carry your Gedo memory into Claude, Cursor, or any MCP client you choose.",
+          "status": "live"
+        }
+      ]
+    },
+    "apps": {
+      "title": "Every device, one Gedo",
+      "desc": "The web app is live in beta today; native clients are on the way — with your memory and goals in sync across every device.",
+      "note": "We'll notify the waitlist the moment each client ships.",
+      "notifyCta": "Notify me at launch",
+      "webCta": "Open the web app",
+      "devices": [
+        {
+          "key": "web",
+          "name": "Web",
+          "desc": "Runs in your browser",
+          "badge": "Available now",
+          "kind": "live"
+        },
+        {
+          "key": "ios",
+          "name": "iOS",
+          "desc": "iPhone app · beta in progress",
+          "badge": "Coming soon",
+          "kind": "soon"
+        },
+        {
+          "key": "android",
+          "name": "Android",
+          "desc": "Android app",
+          "badge": "Coming soon",
+          "kind": "soon"
+        },
+        {
+          "key": "ipad",
+          "name": "iPad",
+          "desc": "Made for the big screen",
+          "badge": "Rolling out",
+          "kind": "later"
+        },
+        {
+          "key": "desktop",
+          "name": "Desktop",
+          "desc": "macOS / Windows",
+          "badge": "Rolling out",
+          "kind": "later"
+        }
+      ]
+    },
+    "finalCta": {
+      "headlineLine1": "Don't get lost in the AI age.",
+      "headlineLine2": "Become a super individual.",
+      "intro": "We're in invite-only beta with limited seats. Leave your email and we'll send your code as a seat opens — no spam, and you can delete everything with one click.",
+      "ctaPrimary": "Request an invite",
+      "clientRoadmap": "See the client roadmap",
+      "ctaStart": "Start free",
+      "ctaOpenApp": "Open GEDO",
+      "introOpen": "Registration is open for a limited number of spots — no invite needed. Create your account in seconds. No spam, and you can delete everything with one click."
+    },
+    "footer": {
+      "tagline": "GEDO — the personal growth system that knows you. A personal assistant within, a digital self without.",
+      "beta": "beta",
+      "singapore": "Singapore",
+      "designedForHumans": "Designed for humans",
+      "cols": [
+        {
+          "h": "Product",
+          "items": [
+            {
+              "label": "Companion",
+              "href": "/app/companion"
+            },
+            {
+              "label": "Memory",
+              "href": "/app/memory"
+            },
+            {
+              "label": "Action",
+              "href": "/app/today"
+            },
+            {
+              "label": "Insights",
+              "href": "/app/insights"
+            },
+            {
+              "label": "Parallel You",
+              "href": "/sim"
+            }
+          ]
+        },
+        {
+          "h": "Resources",
+          "items": [
+            {
+              "label": "Help",
+              "href": "/help"
+            },
+            {
+              "label": "Apps",
+              "href": "/#apps"
+            },
+            {
+              "label": "Changelog",
+              "href": "/changelog"
+            },
+            {
+              "label": "Security & Privacy",
+              "href": "/security"
+            },
+            {
+              "label": "FAQ",
+              "href": "/help#faq"
+            }
+          ]
+        },
+        {
+          "h": "Company",
+          "items": [
+            {
+              "label": "About",
+              "href": "/about"
+            },
+            {
+              "label": "Blog",
+              "href": "/blog"
+            },
+            {
+              "label": "Contact",
+              "href": "/about#contact"
+            },
+            {
+              "label": "Terms of Service",
+              "href": "/terms"
+            },
+            {
+              "label": "Privacy Policy",
+              "href": "/privacy"
+            }
+          ]
+        },
+        {
+          "h": "Follow",
+          "items": [
+            {
+              "label": "X / Twitter",
+              "href": "https://x.com/gedolabs"
+            },
+            {
+              "label": "LinkedIn",
+              "href": "https://www.linkedin.com/company/gedo-ai",
+              "soon": true
+            },
+            {
+              "label": "Discord",
+              "href": "https://discord.gg/gedo",
+              "soon": true
+            },
+            {
+              "label": "YouTube",
+              "href": "",
+              "soon": true
+            }
+          ]
+        }
+      ],
+      "soon": "Coming soon"
+    },
+    "waitlist": {
+      "title": "Request an invite",
+      "subtitle": "Invite-only beta, limited seats. Leave your email — we send codes in batches and never share it.",
+      "emailLabel": "Email",
+      "emailPlaceholder": "you@example.com",
+      "nameLabel": "Your name (optional)",
+      "namePlaceholder": "Name or nickname",
+      "reasonLabel": "What do you most want Gedo to help with? (optional)",
+      "reasonPlaceholder": "e.g. finding direction, staying focused, capturing ideas…",
+      "submit": "Join the waitlist",
+      "submitting": "Submitting…",
+      "successTitle": "You're on the list 🎉",
+      "successBody": "We'll email your code when a seat opens.",
+      "haveCodeCta": "Have a code? Sign up now",
+      "errDup": "You're already on the list",
+      "errInvalidEmail": "Enter a valid email address",
+      "errGeneric": "Something went wrong, try again"
+    }
+  },
+  "featuresDemos": {
+    "chatUser": "Help me plan tomorrow's work",
+    "chatReply": "Sure! Based on your goal progress:",
+    "chatTask1": "Complete API docs (2h)",
+    "chatTask2": "Code review + merge PR (1h)",
+    "chatTask3": "Prepare Friday demo (1.5h)",
+    "chatCreated": "Auto-created 3 tasks ✓",
+    "memHeader": "Episodic layer (sample)",
+    "memFooter": "On-demand recall · consolidates to semantics",
+    "memTagSkill": "Skill",
+    "memSkill": "Proficient in React + TypeScript",
+    "memTagPref": "Pref",
+    "memPref": "Prefers creative work in morning",
+    "memTagEvent": "Event",
+    "memEvent": "Completed project launch last week",
+    "execTitle": "Today's Tasks",
+    "execTask1": "Read tech docs 30 min",
+    "execTask2": "Write weekly report",
+    "execTask3": "Review 2 PRs",
+    "execTask4": "Exercise 30 min",
+    "execMorning": "🌅 Morning",
+    "execEvening": "🌙 Evening",
+    "goalTitle": "Launch AI product in 3 months",
+    "goalPhase1": "Phase 1: MVP",
+    "goalPhase2": "Phase 2: Beta",
+    "goalPhase3": "Phase 3: Launch",
+    "insightsTitle": "Weekly Growth Trend",
+    "days": [
+      "M",
+      "T",
+      "W",
+      "T",
+      "F",
+      "S",
+      "S"
+    ],
+    "insightsFocus": "Focus",
+    "insightsDone": "Done",
+    "insightsStreak": "Streak"
+  },
+  "featuresMore": {
+    "comingSoon": "Coming Soon",
+    "integ1Title": "Cross-Platform Native",
+    "integ1Desc": "Unified experience across Web, iOS and desktop with real-time sync. Switch devices anytime — your AI companion is always with you.",
+    "integ2Title": "Digital Twin Evolution",
+    "integ2Desc": "An independent personality that evolves with every interaction — proactive care, emotional support, and timely advice. Your AI companion becomes your true digital twin."
+  },
+  "auth": {
+    "orEmail": "Or with email",
+    "orEmailSignup": "Or sign up with email",
+    "emailLabel": "Email",
+    "passwordLabel": "Password",
+    "backHome": "← Home",
+    "pricing": "Pricing",
+    "helpCenter": "Help Center",
+    "socialComingSoon": "{provider} sign-in is coming soon!",
+    "loginSubtitle": "Sign in to continue your growth journey",
+    "loginSubmit": "Sign in",
+    "loginSubmitting": "Signing in…",
+    "forgotPassword": "Forgot password?",
+    "noAccount": "Don't have an account?",
+    "signupCta": "Sign up free",
+    "devNotice": "⚠️ Dev environment — test account pre-filled",
+    "errLoginFailed": "Login failed. Please check your email and password.",
+    "errNetwork": "Cannot reach the server. Please make sure the backend is running.",
+    "errBadCredentials": "Incorrect email or password.",
+    "errBadRequest": "Invalid request. Please check your input.",
+    "signupSubtitle": "Create your account and start your AI growth journey",
+    "signupSubmit": "Create account",
+    "signupSubmitting": "Creating account…",
+    "inviteLabel": "Invite code",
+    "invitePlaceholder": "Enter your beta invite code",
+    "inviteHint": "Enter the invite code you received.",
+    "openRegRemaining": "Limited-access registration is open — {count} of {capacity} spots left.",
+    "openRegFull": "This round is full — an invite code is now required to register.",
+    "passwordPlaceholderSignup": "At least 6 characters",
+    "confirmPasswordLabel": "Confirm password",
+    "confirmPasswordPlaceholder": "Re-enter password",
+    "termsAgree": "By signing up you agree to our",
+    "termsOfService": "Terms of Service",
+    "and": "and",
+    "privacyPolicy": "Privacy Policy",
+    "haveAccount": "Already have an account?",
+    "loginCta": "Sign in",
+    "errInvalidInvite": "GEDO is in closed beta. A valid invite code is required — please wait for us to send one.",
+    "errPasswordMismatch": "Passwords do not match.",
+    "errPasswordTooShort": "Password must be at least 6 characters.",
+    "errEmailTaken": "This email is already registered.",
+    "errSignupFailed": "Sign-up failed. Please try again later.",
+    "continueWithApple": "Continue with Apple",
+    "socialSigninWith": "Sign in with {provider}",
+    "socialSignupWith": "Sign up with {provider}",
+    "lastUsed": "Last used",
+    "errSocialFailed": "Sign-in failed. Please try again.",
+    "errSocialNoAccount": "No GEDO account is linked to this yet. Sign up with your email and invite code first — you can link Google/Apple in settings afterward.",
+    "errSocialInviteFirst": "Enter your invite code first, then continue with Google or Apple.",
+    "errSocialEmailExists": "This email already has an account. Sign in with your password, then link Google/Apple from settings.",
+    "errSocialUnavailable": "Social sign-in isn't available right now. Please use email.",
+    "forgot": {
+      "subtitle": "Reset your password",
+      "title": "Forgot your password?",
+      "hint": "Enter your account's email address and we'll send you a link to reset your password.",
+      "submit": "Send reset link",
+      "submitting": "Sending…",
+      "sentTitle": "Check your inbox",
+      "sentBody": "If an account exists for {email}, we've sent a link to reset your password. The link is valid for 1 hour.",
+      "backToLogin": "Back to sign in",
+      "errRateLimited": "Too many requests. Please wait a moment and try again.",
+      "errGeneric": "Something went wrong. Please try again."
+    },
+    "reset": {
+      "subtitle": "Reset your password",
+      "title": "Set a new password",
+      "hint": "Choose a new password for your account — at least 6 characters.",
+      "newPasswordLabel": "New password",
+      "newPasswordPlaceholder": "At least 6 characters",
+      "confirmLabel": "Confirm new password",
+      "confirmPlaceholder": "Re-enter new password",
+      "submit": "Reset password",
+      "submitting": "Resetting…",
+      "successTitle": "Password updated",
+      "successBody": "Your password has been reset. Taking you to sign in…",
+      "goToLogin": "Go to sign in",
+      "requestNew": "Request a new link",
+      "invalidBody": "This reset link is invalid or incomplete. Request a new one to continue.",
+      "errMismatch": "Passwords do not match.",
+      "err": {
+        "invalid_token": "This reset link is invalid.",
+        "used_token": "This reset link has already been used. Request a new one.",
+        "expired_token": "This reset link has expired. Reset links are valid for 1 hour — request a new one.",
+        "weak_password": "Password must be at least 6 characters.",
+        "generic": "Couldn't reset your password. Please try again."
+      }
+    },
+    "verify": {
+      "subtitle": "Email verification",
+      "verifyingTitle": "Verifying your email…",
+      "verifyingBody": "This will only take a moment.",
+      "successTitle": "Email verified",
+      "successBody": "Your email address has been confirmed. Your account is all set.",
+      "successBodyEmail": "{email} has been confirmed. Your account is all set.",
+      "goToApp": "Go to GEDO",
+      "goToLogin": "Go to sign in",
+      "resend": "Resend verification email",
+      "resending": "Sending…",
+      "resent": "A new verification email is on its way.",
+      "alreadyVerified": "Your email is already verified.",
+      "resendFailed": "Couldn't send right now. Please try again.",
+      "resendSignInHint": "Sign in to resend the verification email",
+      "err": {
+        "expired_tokenTitle": "This link has expired",
+        "expired_tokenBody": "Verification links are valid for 24 hours. Request a new one below.",
+        "used_tokenTitle": "Already verified",
+        "used_tokenBody": "This link has already been used — your email is likely verified. You can sign in.",
+        "invalid_tokenTitle": "Invalid link",
+        "invalid_tokenBody": "This verification link is invalid or incomplete. Request a new one below.",
+        "genericTitle": "Verification failed",
+        "genericBody": "We couldn't verify your email. Request a new link below."
+      }
+    }
+  },
+  "sim": {
+    "meta": {
+      "title": "Parallel You — simulate your parallel life in the AI era",
+      "description": "AI is rewriting every industry. Pick who you want to become, make real trade-offs quarter by quarter, and see how far the parallel you gets in the AI wave. An AI life simulator by GEDO."
+    },
+    "landing": {
+      "eyebrow": "Parallel You",
+      "title": "Simulate the parallel you in the AI era",
+      "subtitle": "AI is rewriting every industry. Choose who you want to become and live ten quarters inside the wave — every choice has a visible gain and a hidden cost.",
+      "cta": "Start my parallel life",
+      "resume": "Continue my run",
+      "restart": "Start over",
+      "privacy": "Everything stays in your browser until you decide otherwise.",
+      "badges": {
+        "b1": "The AI era · 10 quarters",
+        "b2": "8 life dimensions",
+        "b3": "Every choice costs"
+      }
+    },
+    "intake": {
+      "personaTitle": "I want to become…",
+      "personaHint": "Pick one direction — the parallel you will chase it.",
+      "traitsTitle": "I am the kind of person who is…",
+      "traitsHint": "Optional, up to 5 — abilities raise your starting point, personality tilts the target. Skip any that don’t fit.",
+      "situationTitle": "Where I stand today",
+      "roleLabel": "Right now I am",
+      "hoursLabel": "Weekly time I can invest",
+      "resourcesLabel": "What I have going for me",
+      "obstacleLabel": "My biggest obstacle",
+      "noteTitle": "Describe your situation (optional)",
+      "notePlaceholder": "Options not a fit? Write your real situation here — e.g. 35, laid-off engineer with a mortgage, six months of runway.",
+      "back": "Back",
+      "next": "Next",
+      "begin": "Reveal the gap",
+      "personas": {
+        "super_individual": "Super individual",
+        "ai_founder": "AI startup founder",
+        "ai_indie_dev": "AI indie developer",
+        "executive": "C-suite executive",
+        "investor": "Investor / capital allocator",
+        "top_consultant": "Top-tier consultant",
+        "elite_professional": "Elite professional",
+        "ai_expert": "Domain expert × AI",
+        "researcher": "Researcher / scientist",
+        "thought_leader": "Thought leader",
+        "ai_creator": "AI-powered creator",
+        "community_builder": "Community builder",
+        "artist": "Human-touch artist",
+        "ai_pm": "AI product lead",
+        "career_switcher": "Career switcher",
+        "early_fire": "Early retiree (FIRE)",
+        "digital_nomad": "Digital nomad",
+        "engaged_parent": "Present parent"
+      },
+      "traits": {
+        "ai_tools": "Fluent with AI tools",
+        "coding": "Can code",
+        "content_skill": "Strong writer/speaker",
+        "data_savvy": "Data-savvy",
+        "distribution": "Knows distribution",
+        "learning_fast": "Fast learner",
+        "leadership": "Leads teams",
+        "expertise": "Deep expertise",
+        "capital_sense": "Understands capital",
+        "taste": "Taste & aesthetics",
+        "risk_taker": "Risk-taker",
+        "steady": "Steady",
+        "sprint": "Sprinter",
+        "marathon": "Marathoner",
+        "planner": "Planner",
+        "improviser": "Improviser",
+        "social": "People person",
+        "solo": "Lone wolf",
+        "generous": "Generous",
+        "frugal": "Frugal",
+        "creative": "Creative",
+        "analytical": "Analytical",
+        "optimist": "Optimist",
+        "realist": "Realist",
+        "night_owl": "Night owl",
+        "early_bird": "Early bird",
+        "homebody": "Homebody",
+        "explorer": "Explorer"
+      },
+      "roles": {
+        "student": "Student",
+        "employee": "Employee",
+        "manager": "Manager",
+        "senior_exec": "Senior executive",
+        "professional": "Professional (doctor/lawyer/finance)",
+        "academic": "Academic / researcher",
+        "founder_now": "Founding",
+        "business_owner": "Business owner",
+        "freelancer_now": "Freelancing",
+        "side_hustler": "Side-hustling",
+        "between_jobs": "Between jobs",
+        "parent_at_home": "At-home parent"
+      },
+      "hours": {
+        "lt5": "< 5 h/week",
+        "h5_10": "5–10 h",
+        "h10_20": "10–20 h",
+        "gt20": "20+ h"
+      },
+      "resources": {
+        "savings": "Savings",
+        "capital": "Serious capital",
+        "skills": "A real skill",
+        "domain_knowledge": "Deep domain knowledge",
+        "network": "Network",
+        "reputation": "Industry reputation",
+        "mentor": "A mentor",
+        "team": "A team I can mobilize",
+        "audience": "An audience",
+        "time_freedom": "Time freedom",
+        "supportive_family": "Supportive family",
+        "side_income": "Side income"
+      },
+      "obstacles": {
+        "time": "Not enough time",
+        "money": "Money is tight",
+        "energy": "Low energy",
+        "focus": "Easily distracted",
+        "confidence": "Low confidence",
+        "direction": "No clear direction",
+        "fear_failure": "Fear of failure",
+        "no_support": "No support around me",
+        "burnout": "Burnt out",
+        "ai_anxiety": "Anxious about AI",
+        "golden_handcuffs": "Can't give up my comfort",
+        "plateau": "Hit a ceiling"
+      },
+      "traitCats": {
+        "ability": "Abilities",
+        "pace": "Pace",
+        "social": "Social",
+        "mind": "Mindset",
+        "rhythm": "Rhythm"
+      },
+      "q1Title": "In the AI era, who do you want to become?",
+      "q1Hint": "Type your own goal, or pick a popular one below.",
+      "q1Placeholder": "e.g. Build a one-person company with AI",
+      "q1Popular": "Popular picks",
+      "q1Custom": "Your goal",
+      "suggested": "Suggested for you",
+      "stepLabels": {
+        "goal": "Goal",
+        "you": "You",
+        "now": "Now"
+      },
+      "situationHint": "All optional — if the options don't fit, just describe your reality in the box below."
+    },
+    "gap": {
+      "title": "The gap between two yous",
+      "youNow": "You today",
+      "youTarget": "The parallel you",
+      "pathTitle": "The road ahead",
+      "byRound": "around round {n}",
+      "start": "Start round 1",
+      "loading": "Mapping your two lives…"
+    },
+    "round": {
+      "roundOf": "Round {n} / {total}",
+      "achievement": "Progress to target",
+      "pick": "Choose your move",
+      "reveal": "The cost",
+      "continue": "Next quarter",
+      "finish": "See my life report",
+      "randomEvent": "Life happens",
+      "loading": "A new quarter begins…",
+      "retry": "Retry"
+    },
+    "dims": {
+      "health": "Health",
+      "career": "Career",
+      "family": "Family",
+      "finance": "Finance",
+      "growth": "Growth",
+      "social": "Social",
+      "hobby": "Hobby",
+      "self_realization": "Self"
+    },
+    "report": {
+      "loading": "Writing your life report…",
+      "chapters": "The journey",
+      "keyDecisions": "Decisions that defined it",
+      "traitsTitle": "What this run revealed about you",
+      "fromRounds": "from rounds {list}",
+      "radarTitle": "Where you landed",
+      "finalAchievement": "Final progress {pct}%",
+      "download": "Download my save file",
+      "playAgain": "Live another life",
+      "ctaTitle": "This was a simulation. Your real life needs a system.",
+      "ctaBody": "GEDO turns this exact path into real goals, daily actions and a memory that grows with you. The simulation took 10 minutes — the real thing takes a companion.",
+      "waitlistTitle": "Join the waitlist",
+      "emailPlaceholder": "you@example.com",
+      "joinWaitlist": "Reserve my spot",
+      "waitlistDone": "You are on the list — this run is parked under your email and imports automatically when you register.",
+      "waitlistError": "Could not join right now, please retry.",
+      "roundWord": "Round {n}",
+      "shareCard": "Share card",
+      "shareCardCta": "Scan to start your own parallel life",
+      "goalSeedTitle": "Your goal seed",
+      "goalSeedFirstStep": "First step",
+      "goalSeedHint": "After you join GEDO, turn this into a real goal that auto-decomposes into an OKR plan.",
+      "dimLabel": "Dimension"
+    },
+    "errors": {
+      "rate_limited": "The parallel universe is a bit crowded — retry in {s}s.",
+      "budget_exhausted": "Today's simulation quota is used up. Come back tomorrow!",
+      "llm_failed": "The storyteller stumbled. Tap retry.",
+      "sim_not_configured": "The simulator is not configured on this deployment.",
+      "network": "Network hiccup — check your connection and retry."
+    },
+    "footer": {
+      "aiNote": "All simulation content is AI-generated, for fun and self-exploration only."
+    },
+    "header": {
+      "wordmark": "Parallel You",
+      "theme": "Theme",
+      "soundOn": "Sound on",
+      "soundOff": "Sound off"
+    }
+  }
+}

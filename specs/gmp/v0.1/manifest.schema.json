@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gedo.ai/specs/gmp/v0.1/manifest.schema.json",
+  "title": "GEDO Memory Pack — manifest.json",
+  "description": "Top-level metadata for a .gmp pack. MUST exist at the root of the ZIP container.",
+  "type": "object",
+  "required": ["schema", "exporter", "owner", "created_at", "stats"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "description": "Format identifier. MUST be 'gedo-memory-pack/v<major>.<minor>'.",
+      "type": "string",
+      "pattern": "^gedo-memory-pack/v[0-9]+\\.[0-9]+$"
+    },
+    "exporter": {
+      "description": "Exporting tool identifier, e.g. 'gedo.ai/1.2' or 'mem0/0.4.1'.",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128
+    },
+    "owner": {
+      "type": "object",
+      "required": ["uid_hash"],
+      "additionalProperties": false,
+      "properties": {
+        "uid_hash": {
+          "description": "SHA-256(uid || uid_salt) hex-lowercase. Never put a raw user id here.",
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "uid_salt": {
+          "description": "Hex-encoded random salt used in uid_hash. Optional but recommended.",
+          "type": "string",
+          "pattern": "^[0-9a-f]+$"
+        },
+        "display_name": {
+          "description": "Self-declared name of the owner. Importers MUST treat this as untrusted.",
+          "type": "string",
+          "maxLength": 128
+        },
+        "public_key": {
+          "description": "Owner's Ed25519 public key, base64-encoded. Used to verify 'signature'.",
+          "type": "string",
+          "pattern": "^[A-Za-z0-9+/=]+$"
+        }
+      }
+    },
+    "created_at": {
+      "description": "RFC 3339 UTC timestamp of when this pack was generated.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "stats": {
+      "description": "Quick counts. Importers MAY use these for progress UI but MUST recount after parsing.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "episodes": { "type": "integer", "minimum": 0 },
+        "skills": { "type": "integer", "minimum": 0 },
+        "goals_active": { "type": "integer", "minimum": 0 },
+        "rules": { "type": "integer", "minimum": 0 },
+        "dimensions_filled": { "type": "integer", "minimum": 0, "maximum": 8 }
+      }
+    },
+    "encryption": {
+      "description": "Encryption mode applied to non-manifest files inside the pack.",
+      "type": "string",
+      "enum": ["none", "age-x25519", "age-passphrase"],
+      "default": "none"
+    },
+    "encryption_recipients": {
+      "description": "age recipient strings; required when encryption == 'age-x25519'.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "signature": {
+      "description": "Detached signature over the canonical JSON of this manifest with 'signature' removed. Format: '<algo>:<base64>'.",
+      "type": "string",
+      "pattern": "^(ed25519):[A-Za-z0-9+/=]+$"
+    },
+    "extra": {
+      "description": "Vendor-specific extension bag. MUST be ignored by other implementations if unknown.",
+      "type": "object"
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "encryption": { "const": "age-x25519" } }, "required": ["encryption"] },
+      "then": { "required": ["encryption_recipients"] }
+    }
+  ]
+}

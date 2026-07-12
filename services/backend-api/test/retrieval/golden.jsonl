@@ -1,0 +1,10 @@
+{"query":"我上周在做什么项目","expected_ids":["mem_001","mem_002"],"tags":["time","bm25"],"notes":"时间词'上周'应触发 time retriever，命中 W-1 到 W0 范围内的项目相关记忆"}
+{"query":"我跑步的个人最佳成绩是多少","expected_ids":["mem_003"],"tags":["vector","bm25"],"notes":"语义查询，应命中 content 含跑步/PB 的记忆"}
+{"query":"帮我回忆一下和张三的合作情况","expected_ids":["mem_004","mem_005"],"tags":["vector","graph"],"notes":"人名实体查询，graph hop 应能找到通过 relates_to 关联的对话记忆"}
+{"query":"我有哪些关于读书的习惯和计划","expected_ids":["mem_006","mem_007","mem_008"],"tags":["bm25","vector"],"notes":"多条记忆合并，BM25 关键词 '读书' 优先，vector 补充语义相近记忆"}
+{"query":"最近睡眠质量怎么样","expected_ids":["mem_009"],"tags":["time","vector"],"notes":"最近=过去7天时间窗口，加语义相似度过滤睡眠相关记忆"}
+{"query":"我对工作压力的感受","expected_ids":["mem_010","mem_011"],"tags":["vector"],"notes":"情感/主观描述，纯向量语义检索，无时间词和精确关键词"}
+{"query":"三个月前我提到的那个副业想法","expected_ids":["mem_012"],"tags":["time","bm25"],"notes":"时间词'三个月前'→[-90,-60]天，结合 '副业' 关键词精确定位"}
+{"query":"我的家庭成员情况","expected_ids":["mem_013","mem_014"],"tags":["vector","bm25"],"notes":"身份档案类查询，L1 identity_profile 或 memories 中含家庭关系"}
+{"query":"上个月完成了哪些目标","expected_ids":["mem_015","mem_016"],"tags":["time","bm25"],"notes":"时间词'上个月'，BM25 命中 '目标'/'完成' 关键词"}
+{"query":"我学Python的进展","expected_ids":["mem_017","mem_018","mem_019"],"tags":["vector","graph"],"notes":"技能学习类，graph 可从 skill_memories 扩展关联记忆"}

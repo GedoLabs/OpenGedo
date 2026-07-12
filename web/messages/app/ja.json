@@ -1,0 +1,2058 @@
+{
+  "app": {
+    "nav": {
+      "companion": "相棒",
+      "memory": "記憶",
+      "action": "実行",
+      "insights": "洞察",
+      "avatar": "分身",
+      "settings": "設定",
+      "search": "会話を検索",
+      "searchHint": "会話を検索 (⌘K)"
+    },
+    "common": {
+      "loading": "読み込み中…",
+      "save": "保存",
+      "saving": "保存中…",
+      "saved": "保存しました",
+      "cancel": "キャンセル",
+      "back": "戻る",
+      "close": "閉じる",
+      "collapse": "閉じる",
+      "confirm": "確定",
+      "delete": "削除",
+      "retry": "再試行",
+      "loadFailed": "エラーが発生しました。もう一度お試しください。",
+      "chatWithCompanion": "相棒と話す",
+      "removeItem": "{item} を削除"
+    },
+    "shell": {
+      "accountAndSettings": "アカウントと設定",
+      "accountAndSettingsFor": "{email} · アカウントと設定",
+      "membershipLevel": "メンバーシップ",
+      "home": "ホーム",
+      "help": "ヘルプ",
+      "logout": "ログアウト",
+      "manage": "管理",
+      "upgradeHint": "モデルと容量を解放"
+    },
+    "language": {
+      "title": "言語",
+      "subtitle": "アプリの表示言語を選択します",
+      "label": "表示言語",
+      "change": "言語を切り替える",
+      "timezone": "タイムゾーン",
+      "timezoneDesc": "リマインダーや日次プランに使用されます。実際にお住まいの地域を選んでください。",
+      "timezoneSearch": "都市や地域を検索…",
+      "timezoneNoResults": "一致するタイムゾーンがありません"
+    },
+    "membership": {
+      "tierFree": "無料版",
+      "tierPro": "プロ版",
+      "tierUltra": "アルティメット版",
+      "intervalMonthly": "月払い",
+      "intervalYearly": "年払い",
+      "intervalNone": "—"
+    },
+    "settings": {
+      "title": "アカウントセンター",
+      "subtitle": "アカウント・購読・設定・プライバシーを一元管理",
+      "saveBtn": "設定を保存",
+      "savedBtn": "保存しました",
+      "saving": "保存中…",
+      "nav": {
+        "label": "セクション",
+        "overview": "概要",
+        "account": "アカウントとログイン",
+        "subscription": "メンバーシップ",
+        "preferences": "設定",
+        "mcp": "外部ツール",
+        "developer": "開発者・連携",
+        "privacy": "データとプライバシー"
+      },
+      "overview": {
+        "title": "概要",
+        "displayName": "表示名",
+        "joined": "登録日",
+        "smartUsage": "今月のスマート利用量",
+        "manageSubscription": "購読を管理",
+        "exportData": "データをエクスポート",
+        "changeAvatar": "アバターを変更",
+        "avatarUploadFailed": "アバターのアップロードに失敗しました。もう一度お試しください",
+        "editName": "表示名を編集",
+        "namePlaceholder": "表示名"
+      },
+      "usage": {
+        "loading": "利用量を読み込み中…",
+        "unavailable": "今月最初のAI利用後に表示されます。",
+        "smartUsage": "スマート利用量",
+        "visitorUsage": "分身の訪問者返信",
+        "level": {
+          "normal": "正常",
+          "high": "やや多め",
+          "near_limit": "上限に近づいています"
+        }
+      },
+      "preferences": {
+        "title": "設定"
+      },
+      "display": {
+        "title": "表示",
+        "fontSize": "文字サイズ",
+        "fontSizeHint": "アプリ全体の文字サイズを調整します。すぐに反映されます。",
+        "fontSizeSmall": "小",
+        "fontSizeStandard": "標準",
+        "fontSizeLarge": "大"
+      },
+      "account": {
+        "title": "アカウントとログイン",
+        "email": "メールアドレス",
+        "changeEmail": "メールを変更",
+        "password": "パスワード",
+        "changePassword": "パスワードを変更",
+        "collapse": "閉じる",
+        "loginMethods": "ログイン方法",
+        "emailPassword": "メールとパスワード",
+        "google": "Google",
+        "apple": "Apple",
+        "disconnect": "解除",
+        "connectGoogle": "Google を連携",
+        "connectApple": "Apple を連携",
+        "linkHint": "Google または Apple を連携すると、パスワード不要で素早くサインインできます。",
+        "errLinkedElsewhere": "このアカウントは別の GEDO ユーザーに連携済みです。",
+        "errProviderUnavailable": "このサインイン方法は現在利用できません。",
+        "errLinkFailed": "連携できませんでした。もう一度お試しください。",
+        "errUnlinkFailed": "連携を解除できませんでした。もう一度お試しください。",
+        "errLastMethod": "唯一のサインイン方法は削除できません。先にパスワードを設定するか、別の方法を連携してください。",
+        "emailVerification": "メール認証",
+        "verifyHint": "メールアドレスを認証してアカウントを保護しましょう。",
+        "resendVerification": "再送信",
+        "verifySending": "送信中…",
+        "verifySent": "認証メールを送信しました。ご確認ください。",
+        "verifyAlready": "メールアドレスは認証済みです。",
+        "verifyFailed": "現在送信できませんでした。もう一度お試しください。"
+      },
+      "membership": {
+        "title": "メンバーシップと購読",
+        "currentTier": "現在のプラン",
+        "planName": "プラン名",
+        "billingInterval": "請求周期",
+        "periodEnd": "現在の期間の終了日",
+        "cancelNotice": "現在の請求期間の終了時に解約するよう設定されています。それまでは有料機能をご利用いただけます。",
+        "freeNotice": "現在は無料版です。アップグレードすると、より多くのモデルと容量が利用できます。詳しくは料金ページをご覧ください。",
+        "upgrade": "アップグレード",
+        "viewPricing": "料金を見る",
+        "managePortal": "購読と請求書を管理",
+        "portalError": "請求ポータルを開けませんでした",
+        "benefitsSummary": "プランの詳細は料金ページをご覧ください。スマート利用量は毎月リセットされます。"
+      },
+      "avatar": {
+        "title": "相棒の設定",
+        "nameLabel": "アシスタント名",
+        "personalityLabel": "性格",
+        "personality": {
+          "friendly": "あたたかい",
+          "friendlyDesc": "親しみやすく、励まし中心",
+          "professional": "プロフェッショナル",
+          "professionalDesc": "目標重視、簡潔で率直",
+          "motivational": "モチベーター",
+          "motivationalDesc": "エネルギッシュで挑戦志向",
+          "gentle": "やさしい伴走",
+          "gentleDesc": "辛抱強く、細やかに寄り添う"
+        }
+      },
+      "notifications": {
+        "title": "通知設定",
+        "morning": "朝の計画リマインダー",
+        "morningDesc": "毎朝、今日の計画の確認をお知らせします",
+        "checkin": "チェックインのリマインダー",
+        "checkinDesc": "タスクの締め切りが近づくとお知らせします",
+        "evening": "夜のふりかえりリマインダー",
+        "eveningDesc": "毎晩、3つの問いのふりかえりをお知らせします"
+      },
+      "theme": {
+        "title": "表示",
+        "pickerTitle": "テーマとアクセント",
+        "mode": "テーマ",
+        "modeDark": "ダーク",
+        "modeLight": "ライト",
+        "modeAuto": "システム",
+        "accent": "アクセント",
+        "fontSize": "文字サイズ",
+        "fontSizeSmall": "小",
+        "fontSizeStandard": "標準",
+        "fontSizeLarge": "大",
+        "accentColors": {
+          "emerald": "エメラルド",
+          "amber": "アンバー",
+          "blue": "ブルー",
+          "purple": "パープル",
+          "coral": "コーラル",
+          "teal": "ティール"
+        }
+      },
+      "mcp": {
+        "title": "外部ツール（MCP）",
+        "desc": "リモート MCP サーバーを登録すると、そのツールが相棒のチャットで使えるようになります（入力欄の「+」メニューにも表示）。",
+        "empty": "まだ外部ツールがありません。",
+        "namePh": "名前（例：マイツール）",
+        "urlPh": "https://mcp.example.com/mcp",
+        "add": "追加",
+        "test": "テスト",
+        "testOk": "接続済み · ツール {n} 件",
+        "testFailed": "接続に失敗しました",
+        "enable": "有効化",
+        "disable": "無効化",
+        "disabled": "無効",
+        "delete": "削除",
+        "securityHint": "本番環境では https 必須、プライベートアドレスは既定でブロック（セルフホストは MCP_ALLOW_PRIVATE=1）。トークン入り headers はブラウザに返しません。",
+        "commandPh": "/絶対パス/コマンド",
+        "argsPh": "引数（スペース区切り）",
+        "directoryTitle": "おすすめ連携",
+        "dirConnect": "接続",
+        "dirAdded": "追加済み",
+        "oauthConnected": "認可済み",
+        "authRequired": "認可が必要",
+        "authorize": "認可する"
+      },
+      "developer": {
+        "title": "開発者・連携（記憶 MCP）",
+        "desc": "あなたの Gedo 記憶を任意の AI へ：アクセストークンを作成し、Claude Code / Claude Desktop / Cursor などの MCP クライアントに貼り付けると、許可した範囲内で記憶とポートレートを検索できます。読み書き分離（書き込みは直接保存されず確認キューへ）・マスキング可・全呼び出し記録・いつでも失効。",
+        "endpointLabel": "MCP エンドポイント（Streamable HTTP）",
+        "upgradeHint": "記憶 MCP は Pro 以上の会員限定機能です。アップグレードするとトークンを作成できます。",
+        "tokenOnce": "トークンの表示は今回限りです。すぐコピーして保存してください。",
+        "empty": "アクセストークンはまだありません。",
+        "namePh": "トークン名（例：My Claude Code）",
+        "create": "トークンを作成",
+        "revoke": "失効",
+        "redactToggle": "出力の PII をマスク（メール・電話・住所など。秘密鍵/パスワード類はスイッチに関わらず常に遮断）",
+        "redactOn": "マスキング有効",
+        "redactOff": "マスキングなし",
+        "lastUsed": "最終使用 {time}",
+        "neverUsed": "未使用",
+        "securityHint": "トークンは記憶への読み取り専用の鍵です。信頼できる AI クライアントにのみ貼り付けてください。接続すると記憶の内容がそのクライアントのモデル提供元へ送られます。",
+        "auditTitle": "最近のアクセス履歴",
+        "scope": {
+          "memory_read": "記憶検索",
+          "profile_read": "ポートレート",
+          "goals_read": "目標とタスク",
+          "memory_write": "記憶の書き込み（確認キュー）"
+        }
+      },
+      "privacy": {
+        "title": "プライバシーとデータ",
+        "pauseMemory": "長期記憶を一時停止",
+        "pauseMemoryDesc": "オンにすると、AIは過去の記憶を参照せず、新しい記憶も自動で記録しません",
+        "export": "データをエクスポート",
+        "exportDesc": "すべての記憶・目標・タスクをダウンロード（.gmp パッケージ）",
+        "wipe": "すべてのデータを消去",
+        "wipeDesc": "アカウントとすべての記憶・目標・タスク・会話を完全に削除します（復元不可）",
+        "logout": "ログアウト",
+        "autoAccept": "インポート記憶の自動受け取り",
+        "autoAcceptDesc": "確信度の高い候補は自動で保存されます（「確認待ち」から取り消し可能）。オフにするとすべて手動確認になります。"
+      },
+      "wipe": {
+        "title": "すべてのデータを消去",
+        "warning": "この操作はアカウントとすべての記憶・目標・タスク・会話・分身データを完全に削除し、元に戻すことはできません。バックアップが必要な場合は、先に上の「データをエクスポート」をご利用ください。",
+        "passwordLabel": "アカウントのパスワード",
+        "passwordPlaceholder": "現在のパスワードを入力",
+        "confirmLabel": "確認のため <kw>DELETE</kw> と入力してください",
+        "confirmDelete": "完全に削除"
+      },
+      "emailForm": {
+        "newEmail": "新しいメールアドレス",
+        "currentPassword": "現在のパスワード（本人確認用）",
+        "updated": "✓ メールを更新しました"
+      },
+      "passwordForm": {
+        "current": "現在のパスワード",
+        "new": "新しいパスワード（6文字以上）",
+        "confirm": "新しいパスワードを再入力",
+        "changed": "✓ パスワードを変更しました"
+      },
+      "errors": {
+        "bad_credentials": "パスワードが正しくありません。もう一度お試しください",
+        "weak_password": "新しいパスワードは6文字以上にしてください",
+        "same_password": "新しいパスワードは現在のものと異なる必要があります",
+        "invalid_email": "有効なメールアドレスを入力してください",
+        "email_taken": "そのメールアドレスはすでに使われています",
+        "same_email": "新しいメールが現在のものと同じです",
+        "bad_json": "リクエストに失敗しました。もう一度お試しください",
+        "unauthorized": "セッションの有効期限が切れました。再度ログインしてください",
+        "passwordMismatch": "新しいパスワードが一致しません",
+        "generic": "操作に失敗しました。しばらくして再度お試しください"
+      }
+    },
+    "quota": {
+      "title": "今月の上限に達しました",
+      "body": "現在のプランの今月の利用上限に達しました。",
+      "upgradeTo": "{tier} にアップグレード",
+      "dismiss": "閉じる",
+      "resource": {
+        "active_goals": "無料版のアクティブ目標上限（5件）に達しました。",
+        "memory_items": "無料版の記憶上限（200件）に達しました。",
+        "smart_credits": "今月のスマート利用枠を使い切りました。",
+        "persona_publish": "公開分身には Pro が必要です。",
+        "visitor_replies": "分身の訪問者返信枠を使い切りました。",
+        "profile_refresh": "今月の深いプロフィール更新回数を使い切りました。"
+      }
+    },
+    "companion": {
+      "cards": {
+        "snapshot": {
+          "fallbackTitle": "{period, select, today {今日のステータス} week {今週のステータス} month {今月のステータス} other {ステータス}}"
+        },
+        "goalProgress": {
+          "fallbackTitle": "目標の進捗",
+          "status": "{status, select, on_track {順調} at_risk {要注意} behind {遅れ} completed {完了} other {順調}}",
+          "nextStep": "次のステップ: {task}"
+        },
+        "taskAdjust": {
+          "fallbackTitle": "タスク調整の提案",
+          "action": "{action, select, postpone {先送り} reschedule {日程変更} remove {削除} priority_up {優先度アップ} priority_down {優先度ダウン} other {調整}}",
+          "apply": "一括適用",
+          "applying": "適用中…",
+          "applied": "適用しました",
+          "appliedPartial": "{applied}/{total} 件を適用（他は未一致）",
+          "undo": "元に戻す",
+          "noop": "調整できるタスクが見つからず、変更はありません",
+          "undoing": "取り消し中…",
+          "undone": "取り消しました",
+          "errorApply": "操作に失敗しました",
+          "errorUndo": "取り消しに失敗しました"
+        },
+        "memoryList": {
+          "fallbackTitle": "関連する記憶"
+        }
+      },
+      "brand": "相棒",
+      "brandFull": "相棒 · GEDO-AI",
+      "defaultName": "あなた",
+      "heroTitle": "今日はどう、{name}",
+      "heroSubtitle": "相棒が会話から記録・計画・リマインドします — あなたは話すだけ",
+      "notifications": "通知",
+      "voiceChat": "音声会話",
+      "newSession": "新しいセッション",
+      "thinking": "相棒が考えています…",
+      "searchPlaceholder": "会話を検索…",
+      "noMatch": "「{query}」に一致する会話はありません",
+      "noConversations": "まだ会話がありません · 右側に入力して始めましょう",
+      "untitled": "無題の会話",
+      "deleteConversation": "会話を削除",
+      "deleteQuestion": "削除しますか？",
+      "groupToday": "今日",
+      "groupYesterday": "昨日",
+      "groupEarlier": "それ以前",
+      "timeJustNow": "たった今",
+      "timeMinutesAgo": "{n}分前",
+      "timeDaysAgo": "{n}日前",
+      "loadingHistory": "履歴を読み込み中…",
+      "emptyTitle": "新しい会話を始める",
+      "emptyBody": "気になっていることを相棒に話してください — 記録・計画・リマインドを同時に行います。",
+      "quick": {
+        "todayStatus": "今日の状態",
+        "todayStatusPrompt": "昨日の進捗と今日のエネルギー予測をもとに、今日のタイムラインを組み直して。",
+        "jot": "メモする",
+        "jotPrompt": "これをメモして：",
+        "setGoal": "目標を立てる",
+        "setGoalPrompt": "90日間の目標を立てたい —— "
+      },
+      "tools": {
+        "capture_memory": "記憶を保存",
+        "search_memory": "記憶を検索",
+        "create_goal": "目標を作成",
+        "plan_goal": "目標をプランニング",
+        "create_task": "タスクを追加",
+        "complete_task": "タスクを完了",
+        "list_today_tasks": "今日のタスクを表示",
+        "list_goals": "目標を表示",
+        "generate_review": "振り返りを生成"
+      },
+      "result": {
+        "done": "完了",
+        "failed": "実行に失敗しました",
+        "calling": "呼び出し中…",
+        "interrupted": "中断されました",
+        "timeout": "応答がタイムアウトし、自動的に中断しました。もう一度お試しください。",
+        "error": "エラーが発生しました：{err}",
+        "connectFailed": "接続に失敗しました",
+        "connectFailedDetail": "接続に失敗しました：{err}",
+        "foundMemories": "関連する記憶を {n} 件見つけました",
+        "noMemories": "関連する記憶は見つかりませんでした",
+        "todayTasks": "今日は {n} 件のタスクがあります",
+        "noTodayTasks": "今日のタスクはありません",
+        "totalGoals": "目標は全部で {n} 件です",
+        "noGoals": "まだ目標がありません"
+      },
+      "composer": {
+        "placeholder": "何か話しかけて… Enter で送信、Shift+Enter で改行",
+        "attach": "添付",
+        "uploading": "アップロード中…",
+        "remind": "リマインダー",
+        "voiceInput": "音声入力",
+        "lang": "日本語",
+        "hint": "相棒は会話から自動で抽出し、確認を求めます。記憶はいつでも「記憶」で編集・削除できます",
+        "menuAttach": "ファイルを添付",
+        "menuLink": "目標 / タスク / カードを関連付け",
+        "menuTools": "外部ツール",
+        "menuSoon": "近日公開"
+      },
+      "refPicker": {
+        "title": "コンテンツを関連付け",
+        "goals": "目標",
+        "tasks": "タスク",
+        "cards": "カード",
+        "search": "検索…",
+        "empty": "まだ何もありません。",
+        "confirm": "{n} 件を関連付け",
+        "limit": "最大 5 件まで"
+      },
+      "modePicker": {
+        "auto": "自動",
+        "autoHint": "ツールを使うかどうかは相棒におまかせ",
+        "memory": "記憶",
+        "memoryHint": "今回は必ず記憶を保存する",
+        "todo": "タスク",
+        "todoHint": "今回は必ずタスクを追加する",
+        "goal": "目標",
+        "goalHint": "今回は必ず目標をプランニングする",
+        "review": "振り返り",
+        "reviewHint": "今回は必ず振り返りを生成する",
+        "expandHint": "モードを切り替える"
+      },
+      "memoryExpand": {
+        "tagsPlaceholder": "タグ（カンマ区切り）"
+      },
+      "goalExpand": {
+        "continueWoop": "WOOP でプランニングを続ける →"
+      },
+      "reviewExpand": {
+        "completionRate": "完了率",
+        "tasks": "タスク",
+        "activeGoals": "進行中の目標",
+        "reflections": "振り返り回数",
+        "insights": "気づき",
+        "suggestions": "提案"
+      },
+      "rowEdit": {
+        "save": "保存",
+        "cancel": "キャンセル",
+        "edit": "編集",
+        "delete": "削除"
+      },
+      "message": {
+        "stop": "生成を停止",
+        "stopped": "停止しました"
+      },
+      "level": {
+        "key_result": "主要成果",
+        "monthly": "フェーズ",
+        "task": "サブタスク",
+        "objective": "目標"
+      },
+      "decompose": {
+        "loading": "プランの詳細を読み込み中…",
+        "empty": "詳細はまだありません。",
+        "recentTasks": "直近のタスク",
+        "redoing": "再プランニング中…（約1分）",
+        "redo": "再プランニング",
+        "redoFailed": "再生成に失敗しました。元のプランは保持されています。後でもう一度お試しください。",
+        "doneStatus": "完了",
+        "savedChip": "目標ページに保存済み",
+        "discard": "プランを破棄",
+        "discarding": "破棄中…",
+        "discardConfirm": "このプランを破棄しますか？目標と KR/フェーズ、未着手のタスクは削除されます（完了済みは履歴として保持）。",
+        "discarded": "破棄しました。このプランの目標とタスクは削除されました。"
+      },
+      "inProgress": "進行中",
+      "board": {
+        "title": "コンテキストボード",
+        "items": "{n} 件",
+        "pending": "{n} 件 要確認",
+        "collapse": "折りたたむ",
+        "activeCapture": "自動キャプチャ · AIが抽出、あなたが確認",
+        "coreHint": "重要な情報は自動で記憶（取り消し可）· その他の候補は確認後に記憶に入ります",
+        "explainTitle": "説明 · コンテキストボード",
+        "explainBody": "相棒がツール（記憶の保存・タスクの調整・目標のプランニング）を呼び出すたびに、その過程がここに表示されます。会話を始めると、ボードが自動で埋まります。"
+      },
+      "capture": {
+        "statusPending": "要確認",
+        "statusSaved": "記憶しました",
+        "statusConfirmed": "確認済み",
+        "statusRejected": "無視しました",
+        "statusUndone": "取り消しました",
+        "statusExpired": "期限切れ",
+        "importanceCore": "重要",
+        "importanceHigh": "やや重要",
+        "taskCandidate": "タスク候補",
+        "memoryCapture": "記憶キャプチャ",
+        "hit": "一致·{slot}",
+        "due": "期限 {date}",
+        "saveConfirm": "保存して確認",
+        "addTask": "タスクに追加",
+        "confirmRemember": "確認して記憶",
+        "fix": "修正",
+        "ignore": "無視",
+        "addedToToday": "今日のタスクに追加しました",
+        "savedToMemory": "記憶に保存しました",
+        "undo": "取り消す"
+      },
+      "callStatus": {
+        "running": "進行中",
+        "success": "完了",
+        "failed": "失敗"
+      },
+      "memoryModal": {
+        "eyebrow": "記憶に保存",
+        "title": "今のことをメモする",
+        "saving": "保存中…",
+        "save": "記憶に保存",
+        "contentLabel": "内容",
+        "contentPlaceholder": "例：今朝30分ランニング。脚は疲れたが調子よし、ペース6'42\"…",
+        "typeLabel": "種類",
+        "sourceLabel": "ソース",
+        "dimensionsLabel": "関連する次元",
+        "dimensionsHint": "任意。未選択なら内容から自動分類",
+        "tagsLabel": "タグ",
+        "tagsHint": "Enter かカンマで追加。例：健康、ランニング、マイルストーン",
+        "tagsPlaceholder": "入力して Enter…",
+        "saveError": "保存に失敗しました",
+        "category": {
+          "important_info": "重要な情報",
+          "observation": "自己観察",
+          "goal_related": "目標に関連",
+          "reflection": "ふりかえり",
+          "general": "日常"
+        },
+        "source": {
+          "text": "手動入力",
+          "chat_extract": "会話から抽出",
+          "voice": "音声記録"
+        }
+      },
+      "notif": {
+        "eyebrow": "通知",
+        "titlePending": "{n} 件があなたの返信待ちです",
+        "titleEmpty": "すべて確認済み",
+        "loading": "読み込み中…",
+        "emptyBody": "相棒からお知らせすることはまだありません",
+        "accepted": "承諾しました",
+        "snoozed": "あとで",
+        "dismissed": "無視しました",
+        "snooze": "あとで",
+        "ignore": "無視",
+        "accept": "受け取る",
+        "justNow": "たった今",
+        "minutesAgo": "{n} 分前",
+        "hoursAgo": "{n} 時間前",
+        "daysAgo": "{n} 日前"
+      },
+      "voice": {
+        "eyebrow": "音声会話",
+        "noSpeechApi": "このブラウザは Web Speech API に対応していません。Chrome / Edge をお使いください。",
+        "noSynthesis": "このブラウザは音声合成に対応していません。",
+        "noReply": "相棒からの返信はありませんでした。",
+        "requestFailed": "リクエストに失敗しました",
+        "exit": "音声を終了",
+        "holdToTalk": "押して話す",
+        "stopListening": "集音を停止",
+        "processing": "処理中…",
+        "stopReading": "読み上げを停止",
+        "retry": "再試行",
+        "youSaid": "あなた",
+        "assistant": "相棒",
+        "state": {
+          "idle": "準備ができたら始めましょう",
+          "listening": "聞いています…",
+          "transcribing": "文字起こし中",
+          "responding": "相棒が返信中",
+          "speaking": "相棒が読み上げ中",
+          "error": "エラーが発生しました"
+        }
+      }
+    },
+    "insights": {
+      "brand": "洞察",
+      "titleWeek": "今週のふりかえり",
+      "titleMonth": "今月のふりかえり",
+      "subtitle": "相棒があなたの実行・記憶・ふりかえりから抽出した {days} 日間のインサイト",
+      "periodWeek": "今週",
+      "periodMonth": "今月",
+      "generating": "生成中…",
+      "aiReview": "AI ふりかえり",
+      "exportReport": "レポートを書き出す",
+      "emptyTitle": "インサイトは日々から生まれる",
+      "emptyHint": "まず相棒と話し、いくつかメモしてみましょう —— 使うほど、ここの傾向とふりかえりが正確になります。",
+      "reviewsTitle": "過去のふりかえり",
+      "reviewsEmpty": "AI ふりかえりはまだありません — 上の「AI ふりかえり」で最初の一件を生成しましょう",
+      "periodMonthShort": "月",
+      "periodWeekShort": "週",
+      "kpi": {
+        "ecsAvg": "ECS 平均",
+        "ecsExcellent": "優秀",
+        "ecsGood": "良好",
+        "ecsWatch": "要注意",
+        "completionRate": "タスク完了率",
+        "completionSub": "完了 / 計画",
+        "activeGoals": "進行中の目標",
+        "activeGoalsSub": "進行中",
+        "newMemories": "新しい記憶",
+        "newMemoriesSub": "蓄積済み",
+        "reflections": "ふりかえり数",
+        "reflectionsSub": "回"
+      },
+      "ecsTrend": "ECS トレンド",
+      "ecsNoData": "データがまだ足りません — 数日タスクをこなすとトレンドが見えてきます",
+      "trendFlat": "— 横ばい",
+      "weekdays": [
+        "日",
+        "月",
+        "火",
+        "水",
+        "木",
+        "金",
+        "土"
+      ],
+      "completionByDay": "日別の完了率",
+      "last7": "過去 7 日",
+      "noData": "データなし",
+      "sidebarTitle": "相棒のインサイト",
+      "sidebarEmpty": "今のところ新しいインサイトはありません — 記録と実行を続ければ、相棒が観察し続けます",
+      "regenerate": "再生成",
+      "suggestion": {
+        "praise": "いいね",
+        "tip": "ヒント",
+        "warning": "注意",
+        "hint": "メモ"
+      },
+      "overview": "概要",
+      "highlights": "ハイライト",
+      "lowlights": "改善点",
+      "nextFocus": "次の重点",
+      "export": {
+        "reportTitle": "洞察レポート",
+        "monthly": "月次",
+        "weekly": "今週",
+        "exportedAt": "書き出し日時",
+        "metrics": "指標",
+        "ecsMean": "ECS 平均",
+        "taskCompletion": "タスク完了率",
+        "activeGoals": "進行中の目標",
+        "newMemories": "新しい記憶",
+        "reflections": "ふりかえり数",
+        "aiSuggestions": "AI の提案",
+        "historyReviews": "過去のふりかえり",
+        "noSummary": "（要約なし）",
+        "reviewTitle": "ふりかえり"
+      },
+      "reviewModal": {
+        "eyebrowMonth": "月次ふりかえり",
+        "eyebrowWeek": "週次ふりかえり",
+        "title": "ふりかえり",
+        "exportMd": "Markdown で書き出す",
+        "noData": "ふりかえりデータがありません",
+        "ecsAvg": "ECS 平均",
+        "completionRate": "完了率"
+      }
+    },
+    "memory": {
+      "nav": {
+        "profile": "プロフィール",
+        "codex": "図鑑",
+        "memories": "記憶"
+      },
+      "flower": {
+        "dimGoals": "関連する目標",
+        "dimEntities": "関連するカード"
+      },
+      "knowLevels": {
+        "l1": "はじめまして",
+        "l2": "顔なじみ",
+        "l3": "親友",
+        "l4": "理解者"
+      },
+      "codex": {
+        "loading": "読み込み中…",
+        "detail": {
+          "mentions": "言及 {n} 回",
+          "lastSeen": "最終言及 {d}",
+          "discoveries": "相棒の新発見",
+          "adopt": "採用",
+          "ignore": "無視",
+          "loadMore": "もっと見る",
+          "chatAbout": "相棒とこの話をする",
+          "edit": "カードを編集",
+          "facts": "カードの事実",
+          "inboxEntry": "この相手に関する発見が {n} 件確認待ちです"
+        },
+        "searchPlaceholder": "名前・関係で検索…",
+        "addCard": "カードを追加",
+        "emptyTitle": "まだカードがありません",
+        "emptyHint": "大切な人、愛用品、思い出の場所をカードにしましょう。会話によく出る人物は自動でカード候補として提案されます。",
+        "aiHiddenBadge": "AIに非表示",
+        "avatarVisibleBadge": "分身に公開",
+        "types": {
+          "all": "すべて",
+          "person": "人",
+          "pet": "ペット",
+          "object": "モノ",
+          "place": "場所",
+          "event": "出来事",
+          "org": "組織",
+          "other": "その他"
+        },
+        "keyLabels": {
+          "birthday": "誕生日",
+          "personality": "性格",
+          "likes": "好きなもの",
+          "how_we_met": "出会い",
+          "breed": "品種",
+          "brand": "ブランド",
+          "model": "型番",
+          "acquired_at": "入手時期",
+          "meaning": "自分にとっての意味",
+          "city": "都市",
+          "period": "時期",
+          "when": "時期",
+          "my_role": "自分の役割",
+          "impact": "影響",
+          "joined_at": "加入時期"
+        },
+        "editor": {
+          "newTitle": "カードを作成",
+          "editTitle": "カードを編集",
+          "emoji": "アイコン",
+          "name": "名前",
+          "namePlaceholder": "母 / ポチ / 愛車…",
+          "type": "タイプ",
+          "relation": "自分との関係",
+          "relationPlaceholder": "母親 / 愛犬 / 通勤の相棒…",
+          "aliases": "別名（読点区切り）",
+          "aliasesPlaceholder": "お母さん、張さん",
+          "facts": "カードの事実",
+          "noFacts": "まだ事実がありません。下の候補から追加しましょう",
+          "suggested": "おすすめ項目",
+          "customKeyPlaceholder": "カスタム項目",
+          "valuePlaceholder": "内容",
+          "addFact": "追加",
+          "removeFact": "削除",
+          "note": "メモ",
+          "notePlaceholder": "補足しておきたい背景など…",
+          "dimensions": "関連する次元",
+          "privacy": "プライバシー",
+          "aiExcluded": "AIに非表示",
+          "aiExcludedHint": "オンにすると、相棒はこのカードを読まず、会話でも参照しません。",
+          "avatarVisible": "対外分身に公開",
+          "avatarVisibleHint": "オンにすると、公開デジタル分身が認識済みの訪問者にカードの事実を伝えられます。既定はオフ。",
+          "invite": "専用招待リンク",
+          "inviteGenerate": "招待リンクを生成",
+          "inviteNeedPublish": "先に「分身」ページでデジタル分身を公開すると有効になります。",
+          "inviteHint": "リンクを開いた相手はこのカードとして自動認識されます。",
+          "copy": "コピー",
+          "linkedEpisodes": "関連する記憶",
+          "noLinkedEpisodes": "このカードを参照するかけらはまだありません",
+          "delete": "削除",
+          "cancel": "キャンセル",
+          "save": "保存"
+        },
+        "groups": {
+          "people": "人",
+          "things": "ペット・モノ",
+          "places": "場所・組織",
+          "events": "できごと"
+        },
+        "completeness": "プロフィール {pct}% 完成",
+        "merge": {
+          "button": "統合…",
+          "hint": "「{name}」を別のカードへ統合：情報は相手カードに補完、記憶のリンクも引き継ぎ、このカードは削除されます（取り消し不可）。",
+          "pickTarget": "統合先のカードを選択…",
+          "confirm": "統合する"
+        },
+        "rail": {
+          "title": "分類",
+          "collapse": "折りたたむ",
+          "expand": "展開"
+        },
+        "summary": {
+          "title": "AI サマリー",
+          "empty": "相棒とその話をすると、AI がここにまとめを書きます。",
+          "generatedAt": "{date} 生成",
+          "regenerate": "再生成",
+          "regenerating": "生成中…",
+          "failed": "前回の生成に失敗しました。後で自動的に再試行します。",
+          "excludedHint": "AI から隠したカードにはまとめを生成しません。"
+        }
+      },
+      "allMemories": "すべての記憶",
+      "dimAll": "すべて",
+      "profileTitle": "プロフィール",
+      "codexTitle": "図鑑",
+      "profileSub": "AI から見たあなた——結論はすべて記憶まで遡れて、いつでも直せます。",
+      "codexSub": "あなたにまつわる人・モノ・出来事 —— 記憶のアンカー",
+      "searchPlaceholder": "記憶を検索…",
+      "emptyTimelineTitle": "記憶はここに自動で蓄積されます",
+      "emptyTimelineHint": "今日のことを相棒に話してみましょう。記憶しておくべきことを、あなたの確認のうえで記録します。",
+      "genFailed": "生成に失敗しました",
+      "genFailedDetail": "生成に失敗しました：{msg}",
+      "noSummaryReturned": "相棒からの要約はありませんでした。",
+      "aiSummaryLabel": "AIサマリー",
+      "export": {
+        "title": "記憶エクスポート · {focus}",
+        "exportedAt": "書き出し日時",
+        "summaryHeading": "相棒の要約",
+        "timelineHeading": "タイムライン"
+      },
+      "detail": {
+        "filterAll": "すべて",
+        "filterText": "手動",
+        "filterChatExtract": "会話から抽出",
+        "filterVoice": "音声",
+        "countPill": "{count} 件",
+        "filterPill": "絞り込み {count}",
+        "loading": "読み込み中…",
+        "emptyAll": "まだ記憶がありません — 右上の「手動で記録」をタップするか、相棒と話してみましょう",
+        "emptyFiltered": "このソースの絞り込みでは記憶がありません",
+        "loadMore": "さらに {n} 件を表示 ↓"
+      },
+      "entry": {
+        "sourceLabel": "ソース：{label}",
+        "sources": {
+          "text": "手動",
+          "chat_extract": "会話から抽出",
+          "voice": "音声",
+          "passive_event": "受動イベント",
+          "reminder": "リマインダー起点",
+          "raw": "未加工",
+          "import": "インポート"
+        },
+        "aiHidden": "AIには非表示",
+        "downweighted": "重みを下げました",
+        "allowAiTip": "AIがこの記憶を使えるようにする",
+        "disallowAiTip": "AIがこの記憶を使えないようにする",
+        "excluded": "除外済み",
+        "aiVisible": "AIに表示",
+        "restoreWeightTip": "この記憶の重みを元に戻す",
+        "lowerWeightTip": "重みを下げる：検索結果の順位が下がります",
+        "downweightedRestore": "重みを下げました ↺",
+        "downweight": "重みを下げる",
+        "deleteTip": "この記憶を完全に削除する",
+        "delete": "削除",
+        "emptyContent": "（空）",
+        "timeToday": "今日 {time}",
+        "timeYesterday": "昨日",
+        "timeDaysAgo": "{n} 日前",
+        "menu": {
+          "open": "その他",
+          "muteAi": "AI に話させない",
+          "allowAi": "AI に再び見せる",
+          "downweight": "控えめにする",
+          "restoreWeight": "重みを戻す",
+          "delete": "削除",
+          "deleteConfirm": "削除しますか？"
+        }
+      },
+      "sidebar": {
+        "regenSummary": "要約を再生成",
+        "exportMd": "Markdown で書き出す",
+        "setReminder": "リマインダーを設定",
+        "generating": "生成中…"
+      },
+      "profile": {
+        "loading": "プロフィールを読み込み中…",
+        "defaultName": "あなたのプロフィール",
+        "gettingToKnow": "相棒はまだあなたを知り始めたところです",
+        "northStar": "ノーススター · {value}",
+        "rightNow": "今のあなた",
+        "rightNowStats": "過去 {days} 日 · {signals} 件の信号 · 把握度 {pct}%",
+        "rightNowEmpty": "もっと話したり、メモを記録すると、今の関心やリズムがここに表れます",
+        "chips": {
+          "focus": "関心",
+          "mode": "モード",
+          "energy": "エネルギー",
+          "emotion": "気分",
+          "momentum": "勢い"
+        },
+        "inProgress": "進行中 · ",
+        "completion": "理解度",
+        "improveProfile": "プロフィールを充実させる",
+        "inviteTitle": "相棒はもっとあなたを知りたいです",
+        "inviteWantsToKnow": "もっと知りたいこと：{list}",
+        "inviteGeneric": "あなた自身について話すと、プロフィールがより立体的になります",
+        "inviteSuffix": " — 会話の中で自然に触れるだけでOK。または「人生のスナップショット」で一気に入力できます。",
+        "snapshotCta": "人生のスナップショット · 一気に入力 →",
+        "lifeFlowerTab": "ライフフラワー",
+        "overallScore": "総合 <b>{score}</b>/10",
+        "pickDimHint": "領域をクリックして詳細を見る",
+        "coreArchiveTitle": "コアプロファイル",
+        "coreArchiveHint": "最も安定したあなた。毎回の会話で記憶されます",
+        "careAbout": "大切にしていること",
+        "bottomLine": "譬れない一線",
+        "vision": "ビジョン",
+        "currentChallenges": "今の課題",
+        "notMentioned": "まだ話していません",
+        "provenanceChat": "会話から自動入力",
+        "benefit": {
+          "careAbout": "入力すると、相棒はあなたの優先順位に沿って提案します",
+          "bottomLine": "入力すると、相棒は譲れない一線に触れる提案をしません",
+          "vision": "入力すると、目標計画が北極星に向かって調整されます"
+        },
+        "memoryFragmentsTitle": "記憶",
+        "memoryFragmentsHint": "会話やメモからの生の記録",
+        "viewAll": "すべて見る",
+        "memCountLabel": "記憶の件数",
+        "pendingLabel": "未整理",
+        "reorgTitle": "ワンタップで記憶を整理",
+        "reorgHint": "相棒がすべての記憶を読み込み、プロフィールを更新します。判断が難しい変更はあなたに確認します。",
+        "reorgLast": " 前回：{date}",
+        "pendingConfirm": "確認待ち",
+        "reorganizing": "整理中…",
+        "reorganize": "ワンタップで整理",
+        "reorgDoneUpdated": "プロフィールを更新しました",
+        "reorgDoneNoChange": "変更は不要でした",
+        "reorgNoticeConflicts": "整理が完了 · {auto}。{n} 件の変更があなたの確認待ちです。",
+        "reorgNoticeDone": "整理が完了 · {auto}{offline}。",
+        "offlineSuffix": "（オフラインのルールベース整理）",
+        "reorgFailed": "整理に失敗しました",
+        "reorgFailedDetail": "整理に失敗しました：{msg}",
+        "narrative": {
+          "title": "成長の軌跡",
+          "windowSuffix": "日",
+          "confidence": "把握度 {pct}%{ai}",
+          "aiSuffix": " · AIによる要約",
+          "empty": "記録を続けると軌跡が見えてきます — もう数日使うと、ここに段階・変化・次の一歩が表示されます。",
+          "changes": "主な変化",
+          "nextSteps": "次の一歩",
+          "risks": "リスク",
+          "opportunities": "チャンス"
+        },
+        "identity": {
+          "title": "AIから見たあなた",
+          "version": "v{v} · 把握度 {pct}%",
+          "empty": "相棒はあなたの記憶から「あなたが誰か」を描き出しています — 強み・スタイル・成長段階は証拠が増えるほど明確になります。",
+          "growthStage": "成長段階",
+          "decisionStyle": "意思決定スタイル",
+          "riskTendency": "リスク傾向",
+          "strengths": "強み",
+          "weaknesses": "改善点",
+          "goalPrefs": "目標の傾向",
+          "recentChanges": "最近の変化（理由）"
+        },
+        "aiSeesYou": "AI は今こう見ています：",
+        "evidenceLink": "この {n} 件の記憶から",
+        "evidenceMissing": "記憶の整理を実行すると、ここの結論を記憶まで遡れるようになります。",
+        "experience": {
+          "title": "経歴",
+          "hint": "記憶から整理されたマイルストーンと学び",
+          "peopleEntry": "大切な人 {n}人",
+          "lessonsTitle": "学びと教訓",
+          "lessonApplied": "定着済み",
+          "empty": "まだマイルストーンがありません。記憶を増やして、相棒に整理してもらいましょう。"
+        },
+        "sidebar": {
+          "title": "クイックビューと操作",
+          "open": "クイックビューと操作"
+        }
+      },
+      "profileDims": {
+        "health": "健康",
+        "career": "キャリア",
+        "family": "家庭",
+        "finance": "お金",
+        "growth": "成長",
+        "social": "社交",
+        "hobby": "趣味",
+        "self_realization": "自己"
+      },
+      "dimDetail": {
+        "empty": "まだ話していない分野です——相棒と話すと、プロフィールが育っていきます。",
+        "goAssess": "評価を見る"
+      },
+      "review": {
+        "eyebrow": "変更の確認",
+        "title": "これらの変更をプロフィールに反映しますか？",
+        "later": "あとで",
+        "acceptAll": "すべて適用（{n}）",
+        "explain": "相棒が過去の記憶を整理する際、現在のプロフィールと一致しない点が見つかりました。確信度が高い更新は自動で反映済みです。以下は判断が難しいものなので、あなたに確認をお願いします。",
+        "loading": "確認待ちの変更を読み込み中…",
+        "empty": "確認待ちの変更はありません ✓",
+        "acceptNew": "新しい値を採用",
+        "keepOld": "元の値を保持",
+        "fieldLabels": {
+          "name": "呼び方",
+          "profession": "役割 / 職業",
+          "location": "居住地",
+          "topPriorities": "コアバリュー",
+          "northStar": "ノーススタービジョン",
+          "fiveYear": "5年後のビジョン",
+          "tone": "コミュニケーションの好み"
+        },
+        "leafLabels": {
+          "summary": "概要",
+          "recentInsight": "最近の洞察",
+          "skills": "スキル",
+          "patterns": "パターン"
+        },
+        "emptyValue": "（空）"
+      },
+      "reminder": {
+        "eyebrow": "リマインダールール",
+        "title": "リマインダーを設定",
+        "save": "リマインダーを保存",
+        "saving": "保存中…",
+        "contentLabel": "リマインダー内容",
+        "contentPlaceholder": "例：毎週日曜午後4時：筋トレを1回追加",
+        "dateLabel": "日付",
+        "timeLabel": "時間",
+        "freqLabel": "頻度",
+        "freq": {
+          "once": "一度だけ",
+          "daily": "毎日",
+          "weekly": "毎週",
+          "monthly": "毎月"
+        },
+        "onceNote": "リマインダー：{date} {time}",
+        "repeatNote": "{freq}リマインダー · 開始 {date} {time}",
+        "freqShort": {
+          "daily": "日",
+          "weekly": "週",
+          "monthly": "月"
+        },
+        "saveError": "保存に失敗しました",
+        "prefillTitle": "リマインダー · {query}"
+      },
+      "insight": {
+        "title": "自己認知レポート",
+        "eyebrow": "証拠ベース · 非臨床",
+        "disclaimer": "あなたの記憶から AI が推測したものです。自己探索のためのもので、臨床的な評価や診断ではありません。",
+        "lockedProgress": "{p}% / {r}%",
+        "lockedHint": "GEDO があなたを知るほどアンロックに近づきます——会話やライフスナップショットで。",
+        "readyBody": "実際の記憶から導く性格インサイト——質問集なし。",
+        "generate": "レポートを生成",
+        "continueDraft": "続きから — 残り{n}問",
+        "view": "レポートを見る",
+        "cooldown": "あと{n}日で更新可",
+        "updated": "v{v} · {date} 更新",
+        "generating": "記憶を読み込み中…",
+        "generatingHint": "実際の証拠から推測しています（約1分）",
+        "finalizing": "回答を反映しています…",
+        "failedTitle": "生成に失敗",
+        "failedBody": "モデルが応答しませんでした。進捗は保存されています。",
+        "retry": "再試行",
+        "clarifyIntro": "いくつかの項目で確認させてください——{n}問、1分以内。",
+        "back": "戻る",
+        "next": "次へ",
+        "submit": "レポート生成",
+        "big5Title": "パーソナリティ・スペクトラム",
+        "gedoTitle": "あなたの動き方",
+        "confidence": "信頼度 {pct}%",
+        "evidenceTitle": "証拠",
+        "clarifyRecord": "あなたの回答",
+        "historyTitle": "履歴",
+        "currentTag": "現在",
+        "versionMeta": "v{v} · {date}",
+        "regenerate": "再生成",
+        "cooldownHint": "あと{n}日で更新可",
+        "evidenceKinds": {
+          "episode": "記憶",
+          "profile": "プロフィール",
+          "life_wheel": "ライフフラワー",
+          "identity": "AI 人格",
+          "clarification": "あなたの回答"
+        },
+        "big5": {
+          "openness": {
+            "name": "開放性",
+            "low": "現実的",
+            "high": "探究的"
+          },
+          "conscientiousness": {
+            "name": "誠実性",
+            "low": "柔軟",
+            "high": "自律的"
+          },
+          "extraversion": {
+            "name": "外向性",
+            "low": "内向的",
+            "high": "外向的"
+          },
+          "agreeableness": {
+            "name": "協調性",
+            "low": "率直",
+            "high": "協調的"
+          },
+          "neuroticism": {
+            "name": "情緒性",
+            "low": "安定",
+            "high": "敏感"
+          }
+        },
+        "gedo": {
+          "motivation": "モチベーション",
+          "decision_style": "意思決定",
+          "energy_rhythm": "エネルギーリズム",
+          "stress_response": "ストレス対処",
+          "interpersonal": "対人パターン"
+        }
+      },
+      "sources": {
+        "title": "記憶ソース",
+        "subtitle": "ブログ・ファイル・AIチャット履歴を取り込み。保存前にすべて確認できます",
+        "countLabel": "ソース {count} 件",
+        "quotaLabel": "今月 {used}/{limit}",
+        "empty": {
+          "title": "まだソースがありません",
+          "hint": "ファイルやリンク、テキスト、ChatGPT / Claude の履歴を追加して、記憶を豊かにしましょう。"
+        },
+        "add": {
+          "entry": "ソースを追加",
+          "title": "記憶にソースを追加",
+          "dropTitle": "ここにファイルをドロップ（クリックで選択）",
+          "dropHint": "TXT · MD · PDF · DOCX · JSON · ZIP",
+          "modeUpload": "ファイル",
+          "modeUrl": "ウェブリンク",
+          "modePaste": "テキスト貼り付け",
+          "modeAi": "AIアプリから取り込み",
+          "urlPlaceholder": "https://your-blog.com/about",
+          "urlSubmit": "リンクを追加",
+          "urlHint": "ブログや公開ページに対応。取得できない場合はテキスト貼り付けをご利用ください。",
+          "pasteTitlePlaceholder": "このソースの名前（任意）",
+          "pastePlaceholder": "自己紹介・メモ・チャット記録など、自分に関するテキストを貼り付け",
+          "pasteSubmit": "テキストを追加",
+          "aiHint": "プラットフォームを選ぶとエクスポート手順が表示されます。ファイルをアップロードするか、内容を貼り付けてください。",
+          "fileQueued": "キューに追加済み",
+          "fileFailed": "失敗しました",
+          "quotaLeft": "今月あと {n} 件追加できます",
+          "quotaFull": "今月のソース上限に達しました。アップグレードで追加できます",
+          "queueNote": "取り込みはバックグラウンドで処理されます。このウィンドウは閉じて構いません。"
+        },
+        "platforms": {
+          "chatgpt": "ChatGPT",
+          "claude": "Claude",
+          "gemini": "Gemini",
+          "kimi": "Kimi",
+          "doubao": "Doubao",
+          "deepseek": "DeepSeek"
+        },
+        "guide": {
+          "uploadExport": "エクスポートファイルをアップロード",
+          "pasteInstead": "テキストを貼り付ける",
+          "chatgpt1": "ChatGPT → 設定 → データコントロール → データをエクスポート",
+          "chatgpt2": "エクスポートを確定し、メールのダウンロードリンクを開く",
+          "chatgpt3": "zip をダウンロードし、解凍せずそのままアップロード",
+          "claude1": "Claude → 設定 → プライバシー → データをエクスポート",
+          "claude2": "ダウンロードリンクがメールで届きます（24時間有効）",
+          "claude3": "zip または conversations.json をここにアップロード",
+          "gemini1": "takeout.google.com を開き、すべての選択を解除",
+          "gemini2": "「マイアクティビティ」を選択し、内容オプションで「Gemini Apps」のみに。形式は JSON",
+          "gemini3": "エクスポートした zip をここにアップロード",
+          "geminiWarn": "「Gemini」プロダクトを選ぶと Gems 設定のみになります。チャット履歴は「マイアクティビティ」にあります。",
+          "kimi1": "Kimi のウェブ版 → アバターメニュー → 設定",
+          "kimi2": "「個人データのエクスポート」からコピーを申請",
+          "kimi3": "ダウンロードした zip/json をここにアップロード",
+          "doubao1": "Doubao に公式エクスポートはありません。残したい会話をコピー",
+          "doubao2": "ここに貼り付けるか、拡張機能で保存した MD/TXT をアップロード",
+          "deepseek1": "DeepSeek に公式エクスポートはありません。残したい会話をコピー",
+          "deepseek2": "ここに貼り付けるか、拡張機能で保存した MD/TXT をアップロード"
+        },
+        "status": {
+          "queued": "待機中",
+          "fetching": "取得中",
+          "parsing": "解析中",
+          "extracting": "抽出中",
+          "review": "確認待ち",
+          "done": "完了",
+          "failed": "失敗",
+          "canceled": "キャンセル"
+        },
+        "card": {
+          "chars": "文字",
+          "queuePos": "待ち順 {pos} 番",
+          "pending": "確認待ち {count} 件",
+          "goReview": "確認する",
+          "deleteConfirm": "削除する？",
+          "acceptedLine": "保存 {accepted} 件・却下 {rejected} 件",
+          "pasteFallbackHint": "テキスト貼り付けでの取り込みをお試しください"
+        },
+        "typeNames": {
+          "file": "ファイル",
+          "url": "ウェブページ",
+          "text": "貼り付けテキスト",
+          "chat_export": "チャットエクスポート"
+        },
+        "errors": {
+          "SSRF_BLOCKED": "このアドレスは許可されていません",
+          "BAD_URL": "無効なリンクです",
+          "FETCH_FAILED": "ページを取得できませんでした",
+          "FETCH_TIMEOUT": "取得がタイムアウトしました",
+          "UNSUPPORTED_CONTENT_TYPE": "未対応のコンテンツ形式です",
+          "NO_TEXT_LAYER": "この PDF は文字レイヤーがありません（スキャンの可能性）。テキスト化してから追加してください",
+          "PARSE_FAILED": "ファイルを解析できませんでした",
+          "ZIP_GUARD": "アーカイブが大きすぎるか、ファイル数が多すぎます",
+          "NO_CONTENT": "抽出できるテキストがありません",
+          "NO_DATA_IN_ZIP": "アーカイブ内に解析可能なデータがありません",
+          "EMPTY_INPUT": "内容が空です",
+          "PARSER_UNAVAILABLE": "サーバーにこの形式のパーサーがありません"
+        },
+        "review": {
+          "title": "確認して保存",
+          "summary": "候補 {total} 件：記憶 {mem}・図鑑 {ent}",
+          "selectAll": "全て選択",
+          "clearAll": "解除",
+          "acceptSel": "選択を保存 ({n})",
+          "rejectSel": "選択を却下",
+          "edit": "編集",
+          "empty": "確認待ちの候補はありません",
+          "doneLine": "保存 {confirmed} 件・却下 {rejected} 件",
+          "quotaHit": "記憶の上限に達したため保存されませんでした",
+          "quotaBanner": "記憶数の上限に達し、一部は保存されませんでした。アップグレードで続行できます。",
+          "upgrade": "アップグレード",
+          "rowFailed": "保存に失敗しました",
+          "groupMemories": "記憶",
+          "groupNewEntities": "新しい図鑑カード",
+          "groupEntityFacts": "既存カードへの事実",
+          "panelSub": "すべてのソースの抽出結果をここで確認。承認するまで保存されません。",
+          "openPanel": "確認待ち（{n}）",
+          "newCardBadge": "新規カード"
+        },
+        "types": {
+          "important_info": "重要情報",
+          "personal_trait": "特性",
+          "key_event": "重要な出来事",
+          "date_reminder": "日付リマインド"
+        },
+        "entityTypes": {
+          "person": "人物",
+          "pet": "ペット",
+          "object": "持ち物",
+          "place": "場所",
+          "event": "出来事",
+          "org": "組織",
+          "other": "その他"
+        },
+        "detail": {
+          "open": "詳細を見る",
+          "eyebrow": "ソースの詳細",
+          "tabs": {
+            "overview": "概要",
+            "text": "本文",
+            "chunks": "チャンク"
+          },
+          "download": "元ファイルをダウンロード",
+          "steps": {
+            "fetch": "ページ取得",
+            "parse": "解析・分割",
+            "extract": "記憶を抽出",
+            "review": "確認して保存"
+          },
+          "parseLine": "{chars} 文字 → {chunks} チャンク",
+          "convSuffix": "（会話 {convs} 件）",
+          "extractLine": "{done}/{total} チャンク・候補 {cand} 件",
+          "failSuffix": "（失敗 {n}）",
+          "reviewLine": "確認待ち {pending}・保存 {accepted}・却下 {rejected}",
+          "info": {
+            "type": "種類",
+            "platform": "プラットフォーム",
+            "file": "ファイル",
+            "link": "リンク",
+            "size": "サイズ",
+            "created": "追加日時",
+            "updated": "更新日時"
+          },
+          "textEmpty": "本文はまだ生成されていません。解析後に表示されます。",
+          "textMeta": "{shown} / {total} 文字を表示中",
+          "loadMore": "さらに読み込む",
+          "chunksEmpty": "チャンクはまだありません。解析後に表示されます。",
+          "embedded": "埋め込み済み（後で検索に利用）",
+          "notEmbedded": "未埋め込み"
+        }
+      },
+      "inbox": {
+        "title": "確認待ち",
+        "subtitle": "確認待ちの記憶はすべてここに：ソース取り込み、会話からの発見、記憶の整理。",
+        "groups": {
+          "expiring": "まもなく期限切れ",
+          "chat": "会話から",
+          "consolidation": "記憶の整理"
+        },
+        "deletedSource": "ソースは削除済み",
+        "autoSavedLine": "{name} から {n} 件を自動で受け取りました（取り消し可）",
+        "undoAll": "すべて取り消す",
+        "doneLine": "{confirmed} 件を受け取り · {rejected} 件をスキップ",
+        "acceptSel": "選択を受け取る（{n}）",
+        "skipSel": "選択をスキップ",
+        "empty": "確認待ちの項目はありません。すべて完了です。",
+        "entityEmpty": "この相手に関する新しい発見はまだありません。",
+        "entityFilter": "「{name}」に関する項目のみ表示",
+        "clearFilter": "すべて表示"
+      },
+      "memoriesTitle": "記憶",
+      "memoriesSub": "すべての記憶を、ソースやライフエリアで自在に切り替え。",
+      "rail": {
+        "title": "ソース",
+        "collapse": "折りたたむ",
+        "expand": "ソースを開く",
+        "all": "すべての記憶",
+        "chat": "相棒との会話",
+        "manual": "手動記録",
+        "imports": "インポート",
+        "addImport": "ソースを追加",
+        "guideText": "ChatGPT のエクスポートや文書、リンクを渡せば、相棒が記憶に変えてくれます。",
+        "guideCta": "データを取り込む",
+        "quota": "今月 {used}/{limit}",
+        "pendingChip": "確認待ち {n} 件"
+      },
+      "addMenu": {
+        "button": "追加",
+        "capture": "メモする",
+        "upload": "ファイルをアップロード",
+        "link": "リンク・テキストを貼る",
+        "ai": "AI プラットフォームから"
+      },
+      "filterBar": {
+        "label": "絞り込み",
+        "source": "ソース：{name}",
+        "dim": "エリア：{name}",
+        "search": "検索：「{q}」",
+        "clearAll": "すべて解除",
+        "clearSource": "ソースを解除",
+        "clearDim": "エリアを解除",
+        "clearSearch": "検索を解除",
+        "emptyCombo": "「{conditions}」に該当する記憶はありません",
+        "evidence": "証拠：{name}"
+      },
+      "toolsMenu": "その他の操作",
+      "undoToast": {
+        "deleted": "{n} 件削除しました",
+        "undo": "元に戻す"
+      },
+      "emptyPendingTitle": "記憶が確認を待っています",
+      "emptyPendingHint": "取り込んだ内容は候補になっています。受け取るとここに表示されます。",
+      "emptyPendingCta": "確認する（{n}）",
+      "flowerCard": {
+        "legendSelf": "自己評価",
+        "legendAi": "AI 評価",
+        "insufficientLegend": "空の花びら = 情報不足",
+        "insufficientHint": "この分野はまだ話が少なめ——相棒と話すほど、評価が育っていきます。",
+        "aiEmptyHint": "生活のいろいろな面について話すと、AI がこの花を育てます。",
+        "aiEmptyShort": "AI はまだあなたを知り始めたばかり",
+        "ruleInsightFallback": "初期評価は記憶の活動量と目標の進捗から算出。「一括整理」で AI の解説を生成できます。",
+        "signalsLine": "記憶 {total} 件 · 直近30日 {recent} 件",
+        "goalsLine": "目標 {n} 件 · 平均進捗 {p}%",
+        "selfCompare": "自己評価 {s}/10",
+        "viewMemories": "記憶を見る（{n}）"
+      },
+      "dimLevels": {
+        "needs_care": "水やり待ち",
+        "sprouting": "芽生え",
+        "growing": "成長中",
+        "thriving": "繁茂",
+        "blooming": "開花",
+        "unknown": "情報不足"
+      },
+      "dimLevelDesc": {
+        "needs_care": "長く手つかず、または負荷がかかっている分野。優先的にケアを",
+        "sprouting": "動き始めたばかりで、まだ安定していません",
+        "growing": "継続的に取り組めていて、ペースは安定",
+        "thriving": "努力と成果がそろった、生活の支柱のひとつ",
+        "blooming": "あなたの強み。他の分野を潤す余力もあります",
+        "unknown": "まだ会話が足りないため、AI は採点を保留しています"
+      },
+      "flowerMovedNotice": "生命の花は「プロフィール」に引っ越しました——レーダーと自己評価はそちらへ。",
+      "flowerMovedCta": "見てみる"
+    },
+    "execution": {
+      "shell": {
+        "execution": "実行",
+        "goals": "目標",
+        "obstacles": "対応カード"
+      },
+      "weekdays": [
+        "日",
+        "月",
+        "火",
+        "水",
+        "木",
+        "金",
+        "土"
+      ],
+      "brand": "実行",
+      "subtitle": "目標を毎日のタスクへプランニングし、AIが自動でスケジュール · 実行を追跡",
+      "eveningReview": "夜のふりかえり",
+      "replan": "再計画",
+      "addTask": "タスクを追加",
+      "ecsLabel": {
+        "excellent": "優秀",
+        "good": "良好",
+        "fair": "普通",
+        "watch": "要注意"
+      },
+      "dayLabel": {
+        "unscheduled": "未予定",
+        "today": "今日",
+        "tomorrow": "明日",
+        "yesterday": "昨日",
+        "dayAfterTomorrow": "明後日",
+        "dateFormat": "{mm}月{dd}日 · {wd}"
+      },
+      "dateLine": {
+        "todayPlanned": "AIが昨日のふりかえりから {n} 件をスケジュールしました",
+        "upcomingPlanned": "今後の予定 {n} 件",
+        "historyDone": "履歴 {n} 件（完了 / スキップ）"
+      },
+      "hero": {
+        "completedToday": "今日の完了",
+        "mitNotStarted": " · MIT 未着手",
+        "focusTip": "午前は集中力が高い傾向です。<b>MIT</b> は10:30前に入れましょう。午後は体感が落ちます。",
+        "completedPct": "完了 {pct}%",
+        "planStable": "計画の安定度 92%",
+        "reviewPending": "ふりかえり 未完了",
+        "energyCurveTitle": "エネルギーカーブ",
+        "past14": "過去14日間の平均",
+        "now": "現在",
+        "peak": "ピーク · 10:30"
+      },
+      "schedule": {
+        "todayTimeline": "今日のタイムライン",
+        "upcomingTasks": "今後のタスク",
+        "historyRecord": "履歴",
+        "todayChip": "今日",
+        "upcomingChip": "今後{count}",
+        "historyChip": "履歴{count}",
+        "filterAll": "すべて",
+        "filterMitOnly": "MITのみ",
+        "filterOpen": "未完了",
+        "emptyNoTasksToday": "今日のタスクはありません · 右上の「タスクを追加」か、相棒に計画してもらいましょう",
+        "emptyNoFilterMatch": "この絞り込みに一致するタスクはありません",
+        "emptyNoUpcoming": "今後の予定はまだありません · タスクに期限を設定するとここに表示されます",
+        "emptyNoHistory": "履歴はまだありません · 完了またはスキップしたタスクがここに表示されます",
+        "upcomingBanner": "今後のタスク · {n} 件予定",
+        "view": "見る",
+        "itemsCount": "{n} 件"
+      },
+      "energy": {
+        "high": "高",
+        "medium": "中",
+        "low": "低"
+      },
+      "task": {
+        "inProgress": "進行中 · {time}",
+        "refine": "細分化",
+        "later": "あとで",
+        "blocked": "ブロック中",
+        "done": "完了",
+        "doneCheck": "完了 ✓",
+        "start": "開始 →",
+        "new": "新規",
+        "doneMark": "✓ 完了",
+        "skipMark": "⤫ スキップ"
+      },
+      "sidebar": {
+        "activeGoalsTitle": "進行中の目標",
+        "activeCount": "{n} 件 進行中",
+        "noGoals": "まだ目標がありません · 相棒に「目標を立てたい」と話しかけてみましょう",
+        "ifThenTitle": "If-Then カード",
+        "hitRate": "命中率 {rate}",
+        "noObstacles": "まだ If-Then カードがありません"
+      },
+      "goalCard": {
+        "ongoing": "継続中",
+        "decomposed": "プラン済み · タスク {n} 件{sub}",
+        "childGoals": " · サブ目標 {n} 件",
+        "viewBtn": "詳細を見る",
+        "replanBtn": "再プランニング / 調整",
+        "decomposeBtn": "デイリープランを作成"
+      },
+      "obstacleCard": {
+        "triggered": "発生 {n}",
+        "executed": "実行 {n}"
+      },
+      "dims": {
+        "career": "キャリア",
+        "health": "健康",
+        "growth": "成長",
+        "learning": "学習",
+        "relation": "人間関係",
+        "family": "家庭",
+        "finance": "お金",
+        "self": "自己",
+        "fun": "余暇"
+      },
+      "goalsView": {
+        "title": "目標",
+        "subtitle": "WOOP ガイド付き · OKR 4階層プランニング",
+        "newGoal": "新しい目標",
+        "chatCta": "達成したいことを相棒に伝えると、AI が SMART プランに仕上げます",
+        "goToChat": "会話へ移動",
+        "stats": {
+          "active": "進行中",
+          "completed": "完了",
+          "avgProgress": "平均進捗",
+          "hitRate": "障害ヒット率"
+        },
+        "emptyTitle": "まだ目標がありません",
+        "emptyHint": "右上の「新しい目標」で WOOP ガイドを試すか、まずは相棒に達成したいことを話してみましょう。"
+      },
+      "obstaclesView": {
+        "title": "対応カード",
+        "subtitle": "If-Then 障害対応カード · 実行の障害を予見して乗り越える",
+        "emptyTitle": "まだ障害対応プランがありません",
+        "emptyHint": "目標を作成すると If-Then カードが自動生成されます。または、タスクが「ブロック中」になったときに相棒が1枚作成します。",
+        "kpis": {
+          "hitRate": "障害ヒット率",
+          "hitRateSub": "自己認識の精度",
+          "cards": "対応カード",
+          "cardsSub": "If-Then",
+          "triggers": "発生回数",
+          "triggersSub": "ヒット数",
+          "executions": "実行回数",
+          "executionsSub": "プラン通りに実行"
+        },
+        "distributionTitle": "障害タイプの分布",
+        "timesUnit": "{n} 回",
+        "recentEventsTitle": "最近の障害イベント",
+        "unnamedTask": "（無題のタスク）",
+        "matched": "ヒット",
+        "newObstacle": "新しい障害",
+        "libraryTitle": "If-Then カードライブラリ"
+      },
+      "taskCreate": {
+        "eyebrow": "新しいタスク",
+        "title": "今日のタスクを追加",
+        "cancel": "キャンセル",
+        "add": "今日に追加",
+        "adding": "追加中…",
+        "titleLabel": "タスク",
+        "titlePlaceholder": "例：PRD の第3章を書き上げる",
+        "energyLabel": "必要なエネルギー",
+        "energyOptions": {
+          "high": {
+            "label": "高",
+            "desc": "集中力が必要、考える作業"
+          },
+          "medium": {
+            "label": "中",
+            "desc": "通常の作業、対応可能"
+          },
+          "low": {
+            "label": "低",
+            "desc": "機械的、ぼんやりでもOK"
+          }
+        },
+        "durationLabel": "予想所要時間",
+        "durations": {
+          "15": "15分",
+          "25": "25分（ポモドーロ）",
+          "45": "45分",
+          "60": "60分",
+          "90": "90分（集中タイム）"
+        },
+        "goalLabel": "関連する目標（任意）",
+        "noGoal": "— なし —",
+        "saveError": "追加に失敗しました"
+      },
+      "taskBreakdown": {
+        "eyebrow": "タスクを細分化",
+        "titleWith": "「{title}」を分解",
+        "titleGeneric": "タスクを分解",
+        "cancel": "キャンセル",
+        "creating": "作成中…",
+        "addN": "{n} 件のサブタスクを追加",
+        "intro": "相棒がこれをいくつかのステップに分解しました。リストに追加するものを選んでください：",
+        "loading": "相棒が分解しています…",
+        "empty": "分解できるステップがありません",
+        "genError": "生成に失敗しました",
+        "applyError": "作成に失敗しました"
+      },
+      "obstacleMatch": {
+        "eyebrow": "ブロック中",
+        "titleWith": "「{title}」がブロックされました",
+        "titleGeneric": "ブロックされました",
+        "cancel": "キャンセル",
+        "matching": "マッチング中…",
+        "matchBtn": "対応カードを探す",
+        "skipTask": "タスクをスキップする",
+        "done": "完了",
+        "close": "閉じる",
+        "whatBlocked": "何が妨げになっていますか？",
+        "noteLabel": "詳細を追加（任意）",
+        "noteHint": "相棒がこれをふりかえり資料に取り込みます",
+        "notePlaceholder": "例：午前に3つの会議があり、PRD をやる気力が残っていない",
+        "reasons": {
+          "procrastination_fear": {
+            "label": "先延ばし / 始めるのが怖い",
+            "desc": "プレッシャーを感じる / 始め方が分からない"
+          },
+          "time_insufficient": {
+            "label": "時間がない",
+            "desc": "今日の予定が詰まりすぎている"
+          },
+          "energy_low": {
+            "label": "エネルギー不足",
+            "desc": "眠い、疲れている、調子が出ない"
+          },
+          "external_block": {
+            "label": "外部の障害",
+            "desc": "他人に依存している / ツールが壊れた"
+          },
+          "unclear_step": {
+            "label": "次の一歩が不明確",
+            "desc": "先に考えをまとめる必要がある"
+          },
+          "mood_dip": {
+            "label": "気分が落ちている",
+            "desc": "何もしたくない"
+          },
+          "other": {
+            "label": "その他"
+          }
+        },
+        "matchError": "マッチングに失敗しました",
+        "recordError": "記録に失敗しました",
+        "noMatch": "この理由に対する If-Then カードはまだありません。今回はタスクをスキップし、次回相棒と一緒に1枚作成しましょう。",
+        "matchedIntro": "相棒が <b>{n}</b> 件のカードを見つけました。1つを試してみましょう：",
+        "recordedHit": "ヒットを記録しました",
+        "notUsed": "使わなかった",
+        "followThis": "これに従った",
+        "recorded": "記録済み"
+      },
+      "dailyPlanReview": {
+        "eyebrowPreview": "明日のプレビュー",
+        "eyebrowPlanning": "AI プランニング",
+        "titleAccepted": "今日に追加しました ✓",
+        "titlePlanning": "相棒が計画しています…",
+        "gotIt": "わかりました",
+        "done": "完了",
+        "later": "あとで",
+        "addingNow": "追加中…",
+        "acceptAdd": "採用して今日に追加",
+        "loadingText": "相棒が昨日のふりかえりとあなたのエネルギーカーブを基に計画しています…",
+        "suggestedN": "提案 {n} 件",
+        "sourceLlm": "最先端モデル",
+        "sourceFallback": "ルールベースのフォールバック",
+        "genError": "生成に失敗しました",
+        "applyError": "適用に失敗しました"
+      },
+      "eveningReflection": {
+        "eyebrow": "夜のふりかえり",
+        "titleDone": "今日はここまで。また明日。",
+        "titlePending": "30秒でまとめましょう",
+        "close": "閉じる",
+        "notNow": "今はしない",
+        "saving": "保存中…",
+        "finishReview": "ふりかえりを完了",
+        "todayScore": "今日の ECS スコア：{score}",
+        "savedNote": "あなたのふりかえりは相棒のプロフィールに反映されました。明日の計画はこれを踏まえて調整されます。",
+        "obstacleLabel": "今日の最大の障害",
+        "obstacles": {
+          "none": "大きな障害はなかった",
+          "procrastination": "先延ばし",
+          "time": "時間不足",
+          "energy": "エネルギー不足",
+          "distraction": "気が散った",
+          "mood": "気分",
+          "external": "外部からの妨害"
+        },
+        "valuableLabel": "今日いちばん価値があったこと",
+        "valuableHint": "一言で十分です",
+        "valuablePlaceholder": "例：PRD の第3章を書き終えた / 母と20分電話した",
+        "adjustLabel": "明日はどう調整したい？",
+        "adjusts": {
+          "no_change": {
+            "label": "維持",
+            "desc": "ペースは良好、明日も同様に"
+          },
+          "lower_load": {
+            "label": "少し減らす",
+            "desc": "今日は詰め込みすぎた、明日は減らす"
+          },
+          "higher_load": {
+            "label": "少し増やす",
+            "desc": "もう少し挑戦できそう"
+          },
+          "reorder": {
+            "label": "並び替え",
+            "desc": "内容は問題ない、タイミングが合わなかった"
+          }
+        },
+        "stabilityLabel": "今日の計画の安定感（あなたの感覚）",
+        "stabilityHint": "完了率 {pct}% · 予定 {n} 件",
+        "stabilitySliderLabel": "安定度",
+        "estimateLabel": "推定 ECS 合計：",
+        "saveError": "保存に失敗しました"
+      },
+      "goalDecompose": {
+        "eyebrowReplan": "再計画",
+        "eyebrowNew": "目標プランニング",
+        "titleWith": "「{title}」を{action}",
+        "titleGeneric": "目標を計画",
+        "actionReplan": "再計画",
+        "actionPlan": "計画",
+        "hintPlaceholder": "再生成時の調整意図（任意、例：もっと楽に）",
+        "regenerating": "生成中…",
+        "regenerate": "再生成",
+        "cancel": "キャンセル",
+        "committing": "タスクを生成中…",
+        "confirmGenerate": "確認して{prefix}{n} 件のタスクを生成",
+        "replanPrefix": "再",
+        "planningText": "相棒があなたのプロフィールを基に計画しています…",
+        "noPlan": "計画はまだありません",
+        "replanBanner": "再計画{doneSuffix}{skipSuffix}",
+        "doneSuffix": " · 完了 {done}/{total}（{pct}%）",
+        "skipSuffix": " · {n} 回スキップ",
+        "replanNote": "あなたの進捗と他の目標を踏まえて再計画しました。確認すると、新しい計画が<b>未完了の古いタスクを置き換え</b>ます。完了済みのものは履歴として残ります。",
+        "personalizedNote": "あなたのプロフィールと最近の状況を踏まえて計画しました。",
+        "notPersonalizedNote": "話すほど、あなたに合った計画になります —— プロフィールでさらに補える項目を確認してみましょう。",
+        "objectiveLabel": "目標（一文で）",
+        "keyResultsLabel": "主要な成果",
+        "addKr": "追加",
+        "newKr": "新しい主要な成果",
+        "durationLabel": "期間",
+        "days": "日",
+        "rescheduleBtn": "この期間で再スケジュール",
+        "phaseDayPrefix": "",
+        "phaseDaySuffix": "日目",
+        "dailySummary": "1日 {n} 件 · 合計 {total} 件のタスク",
+        "milestoneSummary": "重要タスク {total} 件",
+        "newDailyTask": "新しい毎日のタスク",
+        "addDailyTask": "毎日のタスクを追加",
+        "milestoneTasksLabel": "重要タスク",
+        "dayPrefix": "{day}日目",
+        "minutesSuffix": "分",
+        "genError": "生成に失敗しました",
+        "commitError": "タスクの生成に失敗しました"
+      }
+    },
+    "avatar": {
+      "loading": "デジタル分身を読み込み中…",
+      "sessionExpired": "ログイン状態が切れました。再度ログインしてください",
+      "loadError": "読み込みに失敗しました。接続を確認して再試行してください",
+      "reLogin": "再ログイン",
+      "retry": "再試行",
+      "title": "デジタル分身",
+      "subtitle": "公開用デジタルペルソナ · 公開スタジオ",
+      "saving": "保存中",
+      "tabs": {
+        "config": "設定",
+        "activity": "アクティビティ",
+        "distribute": "公開"
+      },
+      "defaultAssistantName": "あなた",
+      "assistantOf": "{name} のAIアシスタント",
+      "config": {
+        "identityTitle": "公開上の立場：代理アシスタント（ABOUT）",
+        "identityBody": "分身は「{name} のAIアシスタント」として三人称で応答し、公開プロフィールのみを使用します。プライベートな記憶は明かしません。",
+        "accessTitle": "アクセス制限",
+        "access": {
+          "public": {
+            "label": "公開",
+            "desc": "誰でも直接会話できます"
+          },
+          "hybrid": {
+            "label": "オープン + パスコード解除",
+            "desc": "匿名で軽い会話が可能。パスコード入力で識別 / 信頼モードを解除"
+          },
+          "passcode": {
+            "label": "パスコード必須",
+            "desc": "正しいパスコードを入力しないと会話できません"
+          }
+        },
+        "passcodeLabel": "パスコード",
+        "passcodePlaceholder": "共有用パスコードを設定",
+        "inviteHint": "ヒント：「記憶 · 人脈」で重要な連絡先専用の招待リンクを生成できます。開くと自動的に識別され、パスコードは不要です。",
+        "avatarTitle": "アバター",
+        "profileTitle": "プロフィール",
+        "displayNameLabel": "公開表示名",
+        "displayNamePlaceholder": "例：Alex",
+        "taglineLabel": "一言紹介",
+        "taglinePlaceholder": "例：プロダクトデザイナー / 個人開発者",
+        "greetingLabel": "あいさつ文",
+        "greetingPlaceholder": "訪問者がページを開いたときに分身が話す最初の一言",
+        "promptsTitle": "おすすめの質問",
+        "deleteAria": "削除",
+        "addAria": "追加",
+        "addPlaceholder": "訪問者が聞きそうな質問を追加",
+        "scopeTitle": "公開トピックの範囲",
+        "scopeDesc": "分身が話せる話題を限定します。空欄の場合は追加の制限なし（ABOUTのプライバシールールは適用されます）。",
+        "scopePlaceholder": "例：職歴、技術スタック、協業方法",
+        "themeTitle": "テーマカラー",
+        "previewLabel": "リアルタイムプレビュー",
+        "previewEmpty": "公開すると、ここで分身とリアルタイムに会話プレビューできます。"
+      },
+      "presetAvatars": {
+        "default": "ロボット",
+        "fox": "キツネ",
+        "cat": "ネコ",
+        "panda": "パンダ",
+        "owl": "フクロウ",
+        "astronaut": "宇宙飛行士",
+        "wizard": "魔法使い",
+        "ghost": "おばけ",
+        "alien": "エイリアン",
+        "sun": "太陽",
+        "sprout": "新芽",
+        "star": "星"
+      },
+      "themeColors": {
+        "emerald": "エメラルドグリーン",
+        "blue": "オーシャンブルー",
+        "violet": "ドリーミーバイオレット",
+        "rose": "ローズピンク",
+        "amber": "ウォームアンバー"
+      },
+      "picker": {
+        "uploadPhoto": "写真をアップロード",
+        "fileHint": "JPG/PNG/WebP対応、8MB以下",
+        "fileTooLarge": "画像は8MB以下にしてください",
+        "uploadError": "アップロードに失敗しました",
+        "chooseCartoonHint": "またはアバターを選ぶ",
+        "cartoonAvatarOf": "アバター · {label}",
+        "chooseCartoonAvatar": "アバターを選ぶ",
+        "close": "閉じる"
+      },
+      "activity": {
+        "kind": {
+          "task": "タスク",
+          "memory": "記憶",
+          "reminder": "リマインダー"
+        },
+        "inboxTitle": "確認待ちの受信箱",
+        "inboxDesc": "訪問者とのやり取りから抽出された候補です。確認後にタスク / 記憶へ書き込まれます。",
+        "loading": "読み込み中…",
+        "inboxEmpty": "確認待ちの項目はありません",
+        "noContent": "（内容なし）",
+        "ignore": "無視",
+        "adopt": "採用",
+        "publishGuideTitle": "分身はまだ公開されていません",
+        "publishGuideDesc": "設定を完了して公開すると、訪問者が分身と会話でき、ここにインタラクションが表示されます。",
+        "publishGuideStepConfig": "公開プロフィール・挨拶・アクセス設定を整える",
+        "publishGuideStepPublish": "「配信」タブで公開し、専用リンクを取得",
+        "publishGuideStepShare": "リンクや QR コードを共有して会話を集める",
+        "publishGuideConfigBtn": "設定へ",
+        "publishGuideDistributeBtn": "公開へ"
+      },
+      "insights": {
+        "title": "アクティビティの洞察",
+        "views": "累計閲覧数",
+        "sessions": "訪問者セッション",
+        "sessionsSub": "{matched} 件識別 · {anon} 件匿名",
+        "matchRate": "識別率",
+        "matchRateSub": "識別済みの割合",
+        "avgMsgs": "セッションあたりのメッセージ数",
+        "avgMsgsSub": "合計 {n} 件",
+        "approved": "採用済み",
+        "approvedSub": "{n} 件確認待ち",
+        "topQuestionsTitle": "人気の開始質問"
+      },
+      "sessions": {
+        "title": "訪問者との会話を見る",
+        "desc": "訪問者と分身の全文を表示します。クリックして展開してください。",
+        "empty": "まだ訪問者との会話がありません。公開してリンクを共有すると、会話がここに表示されます。",
+        "via": {
+          "invite": "招待",
+          "passcode": "パスコード",
+          "anonymous": "匿名"
+        },
+        "matchedVisitor": "識別済みの訪問者",
+        "anonymousVisitor": "匿名の訪問者",
+        "msgCount": "{n} 件のメッセージ",
+        "archived": "アーカイブ済み",
+        "emptyTurns": "（このセッションにはメッセージがありません）",
+        "summaryPrefix": "要約：",
+        "timeToday": "今日 {time}",
+        "timeYesterday": "昨日",
+        "timeDaysAgo": "{n} 日前",
+        "searchPlaceholder": "訪問者名・要約・会話内容を検索…",
+        "clearSearch": "検索をクリア",
+        "resultCount": "合計 {n} 件",
+        "noResults": "一致する訪問者との会話がありません。",
+        "loadMore": "さらに {n} 件を読み込む ↓",
+        "timeFilter": "期間",
+        "timeAll": "すべて",
+        "time7d": "過去 7 日",
+        "time30d": "過去 30 日",
+        "time90d": "過去 90 日"
+      },
+      "distribute": {
+        "published": "公開中",
+        "unpublished": "未公開",
+        "publishedDesc": "誰でも専用リンクから分身にアクセスできます。",
+        "unpublishedDesc": "公開すると、ログイン不要でアクセスできる専用リンクが生成されます。",
+        "unpublishBtn": "公開を停止",
+        "publishBtn": "公開する",
+        "publishQuotaExceeded": "デジタル分身の公開には Pro 以上のプランが必要です",
+        "publishError": "操作に失敗しました。しばらくしてから再試行してください",
+        "linkTitle": "専用リンク",
+        "copyLinkTitle": "リンクをコピー",
+        "qrTitle": "QRコード",
+        "qrDesc": "オフラインで共有したり、名刺やポスターに印刷できます。スキャンすると分身に直接アクセスできます。",
+        "qrAlt": "デジタル分身のQRコード",
+        "qrHint": "スキャンすると携帯から分身と話せます。",
+        "downloadPng": "PNGをダウンロード",
+        "embedTitle": "ウェブサイトへの埋め込み",
+        "embedDesc": "以下のコードをコピーして、分身のチャットウィジェットをサイト / ブログに埋め込めます。",
+        "copyEmbedTitle": "埋め込みコードをコピー",
+        "previewWidget": "ウィジェットをプレビュー",
+        "mcpTitle": "外部エージェント連携",
+        "mcpBody": "外部エージェントは MCP で接続できます：エンドポイント <code>{endpoint}</code>（Streamable HTTP・認証不要）、ツール <tool>digital_persona_profile</tool> / <tool>digital_persona_ask</tool>、slug：<code>{slug}</code>",
+        "emptyState": "公開すると、専用リンク・QRコード・埋め込みコードがここに表示されます。"
+      }
+    },
+    "lifeAreas": {
+      "health": {
+        "label": "健康",
+        "desc": "運動 / 睡眠 / 食事"
+      },
+      "career": {
+        "label": "キャリア",
+        "desc": "仕事 / プロジェクト / 影響力"
+      },
+      "growth": {
+        "label": "成長",
+        "desc": "スキル / 知識 / 学習"
+      },
+      "relation": {
+        "label": "人間関係",
+        "desc": "家族 / 友人 / パートナー"
+      },
+      "self": {
+        "label": "自己",
+        "desc": "心 / 感情 / 内省"
+      },
+      "fun": {
+        "label": "余暇",
+        "desc": "趣味 / 遊び"
+      },
+      "family": {
+        "label": "家庭",
+        "desc": "住まい / つながり"
+      },
+      "finance": {
+        "label": "お金",
+        "desc": "収入 / 貯蓄 / 投資"
+      }
+    },
+    "twin": {
+      "title": "分身モデル",
+      "badgeSoon": "鋳造中 · ベータ",
+      "tagline": "あなたの言葉で学習し、あなたらしく話す専用モデル。あなただけのもので、いつでも削除できます。",
+      "gateDesc": "分身モデルは Ultra 会員限定の機能です。",
+      "upgradeHint": "Ultra 限定",
+      "consentEntry": "分身モデルの学習",
+      "consentEntryDesc": "あなた専用のモデルを学習します。独立した同意で、いつでも取り消し・完全削除できます",
+      "enable": "分身モデルを有効にする",
+      "consentTitle": "分身モデルの学習を有効にする",
+      "consentIntro": "有効にする前に、以下をご確認ください：",
+      "clause1": "学習に使うのはあなた自身が書いた内容のみ（あなたのメッセージ、アップロードした文章、インポートした会話のあなたの発言）。AI の返答や他人の言葉は使いません。",
+      "clause2": "学習の成果物はあなただけの分身モデルです。共有モデルに統合されることはなく、他のユーザーは利用できません。",
+      "clause3": "学習データと分身モデルは GEDO 自社のインフラ上で処理され、第三者の AI サービスには送信されません。機微な情報は学習前に自動で除去されます。",
+      "clause4": "いつでも同意を取り消せます。取り消すと学習データと分身モデルは完全に削除され、復元できません。",
+      "clause5": "この同意は他のデータ設定から独立しています。「AI に見せない」と設定した内容が学習に使われることはありません。",
+      "consentBeta": "ベータ版の規約です。正式版の公開時に再確認をお願いします。",
+      "agree": "同意して有効にする",
+      "cancel": "キャンセル",
+      "grantedAt": "有効 · {version} · {date}",
+      "revoke": "取り消して削除",
+      "revokeTitle": "分身モデルの同意を取り消しますか？",
+      "revokeWarning": "学習データと分身モデルは完全に削除され、復元できません。分身は汎用モードに戻ります。",
+      "revokeConfirm": "取り消して削除する",
+      "progressTitle": "データ蓄積の進み具合",
+      "progressStats": "{items} 件（目標 {minItems} 件）",
+      "actionChat": "話しに行く",
+      "actionUpload": "文章サンプルを追加",
+      "actionImport": "設定 → プライバシー から ChatGPT / Claude の履歴をインポートして加速することもできます。",
+      "uploadPlaceholder": "あなたが書いた文章を貼り付けてください（メッセージ、メール、メモなど。20 文字以上）…",
+      "uploadSubmit": "サンプルを追加",
+      "uploadOk": "追加しました。進み具合を更新しました",
+      "uploadTooShort": "短すぎます（20 文字以上）",
+      "forging": "あなたの分身モデルを鋳造しています…",
+      "activeDesc": "専用モデル v{version} が有効になりました。分身があなたらしく話し始めます。",
+      "manageInSettings": "同意と削除は 設定 → プライバシー で管理できます。"
+    },
+    "welcome": {
+      "brand": "GEDO · ようこそ",
+      "skip": "スキップ",
+      "prev": "戻る",
+      "next": "次へ",
+      "start": "はじめる",
+      "steps": {
+        "talk": {
+          "title": "対話",
+          "desc": "ひとこと話すだけで、相棒が記録・計画・リマインドを同時にこなします —— あなたは話すだけ。"
+        },
+        "distill": {
+          "title": "蓄積",
+          "desc": "大切なことは自動で記憶になり、あなたの確認を経て保存 —— 使うほどあなたを理解します。"
+        },
+        "insight": {
+          "title": "洞察",
+          "desc": "傾向、エネルギー曲線、夜の振り返り —— 自分のリズムが見えてきます。"
+        },
+        "breakthrough": {
+          "title": "突破",
+          "desc": "日々の積み重ねで、やりたいことを成し遂げ、なりたい自分へ成長する。"
+        }
+      },
+      "talk": {
+        "userMsg": "今週３回のトレーニングが流れそう、日曜は出張もあって。",
+        "reply": "焦らないで —— 厳密なノルマじゃないから、2回できれば十分安定。3つ対応しておきました：",
+        "trace": {
+          "record": {
+            "name": "記憶に記録",
+            "detail": "日曜は出張 · トレーニング枠が縮小"
+          },
+          "adjust": {
+            "name": "実行を調整",
+            "detail": "今週 3回 → 2回"
+          },
+          "retarget": {
+            "name": "目標を再配置",
+            "detail": "運動習慣 · 今週のペース"
+          }
+        }
+      },
+      "memory": {
+        "recorded": "記憶に記録しました",
+        "recordedDetail": "健康診断：血圧が高め · 定期的な運動が必要",
+        "sectionLabel": "人生テーマ · 領域",
+        "rows": {
+          "health": {
+            "name": "健康",
+            "sub": "ランニング · 睡眠"
+          },
+          "career": {
+            "name": "仕事",
+            "sub": "ポートフォリオ"
+          },
+          "growth": {
+            "name": "成長 / 学習",
+            "sub": "英会話"
+          }
+        }
+      },
+      "insight": {
+        "title": "今週の成長トレンド",
+        "days": {
+          "mon": "月",
+          "tue": "火",
+          "wed": "水",
+          "thu": "木",
+          "fri": "金",
+          "sat": "土",
+          "sun": "日"
+        },
+        "stats": {
+          "completion": "達成率",
+          "focus": "集中",
+          "streak": "連続"
+        },
+        "streakValue": "12日"
+      },
+      "growth": {
+        "title": "人生の成長軌跡",
+        "capability": "能力 +18%",
+        "today": "今日",
+        "days": "{n}日"
+      }
+    }
+  }
+}

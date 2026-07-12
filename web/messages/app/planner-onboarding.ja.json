@@ -1,0 +1,367 @@
+{
+  "planner": {
+    "dimensions": {
+      "health": "健康",
+      "career": "キャリア",
+      "family": "家族",
+      "finance": "財務",
+      "growth": "成長",
+      "social": "社交",
+      "hobby": "趣味",
+      "self_realization": "自己実現"
+    },
+    "levels": {
+      "objective": {
+        "label": "O 最終目標",
+        "timeframe": "3〜12か月"
+      },
+      "key_result": {
+        "label": "KR 四半期成果",
+        "timeframe": "四半期ごと"
+      },
+      "monthly": {
+        "label": "M 月次目標",
+        "timeframe": "毎月"
+      },
+      "task": {
+        "label": "T 今日の行動",
+        "timeframe": "毎日"
+      }
+    },
+    "status": {
+      "active": "進行中",
+      "completed": "完了",
+      "paused": "一時停止",
+      "draft": "下書き",
+      "cancelled": "キャンセル"
+    },
+    "obstacleTypes": {
+      "time_limited": {
+        "label": "時間不足型",
+        "description": "所要時間を過小評価し、日次計画が過密"
+      },
+      "attention_scattered": {
+        "label": "注意散漫型",
+        "description": "頻繁な切り替えと外部の中断"
+      },
+      "procrastination_fear": {
+        "label": "先延ばし・恐れ型",
+        "description": "重要タスクが後回しになる"
+      },
+      "info_insufficient": {
+        "label": "情報不足型",
+        "description": "情報不足で進めない"
+      },
+      "energy_low": {
+        "label": "エネルギー不足型",
+        "description": "特定の時間帯に完了率が低い"
+      },
+      "external_dependency": {
+        "label": "外部依存型",
+        "description": "他者待ちで停滞"
+      }
+    },
+    "list": {
+      "emptyTitle": "まだ目標がありません",
+      "emptyHint": "「新規目標」で WOOP ガイド付き構築を開始",
+      "moreActions": "その他",
+      "editGoal": "目標を編集",
+      "decomposeOkr": "AI プランを作成",
+      "viewObstacles": "障害プランを見る",
+      "pause": "一時停止",
+      "resume": "再開",
+      "markComplete": "完了にする",
+      "delete": "削除",
+      "detail": "詳細",
+      "hitRate": "障害ヒット率 {rate}%",
+      "woopWish": "W 願望",
+      "woopOutcome": "O 最良の結果",
+      "woopObstacle": "O 最大の障害",
+      "searchPlaceholder": "目標を検索...",
+      "filterAll": "すべて",
+      "noResultsTitle": "該当する目標がありません",
+      "noResultsHint": "検索語を変えるか、絞り込みを解除してください。",
+      "clearFilters": "絞り込みを解除",
+      "pagePrev": "前へ",
+      "pageNext": "次へ",
+      "pageIndicator": "{current} / {total} ページ",
+      "createdOn": "作成 {date}",
+      "targetSpan": "{start} → {end}",
+      "targetBy": "目標 {date}"
+    },
+    "deleteGoalConfirm": "この目標を削除しますか？配下の KR と未着手のタスクは削除され、完了／進行中のタスクは残ります（フリータスクとして切り離し）。",
+    "editModal": {
+      "eyebrow": "目標を編集",
+      "title": "目標情報を更新",
+      "titleLabel": "目標タイトル",
+      "titlePlaceholder": "例：90日で英語を流暢に話せるようになる",
+      "dimensionLabel": "生命の次元",
+      "descriptionLabel": "説明",
+      "descriptionPlaceholder": "補足説明（任意）",
+      "woopSection": "WOOP（任意）",
+      "wishLabel": "W · 願望",
+      "wishPlaceholder": "本当に望んでいること",
+      "outcomeLabel": "O · 最良の結果",
+      "outcomePlaceholder": "実現したときの最良の姿",
+      "obstacleLabel": "O · 最大の障害",
+      "obstaclePlaceholder": "最も邪魔になりそうなこと"
+    },
+    "wizard": {
+      "title": "目標構築ウィザード",
+      "steps": {
+        "input": "目標を記述",
+        "diagnosis": "AI で明確化",
+        "structure": "OKR を生成",
+        "obstacle_plan": "障害プラン"
+      },
+      "inputLabel": "目標を一文で記述してください",
+      "inputPlaceholder": "例：6か月でプロダクトマネージャーに転職 / 3か月で体脂肪率18%に / 半年で PMP 認定に合格",
+      "analyzing": "AI が分析中…",
+      "startDiagnosis": "診断を開始",
+      "noClarify": "明確化が必要な質問はありません。そのまま WOOP に進めます。",
+      "generating": "生成中…",
+      "generateOkr": "OKR を生成",
+      "questionProgress": "質問 {current} / {total}",
+      "other": "その他…",
+      "answerPlaceholder": "回答を入力…",
+      "skip": "スキップ →",
+      "prevQuestion": "前の質問",
+      "nextQuestion": "次の質問",
+      "editAnswers": "回答を修正",
+      "confirmObstaclePlan": "確定して障害プランを生成",
+      "yourObstacle": "あなたの障害：{obstacle}",
+      "obstaclePlanIntro": "AI があなたの障害の記述から If-Then 対応カードを生成しました",
+      "ifLabel": "もし",
+      "thenLabel": "なら",
+      "back": "戻る",
+      "confirmStart": "確定して開始",
+      "ifThenWhen": "「{goal}」に関わるタスクに取り組んでいて、この障害にぶつかったら",
+      "thenActions": {
+        "time_limited": "今日の計画をすぐ3項目以内に絞り、MIT だけを残す",
+        "attention_scattered": "スマホを別の部屋に置き、25分の集中タイマーを開始する",
+        "procrastination_fear": "まず10分だけかけて、最小限の実行可能版を仕上げる",
+        "info_insufficient": "まず15分だけ下調べをして、必要な情報リストを書き出す",
+        "energy_low": "まず5分のウォームアップ／準備をしてから、続けるかを判断する",
+        "external_dependency": "自分だけで進められる部分を切り出し、できることから始める"
+      },
+      "ifThenFallback": "「{obstacle}」にぶつかったら",
+      "thenFallback": "まず5分の最小アクションから始める"
+    },
+    "detail": {
+      "eyebrow": "目標の詳細",
+      "loading": "読み込み中…",
+      "close": "閉じる",
+      "summary": "{progress}% · タスク {todos}件 · KR {krs}件",
+      "editGoal": "目標を編集",
+      "krSection": "主要な成果 (KR)",
+      "noKr": "KR はまだありません。下から手動で追加するか、「再プランニング」で生成できます。",
+      "noTodos": "タスクはありません",
+      "addKrPlaceholder": "新しい主要な成果…",
+      "addKr": "KR を追加",
+      "orphanTodos": "KR に属さないタスク",
+      "replanSection": "再プランニング（今のプランに満足できないとき）",
+      "replanPlaceholder": "任意：どう調整したいかを記述（例：「もっと会話寄りに、強度を下げる」）。AI がそれに沿って組み直し、プレビューを生成するので、編集してから保存できます。",
+      "genPreview": "プレビューを生成",
+      "genPreviewing": "プレビューを生成中…",
+      "previewHint": "プレビュー（KR タイトルを編集可）。適用すると未完了の古いプランを置き換えます。完了済みは履歴として残ります：",
+      "discard": "破棄",
+      "regen": "再生成",
+      "applying": "適用中…",
+      "applyReplace": "適用して置き換え",
+      "deleteGoal": "目標を削除",
+      "deleteKrConfirm": "この主要な成果 (KR) を削除しますか？配下の未着手タスクは削除され、完了／進行中のタスクは目標に付け替えられます。",
+      "deleteGoalConfirm": "目標「{title}」を削除しますか？\n· 完了済み {done} 件を保持（履歴に）\n· 進行中 {prog} 件を切り離し（フリータスクに）\n· 未着手 {todo} 件を削除\nKR とその子項目もまとめて削除されます。",
+      "woopWish": "W 願望",
+      "woopOutcome": "O 最良の結果",
+      "woopObstacle": "O 最大の障害"
+    },
+    "obstacleLibrary": {
+      "byGoal": "目標別",
+      "byType": "タイプ別",
+      "all": "すべて",
+      "cardCount": "{n} 枚",
+      "emptyTitle": "If-Then カードはまだありません",
+      "emptyHint": "目標作成時に自動生成されます",
+      "ifLabel": "もし",
+      "thenLabel": "なら",
+      "triggerCount": "{n} 回発動",
+      "deleteTitle": "削除"
+    }
+  },
+  "onboarding": {
+    "subtitle": "人生スナップショット · 初期プロフィール — 約5〜10分、一度に完了または後で再開",
+    "later": "あとで",
+    "optional": "（任意）",
+    "multiIndex": "{placeholder} ({index}/{count})",
+    "prevChapter": "前の章",
+    "skipChapter": "この章をスキップ",
+    "saving": "保存中…",
+    "continue": "続ける",
+    "finish": "完了",
+    "saveError": "保存できませんでした。しばらくして再度お試しください。",
+    "rings": { "basics": "基本の輪", "life": "生活の輪", "core": "内面の輪" },
+    "ringDone": "「{ring}」完了",
+    "knowLevelLabel": "理解レベル",
+    "sayALittle": "ひとことでもOK…",
+    "expandMore": "もっと書く",
+    "benefit": {
+      "name": "相棒があなたの好きな呼び方で呼びます",
+      "birthday": "ライフステージに合った提案になります",
+      "location": "天気・生活リズム・ローカル情報に反映されます",
+      "role": "職業や立場に合ったアドバイスになります",
+      "core_beliefs": "すべての提案があなたの価値観に沿います",
+      "non_negotiables": "譲れない一線に触れる提案は決してしません",
+      "pivotal_success": "励ましに実際のハイライトを引用します",
+      "pivotal_failure": "同じ落とし穴を避ける手助けをします",
+      "pivotal_turning": "今のあなたになった経緯を理解します",
+      "important_people": "名前を出せば相棒がすぐ誰か分かります（図鑑カードも作成）",
+      "relationship_notes": "大切な関係のリマインドが賢くなります",
+      "life_wheel_self_score": "生命の花の花びらに最初の形が生まれます",
+      "capability_evidence": "褒め言葉に根拠がつきます",
+      "top_3_challenges": "会話が今の課題解決を優先します",
+      "why_now": "伴走のペースが緊急度に合います",
+      "future_5y": "長期目標の分解に錨ができます",
+      "future_10y": "さらに先のビジョンもそっと覚えておきます",
+      "north_star": "どの計画も北極星に向かいます"
+    },
+    "layers": {
+      "identity": "アイデンティティ・プロフィール",
+      "semantic": "意味記憶",
+      "working": "ワーキングメモリ"
+    },
+    "lifeWheel": {
+      "health": "健康",
+      "career": "キャリア",
+      "family": "家族",
+      "finance": "財務",
+      "growth": "成長",
+      "social": "社交",
+      "hobby": "趣味",
+      "self_realization": "自己実現"
+    },
+    "completion": {
+      "title": "記憶プロフィールを作成しました",
+      "viewMemory": "記憶アーキテクチャを見る",
+      "startChat": "会話を始める",
+      "body": "あなたの回答はアイデンティティ・ワーキングメモリ・意味記憶に保存されました。",
+      "slotsFilled": "コア記憶スロットを {filled}/{total} 件入力しました。",
+      "completeness": "プロフィール完成度 {percent}%",
+      "hint": "すべての空欄を埋める必要はありません —— 会話の中で触れれば、相棒が自然に覚えて補完してくれます。"
+    },
+    "days": {
+      "1": {
+        "title": "基本プロフィール",
+        "intro": "まずは基本から —— あなたの呼び方と、いまのライフステージを GEDO に教えてください。",
+        "questions": {
+          "name": {
+            "label": "どのように呼べばよいですか？",
+            "placeholder": "例：太郎 / Alice"
+          },
+          "birthday": {
+            "label": "誕生日（YYYY-MM-DD、年月だけでも可）",
+            "placeholder": "1995-06-12"
+          },
+          "location": {
+            "label": "いまの主な居住都市は？",
+            "placeholder": "例：Singapore / Tokyo"
+          },
+          "role": {
+            "label": "いまの主な役割は？",
+            "placeholder": "例：プロダクトマネージャー / 大学院生 / 専業主婦(主夫)"
+          }
+        }
+      },
+      "2": {
+        "title": "価値観と原則",
+        "intro": "信じていること、受け入れられないことを一言で。この2つは「ソウルプロンプト」に取り込まれます。",
+        "questions": {
+          "core_beliefs": {
+            "label": "最も強く信じていること3つ（1行に1つ）",
+            "hint": "例：長期主義は短期の駆け引きに勝る；誠実さは賢さより大切；健康が 1 で、ほかはすべて 0。",
+            "placeholder": "1行に1つ"
+          },
+          "non_negotiables": {
+            "label": "絶対に受け入れられないこと3つ",
+            "placeholder": "1行に1つ"
+          }
+        }
+      },
+      "3": {
+        "title": "人生の転機となった経験",
+        "intro": "あなたを形づくった出来事 —— 成功・失敗・転機を1つずつ。GEDO はこれらから意思決定のパターンを理解します。",
+        "questions": {
+          "pivotal_success": {
+            "label": "最も達成感を得た経験",
+            "hint": "何があったか、なぜ大切だったかを簡単に（2〜4文で十分）。"
+          },
+          "pivotal_failure": {
+            "label": "最も印象に残っている失敗",
+            "hint": "そこから何を学びましたか？"
+          },
+          "pivotal_turning": {
+            "label": "人生の方向が変わった出来事",
+            "hint": "なぜそれなのですか？"
+          }
+        }
+      },
+      "4": {
+        "title": "大切な人間関係",
+        "intro": "あなたにとって最も大切な5人。GEDO が適切なタイミングで大事な日を知らせ、近況を気にかけます。",
+        "questions": {
+          "important_people": {
+            "label": "最も大切な5人を挙げてください（名前＋関係、例：「母 林さん」）",
+            "placeholder": "例：パートナー 田中 / 恩師 李教授"
+          },
+          "relationship_notes": {
+            "label": "GEDO に覚えておいてほしい関係の詳細（任意）",
+            "hint": "例：田中の誕生日は 8/12；毎週日曜に両親へ電話。"
+          }
+        }
+      },
+      "5": {
+        "title": "能力マップ",
+        "intro": "8次元の「生命の花」で自己採点し、各次元に根拠を1つ（任意）。これが意味記憶の土台になります。",
+        "questions": {
+          "life_wheel_self_score": {
+            "label": "8次元「生命の花」の自己評価（0＝まったく取り組んでいない、10＝現時点の理想）"
+          },
+          "capability_evidence": {
+            "label": "1〜3の次元を選び、それぞれ具体的な根拠を1つ（任意）",
+            "hint": "例：仕事 8 — 半年で X プロジェクトを独力で完遂；健康 4 — この1か月運動していない。"
+          }
+        }
+      },
+      "6": {
+        "title": "いまの不安と目標",
+        "intro": "いま最も眠れなくなる3つのことは？GEDO は日々のプランニングでそれらを優先します。",
+        "questions": {
+          "top_3_challenges": {
+            "label": "いま最大の課題／不安 3つ",
+            "placeholder": "1行に1つ、具体的なほど良い"
+          },
+          "why_now": {
+            "label": "なぜ今なのですか？（任意）",
+            "hint": "例：外部の締め切りがある、ある出来事が内省のきっかけになった、など。"
+          }
+        }
+      },
+      "7": {
+        "title": "長期ビジョン",
+        "intro": "5年後の自分、10年後の自分 —— 正確でなくてよいので「どうなりたいか」を。これがあなたの北極星です。",
+        "questions": {
+          "future_5y": {
+            "label": "5年後、どんな人になり／何をしていたいですか？",
+            "hint": "網羅する必要はありません。最も重要な1〜2の変化を。"
+          },
+          "future_10y": {
+            "label": "10年後は？"
+          },
+          "north_star": {
+            "label": "一言で北極星（GEDO は常にシステムプロンプトに保持します）",
+            "placeholder": "例：普通の人がより良い長期的意思決定をできる製品をつくる。"
+          }
+        }
+      }
+    }
+  }
+}

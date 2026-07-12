@@ -1,0 +1,2058 @@
+{
+  "app": {
+    "nav": {
+      "companion": "智伴",
+      "memory": "智忆",
+      "action": "智行",
+      "insights": "智察",
+      "avatar": "分身",
+      "settings": "设置",
+      "search": "搜索对话",
+      "searchHint": "搜索对话 (⌘K)"
+    },
+    "common": {
+      "loading": "正在加载…",
+      "save": "保存",
+      "saving": "保存中…",
+      "saved": "已保存",
+      "cancel": "取消",
+      "back": "返回",
+      "close": "关闭",
+      "collapse": "收起",
+      "confirm": "确认",
+      "delete": "删除",
+      "retry": "重试",
+      "loadFailed": "出错了，请稍后重试。",
+      "chatWithCompanion": "和智伴聊聊",
+      "removeItem": "移除 {item}"
+    },
+    "shell": {
+      "accountAndSettings": "个人中心",
+      "accountAndSettingsFor": "{email} · 个人中心",
+      "membershipLevel": "会员等级",
+      "home": "主页",
+      "help": "获取帮助",
+      "logout": "退出登录",
+      "manage": "管理",
+      "upgradeHint": "解锁更多模型与容量"
+    },
+    "language": {
+      "title": "语言",
+      "subtitle": "选择应用界面使用的语言",
+      "label": "界面语言",
+      "change": "切换语言",
+      "timezone": "时区",
+      "timezoneDesc": "用于晨间计划、待办提醒等；请选你实际所在地的时区。",
+      "timezoneSearch": "搜索城市或地区…",
+      "timezoneNoResults": "没有匹配的时区"
+    },
+    "membership": {
+      "tierFree": "免费版",
+      "tierPro": "专业版",
+      "tierUltra": "旗舰版",
+      "intervalMonthly": "月付",
+      "intervalYearly": "年付",
+      "intervalNone": "—"
+    },
+    "settings": {
+      "title": "个人中心",
+      "subtitle": "统一管理身份、订阅、偏好与数据隐私",
+      "saveBtn": "保存设置",
+      "savedBtn": "已保存",
+      "saving": "保存中…",
+      "nav": {
+        "label": "个人中心模块",
+        "overview": "个人概览",
+        "account": "账号与登录",
+        "subscription": "会员与订阅",
+        "preferences": "偏好设置",
+        "mcp": "外部工具",
+        "developer": "开发者/接入",
+        "privacy": "数据与隐私"
+      },
+      "overview": {
+        "title": "个人概览",
+        "displayName": "显示名",
+        "joined": "加入时间",
+        "smartUsage": "本月智能用量",
+        "manageSubscription": "管理订阅",
+        "exportData": "导出数据",
+        "changeAvatar": "更换头像",
+        "avatarUploadFailed": "头像上传失败，请重试",
+        "editName": "编辑显示名",
+        "namePlaceholder": "你的显示名"
+      },
+      "usage": {
+        "loading": "加载用量中…",
+        "unavailable": "本月首次使用智能功能后将显示用量状态。",
+        "smartUsage": "智能用量",
+        "visitorUsage": "数字人访客回复",
+        "level": {
+          "normal": "正常",
+          "high": "偏高",
+          "near_limit": "接近上限"
+        }
+      },
+      "preferences": {
+        "title": "偏好设置"
+      },
+      "display": {
+        "title": "显示",
+        "fontSize": "字号大小",
+        "fontSizeHint": "调整应用内文字大小，立即生效。",
+        "fontSizeSmall": "小",
+        "fontSizeStandard": "标准",
+        "fontSizeLarge": "大"
+      },
+      "account": {
+        "title": "账号与登录",
+        "email": "邮箱",
+        "changeEmail": "更改邮箱",
+        "password": "密码",
+        "changePassword": "修改密码",
+        "collapse": "收起",
+        "loginMethods": "登录方式",
+        "emailPassword": "邮箱密码",
+        "google": "Google",
+        "apple": "Apple",
+        "disconnect": "解绑",
+        "connectGoogle": "连接 Google",
+        "connectApple": "连接 Apple",
+        "linkHint": "连接 Google 或 Apple，免密码快速登录。",
+        "errLinkedElsewhere": "该账号已连接到另一个 GEDO 用户。",
+        "errProviderUnavailable": "该登录方式当前不可用。",
+        "errLinkFailed": "连接失败，请重试。",
+        "errUnlinkFailed": "解绑失败，请重试。",
+        "errLastMethod": "无法移除唯一的登录方式，请先设置密码或连接其他方式。",
+        "emailVerification": "邮箱验证",
+        "verifyHint": "验证你的邮箱地址以保护账户安全。",
+        "resendVerification": "重新发送",
+        "verifySending": "发送中…",
+        "verifySent": "验证邮件已发送，请查收。",
+        "verifyAlready": "你的邮箱已完成验证。",
+        "verifyFailed": "暂时无法发送，请重试。"
+      },
+      "membership": {
+        "title": "会员与订阅",
+        "currentTier": "当前等级",
+        "planName": "套餐名称",
+        "billingInterval": "计费周期",
+        "periodEnd": "当前周期结束",
+        "cancelNotice": "已设置在当前计费周期结束后取消订阅，在此之前仍可使用付费权益。",
+        "freeNotice": "你当前为免费版。升级后可解锁更多模型与容量，详见定价页。",
+        "upgrade": "升级套餐",
+        "viewPricing": "查看定价",
+        "managePortal": "管理订阅与发票",
+        "portalError": "无法打开账单门户",
+        "benefitsSummary": "当前方案权益详见定价页；智能用量每月重置。"
+      },
+      "avatar": {
+        "title": "智伴设置",
+        "nameLabel": "助理名称",
+        "personalityLabel": "性格风格",
+        "personality": {
+          "friendly": "温暖友好",
+          "friendlyDesc": "亲切关怀，鼓励为主",
+          "professional": "专业高效",
+          "professionalDesc": "聚焦目标，简洁直接",
+          "motivational": "激励驱动",
+          "motivationalDesc": "充满能量，挑战导向",
+          "gentle": "温柔陪伴",
+          "gentleDesc": "耐心倾听，细致入微"
+        }
+      },
+      "notifications": {
+        "title": "通知偏好",
+        "morning": "晨间计划提醒",
+        "morningDesc": "每天早上提醒你确认今日计划",
+        "checkin": "打卡提醒",
+        "checkinDesc": "待办临近截止时提醒打卡",
+        "evening": "晚间反思提醒",
+        "eveningDesc": "每天晚上提醒完成三问反思"
+      },
+      "theme": {
+        "title": "外观",
+        "pickerTitle": "主题与主色",
+        "mode": "主题",
+        "modeDark": "深色",
+        "modeLight": "浅色",
+        "modeAuto": "系统",
+        "accent": "主色",
+        "fontSize": "字号",
+        "fontSizeSmall": "小",
+        "fontSizeStandard": "标准",
+        "fontSizeLarge": "大",
+        "accentColors": {
+          "emerald": "翡翠绿",
+          "amber": "琥珀",
+          "blue": "海洋蓝",
+          "purple": "紫",
+          "coral": "珊瑚",
+          "teal": "青"
+        }
+      },
+      "mcp": {
+        "title": "外部工具（MCP）",
+        "desc": "登记远程 MCP server，其工具会并入智伴的聊天能力（输入框「+」菜单里也能看到）。",
+        "empty": "还没有登记外部工具。",
+        "namePh": "名称（如：我的工具）",
+        "urlPh": "https://mcp.example.com/mcp",
+        "add": "添加",
+        "test": "测试",
+        "testOk": "已连接 · {n} 个工具",
+        "testFailed": "连接失败",
+        "enable": "启用",
+        "disable": "停用",
+        "disabled": "已停用",
+        "delete": "删除",
+        "securityHint": "生产环境要求 https，私网地址默认拒绝（自托管可设 MCP_ALLOW_PRIVATE=1）；带 token 的 headers 不会回传到浏览器。",
+        "commandPh": "/绝对路径/命令",
+        "argsPh": "参数（空格分隔）",
+        "directoryTitle": "推荐连接",
+        "dirConnect": "连接",
+        "dirAdded": "已添加",
+        "oauthConnected": "已授权",
+        "authRequired": "需要授权",
+        "authorize": "去授权"
+      },
+      "developer": {
+        "title": "开发者/接入（记忆 MCP）",
+        "desc": "把你的 Gedo 记忆接入任何 AI：创建访问令牌，粘到 Claude Code / Claude Desktop / Cursor 等 MCP 客户端，对方即可在授权范围内检索你的记忆与画像。读写分权（写入不直接落库，仅进待确认队列）、可脱敏、每次调用留痕、随时吊销。",
+        "endpointLabel": "MCP 端点（Streamable HTTP）",
+        "upgradeHint": "记忆 MCP 为 Pro 及以上会员专属功能，升级后即可创建访问令牌。",
+        "tokenOnce": "令牌只显示这一次，请立即复制保存——关闭后无法再查看。",
+        "empty": "还没有访问令牌。",
+        "namePh": "令牌名称（如：我的 Claude Code）",
+        "create": "创建令牌",
+        "revoke": "吊销",
+        "redactToggle": "输出脱敏（隐去邮箱/电话/地址等 PII；密钥密码类内容无论开关一律拦截）",
+        "redactOn": "已开启脱敏",
+        "redactOff": "未脱敏",
+        "lastUsed": "最近使用 {time}",
+        "neverUsed": "从未使用",
+        "securityHint": "令牌等同于你记忆的只读钥匙：只粘到你信任的 AI 客户端；接入即表示记忆内容会流向该客户端背后的模型服务商。",
+        "auditTitle": "最近访问记录",
+        "scope": {
+          "memory_read": "记忆检索",
+          "profile_read": "画像",
+          "goals_read": "目标与待办",
+          "memory_write": "写入记忆（进待确认队列）"
+        }
+      },
+      "privacy": {
+        "title": "隐私与数据",
+        "pauseMemory": "暂停长期记忆",
+        "pauseMemoryDesc": "开启后，AI 对话不再调用你的历史记忆，也不再自动记录新记忆",
+        "export": "导出我的数据",
+        "exportDesc": "下载所有记忆、目标、待办数据（.gmp 包）",
+        "wipe": "清除我的全部数据",
+        "wipeDesc": "永久删除账号及所有记忆、目标、待办、对话，不可恢复",
+        "logout": "退出登录",
+        "autoAccept": "导入记忆自动收下",
+        "autoAcceptDesc": "高置信的导入候选自动入库（可在「待确认」中一键撤销）；关闭后全部候选等你逐条确认。"
+      },
+      "wipe": {
+        "title": "清除全部数据",
+        "warning": "此操作将永久删除你的账号以及全部记忆、目标、待办、对话与数字人数据，且无法恢复。如需备份，请先在上方\"导出我的数据\"。",
+        "passwordLabel": "账号密码",
+        "passwordPlaceholder": "请输入当前密码",
+        "confirmLabel": "请输入 <kw>DELETE</kw> 以确认",
+        "confirmDelete": "永久删除"
+      },
+      "emailForm": {
+        "newEmail": "新邮箱地址",
+        "currentPassword": "当前密码（验证身份）",
+        "updated": "✓ 邮箱已更新"
+      },
+      "passwordForm": {
+        "current": "当前密码",
+        "new": "新密码（至少 6 位）",
+        "confirm": "确认新密码",
+        "changed": "✓ 密码已修改"
+      },
+      "errors": {
+        "bad_credentials": "密码错误，请重试",
+        "weak_password": "新密码至少 6 位",
+        "same_password": "新密码不能与当前密码相同",
+        "invalid_email": "请输入有效的邮箱地址",
+        "email_taken": "该邮箱已被占用",
+        "same_email": "新邮箱与当前邮箱相同",
+        "bad_json": "请求异常，请重试",
+        "unauthorized": "登录已过期，请重新登录",
+        "passwordMismatch": "两次输入的新密码不一致",
+        "generic": "操作失败，请稍后重试"
+      }
+    },
+    "quota": {
+      "title": "已达本月额度上限",
+      "body": "你已达到当前方案的本月使用上限。",
+      "upgradeTo": "升级到 {tier}",
+      "dismiss": "关闭",
+      "resource": {
+        "active_goals": "免费版活跃目标已达上限（5 个）。",
+        "memory_items": "免费版记忆条数已达上限（200 条）。",
+        "smart_credits": "本月智能额度已用完。",
+        "persona_publish": "公开发布数字人需要 Pro 会员。",
+        "visitor_replies": "数字人访客回复额度已用完。",
+        "profile_refresh": "本月深度画像刷新次数已用完。"
+      }
+    },
+    "companion": {
+      "cards": {
+        "snapshot": {
+          "fallbackTitle": "{period, select, today {今日状态} week {本周状态} month {本月状态} other {状态}}"
+        },
+        "goalProgress": {
+          "fallbackTitle": "目标进度",
+          "status": "{status, select, on_track {进行中} at_risk {需关注} behind {落后} completed {完成} other {进行中}}",
+          "nextStep": "下一步: {task}"
+        },
+        "taskAdjust": {
+          "fallbackTitle": "任务调整建议",
+          "action": "{action, select, postpone {顺延} reschedule {改期} remove {移除} priority_up {提优先级} priority_down {降优先级} other {调整}}",
+          "apply": "一键应用",
+          "applying": "正在应用…",
+          "applied": "已应用",
+          "appliedPartial": "已应用 {applied}/{total}（其余任务未匹配）",
+          "undo": "撤销",
+          "noop": "没有匹配到可调整的任务，未做任何改动",
+          "undoing": "正在撤销…",
+          "undone": "已撤销",
+          "errorApply": "操作失败",
+          "errorUndo": "撤销失败"
+        },
+        "memoryList": {
+          "fallbackTitle": "相关记忆"
+        }
+      },
+      "brand": "智伴",
+      "brandFull": "智伴 · GEDO-AI",
+      "defaultName": "志远",
+      "heroTitle": "今天聊聊吗，{name}",
+      "heroSubtitle": "智伴会从对话里记录、规划、提醒你 — 你只管说话",
+      "notifications": "通知",
+      "voiceChat": "语音对话",
+      "newSession": "新会话",
+      "thinking": "智伴正在思考…",
+      "searchPlaceholder": "搜索对话…",
+      "noMatch": "没有匹配「{query}」的对话",
+      "noConversations": "还没有对话 · 在右侧输入开始",
+      "untitled": "未命名对话",
+      "deleteConversation": "删除对话",
+      "deleteQuestion": "删除？",
+      "groupToday": "今天",
+      "groupYesterday": "昨天",
+      "groupEarlier": "更早",
+      "timeJustNow": "刚刚",
+      "timeMinutesAgo": "{n} 分钟前",
+      "timeDaysAgo": "{n} 天前",
+      "loadingHistory": "加载历史消息…",
+      "emptyTitle": "开始一段新对话",
+      "emptyBody": "告诉智伴你想聊什么 — 它会同时记录、规划、提醒你。",
+      "quick": {
+        "todayStatus": "今天的状态",
+        "todayStatusPrompt": "帮我从昨天的执行情况和今天能量预测，重新排一下今日时间线。",
+        "jot": "记一条",
+        "jotPrompt": "帮我记一下：",
+        "setGoal": "立个目标",
+        "setGoalPrompt": "我想立一个 90 天的目标 —— "
+      },
+      "tools": {
+        "capture_memory": "保存记忆",
+        "search_memory": "检索记忆",
+        "create_goal": "创建目标",
+        "plan_goal": "规划目标",
+        "create_task": "新增待办",
+        "complete_task": "完成待办",
+        "list_today_tasks": "查看今日待办",
+        "list_goals": "查看目标",
+        "generate_review": "生成复盘"
+      },
+      "result": {
+        "done": "完成",
+        "failed": "执行失败",
+        "calling": "调用中…",
+        "interrupted": "已中断",
+        "timeout": "响应超时，已自动中断，请重试。",
+        "error": "出错了：{err}",
+        "connectFailed": "连接失败",
+        "connectFailedDetail": "连接失败：{err}",
+        "foundMemories": "找到 {n} 条相关记忆",
+        "noMemories": "没有找到相关记忆",
+        "todayTasks": "今天有 {n} 个待办",
+        "noTodayTasks": "今天没有待办",
+        "totalGoals": "共 {n} 个目标",
+        "noGoals": "还没有目标"
+      },
+      "composer": {
+        "placeholder": "说点什么…按 Enter 发送，Shift+Enter 换行",
+        "attach": "附件",
+        "uploading": "上传中…",
+        "remind": "提醒",
+        "voiceInput": "语音输入",
+        "lang": "中文",
+        "hint": "智伴会从对话中自动提取并征求你确认；任何记忆都可在 智忆 修改或删除",
+        "menuAttach": "上传附件",
+        "menuLink": "关联目标 / 待办 / 图鉴卡",
+        "menuTools": "外部工具",
+        "menuSoon": "即将上线"
+      },
+      "refPicker": {
+        "title": "关联内容",
+        "goals": "目标",
+        "tasks": "待办",
+        "cards": "图鉴卡",
+        "search": "搜索…",
+        "empty": "这里还没有内容。",
+        "confirm": "关联 {n} 项",
+        "limit": "最多关联 5 项"
+      },
+      "modePicker": {
+        "auto": "自动",
+        "autoHint": "交给智伴自动判断要不要调用工具",
+        "memory": "记忆",
+        "memoryHint": "本轮强制保存一条记忆",
+        "todo": "待办",
+        "todoHint": "本轮强制新增一条待办",
+        "goal": "目标",
+        "goalHint": "本轮强制规划一个目标",
+        "review": "复盘",
+        "reviewHint": "本轮强制生成一份阶段性复盘",
+        "expandHint": "切换模式"
+      },
+      "memoryExpand": {
+        "tagsPlaceholder": "标签，用逗号分隔"
+      },
+      "goalExpand": {
+        "continueWoop": "继续用 WOOP 规划 →"
+      },
+      "reviewExpand": {
+        "completionRate": "完成率",
+        "tasks": "任务",
+        "activeGoals": "活跃目标",
+        "reflections": "反思次数",
+        "insights": "洞察",
+        "suggestions": "建议"
+      },
+      "rowEdit": {
+        "save": "存",
+        "cancel": "取消",
+        "edit": "改",
+        "delete": "删"
+      },
+      "message": {
+        "stop": "停止生成",
+        "stopped": "已停止"
+      },
+      "level": {
+        "key_result": "关键成果",
+        "monthly": "阶段",
+        "task": "子待办",
+        "objective": "目标"
+      },
+      "decompose": {
+        "loading": "加载规划明细…",
+        "empty": "暂无明细。",
+        "recentTasks": "近期待办",
+        "redoing": "重新规划中…（约 1 分钟）",
+        "redo": "重新规划",
+        "redoFailed": "重新生成失败，原规划已保留，可稍后重试。",
+        "doneStatus": "已完成",
+        "savedChip": "已保存到目标页",
+        "discard": "放弃规划",
+        "discarding": "放弃中…",
+        "discardConfirm": "放弃这次规划？目标及其 KR/阶段、未开始的待办会被删除（已完成的保留为历史）。",
+        "discarded": "已放弃，此次规划的目标与待办已删除。"
+      },
+      "inProgress": "进行中",
+      "board": {
+        "title": "上下文画板",
+        "items": "{n} 项",
+        "pending": "{n} 待确认",
+        "collapse": "折叠",
+        "activeCapture": "主动捕获 · AI 提取，你确认",
+        "coreHint": "核心信息自动记住（可撤销）· 其余候选确认后才进入记忆",
+        "explainTitle": "说明 · 上下文画板",
+        "explainBody": "每当智伴调用工具（保存记忆、调整待办、规划目标），调用过程会出现在这里。开始一段对话，画板就会自动填充。"
+      },
+      "capture": {
+        "statusPending": "待确认",
+        "statusSaved": "已记住",
+        "statusConfirmed": "已确认",
+        "statusRejected": "已忽略",
+        "statusUndone": "已撤销",
+        "statusExpired": "已过期",
+        "importanceCore": "核心",
+        "importanceHigh": "重要",
+        "taskCandidate": "待办候选",
+        "memoryCapture": "记忆捕获",
+        "hit": "命中·{slot}",
+        "due": "截止 {date}",
+        "saveConfirm": "保存并确认",
+        "addTask": "加入待办",
+        "confirmRemember": "确认记住",
+        "fix": "修正",
+        "ignore": "忽略",
+        "addedToToday": "已加入今日待办",
+        "savedToMemory": "已写入智忆",
+        "undo": "撤销"
+      },
+      "callStatus": {
+        "running": "进行中",
+        "success": "完成",
+        "failed": "失败"
+      },
+      "memoryModal": {
+        "eyebrow": "记录到智忆",
+        "title": "把刚才那条记下来",
+        "saving": "保存中…",
+        "save": "保存到智忆",
+        "contentLabel": "内容",
+        "contentPlaceholder": "例如：今早跑步 30 分钟，腿酸但状态好，配速 6'42\"…",
+        "typeLabel": "类型",
+        "sourceLabel": "来源",
+        "dimensionsLabel": "关联维度",
+        "dimensionsHint": "可选；不选则按内容自动归类",
+        "tagsLabel": "标签",
+        "tagsHint": "按 Enter 或逗号添加。例：健康、跑步、里程碑",
+        "tagsPlaceholder": "键入后回车…",
+        "saveError": "保存失败",
+        "category": {
+          "important_info": "重要信息",
+          "observation": "自我察觉",
+          "goal_related": "目标相关",
+          "reflection": "反思感悟",
+          "general": "日常"
+        },
+        "source": {
+          "text": "手动输入",
+          "chat_extract": "对话提取",
+          "voice": "语音记录"
+        }
+      },
+      "notif": {
+        "eyebrow": "通知",
+        "titlePending": "{n} 条待你回应",
+        "titleEmpty": "都看完了",
+        "loading": "加载中…",
+        "emptyBody": "智伴还没有发现需要主动告诉你的事情",
+        "accepted": "已接受",
+        "snoozed": "稍后",
+        "dismissed": "已忽略",
+        "snooze": "稍后",
+        "ignore": "忽略",
+        "accept": "收下",
+        "justNow": "刚刚",
+        "minutesAgo": "{n} 分钟前",
+        "hoursAgo": "{n} 小时前",
+        "daysAgo": "{n} 天前"
+      },
+      "voice": {
+        "eyebrow": "语音对话",
+        "noSpeechApi": "当前浏览器不支持 Web Speech API。请用 Chrome / Edge。",
+        "noSynthesis": "当前浏览器不支持语音合成。",
+        "noReply": "智伴没有给出回复。",
+        "requestFailed": "请求失败",
+        "exit": "退出语音",
+        "holdToTalk": "按住说话",
+        "stopListening": "停止收音",
+        "processing": "处理中…",
+        "stopReading": "停止朗读",
+        "retry": "重试",
+        "youSaid": "你说",
+        "assistant": "智伴",
+        "state": {
+          "idle": "准备好就开始",
+          "listening": "正在听…",
+          "transcribing": "转写中",
+          "responding": "智伴正在回复",
+          "speaking": "智伴正在朗读",
+          "error": "出错了"
+        }
+      }
+    },
+    "insights": {
+      "brand": "智察",
+      "titleWeek": "本周回顾",
+      "titleMonth": "本月回顾",
+      "subtitle": "智伴从你的执行、记忆与复盘中提炼的 {days} 天洞察",
+      "periodWeek": "本周",
+      "periodMonth": "本月",
+      "generating": "生成中…",
+      "aiReview": "AI 复盘",
+      "exportReport": "导出报告",
+      "emptyTitle": "洞察来自你的日常",
+      "emptyHint": "先和智伴聊聊、记几条 —— 用得越多，这里的趋势和复盘越准。",
+      "reviewsTitle": "历史复盘",
+      "reviewsEmpty": "还没有 AI 复盘 — 点上方“AI 复盘”生成第一份",
+      "periodMonthShort": "月",
+      "periodWeekShort": "周",
+      "kpi": {
+        "ecsAvg": "ECS 平均分",
+        "ecsExcellent": "优秀",
+        "ecsGood": "良好",
+        "ecsWatch": "需关注",
+        "completionRate": "待办完成率",
+        "completionSub": "已完成 / 已规划",
+        "activeGoals": "活跃目标",
+        "activeGoalsSub": "进行中",
+        "newMemories": "新增记忆",
+        "newMemoriesSub": "已沉淀",
+        "reflections": "完成复盘",
+        "reflectionsSub": "次"
+      },
+      "ecsTrend": "ECS 趋势",
+      "ecsNoData": "数据还不够 — 完成几天待办后趋势会浮现",
+      "trendFlat": "— 持平",
+      "weekdays": [
+        "日",
+        "一",
+        "二",
+        "三",
+        "四",
+        "五",
+        "六"
+      ],
+      "completionByDay": "每日完成率",
+      "last7": "过去 7 天",
+      "noData": "暂无数据",
+      "sidebarTitle": "智伴洞察",
+      "sidebarEmpty": "暂时没有新洞察 — 继续记录与执行，智伴会持续观察",
+      "regenerate": "重新生成",
+      "suggestion": {
+        "praise": "做得好",
+        "tip": "小建议",
+        "warning": "留意",
+        "hint": "提示"
+      },
+      "overview": "概览",
+      "highlights": "亮点",
+      "lowlights": "待提升",
+      "nextFocus": "下期聚焦",
+      "export": {
+        "reportTitle": "智察报告",
+        "monthly": "月度",
+        "weekly": "本周",
+        "exportedAt": "导出时间",
+        "metrics": "指标",
+        "ecsMean": "ECS 均值",
+        "taskCompletion": "待办完成率",
+        "activeGoals": "活跃目标",
+        "newMemories": "新增记忆",
+        "reflections": "完成复盘",
+        "aiSuggestions": "AI 建议",
+        "historyReviews": "历史复盘",
+        "noSummary": "(无摘要)",
+        "reviewTitle": "复盘"
+      },
+      "reviewModal": {
+        "eyebrowMonth": "月复盘",
+        "eyebrowWeek": "周复盘",
+        "title": "复盘",
+        "exportMd": "导出 Markdown",
+        "noData": "没有复盘数据",
+        "ecsAvg": "ECS 均值",
+        "completionRate": "完成率"
+      }
+    },
+    "memory": {
+      "nav": {
+        "profile": "画像",
+        "codex": "图鉴",
+        "memories": "记忆"
+      },
+      "flower": {
+        "dimGoals": "关联目标",
+        "dimEntities": "关联卡片"
+      },
+      "knowLevels": {
+        "l1": "初识",
+        "l2": "熟悉",
+        "l3": "知己",
+        "l4": "懂你"
+      },
+      "codex": {
+        "loading": "加载中…",
+        "detail": {
+          "mentions": "提及 {n} 次",
+          "lastSeen": "最近提及 {d}",
+          "discoveries": "智伴新发现",
+          "adopt": "采纳",
+          "ignore": "忽略",
+          "loadMore": "加载更多",
+          "chatAbout": "和智伴聊聊TA",
+          "edit": "编辑卡片",
+          "facts": "卡片事实",
+          "inboxEntry": "有 {n} 条关于 TA 的发现待确认"
+        },
+        "searchPlaceholder": "搜索名字 / 关系…",
+        "addCard": "添加卡片",
+        "emptyTitle": "还没有卡片",
+        "emptyHint": "把身边重要的人、心爱的物、有意义的地方各建一张卡；对话里高频出现的人物也会自动生成建卡建议。",
+        "aiHiddenBadge": "已对 AI 隐藏",
+        "avatarVisibleBadge": "分身可用",
+        "types": {
+          "all": "全部",
+          "person": "人",
+          "pet": "宠物",
+          "object": "物品",
+          "place": "地点",
+          "event": "事件",
+          "org": "组织",
+          "other": "其他"
+        },
+        "keyLabels": {
+          "birthday": "生日",
+          "personality": "性格",
+          "likes": "喜好",
+          "how_we_met": "怎么认识",
+          "breed": "品种",
+          "brand": "品牌",
+          "model": "型号",
+          "acquired_at": "入手时间",
+          "meaning": "对我的意义",
+          "city": "城市",
+          "period": "时期",
+          "when": "发生时间",
+          "my_role": "我的角色",
+          "impact": "影响",
+          "joined_at": "加入时间"
+        },
+        "editor": {
+          "newTitle": "新建卡片",
+          "editTitle": "编辑卡片",
+          "emoji": "图标",
+          "name": "名字",
+          "namePlaceholder": "妈妈 / 球球 / 我的车…",
+          "type": "类型",
+          "relation": "与我的关系",
+          "relationPlaceholder": "母亲 / 爱宠 / 通勤座驾…",
+          "aliases": "别名（顿号分隔）",
+          "aliasesPlaceholder": "老妈、张女士",
+          "facts": "卡片事实",
+          "noFacts": "还没有事实，从下方建议开始补充",
+          "suggested": "建议补充",
+          "customKeyPlaceholder": "自定义键",
+          "valuePlaceholder": "内容",
+          "addFact": "添加",
+          "removeFact": "移除",
+          "note": "备注",
+          "notePlaceholder": "任何想补充的背景…",
+          "dimensions": "关联维度",
+          "privacy": "隐私",
+          "aiExcluded": "对 AI 隐藏",
+          "aiExcludedHint": "打开后智伴不再读取这张卡，对话中也不会引用它。",
+          "avatarVisible": "对外分身可用",
+          "avatarVisibleHint": "打开后，对外数字人可向已识别的访客提及卡上事实；默认关闭。",
+          "invite": "专属邀请链接",
+          "inviteGenerate": "生成邀请链接",
+          "inviteNeedPublish": "先在「分身」页发布数字分身，链接才会生效。",
+          "inviteHint": "对方打开链接即被自动识别为这张卡。",
+          "copy": "复制",
+          "linkedEpisodes": "相关记忆",
+          "noLinkedEpisodes": "还没有碎片引用这张卡",
+          "delete": "删除",
+          "cancel": "取消",
+          "save": "保存"
+        },
+        "groups": {
+          "people": "人",
+          "things": "宠物·物件",
+          "places": "地点·组织",
+          "events": "事件"
+        },
+        "completeness": "资料完整度 {pct}%",
+        "merge": {
+          "button": "合并…",
+          "hint": "把「{name}」并入另一张卡：资料补齐到对方卡上、记忆回链跟着走，本卡随后删除（不可撤销）。",
+          "pickTarget": "选择并入哪张卡…",
+          "confirm": "确认合并"
+        },
+        "rail": {
+          "title": "分类",
+          "collapse": "收起分类",
+          "expand": "展开分类"
+        },
+        "summary": {
+          "title": "AI 总结",
+          "empty": "和智伴多聊聊 TA，AI 会在这里写下总结。",
+          "generatedAt": "生成于 {date}",
+          "regenerate": "重新生成",
+          "regenerating": "生成中…",
+          "failed": "上次生成失败，稍后会自动重试。",
+          "excludedHint": "已对 AI 隐藏的卡片不会生成总结。"
+        }
+      },
+      "allMemories": "全部记忆",
+      "dimAll": "全部",
+      "profileTitle": "画像",
+      "codexTitle": "图鉴",
+      "profileSub": "AI 眼中的你：结论都可以追溯到记忆，也随时能纠正。",
+      "codexSub": "与你有关的人、物、事 —— 记忆的锚点",
+      "searchPlaceholder": "搜索记忆…",
+      "emptyTimelineTitle": "记忆会自动沉淀在这里",
+      "emptyTimelineHint": "和智伴说说今天，它会替你记住值得记的 —— 等你确认才入库。",
+      "genFailed": "生成失败",
+      "genFailedDetail": "生成失败：{msg}",
+      "noSummaryReturned": "智伴未返回总结。",
+      "aiSummaryLabel": "智伴总结",
+      "export": {
+        "title": "智忆导出 · {focus}",
+        "exportedAt": "导出时间",
+        "summaryHeading": "智伴总结",
+        "timelineHeading": "时间线"
+      },
+      "detail": {
+        "filterAll": "全部",
+        "filterText": "手动",
+        "filterChatExtract": "对话提取",
+        "filterVoice": "语音",
+        "countPill": "{count} 条",
+        "filterPill": "筛选 {count}",
+        "loading": "加载中…",
+        "emptyAll": "还没有记忆 — 点右上“手动记录”或回到智伴随便聊几句",
+        "emptyFiltered": "当前来源筛选下没有记忆",
+        "loadMore": "查看更早的 {n} 条 ↓"
+      },
+      "entry": {
+        "sourceLabel": "来源：{label}",
+        "sources": {
+          "text": "手动",
+          "chat_extract": "对话提取",
+          "voice": "语音",
+          "passive_event": "被动事件",
+          "reminder": "提醒触发",
+          "raw": "原始",
+          "import": "导入"
+        },
+        "aiHidden": "AI 不可见",
+        "downweighted": "已降权",
+        "allowAiTip": "允许 AI 使用这条记忆",
+        "disallowAiTip": "禁止 AI 使用这条记忆",
+        "excluded": "已排除",
+        "aiVisible": "AI 可见",
+        "restoreWeightTip": "恢复这条记忆的权重",
+        "lowerWeightTip": "降低权重：召回时排得更后",
+        "downweightedRestore": "已降权 ↺",
+        "downweight": "降权",
+        "deleteTip": "永久删除这条记忆",
+        "delete": "删除",
+        "emptyContent": "(空)",
+        "timeToday": "今天 {time}",
+        "timeYesterday": "昨天",
+        "timeDaysAgo": "{n} 天前",
+        "menu": {
+          "open": "更多",
+          "muteAi": "不让 AI 提起",
+          "allowAi": "恢复 AI 可见",
+          "downweight": "少提起",
+          "restoreWeight": "恢复权重",
+          "delete": "删除",
+          "deleteConfirm": "确认删除？"
+        }
+      },
+      "sidebar": {
+        "regenSummary": "重新生成总结",
+        "exportMd": "导出 Markdown",
+        "setReminder": "设置提醒规则",
+        "generating": "生成中…"
+      },
+      "profile": {
+        "loading": "加载画像…",
+        "defaultName": "你的画像",
+        "gettingToKnow": "智伴还在认识你",
+        "northStar": "北极星 · {value}",
+        "rightNow": "此刻的你",
+        "rightNowStats": "近 {days} 天 · {signals} 条信号 · 把握度 {pct}%",
+        "rightNowEmpty": "多聊聊、记几条，这里会显现你此刻的关注与节奏",
+        "chips": {
+          "focus": "关注",
+          "mode": "模式",
+          "energy": "精力",
+          "emotion": "情绪",
+          "momentum": "势头"
+        },
+        "inProgress": "正在推进 · ",
+        "completion": "了解度",
+        "improveProfile": "完善画像",
+        "inviteTitle": "智伴想更懂你",
+        "inviteWantsToKnow": "还想了解：{list}",
+        "inviteGeneric": "聊聊你自己，画像会更立体",
+        "inviteSuffix": " — 在对话里自然提到就行，或用「人生快照」一次填完。",
+        "snapshotCta": "人生快照 · 一次填完 →",
+        "lifeFlowerTab": "生命之花",
+        "overallScore": "整体 <b>{score}</b>/10",
+        "pickDimHint": "点维度看详情",
+        "coreArchiveTitle": "核心档案",
+        "coreArchiveHint": "最稳定的你，每次对话都记得",
+        "careAbout": "在意",
+        "bottomLine": "底线",
+        "vision": "愿景",
+        "currentChallenges": "当前挑战",
+        "notMentioned": "还没聊到",
+        "provenanceChat": "由对话自动补全",
+        "benefit": {
+          "careAbout": "填了它，智伴给建议时会先对齐你的价值排序",
+          "bottomLine": "填了它，智伴不会推荐触碰你底线的方案",
+          "vision": "填了它，目标规划会朝你的北极星对齐"
+        },
+        "memoryFragmentsTitle": "记忆",
+        "memoryFragmentsHint": "对话与手记里的原始片段",
+        "viewAll": "查看全部",
+        "memCountLabel": "记忆条数",
+        "pendingLabel": "待沉淀",
+        "reorgTitle": "一键梳理记忆",
+        "reorgHint": "智伴通读全部记忆，更新画像；拿不准的变更会请你确认。",
+        "reorgLast": " 上次：{date}",
+        "pendingConfirm": "待确认",
+        "reorganizing": "梳理中…",
+        "reorganize": "一键梳理",
+        "reorgDoneUpdated": "已更新画像",
+        "reorgDoneNoChange": "画像无需改动",
+        "reorgNoticeConflicts": "整理完成 · {auto}，有 {n} 项变更待你确认。",
+        "reorgNoticeDone": "整理完成 · {auto}{offline}。",
+        "offlineSuffix": "（离线规则整理）",
+        "reorgFailed": "整理失败",
+        "reorgFailedDetail": "整理失败：{msg}",
+        "narrative": {
+          "title": "成长轨迹",
+          "windowSuffix": "天",
+          "confidence": "把握度 {pct}%{ai}",
+          "aiSuffix": " · AI 叙事",
+          "empty": "轨迹会随你的记录逐渐成形 — 多用几天，这里会出现你的阶段、变化与下一步。",
+          "changes": "主要变化",
+          "nextSteps": "下一步",
+          "risks": "风险点",
+          "opportunities": "机会点"
+        },
+        "identity": {
+          "title": "AI 眼中的你",
+          "version": "v{v} · 把握度 {pct}%",
+          "empty": "智伴正在从你的记忆里勾勒「你是谁」 — 优势、风格、成长阶段会随证据增多而清晰。",
+          "growthStage": "成长阶段",
+          "decisionStyle": "决策风格",
+          "riskTendency": "风险倾向",
+          "strengths": "优势",
+          "weaknesses": "待提升",
+          "goalPrefs": "目标偏好",
+          "recentChanges": "最近变化（为什么）"
+        },
+        "aiSeesYou": "AI 现在这样认识你：",
+        "evidenceLink": "来自这 {n} 条记忆",
+        "evidenceMissing": "重新梳理后，这里的结论可以追溯到具体记忆。",
+        "experience": {
+          "title": "经历",
+          "hint": "从记忆里沉淀的里程碑与教训",
+          "peopleEntry": "重要的人 {n} 位",
+          "lessonsTitle": "经验与教训",
+          "lessonApplied": "已内化",
+          "empty": "还没有沉淀出里程碑。多记录一些经历，再让智伴帮你梳理一次。"
+        },
+        "sidebar": {
+          "title": "速览与操作",
+          "open": "速览与操作"
+        }
+      },
+      "profileDims": {
+        "health": "健康",
+        "career": "事业",
+        "family": "家庭",
+        "finance": "财务",
+        "growth": "成长",
+        "social": "社交",
+        "hobby": "兴趣",
+        "self_realization": "自我"
+      },
+      "dimDetail": {
+        "empty": "这块还没聊到 — 和智伴说说，画像会自己长出来。",
+        "goAssess": "看评估"
+      },
+      "review": {
+        "eyebrow": "变更确认",
+        "title": "这些变化要不要更新到画像？",
+        "later": "稍后再说",
+        "acceptAll": "全部采用（{n}）",
+        "explain": "智伴整理历史记忆时发现这些地方和原来的画像不一致。高置信度的更新已自动入库，下面这些拿不准，请你拍板。",
+        "loading": "加载待确认变更…",
+        "empty": "没有待确认的变更 ✓",
+        "acceptNew": "采用新值",
+        "keepOld": "保留原值",
+        "fieldLabels": {
+          "name": "称呼",
+          "profession": "角色 / 职业",
+          "location": "所在地",
+          "topPriorities": "核心价值观",
+          "northStar": "北极星愿景",
+          "fiveYear": "五年愿景",
+          "tone": "沟通偏好"
+        },
+        "leafLabels": {
+          "summary": "概述",
+          "recentInsight": "近期洞察",
+          "skills": "技能",
+          "patterns": "模式"
+        },
+        "emptyValue": "（空）"
+      },
+      "reminder": {
+        "eyebrow": "提醒规则",
+        "title": "设置一条提醒",
+        "save": "保存提醒",
+        "saving": "保存中…",
+        "contentLabel": "提醒内容",
+        "contentPlaceholder": "例如：每周日下午 4 点：补一次力量训练",
+        "dateLabel": "日期",
+        "timeLabel": "时间",
+        "freqLabel": "频率",
+        "freq": {
+          "once": "只提醒一次",
+          "daily": "每日",
+          "weekly": "每周",
+          "monthly": "每月"
+        },
+        "onceNote": "提醒：{date} {time}",
+        "repeatNote": "每{freq}提醒 · 起始 {date} {time}",
+        "freqShort": {
+          "daily": "日",
+          "weekly": "周",
+          "monthly": "月"
+        },
+        "saveError": "保存失败",
+        "prefillTitle": "提醒 · {query}"
+      },
+      "insight": {
+        "title": "自我认知报告",
+        "eyebrow": "证据驱动 · 非临床",
+        "disclaimer": "由 AI 基于你的记忆推断生成，仅用于自我探索，不构成临床心理评估或诊断。",
+        "lockedProgress": "{p}% / {r}%",
+        "lockedHint": "随着 GEDO 更了解你而解锁——继续聊天或完成人生快照。",
+        "readyBody": "基于你真实记忆的人格洞察——不用做题的\"测评\"。",
+        "generate": "生成我的报告",
+        "continueDraft": "继续完成 {n} 道小问题",
+        "view": "查看报告",
+        "cooldown": "{n} 天后可刷新",
+        "updated": "v{v} · {date} 更新",
+        "generating": "正在阅读你的记忆…",
+        "generatingHint": "基于真实证据推断，约需 1 分钟",
+        "finalizing": "正在融入你的回答…",
+        "failedTitle": "生成失败",
+        "failedBody": "模型未能正常返回，你的进度已保留。",
+        "retry": "重试",
+        "clarifyIntro": "有几个维度需要你的确认——{n} 道题，一分钟内。",
+        "back": "上一题",
+        "next": "下一题",
+        "submit": "生成报告",
+        "big5Title": "人格光谱",
+        "gedoTitle": "你的运转方式",
+        "confidence": "置信 {pct}%",
+        "evidenceTitle": "证据",
+        "clarifyRecord": "你的澄清",
+        "historyTitle": "历史版本",
+        "currentTag": "当前",
+        "versionMeta": "v{v} · {date}",
+        "regenerate": "刷新报告",
+        "cooldownHint": "{n} 天后可刷新",
+        "evidenceKinds": {
+          "episode": "记忆",
+          "profile": "画像",
+          "life_wheel": "生命之花",
+          "identity": "AI 人格",
+          "clarification": "你的回答"
+        },
+        "big5": {
+          "openness": {
+            "name": "开放性",
+            "low": "务实",
+            "high": "尝新"
+          },
+          "conscientiousness": {
+            "name": "尽责性",
+            "low": "随性",
+            "high": "自律"
+          },
+          "extraversion": {
+            "name": "外向性",
+            "low": "内敛",
+            "high": "外向"
+          },
+          "agreeableness": {
+            "name": "宜人性",
+            "low": "直率",
+            "high": "随和"
+          },
+          "neuroticism": {
+            "name": "情绪性",
+            "low": "平稳",
+            "high": "敏感"
+          }
+        },
+        "gedo": {
+          "motivation": "动机结构",
+          "decision_style": "决策风格",
+          "energy_rhythm": "精力节律",
+          "stress_response": "压力应对",
+          "interpersonal": "人际模式"
+        }
+      },
+      "sources": {
+        "title": "记忆来源",
+        "subtitle": "导入博客、文件与 AI 对话历史；所有内容经你确认后才会入库",
+        "countLabel": "{count} 个来源",
+        "quotaLabel": "本月 {used}/{limit}",
+        "empty": {
+          "title": "还没有来源",
+          "hint": "上传文件、添加链接、粘贴文字，或导入 ChatGPT / Claude 的历史对话，让智忆更懂你。"
+        },
+        "add": {
+          "entry": "添加来源",
+          "title": "为智忆添加记忆来源",
+          "dropTitle": "拖放文件到这里，或点击选择",
+          "dropHint": "TXT · MD · PDF · DOCX · JSON · ZIP",
+          "modeUpload": "上传文件",
+          "modeUrl": "网页链接",
+          "modePaste": "粘贴文字",
+          "modeAi": "AI 平台导入",
+          "urlPlaceholder": "https://your-blog.com/about",
+          "urlSubmit": "添加链接",
+          "urlHint": "适合博客、公开主页等网页；抓取失败时可改用「粘贴文字」。",
+          "pasteTitlePlaceholder": "给这段内容起个名字（可选）",
+          "pastePlaceholder": "粘贴任何关于你的内容：自我介绍、笔记、对话记录……",
+          "pasteSubmit": "添加文本",
+          "aiHint": "选择平台查看导出方法，然后上传导出文件或粘贴内容。",
+          "fileQueued": "已加入队列",
+          "fileFailed": "添加失败",
+          "quotaLeft": "本月还可添加 {n} 个来源",
+          "quotaFull": "本月来源额度已用完，升级会员可继续添加",
+          "queueNote": "导入在后台排队处理，可以关闭此窗口。"
+        },
+        "platforms": {
+          "chatgpt": "ChatGPT",
+          "claude": "Claude",
+          "gemini": "Gemini",
+          "kimi": "Kimi",
+          "doubao": "豆包",
+          "deepseek": "DeepSeek"
+        },
+        "guide": {
+          "uploadExport": "上传导出文件",
+          "pasteInstead": "粘贴文本内容",
+          "chatgpt1": "打开 ChatGPT → 设置 → 数据控制 → 导出数据",
+          "chatgpt2": "确认导出后，到邮箱找到下载链接",
+          "chatgpt3": "下载 zip 后直接上传到这里（无需解压）",
+          "claude1": "打开 Claude → 设置 → 隐私 → 导出数据",
+          "claude2": "下载链接会发到邮箱（24 小时内有效）",
+          "claude3": "把 zip 或 conversations.json 上传到这里",
+          "gemini1": "打开 takeout.google.com，先取消全选",
+          "gemini2": "勾选「我的活动」，在内容选项里只保留「Gemini Apps」，格式选 JSON",
+          "gemini3": "导出并下载 zip，上传到这里",
+          "geminiWarn": "直接勾选「Gemini」产品导出的只是 Gems 配置，聊天记录在「我的活动」里。",
+          "kimi1": "打开 Kimi 网页版 → 头像菜单 → 设置",
+          "kimi2": "找到「导出个人数据」并申请副本",
+          "kimi3": "下载后把 zip/json 上传到这里",
+          "doubao1": "豆包暂无官方导出：复制你想保留的对话内容",
+          "doubao2": "粘贴到这里；或上传浏览器插件导出的 MD/TXT",
+          "deepseek1": "DeepSeek 暂无官方导出：复制你想保留的对话内容",
+          "deepseek2": "粘贴到这里；或上传浏览器插件导出的 MD/TXT"
+        },
+        "status": {
+          "queued": "排队中",
+          "fetching": "抓取中",
+          "parsing": "解析中",
+          "extracting": "提取中",
+          "review": "待确认",
+          "done": "已完成",
+          "failed": "失败",
+          "canceled": "已取消"
+        },
+        "card": {
+          "chars": "字",
+          "queuePos": "排队第 {pos} 位",
+          "pending": "{count} 条待确认",
+          "goReview": "去确认",
+          "deleteConfirm": "确认删除？",
+          "acceptedLine": "已入库 {accepted} 条 · 已拒绝 {rejected} 条",
+          "pasteFallbackHint": "可改用「粘贴文字」导入正文"
+        },
+        "typeNames": {
+          "file": "文件",
+          "url": "网页",
+          "text": "粘贴文本",
+          "chat_export": "对话导出"
+        },
+        "errors": {
+          "SSRF_BLOCKED": "该地址不允许访问（内网/保留地址）",
+          "BAD_URL": "链接无效",
+          "FETCH_FAILED": "网页抓取失败",
+          "FETCH_TIMEOUT": "抓取超时",
+          "UNSUPPORTED_CONTENT_TYPE": "不支持的内容类型",
+          "NO_TEXT_LAYER": "该 PDF 没有文字层（可能是扫描件），请转成文本后再上传",
+          "PARSE_FAILED": "文件解析失败",
+          "ZIP_GUARD": "压缩包过大或文件数过多",
+          "NO_CONTENT": "没有可提取的文本",
+          "NO_DATA_IN_ZIP": "压缩包里没找到可解析的数据文件",
+          "EMPTY_INPUT": "内容为空",
+          "PARSER_UNAVAILABLE": "服务器缺少该格式的解析器"
+        },
+        "review": {
+          "title": "确认导入记忆",
+          "summary": "{total} 条候选：碎片 {mem} · 图鉴 {ent}",
+          "selectAll": "全选",
+          "clearAll": "清空",
+          "acceptSel": "接受所选 ({n})",
+          "rejectSel": "拒绝所选",
+          "edit": "编辑",
+          "empty": "没有待确认的候选",
+          "doneLine": "已入库 {confirmed} 条 · 已拒绝 {rejected} 条",
+          "quotaHit": "记忆额度已满，未能入库",
+          "quotaBanner": "记忆条数额度已满，部分候选未能入库；升级会员可继续导入。",
+          "upgrade": "升级会员",
+          "rowFailed": "入库失败",
+          "groupMemories": "记忆",
+          "groupNewEntities": "新实体（将建图鉴卡）",
+          "groupEntityFacts": "实体事实（上已有卡）",
+          "panelSub": "所有来源的提取结果集中在这里；确认后才会写入记忆。",
+          "openPanel": "待确认（{n}）",
+          "newCardBadge": "新卡"
+        },
+        "types": {
+          "important_info": "重要信息",
+          "personal_trait": "个人特质",
+          "key_event": "关键事件",
+          "date_reminder": "日期提醒"
+        },
+        "entityTypes": {
+          "person": "人物",
+          "pet": "宠物",
+          "object": "物品",
+          "place": "地点",
+          "event": "事件",
+          "org": "组织",
+          "other": "其他"
+        },
+        "detail": {
+          "open": "查看详情",
+          "eyebrow": "来源详情",
+          "tabs": {
+            "overview": "概览",
+            "text": "原文",
+            "chunks": "分块"
+          },
+          "download": "下载原始文件",
+          "steps": {
+            "fetch": "抓取网页",
+            "parse": "解析分块",
+            "extract": "提取记忆",
+            "review": "确认入库"
+          },
+          "parseLine": "{chars} 字 → {chunks} 块",
+          "convSuffix": "（{convs} 个会话）",
+          "extractLine": "{done}/{total} 块 · 候选 {cand} 条",
+          "failSuffix": "（失败 {n}）",
+          "reviewLine": "待确认 {pending} · 已入库 {accepted} · 已拒绝 {rejected}",
+          "info": {
+            "type": "类型",
+            "platform": "平台",
+            "file": "文件",
+            "link": "链接",
+            "size": "大小",
+            "created": "添加时间",
+            "updated": "更新时间"
+          },
+          "textEmpty": "原文尚未生成——解析完成后可见。",
+          "textMeta": "已显示 {shown} / {total} 字",
+          "loadMore": "加载更多",
+          "chunksEmpty": "还没有分块——解析完成后可见。",
+          "embedded": "已生成嵌入（供后续检索）",
+          "notEmbedded": "未生成嵌入"
+        }
+      },
+      "inbox": {
+        "title": "待确认",
+        "subtitle": "所有等你确认的记忆都在这里：来源导入、与智伴的聊天、记忆梳理。",
+        "groups": {
+          "expiring": "即将过期",
+          "chat": "与智伴的聊天",
+          "consolidation": "记忆梳理"
+        },
+        "deletedSource": "来源已删除",
+        "autoSavedLine": "已自动收下 {n} 条 · {name}（可撤销）",
+        "undoAll": "全部撤销",
+        "doneLine": "已收下 {confirmed} 条 · 跳过 {rejected} 条",
+        "acceptSel": "收下所选（{n}）",
+        "skipSel": "跳过所选",
+        "empty": "没有等待确认的条目，都处理完啦。",
+        "entityEmpty": "暂时没有关于 TA 的新发现。",
+        "entityFilter": "只看关于「{name}」的发现",
+        "clearFilter": "查看全部"
+      },
+      "memoriesTitle": "记忆",
+      "memoriesSub": "你的全部记忆，按来源和生活领域随时切换视角。",
+      "rail": {
+        "title": "来源库",
+        "collapse": "收起",
+        "expand": "展开来源库",
+        "all": "全部记忆",
+        "chat": "与智伴的对话",
+        "manual": "手动记录",
+        "imports": "导入来源",
+        "addImport": "添加来源",
+        "guideText": "把 ChatGPT 导出、文档、网页链接交给智伴，提炼成你的记忆。",
+        "guideCta": "导入资料",
+        "quota": "本月 {used}/{limit}",
+        "pendingChip": "{n} 条待确认"
+      },
+      "addMenu": {
+        "button": "添加",
+        "capture": "记一笔",
+        "upload": "上传文件",
+        "link": "贴链接或文本",
+        "ai": "AI 平台导出"
+      },
+      "filterBar": {
+        "label": "筛选",
+        "source": "来源：{name}",
+        "dim": "领域：{name}",
+        "search": "搜索：“{q}”",
+        "clearAll": "清除全部",
+        "clearSource": "清除来源",
+        "clearDim": "清除领域",
+        "clearSearch": "清除搜索",
+        "emptyCombo": "在「{conditions}」下没有找到记忆",
+        "evidence": "证据：{name}"
+      },
+      "toolsMenu": "更多操作",
+      "undoToast": {
+        "deleted": "已删除 {n} 条",
+        "undo": "撤销"
+      },
+      "emptyPendingTitle": "记忆还在等你确认",
+      "emptyPendingHint": "导入的内容已提炼成候选，收下后就会出现在这里。",
+      "emptyPendingCta": "去待确认（{n}）",
+      "flowerCard": {
+        "legendSelf": "自评",
+        "legendAi": "AI 评估",
+        "insufficientLegend": "空瓣 = 了解不足",
+        "insufficientHint": "这块聊得还少——和智伴多说说，评估会自己长出来。",
+        "aiEmptyHint": "和智伴多聊聊生活的各个方面，AI 会长出这朵花。",
+        "aiEmptyShort": "AI 还在了解你",
+        "ruleInsightFallback": "初步评估来自记忆活跃与目标进展。点「一键梳理」生成 AI 解读。",
+        "signalsLine": "{total} 条记忆 · 近30天 {recent} 条",
+        "goalsLine": "{n} 个目标 · 平均进度 {p}%",
+        "selfCompare": "自评 {s}/10",
+        "viewMemories": "看记忆（{n}）"
+      },
+      "dimLevels": {
+        "needs_care": "待浇灌",
+        "sprouting": "萌芽",
+        "growing": "生长",
+        "thriving": "繁茂",
+        "blooming": "绽放",
+        "unknown": "了解不足"
+      },
+      "dimLevelDesc": {
+        "needs_care": "这一维长期少有投入或明显承压，值得优先照看",
+        "sprouting": "刚开始有起色，投入还不稳定",
+        "growing": "在持续投入，节奏平稳",
+        "thriving": "投入与成果兼具，是生活的支点之一",
+        "blooming": "这一维是你的亮点，有余力滋养其他维度",
+        "unknown": "聊得还不够，AI 暂不打分"
+      },
+      "flowerMovedNotice": "生命之花搬进了「画像」——雷达和自评都在那里。",
+      "flowerMovedCta": "看看"
+    },
+    "execution": {
+      "shell": {
+        "execution": "执行",
+        "goals": "目标",
+        "obstacles": "应急卡"
+      },
+      "weekdays": [
+        "周日",
+        "周一",
+        "周二",
+        "周三",
+        "周四",
+        "周五",
+        "周六"
+      ],
+      "brand": "智行",
+      "subtitle": "把目标规划为每日待办，AI 自动排期 · 追踪执行",
+      "eveningReview": "晚间复盘",
+      "replan": "重新规划",
+      "addTask": "加待办",
+      "ecsLabel": {
+        "excellent": "优秀",
+        "good": "良好",
+        "fair": "一般",
+        "watch": "需关注"
+      },
+      "dayLabel": {
+        "unscheduled": "未排期",
+        "today": "今天",
+        "tomorrow": "明天",
+        "yesterday": "昨天",
+        "dayAfterTomorrow": "后天",
+        "dateFormat": "{mm} 月 {dd} 日 · {wd}"
+      },
+      "dateLine": {
+        "todayPlanned": "AI 已根据昨日复盘排期 {n} 项",
+        "upcomingPlanned": "未来已排期 {n} 项",
+        "historyDone": "历史 {n} 项完成 / 跳过"
+      },
+      "hero": {
+        "completedToday": "今日已完成",
+        "mitNotStarted": " · MIT 尚未启动",
+        "focusTip": "上午专注度评分高，建议把 <b>MIT</b> 安排在 10:30 前的时段；下午体感会回落。",
+        "completedPct": "完成 {pct}%",
+        "planStable": "计划稳定 92%",
+        "reviewPending": "复盘 未完成",
+        "energyCurveTitle": "能量曲线",
+        "past14": "过去 14 天平均",
+        "now": "现在",
+        "peak": "峰值 · 10:30"
+      },
+      "schedule": {
+        "todayTimeline": "今日时间线",
+        "upcomingTasks": "未来待办",
+        "historyRecord": "历史记录",
+        "todayChip": "今日",
+        "upcomingChip": "未来{count}",
+        "historyChip": "历史{count}",
+        "filterAll": "全部",
+        "filterMitOnly": "仅 MIT",
+        "filterOpen": "未完成",
+        "emptyNoTasksToday": "今日暂无待办 · 点右上角“加待办”或让智伴帮你规划",
+        "emptyNoFilterMatch": "没有符合筛选的待办",
+        "emptyNoUpcoming": "未来还没有已排期的待办 · 给待办设置截止日期即可在这里规划",
+        "emptyNoHistory": "还没有历史记录 · 完成或跳过待办后会出现在这里",
+        "upcomingBanner": "未来待办 · 已排期 {n} 项",
+        "view": "查看",
+        "itemsCount": "{n} 项"
+      },
+      "energy": {
+        "high": "高能",
+        "medium": "中能",
+        "low": "低能"
+      },
+      "task": {
+        "inProgress": "进行中 · {time}",
+        "refine": "细化",
+        "later": "稍后",
+        "blocked": "遇阻",
+        "done": "完成",
+        "doneCheck": "完成 ✓",
+        "start": "开始 →",
+        "new": "新",
+        "doneMark": "✓ 完成",
+        "skipMark": "⤫ 跳过"
+      },
+      "sidebar": {
+        "activeGoalsTitle": "进行中目标",
+        "activeCount": "{n} 活跃",
+        "noGoals": "暂无目标 · 在智伴中说“我想立一个目标”开始",
+        "ifThenTitle": "If-Then 应急卡",
+        "hitRate": "{rate} 命中",
+        "noObstacles": "还没有 If-Then 卡"
+      },
+      "goalCard": {
+        "ongoing": "持续",
+        "decomposed": "已规划 · {n} 个待办{sub}",
+        "childGoals": " · {n} 个子目标",
+        "viewBtn": "查看详情",
+        "replanBtn": "重新规划 / 调整",
+        "decomposeBtn": "规划为每日待办"
+      },
+      "obstacleCard": {
+        "triggered": "触发 {n}",
+        "executed": "执行 {n}"
+      },
+      "dims": {
+        "career": "事业",
+        "health": "健康",
+        "growth": "成长",
+        "learning": "学习",
+        "relation": "关系",
+        "family": "家庭",
+        "finance": "理财",
+        "self": "自我",
+        "fun": "休闲"
+      },
+      "goalsView": {
+        "title": "目标",
+        "subtitle": "WOOP 引导 · OKR 四层结构规划",
+        "newGoal": "新建目标",
+        "chatCta": "告诉智伴你想达成什么，AI 帮你规划 SMART 目标",
+        "goToChat": "前往对话",
+        "stats": {
+          "active": "进行中",
+          "completed": "已完成",
+          "avgProgress": "平均进度",
+          "hitRate": "障碍命中率"
+        },
+        "emptyTitle": "还没有目标",
+        "emptyHint": "点右上角“新建目标”做 WOOP 引导，或先和智伴聊聊想达成什么。"
+      },
+      "obstaclesView": {
+        "title": "应急卡",
+        "subtitle": "If-Then 障碍应对卡 · 预见并攻克执行障碍",
+        "emptyTitle": "还没有障碍预案",
+        "emptyHint": "创建目标时会自动生成 If-Then 卡片，或在待办“遇阻”时由智伴帮你沉淀一条。",
+        "kpis": {
+          "hitRate": "障碍命中率",
+          "hitRateSub": "自我认知准确度",
+          "cards": "预案卡片",
+          "cardsSub": "If-Then",
+          "triggers": "触发次数",
+          "triggersSub": "被命中",
+          "executions": "执行次数",
+          "executionsSub": "按预案做"
+        },
+        "distributionTitle": "障碍类型分布",
+        "timesUnit": "{n} 次",
+        "recentEventsTitle": "近期障碍事件",
+        "unnamedTask": "（未命名待办）",
+        "matched": "命中",
+        "newObstacle": "新障碍",
+        "libraryTitle": "If-Then 卡片库"
+      },
+      "taskCreate": {
+        "eyebrow": "新待办",
+        "title": "给今天加一件事",
+        "cancel": "取消",
+        "add": "加入今日",
+        "adding": "添加中…",
+        "titleLabel": "待办",
+        "titlePlaceholder": "例如：写完 PRD 第三节",
+        "energyLabel": "所需能量",
+        "energyOptions": {
+          "high": {
+            "label": "高能",
+            "desc": "专注、需要思考"
+          },
+          "medium": {
+            "label": "中能",
+            "desc": "常规、可执行"
+          },
+          "low": {
+            "label": "低能",
+            "desc": "机械、放空都行"
+          }
+        },
+        "durationLabel": "预计时长",
+        "durations": {
+          "15": "15 分钟",
+          "25": "25 分钟 (番茄)",
+          "45": "45 分钟",
+          "60": "60 分钟",
+          "90": "90 分钟 (深度)"
+        },
+        "goalLabel": "关联目标 (可选)",
+        "noGoal": "— 不关联 —",
+        "saveError": "添加失败"
+      },
+      "taskBreakdown": {
+        "eyebrow": "细化待办",
+        "titleWith": "拆解「{title}」",
+        "titleGeneric": "拆解待办",
+        "cancel": "取消",
+        "creating": "创建中…",
+        "addN": "加入 {n} 个小待办",
+        "intro": "智伴把这件事拆成了几步，勾选要加入清单的小待办：",
+        "loading": "智伴拆解中…",
+        "empty": "没有可拆解的步骤",
+        "genError": "生成失败",
+        "applyError": "创建失败"
+      },
+      "obstacleMatch": {
+        "eyebrow": "遇阻",
+        "titleWith": "「{title}」遇阻了",
+        "titleGeneric": "遇阻了",
+        "cancel": "取消",
+        "matching": "匹配中…",
+        "matchBtn": "匹配应急卡",
+        "skipTask": "直接跳过待办",
+        "done": "完成",
+        "close": "关闭",
+        "whatBlocked": "是什么挡住了？",
+        "noteLabel": "补充 (可选)",
+        "noteHint": "智伴会把这条记录加入复盘材料",
+        "notePlaceholder": "比如：上午开了三个会，再做 PRD 已经没力气",
+        "reasons": {
+          "procrastination_fear": {
+            "label": "拖延 / 害怕开始",
+            "desc": "心里有压力 / 不知道怎么动手"
+          },
+          "time_insufficient": {
+            "label": "没时间",
+            "desc": "今天排得太满"
+          },
+          "energy_low": {
+            "label": "能量不够",
+            "desc": "困、累、没状态"
+          },
+          "external_block": {
+            "label": "外部受阻",
+            "desc": "依赖别人 / 工具坏了"
+          },
+          "unclear_step": {
+            "label": "不确定下一步",
+            "desc": "需要先想清楚"
+          },
+          "mood_dip": {
+            "label": "情绪低",
+            "desc": "不想做任何事"
+          },
+          "other": {
+            "label": "其它"
+          }
+        },
+        "matchError": "匹配失败",
+        "recordError": "记录失败",
+        "noMatch": "还没有针对这个原因的 If-Then 卡。可以先跳过待办，下次智伴会和你一起补一张。",
+        "matchedIntro": "智伴匹配到 <b>{n}</b> 张应急卡。试着按其中一张行动：",
+        "recordedHit": "已记录命中",
+        "notUsed": "没用上",
+        "followThis": "按这条做",
+        "recorded": "已记录"
+      },
+      "dailyPlanReview": {
+        "eyebrowPreview": "明日预览",
+        "eyebrowPlanning": "AI 规划",
+        "titleAccepted": "已加入今日 ✓",
+        "titlePlanning": "智伴正在规划…",
+        "gotIt": "知道了",
+        "done": "完成",
+        "later": "稍后",
+        "addingNow": "加入中…",
+        "acceptAdd": "采纳，加入今日",
+        "loadingText": "智伴正在结合昨日复盘和你的能量曲线规划…",
+        "suggestedN": "建议的 {n} 项",
+        "sourceLlm": "前沿大模型",
+        "sourceFallback": "规则兜底",
+        "genError": "生成失败",
+        "applyError": "应用失败"
+      },
+      "eveningReflection": {
+        "eyebrow": "晚间复盘",
+        "titleDone": "今天就到这。明天继续。",
+        "titlePending": "花 30 秒收个尾",
+        "close": "关闭",
+        "notNow": "先不",
+        "saving": "保存中…",
+        "finishReview": "完成复盘",
+        "todayScore": "ECS 今日得分：{score}",
+        "savedNote": "你的复盘已加入智伴的画像层。明天的规划会基于这些做调整。",
+        "obstacleLabel": "今天最大的障碍",
+        "obstacles": {
+          "none": "没遇到大障碍",
+          "procrastination": "拖延",
+          "time": "时间不够",
+          "energy": "能量不足",
+          "distraction": "分心",
+          "mood": "情绪",
+          "external": "外部干扰"
+        },
+        "valuableLabel": "今天最有价值的一件事",
+        "valuableHint": "一句话就够",
+        "valuablePlaceholder": "例如：写完了 PRD 第三节 / 跟妈通了 20 分钟电话",
+        "adjustLabel": "明天想怎么调？",
+        "adjusts": {
+          "no_change": {
+            "label": "保持",
+            "desc": "节奏挺好，明天照旧"
+          },
+          "lower_load": {
+            "label": "降一档",
+            "desc": "今天太满，明天减项"
+          },
+          "higher_load": {
+            "label": "加一档",
+            "desc": "可以再挑战"
+          },
+          "reorder": {
+            "label": "重排",
+            "desc": "事情没问题，时间错了"
+          }
+        },
+        "stabilityLabel": "今天计划稳定性 (你的感觉)",
+        "stabilityHint": "完成率 {pct}% · {n} 项规划",
+        "stabilitySliderLabel": "稳定性",
+        "estimateLabel": "预估 ECS 总分：",
+        "saveError": "保存失败"
+      },
+      "goalDecompose": {
+        "eyebrowReplan": "重新规划",
+        "eyebrowNew": "目标规划",
+        "titleWith": "{action}「{title}」",
+        "titleGeneric": "规划目标",
+        "actionReplan": "重新规划",
+        "actionPlan": "规划",
+        "hintPlaceholder": "重新生成的调整意图（可选，如：更轻松）",
+        "regenerating": "生成中…",
+        "regenerate": "重新生成",
+        "cancel": "取消",
+        "committing": "生成待办中…",
+        "confirmGenerate": "确认并{prefix}生成 {n} 个待办",
+        "replanPrefix": "重新",
+        "planningText": "智伴正在结合你的画像规划…",
+        "noPlan": "暂无计划",
+        "replanBanner": "重新规划{doneSuffix}{skipSuffix}",
+        "doneSuffix": " · 已完成 {done}/{total}（{pct}%）",
+        "skipSuffix": " · 跳过 {n} 次",
+        "replanNote": "已结合你的完成情况与其他目标重新规划。确认后会用新计划<b>替换未完成的旧待办</b>，已完成的保留为历史。",
+        "personalizedNote": "已结合你的画像与近况规划。",
+        "notPersonalizedNote": "聊得越多，规划越贴合你 —— 去画像看看还能补充什么。",
+        "objectiveLabel": "目标（一句话）",
+        "keyResultsLabel": "关键成果",
+        "addKr": "加一条",
+        "newKr": "新的关键成果",
+        "durationLabel": "周期",
+        "days": "天",
+        "rescheduleBtn": "按此周期重排",
+        "phaseDayPrefix": "第",
+        "phaseDaySuffix": "天",
+        "dailySummary": "每天 {n} 件 · 共 {total} 个待办",
+        "milestoneSummary": "{total} 个关键待办",
+        "newDailyTask": "新的每日待办",
+        "addDailyTask": "加一件每日待办",
+        "milestoneTasksLabel": "关键待办",
+        "dayPrefix": "第{day}天",
+        "minutesSuffix": "分",
+        "genError": "生成失败",
+        "commitError": "生成待办失败"
+      }
+    },
+    "avatar": {
+      "loading": "正在加载数字分身…",
+      "sessionExpired": "登录状态已失效，请重新登录",
+      "loadError": "加载失败，请检查网络后重试",
+      "reLogin": "重新登录",
+      "retry": "重试",
+      "title": "数字分身",
+      "subtitle": "对外数字人 · 发布工作台",
+      "saving": "保存中",
+      "tabs": {
+        "config": "配置",
+        "activity": "活动",
+        "distribute": "分发"
+      },
+      "defaultAssistantName": "你",
+      "assistantOf": "{name} 的智能助理",
+      "config": {
+        "identityTitle": "对外身份：代理助理（ABOUT）",
+        "identityBody": "数字人会以「{name} 的智能助理」第三人称身份对外作答，仅使用公开档案，不会透露私密记忆。",
+        "accessTitle": "访问门槛",
+        "access": {
+          "public": {
+            "label": "公开",
+            "desc": "任何人可直接对话"
+          },
+          "hybrid": {
+            "label": "开放 + 口令解锁",
+            "desc": "匿名可轻聊，输入口令解锁可识别 / 信任模式"
+          },
+          "passcode": {
+            "label": "口令门槛",
+            "desc": "必须输入正确口令才能对话"
+          }
+        },
+        "passcodeLabel": "口令",
+        "passcodePlaceholder": "设置一个分享口令",
+        "inviteHint": "提示：可在「智忆 · 人脉」里为重要联系人生成专属邀请链接，对方打开即被自动识别，无需口令。",
+        "avatarTitle": "形象",
+        "profileTitle": "资料",
+        "displayNameLabel": "对外显示名",
+        "displayNamePlaceholder": "例如：Alex",
+        "taglineLabel": "一句话简介",
+        "taglinePlaceholder": "例如：产品设计师 / 独立开发者",
+        "greetingLabel": "开场白",
+        "greetingPlaceholder": "访客进入页面时数字人说的第一句话",
+        "promptsTitle": "推荐问题",
+        "deleteAria": "删除",
+        "addAria": "添加",
+        "addPlaceholder": "添加一个访客可能会问的问题",
+        "scopeTitle": "对外话题范围",
+        "scopeDesc": "限定数字人可以介绍的话题，留空表示不额外限制（仍受 ABOUT 隐私约束）。",
+        "scopePlaceholder": "例如：职业经历、技术栈、合作方式",
+        "themeTitle": "主题色",
+        "previewLabel": "实时预览",
+        "previewEmpty": "发布后即可在此与数字人实时对话预览。"
+      },
+      "presetAvatars": {
+        "default": "机器人",
+        "fox": "小狐狸",
+        "cat": "猫咪",
+        "panda": "熊猫",
+        "owl": "猫头鹰",
+        "astronaut": "宇航员",
+        "wizard": "法师",
+        "ghost": "幽灵",
+        "alien": "外星人",
+        "sun": "太阳",
+        "sprout": "幼苗",
+        "star": "星星"
+      },
+      "themeColors": {
+        "emerald": "翡翠绿",
+        "blue": "海洋蓝",
+        "violet": "梦幻紫",
+        "rose": "玫瑰粉",
+        "amber": "暖阳橙"
+      },
+      "picker": {
+        "uploadPhoto": "上传照片",
+        "fileHint": "支持 JPG/PNG/WebP，≤8MB",
+        "fileTooLarge": "图片不能超过 8MB",
+        "uploadError": "上传失败",
+        "chooseCartoonHint": "或选择卡通形象",
+        "cartoonAvatarOf": "卡通形象 · {label}",
+        "chooseCartoonAvatar": "选择卡通形象",
+        "close": "关闭"
+      },
+      "activity": {
+        "kind": {
+          "task": "待办",
+          "memory": "记忆",
+          "reminder": "提醒"
+        },
+        "inboxTitle": "待审收件箱",
+        "inboxDesc": "访客互动分析出的候选项，确认后才写入你的待办 / 记忆。",
+        "loading": "加载中…",
+        "inboxEmpty": "暂无待审内容",
+        "noContent": "（无内容）",
+        "ignore": "忽略",
+        "adopt": "采纳",
+        "publishGuideTitle": "分身尚未发布",
+        "publishGuideDesc": "完成配置并发布后，访客才能与你的数字人对话，互动数据也会出现在这里。",
+        "publishGuideStepConfig": "完善对外身份、开场白与访问门槛",
+        "publishGuideStepPublish": "在「分发」页发布，生成专属链接",
+        "publishGuideStepShare": "分享链接或二维码，开始收集访客对话",
+        "publishGuideConfigBtn": "去配置",
+        "publishGuideDistributeBtn": "去发布"
+      },
+      "insights": {
+        "title": "活动洞察",
+        "views": "累计浏览",
+        "sessions": "访客会话",
+        "sessionsSub": "{matched} 识别 · {anon} 匿名",
+        "matchRate": "识别率",
+        "matchRateSub": "已识别占比",
+        "avgMsgs": "人均消息",
+        "avgMsgsSub": "共 {n} 条",
+        "approved": "已采纳",
+        "approvedSub": "{n} 待审",
+        "topQuestionsTitle": "热门开场问题"
+      },
+      "sessions": {
+        "title": "访客对话回看",
+        "desc": "访客与你的数字人的完整对话记录，点开查看全文。",
+        "empty": "还没有访客对话。发布后分享链接，访客的对话会出现在这里。",
+        "via": {
+          "invite": "邀请",
+          "passcode": "口令",
+          "anonymous": "匿名"
+        },
+        "matchedVisitor": "已识别访客",
+        "anonymousVisitor": "匿名访客",
+        "msgCount": "{n} 条消息",
+        "archived": "已归档",
+        "emptyTurns": "（这段会话没有消息）",
+        "summaryPrefix": "摘要：",
+        "timeToday": "今天 {time}",
+        "timeYesterday": "昨天",
+        "timeDaysAgo": "{n} 天前",
+        "searchPlaceholder": "搜索访客名、摘要或对话内容…",
+        "clearSearch": "清除搜索",
+        "resultCount": "共 {n} 条",
+        "noResults": "没有匹配的访客对话。",
+        "loadMore": "加载更多 {n} 条 ↓",
+        "timeFilter": "时间",
+        "timeAll": "全部",
+        "time7d": "近 7 天",
+        "time30d": "近 30 天",
+        "time90d": "近 90 天"
+      },
+      "distribute": {
+        "published": "已发布",
+        "unpublished": "未发布",
+        "publishedDesc": "任何人都可通过专属链接访问你的数字人。",
+        "unpublishedDesc": "发布后会生成一个无需登录即可访问的专属链接。",
+        "unpublishBtn": "取消发布",
+        "publishBtn": "发布",
+        "publishQuotaExceeded": "发布数字分身需要 Pro 及以上会员",
+        "publishError": "操作失败，请稍后再试",
+        "linkTitle": "专属链接",
+        "copyLinkTitle": "复制链接",
+        "qrTitle": "二维码",
+        "qrDesc": "线下分享或印在名片 / 海报上，扫码直达你的数字人。",
+        "qrAlt": "数字分身二维码",
+        "qrHint": "扫码即可在手机上与你的数字人对话。",
+        "downloadPng": "下载 PNG",
+        "embedTitle": "网站嵌入",
+        "embedDesc": "复制下面的代码，把数字人聊天挂件嵌进你的网站 / 博客。",
+        "copyEmbedTitle": "复制嵌入代码",
+        "previewWidget": "预览挂件",
+        "mcpTitle": "外部 Agent 接入",
+        "mcpBody": "外部 Agent 可通过 MCP 接入：端点 <code>{endpoint}</code>（Streamable HTTP，免鉴权），工具 <tool>digital_persona_profile</tool> / <tool>digital_persona_ask</tool>，slug：<code>{slug}</code>",
+        "emptyState": "发布后，这里会出现专属链接、二维码与嵌入代码。"
+      }
+    },
+    "lifeAreas": {
+      "health": {
+        "label": "健康",
+        "desc": "运动 / 睡眠 / 饮食"
+      },
+      "career": {
+        "label": "事业",
+        "desc": "工作 / 项目 / 影响力"
+      },
+      "growth": {
+        "label": "成长",
+        "desc": "技能 / 知识 / 学习"
+      },
+      "relation": {
+        "label": "关系",
+        "desc": "家人 / 朋友 / 伴侣"
+      },
+      "self": {
+        "label": "自我",
+        "desc": "心智 / 情绪 / 内省"
+      },
+      "fun": {
+        "label": "休闲",
+        "desc": "兴趣 / 玩"
+      },
+      "family": {
+        "label": "家庭",
+        "desc": "居住 / 维系"
+      },
+      "finance": {
+        "label": "理财",
+        "desc": "收入 / 储蓄 / 投资"
+      }
+    },
+    "twin": {
+      "title": "分身模型",
+      "badgeSoon": "铸造中 · 内测",
+      "tagline": "你的专属模型——由你写下的文字训练，越来越像你，随时可撤回删除。",
+      "gateDesc": "分身模型是 Ultra 会员专属能力。",
+      "upgradeHint": "Ultra 专属",
+      "consentEntry": "分身模型训练",
+      "consentEntryDesc": "训练一个只属于你的专属模型；独立授权，随时撤回并物理删除",
+      "enable": "开启分身模型",
+      "consentTitle": "开启分身模型训练",
+      "consentIntro": "开启前，请确认以下内容：",
+      "clause1": "仅使用你本人写下的内容训练（你发送的消息、上传的写作样本、导入对话中你自己的发言）；AI 的回复与他人的话不会被使用。",
+      "clause2": "训练产物是一个只属于你的分身模型，不会并入任何公共模型，其他用户无法使用它。",
+      "clause3": "训练语料与分身模型在 GEDO 自有服务器与自有算力上处理，不发送给第三方 AI 服务；敏感信息在进入训练前会被自动移除。",
+      "clause4": "你可以随时撤回本授权——撤回后训练语料与分身模型将被物理删除，不可恢复。",
+      "clause5": "本授权独立于其他数据设置；标记为\"不给 AI 看\"的内容始终不会进入训练。",
+      "consentBeta": "内测条款（beta）——正式条款发布时将请你重新确认。",
+      "agree": "同意并开启",
+      "cancel": "取消",
+      "grantedAt": "已开启 · {version} · {date}",
+      "revoke": "撤回并删除",
+      "revokeTitle": "撤回分身模型授权？",
+      "revokeWarning": "撤回后，训练语料与分身模型将被物理删除，不可恢复；你的分身将回退到通用模式。",
+      "revokeConfirm": "确认撤回并删除",
+      "progressTitle": "语料积累进度",
+      "progressStats": "已积累 {items} 条（目标 {minItems} 条）",
+      "actionChat": "去聊聊",
+      "actionUpload": "上传写作样本",
+      "actionImport": "也可以在 设置 → 隐私 里导入 ChatGPT / Claude 历史对话，加速积累。",
+      "uploadPlaceholder": "粘贴一段你写的文字（消息、邮件、随笔皆可，至少 20 字）……",
+      "uploadSubmit": "添加样本",
+      "uploadOk": "已添加，进度已更新",
+      "uploadTooShort": "内容太短（至少 20 字）",
+      "forging": "正在铸造你的分身模型……",
+      "activeDesc": "你的专属模型 v{version} 已激活——分身开始以你的方式说话。",
+      "manageInSettings": "授权与删除在 设置 → 隐私 中管理。"
+    },
+    "welcome": {
+      "brand": "GEDO · 欢迎",
+      "skip": "跳过",
+      "prev": "上一步",
+      "next": "下一步",
+      "start": "开始使用",
+      "steps": {
+        "talk": {
+          "title": "对话",
+          "desc": "说一句话，智伴同时帮你记录、规划、提醒 —— 你只管说。"
+        },
+        "distill": {
+          "title": "沉淀",
+          "desc": "重要的事自动沉淀成记忆，等你确认入库，越用越懂你。"
+        },
+        "insight": {
+          "title": "洞察",
+          "desc": "趋势、能量曲线、晚间复盘 —— 看见自己的节奏。"
+        },
+        "breakthrough": {
+          "title": "突破",
+          "desc": "日积月累，把想做的事做成，长成你想要的样子。"
+        }
+      },
+      "talk": {
+        "userMsg": "这周三次健身要泡汤了，周日还要出差。",
+        "reply": "别急 —— 不是死指标，完成两次也算稳。我帮你做了三件事：",
+        "trace": {
+          "record": {
+            "name": "记录到智忆",
+            "detail": "周日出差 · 训练窗口收窄"
+          },
+          "adjust": {
+            "name": "调整执行",
+            "detail": "本周 3 次 → 2 次"
+          },
+          "retarget": {
+            "name": "重排目标",
+            "detail": "健身习惯 · 本周节奏"
+          }
+        }
+      },
+      "memory": {
+        "recorded": "已记录到智忆",
+        "recordedDetail": "体检：血压偏高 · 需规律运动",
+        "sectionLabel": "生命主题 · 维度",
+        "rows": {
+          "health": {
+            "name": "健康",
+            "sub": "跑步 · 睡眠"
+          },
+          "career": {
+            "name": "事业",
+            "sub": "作品集"
+          },
+          "growth": {
+            "name": "成长 / 学习",
+            "sub": "英语口语"
+          }
+        }
+      },
+      "insight": {
+        "title": "本周成长趋势",
+        "days": {
+          "mon": "一",
+          "tue": "二",
+          "wed": "三",
+          "thu": "四",
+          "fri": "五",
+          "sat": "六",
+          "sun": "日"
+        },
+        "stats": {
+          "completion": "完成率",
+          "focus": "专注",
+          "streak": "连续"
+        },
+        "streakValue": "12 天"
+      },
+      "growth": {
+        "title": "人生成长轨迹",
+        "capability": "能力 +18%",
+        "today": "今天",
+        "days": "{n} 天"
+      }
+    }
+  }
+}

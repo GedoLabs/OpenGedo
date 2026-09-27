@@ -32,7 +32,7 @@ Requirements: Docker + Docker Compose, and **one** LLM credential — an Anthrop
 key (recommended), or a local [Ollama](https://ollama.com) for a fully offline setup.
 
 ```bash
-git clone https://github.com/Gedolabs/gedo.git && cd gedo
+git clone https://github.com/GedoLabs/OpenGedo.git && cd OpenGedo
 cp services/backend-api/env.example services/backend-api/.env
 # edit services/backend-api/.env — minimal config:
 #   GEDO_EDITION=oss
@@ -115,7 +115,7 @@ GEDO 是一套可自主部署的成长系统：带分层长期记忆的 AI 智�
 需要 Docker 和一个 LLM 凭据（推荐 Anthropic key；或本地 Ollama 全离线）。
 
 ```bash
-git clone https://github.com/Gedolabs/gedo.git && cd gedo
+git clone https://github.com/GedoLabs/OpenGedo.git && cd OpenGedo
 cp services/backend-api/env.example services/backend-api/.env
 # 编辑 .env：GEDO_EDITION=oss、JWT_SECRET、ANTHROPIC_API_KEY 三项即可
 docker compose up -d
